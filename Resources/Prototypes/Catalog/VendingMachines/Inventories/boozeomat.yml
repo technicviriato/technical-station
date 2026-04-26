@@ -147,8 +147,8 @@
     ChemistryBottleEthanol: 3
     DrinkBottleOfNothingFull: 1
     DrinkPoisonWinebottleFull: 2
-    DrinkIrishCarBomb: 2 # Trauma
-# <Trauma>
+  # <Trauma>
+    DrinkIrishCarBomb: 2
   emaggedInventory:
     ChemistryBottleToxin: 1
-# </Trauma>
+  # </Trauma>

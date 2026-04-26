@@ -23,10 +23,10 @@
     ClothingBackpackSatchelVirology: 2
     ClothingBackpackDuffelVirology: 2
     ClothingBackpackMessengerVirology: 2 # Frontier
-# <Trauma>
+  # <Trauma>
   emaggedInventory:
     Handcuffs: 1
     ClothingEyesHudViro: 1
     ClothingHeadHatHoodBioVirology: 1
     ClothingOuterBioVirology: 1
-# </Trauma>
+  # </Trauma>

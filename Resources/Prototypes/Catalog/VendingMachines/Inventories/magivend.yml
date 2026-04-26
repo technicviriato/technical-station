@@ -25,10 +25,10 @@
     ClothingOuterWizardViolet: 3
     ClothingShoesWizard: 9
     RGBStaff: 3 # Trauma
-# <Trauma>
+  # <Trauma>
   emaggedInventory:
     ClothingHandsGlovesWizard: 1
-# </Trauma>
+  # </Trauma>
     #Goobedit: We have this shit mapped so make sure no actual contra gets added into it or else um we might have issues
     #TODO:
     #only missing staff

@@ -30,9 +30,11 @@
     SyringePoisonFent: 2 # Trauma
   emaggedInventory:
     VestineChemistryVial: 1
-    VialRed: 1 # Trauma
-    VialExplosive: 1 # Trauma
-    ChemistryBottleMuteToxin: 1 # Trauma
+    # <Trauma>
+    VialRed: 1
+    VialExplosive: 1
+    ChemistryBottleMuteToxin: 1
+    # </Trauma>
 
 - type: vendingMachineInventory
   id: ChemVendInventorySyndicate

@@ -12,10 +12,10 @@
     OxygenTankFilled: 10
     NitrogenTankFilled: 10
     PlasmaTankFilled: 10 # EE Plasmeme Change
-# <Trauma>
+  # <Trauma>
   emaggedInventory:
     DoubleEmergencyOxygenTankFilled: 2
-# </Trauma>
+  # </Trauma>
 
 - type: vendingMachineInventory
   id: TankDispenserEngineeringInventory
@@ -23,7 +23,7 @@
     PlasmaTankFilled: 10
     NitrogenTankFilled: 10
     OxygenTankFilled: 10
-# <Trauma>
+  # <Trauma>
   emaggedInventory:
     DoubleEmergencyOxygenTankFilled: 2
-# </Trauma>
+  # </Trauma>

@@ -23,9 +23,9 @@
     ClothingHeadBandSkull: 2
     ClothingHeadsetRobotics: 2
     ClothingOuterWinterRobo: 2
-# <Trauma>
+  # <Trauma>
   contrabandInventory:
     ShowcaseRobotWhite: 2
   emaggedInventory:
     BorgModuleAdvancedTool: 1
-# </Trauma>
+  # </Trauma>
