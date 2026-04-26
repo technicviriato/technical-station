@@ -15,6 +15,7 @@
   # <Trauma>
   emaggedInventory:
     DoubleEmergencyOxygenTankFilled: 2
+    NitrousOxideTank: 2
   # </Trauma>
 
 - type: vendingMachineInventory
@@ -26,4 +27,5 @@
   # <Trauma>
   emaggedInventory:
     DoubleEmergencyOxygenTankFilled: 2
+    NitrousOxideTank: 2
   # </Trauma>
