@@ -18,7 +18,10 @@
     DrinkLemonLimeCan: 2
     DrinkLemonLimeCranberryCan: 2
     DrinkFourteenLokoCan: 2
+    DrinkLean: 2 # Trauma
   contrabandInventory:
     DrinkChangelingStingCan: 2
   emaggedInventory:
     DrinkNukieCan: 2
+    DrinkChangelingStingCan: 2
+    PillAmbuzol: 2 # Trauma

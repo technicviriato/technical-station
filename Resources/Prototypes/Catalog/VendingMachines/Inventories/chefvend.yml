@@ -114,3 +114,6 @@
   emaggedInventory: # Goobstation
     WeaponCroissant: 3
     WeaponBaguette: 2
+    Machete: 1 # Trauma
+    HumanCube: 1 # Trauma
+    GingerbreadCube: 1 # Trauma

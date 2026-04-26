@@ -15,3 +15,9 @@
     FoodSnackAncientFries: 1
     FoodSnackAncientHotdog: 1
     FoodSnackAncientTaco: 1
+# <Trauma>
+  emaggedInventory:
+    DrinkChangelingStingCan: 2
+    DrinkNukieCan: 2
+    HotPotato: 1
+# </Trauma>

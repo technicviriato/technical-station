@@ -68,3 +68,4 @@
   emaggedInventory: # Goobstation
     CombatKnife: 1
     ThrowingKnife: 1
+    StrongShrapnelPayload: 2 # Trauma

@@ -23,3 +23,8 @@
     ClothingHeadBandSkull: 2
     ClothingHeadsetRobotics: 2
     ClothingOuterWinterRobo: 2
+# <Trauma>
+  emaggedInventory:
+    ExperimentalCircuitBoard: 1
+    OverlordCircuitBoard: 1
+# </Trauma>

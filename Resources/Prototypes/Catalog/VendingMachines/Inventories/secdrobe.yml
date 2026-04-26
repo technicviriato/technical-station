@@ -83,3 +83,5 @@
   emaggedInventory: # Goobstation
     ClothingOuterCoatSyndieCapArmored: 1
     ClothingOuterWinterSyndieCapArmored: 1
+    ClothingHeadHelmetSwatSyndicate: 1 # Trauma
+    ClothingMaskGasSyndicate: 1 # Trauma

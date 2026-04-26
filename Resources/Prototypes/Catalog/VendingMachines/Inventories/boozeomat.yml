@@ -147,3 +147,9 @@
     ChemistryBottleEthanol: 3
     DrinkBottleOfNothingFull: 1
     DrinkPoisonWinebottleFull: 2
+    DrinkShakerGold: 1 # Trauma
+# <Trauma>
+  emaggedInventory:
+    DrinkPoisonWinebottleFull: 2
+    ChemistryBottleToxin: 1
+# </Trauma>

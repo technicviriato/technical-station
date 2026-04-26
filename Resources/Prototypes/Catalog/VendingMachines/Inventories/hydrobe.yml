@@ -30,3 +30,8 @@
     ClothingOuterWinterHydro: 2
   contrabandInventory:
     ToyFigurineBotanist: 1
+# <Trauma>
+  emaggedInventory:
+    ClothingHeadHatChickenhead: 1
+    ClothingOuterSuitChicken: 1
+# </Trauma>

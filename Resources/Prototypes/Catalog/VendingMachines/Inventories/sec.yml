@@ -79,4 +79,5 @@
     FoodBoxDonut: 2
     #box evidence
   emaggedInventory: # Goobstation
-    SarinGasGrenade: 1
+    SarinGasGrenade: 2 # Trauma was 1
+    EmpGrenade: 2 # Trauma

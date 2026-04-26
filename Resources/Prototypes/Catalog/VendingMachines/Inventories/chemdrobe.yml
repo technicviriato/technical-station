@@ -18,3 +18,7 @@
     ClothingShoesColorWhite: 1
   contrabandInventory:
     ToyFigurineChemist: 1
+# <Trauma>
+  emaggedInventory:
+    ClothingEyesGlassesMed: 1
+# </Trauma>

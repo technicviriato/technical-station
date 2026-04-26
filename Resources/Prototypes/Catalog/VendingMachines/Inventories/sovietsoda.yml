@@ -21,3 +21,11 @@
     DrinkSodaWaterBottleFull: 2
     DrinkColaCan: 10
     ClothingHeadHatUshanka: 2
+    DrinkVodkaBottleFull: 2 # Trauma
+    BaseBallBat: 2 # Trauma
+# <Trauma>
+  emaggedInventory:
+    MobGoidaBot: 2
+# </Trauma>
+
+#maybe add an AKM to emag storage?

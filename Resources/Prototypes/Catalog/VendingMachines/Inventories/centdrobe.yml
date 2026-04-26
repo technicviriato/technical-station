@@ -37,3 +37,10 @@
   contrabandInventory:
     ToyFigurineCaptain: 1
     ToyFigurineHeadOfPersonnel: 1
+    PenCentcom: 1 # Trauma
+# <Trauma>
+  emaggedInventory:
+    ClothingHeadHatSyndieMAA: 1
+    ClothingUniformJumpsuitSyndieFormal: 1
+    ClothingNeckScarfStripedSyndieRed: 1
+# </Trauma>
