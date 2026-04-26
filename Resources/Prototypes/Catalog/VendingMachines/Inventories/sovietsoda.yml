@@ -25,7 +25,5 @@
     BaseBallBat: 2 # Trauma
 # <Trauma>
   emaggedInventory:
-    MobGoidaBot: 2
+    WeaponSniperMosin: 2
 # </Trauma>
-
-#maybe add an AKM to emag storage?

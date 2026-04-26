@@ -22,7 +22,7 @@
     DrinkBeerCan: 6
     KitchenKnife: 2
   emaggedInventory:
-    Machete: 1 # Trauma
     ClothingMaskBreath: 3
-    DoubleEmergencyOxygenTankFilled: 2 # Trauma
+    DoubleEmergencyOxygenTankFilled: 2 # Trauma - was 3 of EmergencyOxygenTankFilled
+    Machete: 1 # Trauma
     DrinkNukieCan: 2

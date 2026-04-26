@@ -38,5 +38,7 @@
     ClothingUniformJumpskirtJanimaid: 2
     ClothingUniformJumpskirtJanimaidmini: 1
     SlipocalypseClusterSoap: 1 # Goobstation
-    GlueGrenade: 2 # Trauma
-    LubeGrenade: 2 # Trauma
+# <Trauma>
+    GlueGrenade: 2
+    LubeGrenade: 2
+# </Trauma>

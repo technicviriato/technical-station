@@ -32,5 +32,7 @@
     LeftArmBorg: 1
   emaggedInventory: # goob
     ClothingMaskGasSyndicate: 1
-    PowerCellHigh: 1 # Trauma
-    RemoteSignallerAdvanced: 1 # Trauma
+# <Trauma>
+    PowerCellHigh: 1
+    RemoteSignallerAdvanced: 1
+# </Trauma>

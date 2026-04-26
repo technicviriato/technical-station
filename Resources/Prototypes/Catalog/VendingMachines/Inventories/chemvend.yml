@@ -27,12 +27,10 @@
     StrangePill: 3
     ChemistryBottleToxin: 1
     ChemistryBottleLead: 2
-  # <Trauma>
   emaggedInventory:
-    ChemicalSynthesisKit: 1
-    ChemistryBottleToxin: 1
-    ChemistryBottleMuteToxin: 1
-# </Trauma>
+    VestineChemistryVial: 1
+    ChemistryBottleToxin: 1 # Trauma
+    ChemistryBottleMuteToxin: 1 # Trauma
 
 - type: vendingMachineInventory
   id: ChemVendInventorySyndicate
@@ -67,9 +65,3 @@
     ChemistryBottleMuteToxin: 3
     ChemistryBottleLead: 2
     ChemistryBottleToxin: 1
-# <Trauma>
-  emaggedInventory:
-    ChemicalSynthesisKit: 1
-    ChemistryBottleToxin: 1
-    ChemistryBottleMuteToxin: 1
-# </Trauma>

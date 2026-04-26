@@ -24,7 +24,8 @@
     ClothingHeadsetRobotics: 2
     ClothingOuterWinterRobo: 2
 # <Trauma>
+  contrabandInventory:
+    ShowcaseRobotWhite: 2
   emaggedInventory:
-    ExperimentalCircuitBoard: 1
-    OverlordCircuitBoard: 1
+    BorgModuleAdvancedTool: 1
 # </Trauma>

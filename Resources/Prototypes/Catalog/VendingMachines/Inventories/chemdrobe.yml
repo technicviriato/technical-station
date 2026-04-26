@@ -18,7 +18,9 @@
     ClothingShoesColorWhite: 1
   contrabandInventory:
     ToyFigurineChemist: 1
+    CigCaronMedical: 1 # Trauma
+    CigPackMedical: 1 # Trauma
 # <Trauma>
   emaggedInventory:
-    ClothingEyesGlassesMed: 1
+    ClothingEyesHudSyndicateAgent: 1
 # </Trauma>

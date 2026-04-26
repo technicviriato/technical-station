@@ -12,5 +12,7 @@
     ClothingBackpackMessengerGenetics: 2 # Frontier
 # <Trauma>
   emaggedInventory:
-    GeneticsDiskUnstableDna: 3
+    Handcuffs: 1
+    DClassIDCard: 1
+    ClothingUniformJumpsuitPrisoner: 1
 # </Trauma>

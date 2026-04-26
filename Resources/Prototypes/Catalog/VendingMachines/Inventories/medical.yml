@@ -13,7 +13,7 @@
     PillCanisterRandom: 1
 # <Trauma>
   emaggedInventory:
-      CombatMedipen: 1
+    CombatMedipen: 1
 # </Trauma>
 
 # All access version. Should reflect the stock of NanoMedInventory, but less powerful
