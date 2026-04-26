@@ -26,6 +26,7 @@
   # <Trauma>
   contrabandInventory:
     ShowcaseRobotWhite: 2
+    ShowcaseRobot: 2
   emaggedInventory:
     BorgModuleAdvancedTool: 1
   # </Trauma>
