@@ -26,11 +26,11 @@
     DrinkLithiumFlask: 1
     StrangePill: 3
     ChemistryBottleToxin: 1
+    # <Trauma>
     ChemistryBottleLead: 2
-    SyringePoisonFent: 2 # Trauma
+    SyringePoisonFent: 2
   emaggedInventory:
     VestineChemistryVial: 1
-    # <Trauma>
     VialRed: 1
     VialExplosive: 1
     ChemistryBottleMuteToxin: 1

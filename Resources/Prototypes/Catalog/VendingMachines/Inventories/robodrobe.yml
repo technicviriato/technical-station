@@ -25,8 +25,8 @@
     ClothingOuterWinterRobo: 2
   # <Trauma>
   contrabandInventory:
-    ShowcaseRobotWhite: 2
-    ShowcaseRobot: 2
+    ClothingHeadHatCardborg: 1
+    ClothingOuterCardborg: 1
   emaggedInventory:
     BorgModuleAdvancedTool: 1
   # </Trauma>
