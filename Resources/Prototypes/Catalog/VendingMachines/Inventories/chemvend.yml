@@ -27,9 +27,11 @@
     StrangePill: 3
     ChemistryBottleToxin: 1
     ChemistryBottleLead: 2
+    SyringePoisonFent: 2 # Trauma
   emaggedInventory:
     VestineChemistryVial: 1
-    ChemistryBottleToxin: 1 # Trauma
+    VialRed: 1 # Trauma
+    VialExplosive: 1 # Trauma
     ChemistryBottleMuteToxin: 1 # Trauma
 
 - type: vendingMachineInventory
