@@ -120,6 +120,7 @@
     - Syringe
     - DeathAcidifierImplanter
     - FreedomImplanter
+    - BodyBagFolded
 
 - type: startingGear
   id: DarkPriestAntagGear
