@@ -51,7 +51,6 @@
     outerClothing: ClothingSingulothArmor
     shoes: ClothingShoesLeather
     gloves: ClothingHandsGlovesColorYellow
-    suitstorage: WeaponLauncherSingularityBuster # potentially remove if an ability is made so the knights can kill tesla
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltUtilityEngineering
     pocket1: ScrollTeleportApprentice # intended to teleport to engineering/tesla
@@ -96,6 +95,7 @@
   id: MimeAssassinGear
   equipment:
     gloves: ClothingHandsGlovesColorWhite
+    eyes: ClothingEyesGlassesHiddenSecurity
     shoes: ClothingShoesColorWhite
     outerClothing: ClothingOuterArmourInvisibleSyndie
     id: MimePDA
@@ -120,7 +120,7 @@
     - Syringe
     - DeathAcidifierImplanter
     - FreedomImplanter
-    - ScramImplanter
+    - SmokeImplanter
     - BodyBagFolded
 
 - type: startingGear
