@@ -97,8 +97,9 @@
   equipment:
     gloves: ClothingHandsGlovesColorWhite
     shoes: ClothingShoesColorWhite
+    outerClothing: ClothingOuterArmourInvisibleSyndie
     id: MimePDA
-    pocket1: CrayonMime
+    pocket1: SyringePistol
     pocket2: KukriKnife
     ears: ClothingHeadsetService
     jumpsuit: ClothingUniformJumpsuitMime
@@ -108,18 +109,18 @@
   storage:
     back:
     - RubberStampMime
-    - WeaponPistolCobra
-    - SyringePistol
+    - AdvMimeryVol1
+    - AdvMimeryVol2
+    - CrayonMime
     - SyndicateBusinessCard
     - ChameleonProjector
-    - MagazinePistolCaselessRifle
-    - MagazinePistolCaselessRifle
-    - MagazinePistolCaselessRifleSAPHE # for more armored targets
+    - ChemistryBottleNocturine
     - ChemistryBottleNocturine
     - Syringe
     - Syringe
     - DeathAcidifierImplanter
     - FreedomImplanter
+    - ScramImplanter
     - BodyBagFolded
 
 - type: startingGear
