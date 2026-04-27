@@ -50,6 +50,12 @@ selectable-set-thief-smuggler-description =
 
 # Syndicate
 
+selectable-set-syndicate-engineer-name = Syndicate Engineer Bundle
+selectable-set-syndicate-engineer-description =
+    This bundle has been engineered to cause maximum damage.
+    Contains: syndicate repairman jumpsuit, workboots, hi-viz vest,
+    armored hardhat, acoustic guitar, suspicious toolbox, power sink,
+    two impact emp grenades, two explosive grenades and four turrets.
 selectable-set-syndicate-ninja-name = Syndicate Ninja Bundle
 selectable-set-syndicate-ninja-description =
     Fulfil your dreams of being a Ninja! Sponsored by the Syndicate.

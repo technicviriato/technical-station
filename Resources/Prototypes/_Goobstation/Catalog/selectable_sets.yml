@@ -106,6 +106,29 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicateEngineerSet
+  name: selectable-set-syndicate-engineer-name
+  description: selectable-set-syndicate-engineer-description
+  sprite:
+    sprite: Clothing/Head/hardhats/armored.rsi
+    state: icon
+  content:
+  - ToolboxElectricalTurret # 1
+  - ToolboxElectricalTurret # 2
+  - ToolboxElectricalTurret # 3
+  - ToolboxElectricalTurret # 4
+  - ToolboxSyndicateFilled
+  - EmpGrenade # 1
+  - EmpGrenade # 2
+  - ExGrenade # 1
+  - ExGrenade # 2
+  - PowerSink
+  - AcousticGuitarInstrument
+  - ClothingHeadHatHardhatArmored
+  - ClothingOuterVestHazard
+  - ClothingUniformJumpsuitRepairmanSyndie
+  - ClothingShoesBootsWork
+- type: selectableSet
   id: SyndicateNinjaSet
   name: selectable-set-syndicate-ninja-name
   description: selectable-set-syndicate-ninja-description
@@ -130,11 +153,12 @@
   - ScramImplanter
   - SmokeImplanter
   - DeathAcidifierImplanter
-  - C4
-  - C4
-  - C4
-  - C4
+  - C4 # 1
+  - C4 # 2
+  - C4 # 3
+  - C4 # 4
   - NinjutsuScroll
+
 - type: selectableSet
   id: SyndicateTunnelClownSet
   name: selectable-set-syndicate-tunnel-clown-name
@@ -153,13 +177,13 @@
   - ClothingEyesNightVisionGogglesSyndie
   - ClownPDA
   - FireAxeFlaming
-  - Stunprod
-  - Stunprod
+  - Stunprod # 1
+  - Stunprod # 2
   - FreedomImplanter
   - MicroBombImplanter
   - SadTromboneImplanter
-  - Handcuffs
-  - Handcuffs
+  - Handcuffs # 1
+  - Handcuffs # 2
   - BoxHoloclown
   - CombatMedipen
   - SyndicateBusinessCard
@@ -183,6 +207,7 @@
   - CameraBug
   - StealthBox
   - SyndicateJawsOfLife
+  - FakeMindShieldImplanter
 
 - type: selectableSet
   id: SyndicateHitmanSet
