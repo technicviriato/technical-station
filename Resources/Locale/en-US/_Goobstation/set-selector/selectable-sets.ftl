@@ -50,6 +50,14 @@ selectable-set-thief-smuggler-description =
 
 # Syndicate
 
+selectable-set-syndicate-ninja-name = Syndicate Ninja Bundle
+selectable-set-syndicate-ninja-description =
+    Fulfil your dreams of being a Ninja! Sponsored by the Syndicate.
+    Contains: ninja jumpsuit, ninja gloves, ninja visor, ninja shoes,
+    ninja PDA, syndicate gas mask, cybersun stealthsuit, katana,
+    jetpack, double emergency oxygen and nitrogen, server pinpointer,
+    hyperzine injector kit, death acidifier implant, emp implanter,
+    scram implanter, smoke implanter, four C-4.
 selectable-set-syndicate-tunnel-clown-name = Tunnel Clown Bundle
 selectable-set-syndicate-tunnel-clown-description =
     Equip your clown gear, honk and kill people in maintenance.
@@ -57,6 +65,7 @@ selectable-set-syndicate-tunnel-clown-description =
     combat gloves, syndicate nightvision goggles, Flaming Fire Axe,
     two stunprods, freedom implant, microbomb implant, sad trombone implant,
     two handcuffs, holoclown, combat medipen and a syndicate business card.
+
 selectable-set-syndicate-spy-name = Spy Bundle
 selectable-set-syndicate-spy-description =
     Complete your objectives quietly with this compilation of stealthy items.

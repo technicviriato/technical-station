@@ -106,6 +106,36 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicateNinjaSet
+  name: selectable-set-syndicate-ninja-name
+  description: selectable-set-syndicate-ninja-description
+  sprite:
+    sprite: Clothing/Mask/ninja.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitNinja
+  - ClothingHandsGlovesSpaceNinja
+  - ClothingShoesSpaceNinja
+  - ClothingEyesVisorNinja
+  - ClothingOuterHardsuitCybersunStealth
+  - ClothingMaskGasSyndicate
+  - NinjaPDA
+  - PinpointerStation
+  - JetpackBlackFilled
+  - DoubleEmergencyOxygenTankFilled
+  - DoubleEmergencyNitrogenTankFilled
+  - StimkitFilled
+  - Katana
+  - EmpImplanter
+  - ScramImplanter
+  - SmokeImplanter
+  - DeathAcidifierImplanter
+  - C4
+  - C4
+  - C4
+  - C4
+  - NinjutsuScroll
+- type: selectableSet
   id: SyndicateTunnelClownSet
   name: selectable-set-syndicate-tunnel-clown-name
   description: selectable-set-syndicate-tunnel-clown-description
