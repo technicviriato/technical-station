@@ -110,7 +110,7 @@
   name: selectable-set-syndicate-engineer-name
   description: selectable-set-syndicate-engineer-description
   sprite:
-    sprite: Clothing/Head/hardhats/armored.rsi
+    sprite: Clothing/Head/Hardhats/armored.rsi
     state: icon
   content:
   - ToolboxElectricalTurret # 1
