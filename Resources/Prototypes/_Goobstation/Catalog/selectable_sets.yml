@@ -106,6 +106,36 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicateTunnelClownSet
+  name: selectable-set-syndicate-tunnel-clown-name
+  description: selectable-set-syndicate-tunnel-clown-description
+  sprite:
+    sprite: Clothing/Mask/clown.rsi
+    state: icon
+  content:
+  - EncryptionKeySyndie
+  - ClothingMaskClown
+  - ClothingUniformJumpsuitClown
+  - ClothingHandsGlovesCombat
+  - ClothingShoesClown
+  - ClothingOuterVestWeb
+  - ClothingBackpackClown
+  - ClothingEyesNightVisionGogglesSyndie
+  - ClownPDA
+  - FireAxeFlaming
+  - Stunprod
+  - Stunprod
+  - FreedomImplanter
+  - MicroBombImplanter
+  - SadTromboneImplanter
+  - Handcuffs
+  - Handcuffs
+  - BoxHoloClown
+  - CombatMedipen
+  - SyndicateBusinessCard
+  - BikeHorn
+
+- type: selectableSet
   id: SyndicateSpySet
   name: selectable-set-syndicate-spy-name
   description: selectable-set-syndicate-spy-description
@@ -258,6 +288,11 @@
     - WeaponSniperMosin
     - WeaponSniperMosin
     - WeaponSniperMosin
+    - WeaponRifleAk
+    - MagazineLightRifle
+    - MagazineLightRifle
+    - MagazineBoxLightRifle
+    - MagazineBoxLightRifle
 
 - type: selectableSet
   id: SyndicateCarpSet
