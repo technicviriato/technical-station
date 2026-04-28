@@ -1,0 +1,109 @@
+﻿# Syndicate
+
+- type: selectableSet
+  id: SyndicateContractorSet
+  name: selectable-set-syndicate-contractor-name
+  description: selectable-set-syndicate-contractor-description
+  sprite:
+    sprite: _Goobstation/Objects/Weapons/Melee/contractor_baton.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitOperative
+  - ClothingShoesBootsJack
+  - ClothingHandsGlovesCombat
+  - ClothingModsuitContractor
+  - ClothingMaskGasVoiceChameleon
+  - ClothingNeckChameleon
+  - ClothingBeltSecurityWebbingContractorFilled
+  - ClothingHeadsetAltSyndicate
+  - JetpackContractorFilled
+  - ClothingEyesHudSyndicate
+  - SyndiPDANukie
+  - WeaponDisablerSyndicate
+  - Handcuffs # 1
+  - Handcuffs # 2
+  - FultonBeacon
+  - Fulton
+
+- type: selectableSet
+  id: SyndicateEngineerSet
+  name: selectable-set-syndicate-engineer-name
+  description: selectable-set-syndicate-engineer-description
+  sprite:
+    sprite: Clothing/Head/Hardhats/armored.rsi
+    state: icon
+  content:
+  - ToolboxElectricalTurret # 1
+  - ToolboxElectricalTurret # 2
+  - ToolboxElectricalTurret # 3
+  - ToolboxElectricalTurret # 4
+  - ToolboxSyndicateFilled
+  - EmpGrenade # 1
+  - EmpGrenade # 2
+  - ExGrenade # 1
+  - ExGrenade # 2
+  - PowerSink
+  - AcousticGuitarInstrument
+  - ClothingHeadHatHardhatArmored
+  - ClothingOuterVestHazard
+  - ClothingUniformJumpsuitRepairmanSyndie
+  - ClothingShoesBootsWork
+
+- type: selectableSet
+  id: SyndicateNinjaSet
+  name: selectable-set-syndicate-ninja-name
+  description: selectable-set-syndicate-ninja-description
+  sprite:
+    sprite: Clothing/Mask/ninja.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitNinja
+  - ClothingHandsGlovesSpaceNinja
+  - ClothingShoesSpaceNinja
+  - ClothingEyesVisorNinja
+  - ClothingOuterHardsuitCybersunStealth
+  - ClothingMaskGasSyndicate
+  - NinjaPDA
+  - PinpointerStation
+  - JetpackBlackFilled
+  - DoubleEmergencyOxygenTankFilled
+  - DoubleEmergencyNitrogenTankFilled
+  - StimkitFilled
+  - Katana
+  - EmpImplanter
+  - ScramImplanter
+  - SmokeImplanter
+  - DeathAcidifierImplanter
+  - C4 # 1
+  - C4 # 2
+  - NinjutsuScroll
+
+- type: selectableSet
+  id: SyndicateTunnelClownSet
+  name: selectable-set-syndicate-tunnel-clown-name
+  description: selectable-set-syndicate-tunnel-clown-description
+  sprite:
+    sprite: Clothing/Mask/clown.rsi
+    state: icon
+  content:
+  - EncryptionKeySyndie
+  - ClothingMaskClown
+  - ClothingUniformJumpsuitClown
+  - ClothingHandsGlovesCombat
+  - ClothingShoesClown
+  - ClothingOuterVestWeb
+  - ClothingBackpackClown
+  - ClothingEyesNightVisionGogglesSyndie
+  - ClownPDA
+  - FireAxeFlaming
+  - Stunprod # 1
+  - Stunprod # 2
+  - FreedomImplanter
+  - MicroBombImplanter
+  - SadTromboneImplanter
+  - Handcuffs # 1
+  - Handcuffs # 2
+  - BoxHoloclown
+  - CombatMedipen
+  - SyndicateBusinessCard
+  - BikeHorn
