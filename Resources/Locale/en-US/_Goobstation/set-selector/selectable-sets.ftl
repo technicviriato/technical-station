@@ -75,7 +75,7 @@ selectable-set-syndicate-ninja-description =
     hyperzine injector kit, death acidifier implant, emp implanter,
     scram implanter, smoke implanter and two C-4.
 
-selectable-set-syndicate-tunnel-clown-name = Tunnel Clown Bundle
+selectable-set-syndicate-tunnel-clown-name = Syndicate Tunnel Clown Bundle
 selectable-set-syndicate-tunnel-clown-description =
     Become the murderous clown you've always dreamed of!
     Contains: syndicate encryption key, clown loadout, web vest,
