@@ -63,7 +63,7 @@ selectable-set-syndicate-ninja-description =
     ninja PDA, syndicate gas mask, cybersun stealthsuit, katana,
     jetpack, double emergency oxygen and nitrogen, server pinpointer,
     hyperzine injector kit, death acidifier implant, emp implanter,
-    scram implanter, smoke implanter, four C-4.
+    scram implanter, smoke implanter and two C-4.
 selectable-set-syndicate-tunnel-clown-name = Tunnel Clown Bundle
 selectable-set-syndicate-tunnel-clown-description =
     Equip your clown gear, honk and kill people in maintenance.
