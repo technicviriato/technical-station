@@ -1,4 +1,4 @@
-﻿# Syndicate
+# Syndicate
 
 selectable-set-syndicate-contractor-name = Syndicate Contractor Bundle
 selectable-set-syndicate-contractor-description =
