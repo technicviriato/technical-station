@@ -106,6 +106,30 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicateContractorSet
+  name: selectable-set-syndicate-contractor-name
+  description: selectable-set-syndicate-contractor-description
+  sprite:
+    sprite: # i'm being unable to put the icons I want, help me
+    state: icon
+  content:
+  - ClothingUniformJumpsuitOperative
+  - ClothingShoesBootsJack
+  - ClothingHandsGlovesCombat
+  - ClothingModsuitContractor
+  - ClothingMaskGasVoiceChameleon
+  - ClothingNeckChameleon
+  - BeltSecurityWebbingContractorFilled
+  - ClothingHeadsetAltSyndicate
+  - JetpackContractorFilled
+  - ClothingEyesHudSyndicate
+  - SyndiPDANukie
+  - WeaponDisablerSyndicate
+  - Handcuffs # 1
+  - Handcuffs # 2
+  - Fulton Beacon
+  - Fulton
+- type: selectableSet
   id: SyndicateEngineerSet
   name: selectable-set-syndicate-engineer-name
   description: selectable-set-syndicate-engineer-description
@@ -128,6 +152,7 @@
   - ClothingOuterVestHazard
   - ClothingUniformJumpsuitRepairmanSyndie
   - ClothingShoesBootsWork
+
 - type: selectableSet
   id: SyndicateNinjaSet
   name: selectable-set-syndicate-ninja-name

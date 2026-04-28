@@ -50,6 +50,15 @@ selectable-set-thief-smuggler-description =
 
 # Syndicate
 
+selectable-set-syndicate-contractor-name = Syndicate Contractor Bundle
+selectable-set-syndicate-contractor-description =
+    Acquire your targets, dead or alive.
+    Contains: operative jumpsuit, jackboots, combat gloves,
+    syndicate visor, chameleon voice mask, chameleon scarf,
+    syndicate headset, contractor's chest rig full of goodies,
+    contractor's modsuit, contractor's jetpack, syndicate pda,
+    syndicate disabler, two handcuffs, fulton beacon and ten fultons.
+
 selectable-set-syndicate-engineer-name = Syndicate Engineer Bundle
 selectable-set-syndicate-engineer-description =
     This bundle has been engineered to cause maximum damage.
