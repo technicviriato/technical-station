@@ -413,7 +413,7 @@
     prototype: MobVoxRaider
   - type: RuleGrids
   - type: LoadMapRule
-    gridPath: Maps/_Trauma/Shuttles/VoxRaidersNew.yml
+    gridPath: /Maps/_Trauma/Shuttles/VoxRaidersShuttleNew.yml
   - type: AntagSelection
     agentName: ghost-role-information-vox-raider-name
     definitions:
