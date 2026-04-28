@@ -110,7 +110,7 @@
   name: selectable-set-syndicate-contractor-name
   description: selectable-set-syndicate-contractor-description
   sprite:
-    sprite: # i'm being unable to put the icons I want, help me
+    sprite: Objects/Weapons/Guns/Battery/syndicate-disabler.rsi
     state: icon
   content:
   - ClothingUniformJumpsuitOperative
