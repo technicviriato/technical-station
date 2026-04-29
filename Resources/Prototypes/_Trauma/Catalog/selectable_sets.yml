@@ -1,6 +1,15 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicatePirateSet
+  name: selectable-set-syndicate-pirate-name
+  description: selectable-set-syndicate-pirate-description
+  sprite:
+    sprite: lorem
+    state: icon
+  content:
+  - lorem
+- type: selectableSet
   id: SyndicateContractorSet
   name: selectable-set-syndicate-contractor-name
   description: selectable-set-syndicate-contractor-description

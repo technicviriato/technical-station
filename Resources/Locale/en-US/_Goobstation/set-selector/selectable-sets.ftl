@@ -50,14 +50,6 @@ selectable-set-thief-smuggler-description =
 
 # Syndicate
 
-selectable-set-syndicate-tunnel-clown-name = Syndicate Tunnel Clown Bundle
-selectable-set-syndicate-tunnel-clown-description =
-    Become the murderous clown you've always dreamed of!
-    Contains: syndicate encryption key, clown loadout, web vest,
-    combat gloves, syndicate nightvision goggles, Flaming Fire Axe,
-    two stunprods, freedom implant, microbomb implant, sad trombone implant,
-    two handcuffs, holoclown, combat medipen and a syndicate business card.
-
 selectable-set-syndicate-spy-name = Spy Bundle
 selectable-set-syndicate-spy-description =
     Complete your objectives quietly with this compilation of stealthy items.
