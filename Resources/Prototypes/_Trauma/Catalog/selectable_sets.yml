@@ -9,6 +9,17 @@
     state: icon
   content:
   - lorem
+
+- type: selectableSet
+  id: SyndicateSolidSnakeSet
+  name: selectable-set-syndicate-solid-snake-name
+  description: selectable-set-syndicate-solid-snake-description
+  sprite:
+    sprite: lorem
+    state: icon
+  content:
+  - lorem
+
 - type: selectableSet
   id: SyndicateContractorSet
   name: selectable-set-syndicate-contractor-name
