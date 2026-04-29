@@ -134,7 +134,7 @@
     - SyndicateCarpSet
     - SyndicateSusSet
 #    - SyndicateBuilderSet - Requires Rework pending Miner Removal
-    setsToSelect: 3
+    setsToSelect: 4
     spawnedStoragePrototype: CrateSyndicate
     spawnedStorageContainer: entity_storage
     openSpawnedStorage: true

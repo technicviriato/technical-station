@@ -2,8 +2,7 @@
 
 selectable-set-syndicate-pirate-captain-name = Syndicate Pirate Captain Bundle
 selectable-set-syndicate-pirate-captain-description =
-    Arrr! Show these landlubbers what a true pirate captain is!
-    Steal some booty at the same time. X marks the spot.
+    Yo ho, yo ho, A pirate's life for me!
     Contains: pirate slops, pirate hat, pirate captain cloak,
     syndicate magboots, explorer gas mask, pirate captain's hardsuit,
     medical hud eyepatch, freelancer's over-ear headset, pirate PDA,

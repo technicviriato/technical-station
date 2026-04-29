@@ -43,8 +43,8 @@
   name: selectable-set-syndicate-solid-snake-name
   description: selectable-set-syndicate-solid-snake-description
   sprite:
-    sprite: lorem
-    state: icon
+    sprite:
+    state: icon??
   content:
   - lorem
 
