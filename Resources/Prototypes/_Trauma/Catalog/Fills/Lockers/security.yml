@@ -78,7 +78,7 @@
 - type: entity
   parent: BaseTraumaGunSafe
   id: GunSafeShotguns
-  name: ballistics ball safe
+  name: ballistics safe
   components:
   - type: EntityTableContainerFill
     containers:
