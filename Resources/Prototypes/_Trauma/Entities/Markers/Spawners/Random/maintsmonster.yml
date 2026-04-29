@@ -9,7 +9,54 @@
     - state: brullbarking
       sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
-    table:
-       id: MobBrullbar
-       prob: 0.2
-       id:
+    table: !type:GroupSelector
+      rolls: 1,3
+      children:
+      - !type:GroupSelector
+        children:
+        - id: MobBrullbar
+        - id: MobBrullbarKing
+        - id: MobBearGoon
+        - id: MobWhiteWolf
+        - id: MobLivingCurse
+        - id: MobFermidLarge
+        - id: MobFermidSmall
+        - id: MobFermidWarrior
+        - id: MobFermidQueen
+        - id: MobSpoogyGhost1
+        - id: BaseMobGlutton
+        - id: MobNanites
+        - id: GunBot
+        - id: NukeBot
+        - id: MobFlockDrone
+        - id: MobAbyssCrawler
+        - id: CMMobXenoDrone
+        - id: CMMobXenoBurrower
+        - id: CMMobXenoWarrior
+        - id: CMMobXenoCrusher
+        - id: CMMobXenoRavager
+        - id: CMMobXenoKing
+        - id: CMMobXenoQueen
+        - id: CMMobXenoRogueKing
+        - id: MobAncientRobot1
+        - id: MobAncientRobot2
+        - id: MobAncientRobot3
+        - id: MobAncientLegs
+        - id: MobAncientRepairBot
+        - id: MobAncientGuardBot
+        - id: MobCorgiCerberus
+        - id: MobRatma
+        - id: MobCreatureWizard
+        - id: MobAbomination
+        - id: MobBasilisk
+        - id: MobBehonkerPyro # Electrical
+        - id: MobBehonkerGrav
+        - id: MobBehonkerIce
+        - id: MobBehonkerElectrical # Pyro
+        - id: MobGorillaAngry
+        - id: MobHiveBot
+        - id: MobHiveBotRanged
+        - id: MobHiveBotStrong
+        - id: MobHivelord
+        - id: MobLion
+        - id: MobWailingHorse
