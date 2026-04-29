@@ -46,11 +46,6 @@
     - yellow
 
 - type: entityTable
-  id: EmptyGunSafe
-  table: !type:AllSelector
-    children: []
-
-- type: entityTable
   id: FillLockerWardenTrauma
   table: !type:AllSelector
     children:
