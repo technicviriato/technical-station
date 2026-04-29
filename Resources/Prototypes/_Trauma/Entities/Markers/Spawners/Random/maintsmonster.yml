@@ -45,7 +45,6 @@
         - id: MobAncientRepairBot
         - id: MobAncientGuardBot
         - id: MobCorgiCerberus
-        - id: MobRatma
         - id: MobCreatureWizard
         - id: MobAbomination
         - id: MobBasilisk
@@ -60,3 +59,13 @@
         - id: MobHivelord
         - id: MobLion
         - id: MobWailingHorse
+        - id: MobCoconutCrab
+        - id: MobClownSpider
+        - id: MobGiantSpiderAngry
+        - id: MobSpiderSpace
+        - id: MobBearSpace
+        - id: MobCobraSpace
+        - id: MobKangarooSpace
+        - id: MobPurpleSnake
+        - id: MobSmallPurpleSnake
+        - id: MobLaserRaptor
