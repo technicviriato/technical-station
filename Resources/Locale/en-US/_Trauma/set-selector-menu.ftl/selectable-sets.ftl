@@ -23,17 +23,17 @@ selectable-set-syndicate-engineer-name = Syndicate Engineer Bundle
 selectable-set-syndicate-engineer-description =
     This bundle has been engineered to cause maximum damage.
     Contains: syndicate repairman jumpsuit, workboots, hi-viz vest,
-    armored hardhat, acoustic guitar, suspicious toolbox, power sink,
-    two impact emp grenades, two explosive grenades and four turrets.
+    armored hardhat, syndicate encryption key, acoustic guitar, suspicious toolbox,
+    power sink, two impact emp grenades, two explosive grenades and four turrets.
 
 selectable-set-syndicate-ninja-name = Syndicate Ninja Bundle
 selectable-set-syndicate-ninja-description =
     Live by a code of honor. Now sponsored by the Syndicate.
     Contains: ninja jumpsuit, ninja gloves, ninja visor, ninja shoes,
     ninja PDA, syndicate gas mask, cybersun stealthsuit, katana,
-    jetpack, double emergency oxygen and nitrogen, server pinpointer,
-    hyperzine injector kit, death acidifier implant, emp implanter,
-    scram implanter, smoke implanter and two C-4.
+    jetpack, syndicate encryption key, double emergency oxygen and nitrogen,
+    server pinpointer, hyperzine injector kit, death acidifier implant,
+    emp implanter, scram implanter, smoke implanter and two C-4.
 
 selectable-set-syndicate-tunnel-clown-name = Syndicate Tunnel Clown Bundle
 selectable-set-syndicate-tunnel-clown-description =

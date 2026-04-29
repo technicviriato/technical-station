@@ -96,6 +96,7 @@
   - ClothingOuterVestHazard
   - ClothingUniformJumpsuitRepairmanSyndie
   - ClothingShoesBootsWork
+  - EncryptionKeySyndie
 
 - type: selectableSet
   id: SyndicateNinjaSet
@@ -111,6 +112,7 @@
   - ClothingEyesVisorNinja
   - ClothingOuterHardsuitCybersunStealth
   - ClothingMaskGasSyndicate
+  - EncryptionKeySyndie
   - NinjaPDA
   - PinpointerStation
   - JetpackBlackFilled
