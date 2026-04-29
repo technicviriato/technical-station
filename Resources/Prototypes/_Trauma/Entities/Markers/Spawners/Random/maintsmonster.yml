@@ -1,0 +1,14 @@
+﻿- type: entity
+  name: maintenance monster spawner
+  id: MaintsMonsterSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Goobstation\Mobs\Animals\brullbar.rsi
+      state: brullbarking.png
+  - type: EntityTableSpawner
+    table:
+       id: lorem
+       prob: 0.65
