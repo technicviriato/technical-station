@@ -43,10 +43,10 @@
   name: selectable-set-syndicate-solid-snake-name
   description: selectable-set-syndicate-solid-snake-description
   sprite:
-    sprite:
-    state: icon??
+    sprite: Structures/Storage/closet.rsi
+    state: cardboard
   content:
-  - lorem
+  - lorem # cigs
 
 - type: selectableSet
   id: SyndicateContractorSet
@@ -57,7 +57,7 @@
     state: icon
   content:
   - ClothingUniformJumpsuitOperative
-  - ClothingShoesBootsJack
+  - ClothingShoesBootsJackFilled
   - ClothingHandsGlovesCombat
   - ClothingModsuitContractor
   - ClothingMaskGasVoiceChameleon
@@ -78,8 +78,8 @@
   name: selectable-set-syndicate-engineer-name
   description: selectable-set-syndicate-engineer-description
   sprite:
-    sprite: Clothing/Head/Hardhats/armored.rsi
-    state: icon
+    sprite: Objects/Weapons/Guns/Turrets/turrets.rsi
+    state: syndie_off
   content:
   - ToolboxElectricalTurret # 1
   - ToolboxElectricalTurret # 2

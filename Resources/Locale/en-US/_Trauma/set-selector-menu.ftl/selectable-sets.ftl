@@ -1,5 +1,9 @@
 # Syndicate
 
+selectable-set-syndicate-solid-snake-name = Syndicate Solid Snake Bundle
+selectable-set-syndicate-solid-snake-description =
+    I'm no hero. Never was. I'm just an old killer hired to do some wet work.
+    Contains:
 selectable-set-syndicate-pirate-captain-name = Syndicate Pirate Captain Bundle
 selectable-set-syndicate-pirate-captain-description =
     Yo ho, yo ho, A pirate's life for me!
