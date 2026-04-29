@@ -1,5 +1,16 @@
 # Syndicate
 
+selectable-set-syndicate-pirate-captain-name = Syndicate Pirate Captain Bundle
+selectable-set-syndicate-pirate-captain-description =
+    Arrr! Show these landlubbers what a true pirate captain is!
+    Steal some booty at the same time. X marks the spot.
+    Contains: pirate slops, pirate hat, pirate captain cloak,
+    syndicate magboots, explorer gas mask, pirate captain's hardsuit,
+    medical hud eyepatch, freelancer's over-ear headset, pirate PDA,
+    syndicate encryption key, jetpack, pirate revolver, two speedloaders,
+    magnum ammunition box, pirate cannon, three cannonballs, four grapeshot,
+    four glassshot, energy cutlass and a microbomb implant.
+
 selectable-set-syndicate-contractor-name = Syndicate Contractor Bundle
 selectable-set-syndicate-contractor-description =
     Acquire your targets, dead or alive.

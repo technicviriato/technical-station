@@ -1,14 +1,42 @@
 # Syndicate
 
 - type: selectableSet
-  id: SyndicatePirateSet
-  name: selectable-set-syndicate-pirate-name
-  description: selectable-set-syndicate-pirate-description
+  id: SyndicatePiratCaptaineSet
+  name: selectable-set-syndicate-pirate-captain-name
+  description: selectable-set-syndicate-pirate-captain-description
   sprite:
-    sprite: lorem
+    sprite: Clothing/Neck/Cloak/piratecap.rsi
     state: icon
   content:
-  - lorem
+  - ClothingUniformJumpsuitPirate
+  - ClothingHeadHatPirate
+  - ClothingNeckCloakPirateCap
+  - ClothingShoesBootsMagSyndie
+  - ClothingMaskGasExplorer
+  - ClothingOuterHardsuitPirateCap
+  - ClothingEyesEyepatchHudMedical
+  - ClothingHeadsetAltFreelancer
+  - PiratePDA
+  - EncryptionKeySyndie
+  - JetpackBlackFilled
+  - WeaponRevolverPirate
+  - SpeedLoaderMagnum # 1
+  - SpeedLoaderMagnum # 2
+  - MagazineBoxMagnum
+  - WeaponLauncherPirateCannon
+  - CannonBall # 1
+  - CannonBall # 2
+  - CannonBall # 3
+  - CannonBallGrapeshot # 1
+  - CannonBallGrapeshot # 2
+  - CannonBallGrapeshot # 3
+  - CannonBallGrapeshot # 4
+  - CannonBallGlassshot # 1
+  - CannonBallGlassshot # 2
+  - CannonBallGlassshot # 3
+  - CannonBallGlassshot # 4
+  - EnergyCutlass
+  - MicroBombImplanter
 
 - type: selectableSet
   id: SyndicateSolidSnakeSet
