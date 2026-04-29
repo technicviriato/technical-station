@@ -6,9 +6,10 @@
   - type: Sprite
     layers:
     - state: green
-    - sprite: _Goobstation\Mobs\Animals\brullbar.rsi
-      state: brullbarking.png
+    - state: brullbarking
+      sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
     table:
-       id: lorem
-       prob: 0.65
+       id: MobBrullbar
+       prob: 0.2
+       id:
