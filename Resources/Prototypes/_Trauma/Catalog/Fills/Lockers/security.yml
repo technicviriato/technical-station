@@ -19,28 +19,26 @@
     - yellow
 
 - type: entity
-  parent: BaseTraumaGunSafe
+  parent: [GunSafeBaseSecure, BaseSecurityContraband, AlertLevelLock]
   id: GunSafeEmptyBlue
   name: gun safe
   components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:NestedSelector
-        tableId: EmptyGunSafe
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Gunsafes
   - type: StationAlertLevelLock
     lockedAlertLevels:
     - green
     - yellow
 
 - type: entity
-  parent: BaseTraumaGunSafe
+  parent: [GunSafeBaseSecure, BaseSecurityContraband, AlertLevelLock]
   id: GunSafeEmptyRed
   name: gun safe
   components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:NestedSelector
-        tableId: EmptyGunSafe
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Gunsafes
   - type: StationAlertLevelLock
     lockedAlertLevels:
     - green
@@ -50,7 +48,7 @@
 - type: entityTable
   id: EmptyGunSafe
   table: !type:AllSelector
-    children:
+    children: []
 
 - type: entityTable
   id: FillLockerWardenTrauma
