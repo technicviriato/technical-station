@@ -10,7 +10,7 @@
       sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
     table: !type:GroupSelector
-      rolls: 1,3
+      rolls: 1,2
       children:
       - !type:GroupSelector
         children:
@@ -30,22 +30,22 @@
         - id: NukeBot
         - id: MobFlockDrone
         - id: MobAbyssCrawler
-        - id: CMMobXenoDrone
-        - id: CMMobXenoBurrower
-        - id: CMMobXenoWarrior
-        - id: CMMobXenoCrusher
-        - id: CMMobXenoRavager
-        - id: CMMobXenoKing
-        - id: CMMobXenoQueen
-        - id: CMMobXenoRogueKing
-        - id: MobAncientRobot1
-        - id: MobAncientRobot2
-        - id: MobAncientRobot3
-        - id: MobAncientLegs
-        - id: MobAncientRepairBot
-        - id: MobAncientGuardBot
+        - id: CMMobXenoDroneSentient
+        - id: CMMobXenoBurrowerSentient
+        - id: CMMobXenoWarriorSentient
+        - id: CMMobXenoCrusherSentient
+        - id: CMMobXenoRavagerSentient
+        - id: CMMobXenoKingSentient
+        - id: CMMobXenoQueenSentient
+        - id: CMMobXenoRogueKingSentient
+        - id: MobAncientRobot1Wraith
+        - id: MobAncientRobot2Wraith
+        - id: MobAncientRobot3Wraith
+        - id: MobAncientLegsWraith
+        - id: MobAncientRepairBotWraith
+        - id: MobAncientGuardBotWraith
         - id: MobCorgiCerberus
-        - id: MobCreatureWizard
+        - id: MobMorph
         - id: MobAbomination
         - id: MobBasilisk
         - id: MobBehonkerPyro # Electrical
@@ -57,7 +57,7 @@
         - id: MobHiveBotRanged
         - id: MobHiveBotStrong
         - id: MobHivelord
-        - id: MobLion
+        - id: MobLionWraith
         - id: MobWailingHorse
         - id: MobCoconutCrab
         - id: MobClownSpider
@@ -69,3 +69,7 @@
         - id: MobPurpleSnake
         - id: MobSmallPurpleSnake
         - id: MobLaserRaptor
+        - id: MobRatma
+        - id: MobRatKing
+        - id: MobGhoulStalker
+        - id: MobGhoulProphet
