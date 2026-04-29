@@ -5,7 +5,7 @@
   name: selectable-set-syndicate-pirate-captain-name
   description: selectable-set-syndicate-pirate-captain-description
   sprite:
-    sprite: Clothing/Neck/Cloak/piratecap.rsi
+    sprite: Objects/Weapons/Guns/Launchers/pirate_cannon.rsi
     state: icon
   content:
   - ClothingUniformJumpsuitPirate
