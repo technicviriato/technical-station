@@ -20,8 +20,8 @@
 
 - type: entity
   parent: BaseTraumaGunSafe
-  id: EmptyGunSafe
-  name: gun balls safe
+  id: GunSafeEmpty
+  name: gun safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -36,7 +36,6 @@
   id: EmptyGunSafe
   table: !type:AllSelector
     children:
-    - id: ClothingHandsGlovesKravMaga
 
 - type: entityTable
   id: FillLockerWardenTrauma
