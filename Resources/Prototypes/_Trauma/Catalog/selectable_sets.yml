@@ -39,14 +39,25 @@
   - MicroBombImplanter
 
 - type: selectableSet
-  id: SyndicateSolidSnakeSet
-  name: selectable-set-syndicate-solid-snake-name
-  description: selectable-set-syndicate-solid-snake-description
+  id: SyndicateSpecialForcesSet
+  name: selectable-set-syndicate-special-forces-name
+  description: selectable-set-syndicate-special-forces-description
   sprite:
     sprite: Structures/Storage/closet.rsi
     state: cardboard
   content:
-  - lorem # cigs
+  - HoloCigar
+  - CigPackSyndicate
+  - EncryptionKeySyndie
+  - CQCManual
+  - ClothingHandsGlovesGorilla
+  - ClothingHeadHatSolidHeadband
+  - ClothingUniformJumpsuitOliveDrabs
+  - ClothingShoesBootsJackFilled
+  - StealthBox
+  - ClothingOuterArmourInvisibleSyndie
+  - SyringePistol
+  - ChemistryBottleNocturine
 
 - type: selectableSet
   id: SyndicateContractorSet

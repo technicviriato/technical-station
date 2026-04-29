@@ -117,7 +117,7 @@
     - state: icon
   - type: SetSelector
     possibleSets:
-    - SyndicateSolidSnakeSet
+    - SyndicateSpecialForcesSet
     - SyndicatePirateCaptainSet
     - SyndicateContractorSet
     - SyndicateEngineerSet

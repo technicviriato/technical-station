@@ -1,9 +1,11 @@
 # Syndicate
 
-selectable-set-syndicate-solid-snake-name = Syndicate Solid Snake Bundle
-selectable-set-syndicate-solid-snake-description =
-    I'm no hero. Never was. I'm just an old killer hired to do some wet work.
-    Contains:
+selectable-set-syndicate-special-forces-name = Syndicate Special Forces Bundle
+selectable-set-syndicate-special-forces-description =
+    Try to remember the basics of CQC.
+    Contains: olive drabs, solid headband, jackboots, gorilla gloves,
+    redspace assisted armor, syndicate encryption key, old manual,
+    syringe pistol, nocturine bottle, invisible cardboard box.
 selectable-set-syndicate-pirate-captain-name = Syndicate Pirate Captain Bundle
 selectable-set-syndicate-pirate-captain-description =
     Yo ho, yo ho, A pirate's life for me!
@@ -16,7 +18,8 @@ selectable-set-syndicate-pirate-captain-description =
 
 selectable-set-syndicate-contractor-name = Syndicate Contractor Bundle
 selectable-set-syndicate-contractor-description =
-    Acquire your targets, dead or alive.
+    Murder is a tool often used by the inexperienced.
+    You don’t need that crutch, you’re a Contractor.
     Contains: operative jumpsuit, jackboots, combat gloves,
     syndicate visor, chameleon voice mask, chameleon scarf,
     syndicate headset, contractor's chest rig full of goodies,
