@@ -20,7 +20,7 @@
 
 - type: entity
   parent: BaseTraumaGunSafe
-  id: GunSafeEmpty
+  id: GunSafeEmptyBlue
   name: gun safe
   components:
   - type: EntityTableContainerFill
@@ -30,6 +30,21 @@
   - type: StationAlertLevelLock
     lockedAlertLevels:
     - green
+    - yellow
+
+- type: entity
+  parent: BaseTraumaGunSafe
+  id: GunSafeEmptyRed
+  name: gun safe
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: EmptyGunSafe
+  - type: StationAlertLevelLock
+    lockedAlertLevels:
+    - green
+    - blue
     - yellow
 
 - type: entityTable
