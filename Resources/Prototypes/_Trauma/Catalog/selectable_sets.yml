@@ -1,7 +1,7 @@
 # Syndicate
 
 - type: selectableSet
-  id: SyndicatePiratCaptaineSet
+  id: SyndicatePirateCaptainSet
   name: selectable-set-syndicate-pirate-captain-name
   description: selectable-set-syndicate-pirate-captain-description
   sprite:
