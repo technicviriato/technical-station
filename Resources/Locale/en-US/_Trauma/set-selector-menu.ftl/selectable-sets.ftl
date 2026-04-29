@@ -38,7 +38,7 @@ selectable-set-syndicate-ninja-name = Syndicate Ninja Bundle
 selectable-set-syndicate-ninja-description =
     Live by a code of honor. Now sponsored by the Syndicate.
     Contains: ninja jumpsuit, ninja gloves, ninja visor, ninja shoes,
-    ninja PDA, syndicate gas mask, cybersun stealthsuit, katana,
+    ninja PDA, ninjutso scroll, syndicate gas mask, cybersun stealthsuit, katana,
     jetpack, syndicate encryption key, double emergency oxygen and nitrogen,
     server pinpointer, hyperzine injector kit, death acidifier implant,
     emp implanter, smoke implanter and two C-4.
