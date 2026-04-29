@@ -35,8 +35,8 @@
 - type: entityTable
   id: EmptyGunSafe
   table: !type:AllSelector
-  children:
-  - id: ClothingHandsGlovesKravMaga
+    children:
+    - id: ClothingHandsGlovesKravMaga
 
 - type: entityTable
   id: FillLockerWardenTrauma
