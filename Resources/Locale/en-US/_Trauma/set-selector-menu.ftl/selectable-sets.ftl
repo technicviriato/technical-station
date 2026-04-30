@@ -5,9 +5,9 @@ selectable-set-syndicate-lawyer-description =
     The law is on your side, this time.
     Contains: red lawyer suit, syndicate sun glasses,
     lawyer badge, lawyer PDA, chameleon headset, chameleon
-    backpack, syndicate encryption key, lawyer's rubber stamp,
-    cybersun pen, space law book, syndicate cane, dna scrambler
-    implant, briefcase smg and three magazines.
+    backpack, syndicate encryption key, lawyer's stamp,
+    cybersun pen, space law book, syndicate cane, syndicate stamp,
+    dna scrambler implant, briefcase smg and three magazines.
 
 selectable-set-syndicate-no-russian-name = Syndicate Terrorist Bundle
 selectable-set-no-russian-description =
