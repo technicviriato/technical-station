@@ -46,12 +46,3 @@
   - type: Construction
     graph: LavaPortal
     node: Lavaportal
-
-# <Trauma>
-- type: entity
-  parent: BaseGateway
-  id: GatewayLavalandEmpty
-  name: LavalandGateway
-  description: To hell you don't go.
-  suffix: OFF
-# </Trauma>
