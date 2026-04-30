@@ -262,8 +262,7 @@
     - WeaponRifleAk
     - MagazineLightRifle # 1
     - MagazineLightRifle # 2
-    - MagazineBoxLightRifle # 1
-    - MagazineBoxLightRifle # 2
+    - MagazineBoxLightRifle
 
 - type: selectableSet
   id: SyndicateCarpSet
