@@ -47,8 +47,20 @@
         - id: MobHiveBot
         - id: MobHiveBotRanged
         - id: MobHiveBotStrong
-        - id: MobHivelord
         - id: MobLionWraith
+        - id: MobShadeWraith
+        - id: MobSkeletonGoonWraith
+        - id: MobPlagueRatLarge
+        - id: MobRotHulk
+        - id: MobCrunchedWraith
+        - id: MobRotHulkBuff
+        - id: MobMonstrosityHeadWraith
+        - id: MobMonstrosityBodyWraith
+        - id: MobVoidHoundWraith
+        - id: MobVoidSpikerWraith
+        - id: MobSkeletonCommanderWraith
+        - id: MobPlagueRatMedium
+        - id: MobPlagueRatSmall
         - id: MobWailingHorse
         - id: MobCoconutCrab
         - id: MobRatma
