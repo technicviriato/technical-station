@@ -8,7 +8,7 @@
     sprite: Objects/Weapons/Guns/LMGs/l6.rsi
     state: icon
   content:
-  - ClothingUniformJumpSuitLawyerBlack
+  - ClothingUniformJumpsuitLawyerBlack
   - ClothingOuterVestWebMerc
   - ClothingBeltMilitaryWebbing
   - ClothingEyesGlassesHiddenSecurity
