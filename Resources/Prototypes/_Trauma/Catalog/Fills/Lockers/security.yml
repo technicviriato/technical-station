@@ -22,6 +22,7 @@
   parent: [GunSafeBaseSecure, BaseSecurityContraband, AlertLevelLock]
   id: GunSafeEmptyBlue
   name: gun safe
+  suffix: Blue
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -35,6 +36,7 @@
   parent: [GunSafeBaseSecure, BaseSecurityContraband, AlertLevelLock]
   id: GunSafeEmptyRed
   name: gun safe
+  suffix: Red
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
