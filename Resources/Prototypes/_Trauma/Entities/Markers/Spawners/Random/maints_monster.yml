@@ -1,7 +1,7 @@
 - type: entity
-  name: maintenance monster spawner
-  id: MaintsMonsterSpawner
   parent: MarkerBase
+  id: MaintsMonsterSpawner
+  name: maintenance monster spawner
   components:
   - type: Sprite
     layers:
@@ -10,9 +10,10 @@
       sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
     table: !type:GroupSelector
-      rolls: 1
+      rolls: 2
       children:
-      - !type:GroupSelector
+      - !type:RepeatSelector
+        count: 2
         prob: 0.4
         children:
         - id: MobBrullbar
@@ -40,10 +41,6 @@
         - id: MobMorph
         - id: MobAbomination
         - id: MobBasilisk
-        - id: MobBehonkerPyro # Electrical
-        - id: MobBehonkerGrav
-        - id: MobBehonkerIce
-        - id: MobBehonkerElectrical # Pyro
         - id: MobGorillaAngry
         - id: MobHivebot
         - id: MobHivebotRanged
@@ -66,7 +63,8 @@
         - id: MobCoconutCrab
         - id: MobRatma
         - id: MobRatKing
-      - !type:GroupSelector
+      - !type:RepeatSelector
+        count: 2
         prob: 0.1
         children:
         - id: CMMobXenoDroneSentient
@@ -77,7 +75,8 @@
         - id: CMMobXenoKingSentient
         - id: CMMobXenoQueenSentient
         - id: CMMobXenoRogueKingSentient
-      - !type:GroupSelector
+      - !type:RepeatSelector
+        count: 2
         prob: 0.2
         children:
         - id: MobGhoulStalker
@@ -85,7 +84,8 @@
         - id: MobGhoulFireShark
         - id: MobGhoulMirrorMaid
         - id: MobGhoulRustWalker
-      - !type:GroupSelector
+      - !type:RepeatSelector
+        count: 3
         prob: 0.3
         children:
         - id: MobClownSpider

@@ -24,9 +24,6 @@
   name: gun safe
   suffix: Blue
   components:
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: Gunsafes
   - type: StationAlertLevelLock
     lockedAlertLevels:
     - green
@@ -38,9 +35,6 @@
   name: gun safe
   suffix: Red
   components:
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: Gunsafes
   - type: StationAlertLevelLock
     lockedAlertLevels:
     - green
