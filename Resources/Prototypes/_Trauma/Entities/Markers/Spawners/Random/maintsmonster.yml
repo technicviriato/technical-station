@@ -10,7 +10,7 @@
       sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
     table: !type:GroupSelector
-      rolls: 1,2
+      rolls: 1
       children:
       - !type:GroupSelector
         children:
@@ -28,16 +28,7 @@
         - id: MobNanites
         - id: GunBot
         - id: NukeBot
-        - id: MobFlockDrone
         - id: MobAbyssCrawler
-        - id: CMMobXenoDroneSentient
-        - id: CMMobXenoBurrowerSentient
-        - id: CMMobXenoWarriorSentient
-        - id: CMMobXenoCrusherSentient
-        - id: CMMobXenoRavagerSentient
-        - id: CMMobXenoKingSentient
-        - id: CMMobXenoQueenSentient
-        - id: CMMobXenoRogueKingSentient
         - id: MobAncientRobot1Wraith
         - id: MobAncientRobot2Wraith
         - id: MobAncientRobot3Wraith
@@ -60,6 +51,24 @@
         - id: MobLionWraith
         - id: MobWailingHorse
         - id: MobCoconutCrab
+        - id: MobRatma
+        - id: MobRatKing
+      - !type:GroupSelector
+        children:
+        - id: CMMobXenoDroneSentient
+        - id: CMMobXenoBurrowerSentient
+        - id: CMMobXenoWarriorSentient
+        - id: CMMobXenoCrusherSentient
+        - id: CMMobXenoRavagerSentient
+        - id: CMMobXenoKingSentient
+        - id: CMMobXenoQueenSentient
+        - id: CMMobXenoRogueKingSentient
+      - !type:GroupSelector
+        children:
+        - id: MobGhoulStalker
+        - id: MobGhoulProphet
+      - !type:GroupSelector
+        children:
         - id: MobClownSpider
         - id: MobGiantSpiderAngry
         - id: MobSpiderSpace
@@ -69,7 +78,3 @@
         - id: MobPurpleSnake
         - id: MobSmallPurpleSnake
         - id: MobLaserRaptor
-        - id: MobRatma
-        - id: MobRatKing
-        - id: MobGhoulStalker
-        - id: MobGhoulProphet
