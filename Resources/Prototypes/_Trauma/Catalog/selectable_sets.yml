@@ -1,6 +1,22 @@
 # Syndicate
 
 - type: selectableSet
+  id: SyndicateNoRussianSet
+  name: selectable-set-syndicate-no-russian-name
+  description: selectable-set-no-russian-description
+  sprite:
+    sprite: Objects/Weapons/Guns/LMGs/l6.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpSuitLawyerBlack
+  - ClothingOuterVestWebMerc
+  - ClothingBeltMilitaryWebbing
+  - ClothingEyesGlassesHiddenSecurity
+  - EncryptionKeySyndie
+  - WeaponLightMachineGunL6
+  - MagazineLightRifleBox
+
+- type: selectableSet
   id: SyndicatePirateCaptainSet
   name: selectable-set-syndicate-pirate-captain-name
   description: selectable-set-syndicate-pirate-captain-description
