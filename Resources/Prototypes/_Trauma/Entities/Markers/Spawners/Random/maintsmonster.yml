@@ -79,6 +79,9 @@
         children:
         - id: MobGhoulStalker
         - id: MobGhoulProphet
+        - id: MobGhoulFireShark
+        - id: MobGhoulMirrorMaid
+        - id: MobGhoulRustWalker
       - !type:GroupSelector
         children:
         - id: MobClownSpider
