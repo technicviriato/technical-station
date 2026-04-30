@@ -19,7 +19,7 @@ selectable-set-syndicate-pirate-captain-description =
     Yo ho, yo ho, A pirate's life for me!
     Contains: pirate slops, pirate hat, pirate captain cloak,
     syndicate magboots, explorer gas mask, pirate captain's hardsuit,
-    medical hud eyepatch, freelancer's over-ear headset, pirate PDA,
+    eyepatch, freelancer's over-ear headset, pirate PDA,
     syndicate encryption key, pirate revolver, two speedloaders,
     pirate cannon, two cannonballs, two grapeshot,
     two glassshot, energy cutlass, and a microbomb implant.
