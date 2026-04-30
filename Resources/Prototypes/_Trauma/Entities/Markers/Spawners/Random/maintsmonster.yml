@@ -13,7 +13,7 @@
       rolls: 1
       children:
       - !type:GroupSelector
-        prob: 0.5
+        prob: 0.4
         children:
         - id: MobBrullbar
         - id: MobBrullbarKing
