@@ -30,27 +30,20 @@
   - ClothingShoesBootsMagSyndie
   - ClothingMaskGasExplorer
   - ClothingOuterHardsuitPirateCap
-  - ClothingEyesEyepatchHudMedical
+  - ClothingEyesEyepatch
   - ClothingHeadsetAltFreelancer
   - PiratePDA
   - EncryptionKeySyndie
-  - JetpackBlackFilled
   - WeaponRevolverPirate
   - SpeedLoaderMagnum # 1
   - SpeedLoaderMagnum # 2
-  - MagazineBoxMagnum
   - WeaponLauncherPirateCannon
   - CannonBall # 1
   - CannonBall # 2
-  - CannonBall # 3
   - CannonBallGrapeshot # 1
   - CannonBallGrapeshot # 2
-  - CannonBallGrapeshot # 3
-  - CannonBallGrapeshot # 4
   - CannonBallGlassshot # 1
   - CannonBallGlassshot # 2
-  - CannonBallGlassshot # 3
-  - CannonBallGlassshot # 4
   - EnergyCutlass
   - MicroBombImplanter
 
@@ -72,8 +65,6 @@
   - ClothingShoesBootsJackFilled
   - StealthBox
   - ClothingOuterArmourInvisibleSyndie
-  - SyringePistol
-  - ChemistryBottleNocturine
 
 - type: selectableSet
   id: SyndicateContractorSet
@@ -144,8 +135,6 @@
   - PinpointerStation
   - JetpackBlackFilled
   - DoubleEmergencyOxygenTankFilled
-  - DoubleEmergencyNitrogenTankFilled
-  - StimkitFilled
   - Katana
   - EmpImplanter
   - SmokeImplanter
@@ -179,7 +168,6 @@
   - SadTromboneImplanter
   - Handcuffs # 1
   - Handcuffs # 2
-  - BoxHoloclown
   - CombatMedipen
   - SyndicateBusinessCard
   - BikeHorn
