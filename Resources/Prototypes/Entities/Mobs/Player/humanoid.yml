@@ -21,11 +21,11 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoidMindShielded
-# <Trauma>
+  # <Trauma>
   speciesBlacklist:
   - Decapoid
   - Plasmaman # spawns and instantly dies
-# </Trauma>
+  # </Trauma>
   parent: EventHumanoid
   components:
     - type: AutoImplant
@@ -35,11 +35,11 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoidCentcomm
-# <Trauma>
+  # <Trauma>
   speciesBlacklist:
   - Decapoid
   - Plasmaman # spawns and instantly dies
-# </Trauma>
+  # </Trauma>
   parent: EventHumanoidMindShielded
   randomizeName: false
   components:
@@ -68,11 +68,11 @@
 
 - type: randomHumanoidSettings
   id: DeathSquad
-# <Trauma>
+  # <Trauma>
   speciesBlacklist:
   - Decapoid
   - Plasmaman
-# </Trauma>
+  # </Trauma>
   parent: CentcommHumanoid # Goobstation
   components:
     - type: AutoImplant
@@ -112,6 +112,11 @@
 
 - type: randomHumanoidSettings
   id: ERTLeader
+  # <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman # spawns and instantly dies
+  # </Trauma>
   parent: CentcommHumanoid # Goobstation
   components:
     - type: GhostRole
@@ -573,11 +578,6 @@
 
 - type: entity
   id: RandomHumanoidSpawnerCBURNUnit
-# <Trauma>
-  speciesBlacklist:
-  - Decapoid
-  - Plasmaman
-# </Trauma>
   name: CBURN Agent
   suffix: ERTRole
   components:
