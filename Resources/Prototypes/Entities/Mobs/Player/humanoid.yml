@@ -11,6 +11,7 @@
   - IPC # Your EMP (when you're nukie, DS or ninja) can easily kill you. TODO: Make EMPImmune component for these roles?
   - Diona # Lack of legs makes it weaker than other species in combat
   - Plasmaman # Do i need to fucking say it?
+  - Decapoid
   # </Trauma>
   components:
     - type: RandomHumanoidAppearance
@@ -20,6 +21,11 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoidMindShielded
+# <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman # spawns and instantly dies
+# </Trauma>
   parent: EventHumanoid
   components:
     - type: AutoImplant
@@ -29,6 +35,11 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoidCentcomm
+# <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman # spawns and instantly dies
+# </Trauma>
   parent: EventHumanoidMindShielded
   randomizeName: false
   components:
@@ -57,6 +68,11 @@
 
 - type: randomHumanoidSettings
   id: DeathSquad
+# <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman
+# </Trauma>
   parent: CentcommHumanoid # Goobstation
   components:
     - type: AutoImplant
@@ -557,6 +573,11 @@
 
 - type: entity
   id: RandomHumanoidSpawnerCBURNUnit
+# <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman
+# </Trauma>
   name: CBURN Agent
   suffix: ERTRole
   components:
@@ -568,6 +589,11 @@
 
 - type: randomHumanoidSettings
   id: CBURNAgent
+# <Trauma>
+  speciesBlacklist:
+  - Decapoid
+  - Plasmaman
+# </Trauma>
   parent: CentcommHumanoid
   components:
     - type: AutoImplant
