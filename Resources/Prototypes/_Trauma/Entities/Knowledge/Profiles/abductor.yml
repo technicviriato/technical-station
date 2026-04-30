@@ -18,10 +18,10 @@
     WindowsKnowledge: 1
     SmokeablesKnowledge: 0 # Not roundstart, blueprint required.
     # Intelectual Skills
-    LiteracyKnowledge: 6
+    LiteracyKnowledge: 2
     MagicalLiteracyKnowledge: 0
     # Language Skills
-    LanguageSolCommon: 1
+    LanguageSolCommon: 0
     # Medical Skill
     SurgeryKnowledge: 4
     FirstAidKnowledge: 2
