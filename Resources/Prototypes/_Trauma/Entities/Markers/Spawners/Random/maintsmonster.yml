@@ -23,7 +23,7 @@
         - id: MobFermidSmall
         - id: MobFermidWarrior
         - id: MobFermidQueen
-        - id: MobSpoogyGhost1
+        - id: MobSpookyGhost1
         - id: BaseMobGlutton
         - id: MobNanites
         - id: GunBot
@@ -44,9 +44,9 @@
         - id: MobBehonkerIce
         - id: MobBehonkerElectrical # Pyro
         - id: MobGorillaAngry
-        - id: MobHiveBot
-        - id: MobHiveBotRanged
-        - id: MobHiveBotStrong
+        - id: MobHivebot
+        - id: MobHivebotRanged
+        - id: MobHivebotStrong
         - id: MobLionWraith
         - id: MobShadeWraith
         - id: MobSkeletonGoonWraith
