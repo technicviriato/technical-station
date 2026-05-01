@@ -76,7 +76,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 5
-      behaviours:
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
@@ -99,7 +99,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 5
-      behaviours:
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
@@ -123,7 +123,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 5
-      behaviours:
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
@@ -147,7 +147,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 5
-      behaviours:
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
@@ -170,7 +170,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 5
-      behaviours:
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
