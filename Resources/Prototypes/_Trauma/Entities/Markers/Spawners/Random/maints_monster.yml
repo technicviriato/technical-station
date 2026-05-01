@@ -81,7 +81,7 @@
         - id: MobGhoulMirrorMaid
         - id: MobGhoulRustWalker
       - !type:GroupSelector
-        prob: 0.3
+        prob: 0.6
         children:
         - id: MobClownSpider
         - id: MobGiantSpiderAngry
