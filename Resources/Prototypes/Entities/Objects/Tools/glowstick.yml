@@ -68,11 +68,6 @@
   id: GlowstickRed
   name: red glowstick
   components:
-  - type: ExpendableLight
-    spentName: expendable-light-spent-red-glowstick-name
-    glowColorLit: "#FF0000"
-  - type: PointLight
-    color: "#FF0000"
   # <Trauma>
   - type: Damageable
     damageContainer: Inorganic
@@ -85,17 +80,17 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
+  - type: ExpendableLight
+    spentName: expendable-light-spent-red-glowstick-name
+    glowColorLit: "#FF0000"
+  - type: PointLight
+    color: "#FF0000"
 
 - type: entity
   parent: GlowstickBase
   id: GlowstickPurple
   name: purple glowstick
   components:
-  - type: ExpendableLight
-    spentName: expendable-light-spent-purple-glowstick-name
-    glowColorLit: "#FF00FF"
-  - type: PointLight
-    color: "#FF00FF"
   # <Trauma>
   - type: Damageable
     damageContainer: Inorganic
@@ -108,17 +103,18 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
+  - type: ExpendableLight
+    spentName: expendable-light-spent-purple-glowstick-name
+    glowColorLit: "#FF00FF"
+  - type: PointLight
+    color: "#FF00FF"
+
 
 - type: entity
   parent: GlowstickBase
   id: GlowstickYellow
   name: yellow glowstick
   components:
-  - type: ExpendableLight
-    spentName: expendable-light-spent-yellow-glowstick-name
-    glowColorLit: "#FFFF00"
-  - type: PointLight
-    color: "#FFFF00"
   # <Trauma>
   - type: Damageable
     damageContainer: Inorganic
@@ -131,17 +127,18 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
+  - type: ExpendableLight
+    spentName: expendable-light-spent-yellow-glowstick-name
+    glowColorLit: "#FFFF00"
+  - type: PointLight
+    color: "#FFFF00"
+
 
 - type: entity
   parent: GlowstickBase
   id: GlowstickBlue
   name: blue glowstick
   components:
-  - type: ExpendableLight
-    spentName: expendable-light-spent-blue-glowstick-name
-    glowColorLit: "#0000FF"
-  - type: PointLight
-    color: "#0000FF"
   # <Trauma>
   - type: Damageable
     damageContainer: Inorganic
@@ -154,17 +151,17 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
+  - type: ExpendableLight
+    spentName: expendable-light-spent-blue-glowstick-name
+    glowColorLit: "#0000FF"
+  - type: PointLight
+    color: "#0000FF"
 
 - type: entity
   parent: GlowstickBase
   id: GlowstickGreen
   name: green glowstick
   components:
-  - type: ExpendableLight
-    spentName: expendable-light-spent-green-glowstick-name
-    glowColorLit: "#00FF00"
-  - type: PointLight
-    color: "#00FF00"
   # <Trauma>
   - type: Damageable
     damageContainer: Inorganic
@@ -177,6 +174,11 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   # </Trauma>
+  - type: ExpendableLight
+    spentName: expendable-light-spent-green-glowstick-name
+    glowColorLit: "#00FF00"
+  - type: PointLight
+    color: "#00FF00"
 
 # ----------------------------------------------------------------------------
 # THE FOLLOWING ARE ALL DUMMY ENTITIES USED TO TEST THE LIGHT BEHAVIOUR SYSTEM
