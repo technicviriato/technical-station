@@ -35,7 +35,6 @@
     state: icon
   content:
   - ClothingUniformJumpsuitLawyerBlack
-  - ClothingOuterVestWebMerc
   - ClothingBeltMilitaryWebbing
   - ClothingEyesGlassesHiddenSecurity
   - EncryptionKeySyndie
@@ -93,31 +92,6 @@
   - ClothingOuterArmourInvisibleSyndie
 
 - type: selectableSet
-  id: SyndicateContractorSet
-  name: selectable-set-syndicate-contractor-name
-  description: selectable-set-syndicate-contractor-description
-  sprite:
-    sprite: _Goobstation/Objects/Weapons/Melee/contractor_baton.rsi
-    state: icon
-  content:
-  - ClothingUniformJumpsuitOperative
-  - ClothingShoesBootsJackFilled
-  - ClothingHandsGlovesCombat
-  - ClothingModsuitContractor
-  - ClothingMaskGasVoiceChameleon
-  - ClothingNeckChameleon
-  - ClothingBeltSecurityWebbingContractorFilled
-  - ClothingHeadsetAltSyndicate
-  - JetpackContractorFilled
-  - ClothingEyesHudSyndicate
-  - SyndiPDANukie
-  - WeaponDisablerSyndicate
-  - Handcuffs # 1
-  - Handcuffs # 2
-  - FultonBeacon
-  - Fulton
-
-- type: selectableSet
   id: SyndicateEngineerSet
   name: selectable-set-syndicate-engineer-name
   description: selectable-set-syndicate-engineer-description
@@ -168,32 +142,3 @@
   - C4 # 1
   - C4 # 2
   - ClothingBeltKnifeRig
-
-- type: selectableSet
-  id: SyndicateTunnelClownSet
-  name: selectable-set-syndicate-tunnel-clown-name
-  description: selectable-set-syndicate-tunnel-clown-description
-  sprite:
-    sprite: Clothing/Mask/clown.rsi
-    state: icon
-  content:
-  - EncryptionKeySyndie
-  - ClothingMaskClown
-  - ClothingUniformJumpsuitClown
-  - ClothingHandsGlovesCombat
-  - ClothingShoesClown
-  - ClothingOuterVestWeb
-  - ClothingBackpackClown
-  - ClothingEyesNightVisionGogglesSyndie
-  - ClownPDA
-  - FireAxeFlaming
-  - Stunprod # 1
-  - Stunprod # 2
-  - FreedomImplanter
-  - MicroBombImplanter
-  - SadTromboneImplanter
-  - Handcuffs # 1
-  - Handcuffs # 2
-  - CombatMedipen
-  - SyndicateBusinessCard
-  - BikeHorn

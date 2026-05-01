@@ -33,16 +33,6 @@ selectable-set-syndicate-pirate-captain-description =
     pirate cannon, two cannonballs, two grapeshot,
     two glassshot, energy cutlass, and a microbomb implant.
 
-selectable-set-syndicate-contractor-name = Syndicate Contractor Bundle
-selectable-set-syndicate-contractor-description =
-    Murder is a tool often used by the inexperienced.
-    You don’t need that crutch, you’re a Contractor.
-    Contains: operative jumpsuit, jackboots, combat gloves,
-    syndicate visor, chameleon voice mask, chameleon scarf,
-    syndicate headset, contractor's chest rig full of goodies,
-    contractor's modsuit, contractor's jetpack, syndicate pda,
-    syndicate disabler, two handcuffs, fulton beacon, and ten fultons.
-
 selectable-set-syndicate-engineer-name = Syndicate Engineer Bundle
 selectable-set-syndicate-engineer-description =
     This bundle has been engineered to cause maximum damage.
@@ -59,12 +49,3 @@ selectable-set-syndicate-ninja-description =
     katana, jetpack, syndicate encryption key, server pinpointer,
     double emergency oxygen tank, death acidifier implant,
     emp implanter, smoke implanter, and two C-4.
-
-selectable-set-syndicate-tunnel-clown-name = Syndicate Tunnel Clown Bundle
-selectable-set-syndicate-tunnel-clown-description =
-    Become the murderous clown you've always dreamed of!
-    Contains: syndicate encryption key, clown loadout, web vest,
-    combat gloves, syndicate nightvision goggles, Flaming Fire Axe,
-    two stunprods, freedom implant, microbomb implant,
-    sad trombone implant, two handcuffs, combat medipen,
-    and a syndicate business card.

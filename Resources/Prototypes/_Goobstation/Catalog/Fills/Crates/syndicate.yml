@@ -124,7 +124,17 @@
     - SyndicateContractorSet
     - SyndicateEngineerSet
     - SyndicateNinjaSet
-    - SyndicateTunnelClownSet
+    - SyndicateWesternSet
+    - SyndicateSpySet
+    - SyndicateHitmanSet
+    - SyndicateImplantsSet
+    - SyndicateHackerSet
+    - SyndicateDeswordSet
+    - SyndicateGrenadierSet
+    - SyndicateFluclearSet
+    - SyndicateFriendshipSet
+    - SyndicateCarpSet
+    - SyndicateSusSet
 #    - SyndicateBuilderSet - Requires Rework pending Miner Removal
     setsToSelect: 4
     spawnedStoragePrototype: CrateSyndicate
