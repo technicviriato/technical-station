@@ -12,8 +12,8 @@ selectable-set-syndicate-lawyer-description =
 selectable-set-syndicate-no-russian-name = Syndicate Terrorist Bundle
 selectable-set-no-russian-description =
     Remember, No Russian.
-    Contains: black lawyer suit, mercenary web vest, chest rig,
-    syndicate sun glasses, syndicate encryption key, L6 SAW and
+    Contains: black lawyer suit, chest rig, syndicate sun glasses,
+    syndicate encryption key, L6 SAW and
     an L6 SAW magazine box.
 
 selectable-set-syndicate-special-forces-name = Syndicate Special Forces Bundle
