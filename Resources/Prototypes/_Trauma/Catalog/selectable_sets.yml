@@ -117,28 +117,24 @@
   - EncryptionKeySyndie
 
 - type: selectableSet
-  id: SyndicateNinjaSet
-  name: selectable-set-syndicate-ninja-name
-  description: selectable-set-syndicate-ninja-description
+  id: SyndicateDoorKickerSet
+  name: selectable-set-syndicate-door-kicker-name
+  description: selectable-set-syndicate-door-kicker-description
   sprite:
-    sprite: Clothing/Mask/ninja.rsi
+    sprite: Objects/Weapons/Guns/Shotguns/combat.rsi
     state: icon
   content:
-  - ClothingUniformJumpsuitNinja
-  - ClothingHandsGlovesSpaceNinja
-  - ClothingShoesSpaceNinja
-  - ClothingEyesVisorNinja
-  - ClothingOuterHardsuitCybersunStealth
+  - ClothingUniformJumpsuitOperative
+  - ClothingBeltMilitaryWebbing
+  - ClothingHeadHelmetSwatSyndicate
+  - ClothingOuterVestWeb
+  - EyesThermalVisionGogglesSyndie
+  - ClothingHandsGlovesCombat
+  - SyndiOperativePDA
+  - SyndicateJawsOfLife
+  - WeaponShotgunCombat
+  - MagazineBoxShotgunHighCaliber
   - ClothingMaskGasSyndicate
   - EncryptionKeySyndie
-  - NinjaPDA
-  - PinpointerStation
-  - JetpackBlackFilled
-  - DoubleEmergencyOxygenTankFilled
-  - Katana
-  - EmpImplanter
-  - SmokeImplanter
-  - DeathAcidifierImplanter
   - C4 # 1
   - C4 # 2
-  - ClothingBeltKnifeRig

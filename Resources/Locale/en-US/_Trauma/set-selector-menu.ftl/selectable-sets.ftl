@@ -41,11 +41,10 @@ selectable-set-syndicate-engineer-description =
     suspicious toolbox, power sink, two impact emp grenades,
     two explosive grenades, and four turrets.
 
-selectable-set-syndicate-ninja-name = Syndicate Ninja Bundle
-selectable-set-syndicate-ninja-description =
+selectable-set-syndicate-door-kicker-name = Syndicate Door Kicker Bundle
+selectable-set-syndicate-door-kicker-description =
     Live by a code of honor. Now sponsored by the Syndicate.
-    Contains: ninja jumpsuit, ninja gloves, ninja visor, ninja shoes,
-    ninja PDA, throwing knife rig, syndicate gas mask, cybersun stealthsuit,
-    katana, jetpack, syndicate encryption key, server pinpointer,
-    double emergency oxygen tank, death acidifier implant,
-    emp implanter, smoke implanter, and two C-4.
+    Contains: operative jumpsuit, combat gloves, thermal vision goggles,
+    syndicate operative pda, chest rig, syndicate gas mask,
+    syndicate jaws of death, 'bojevic' combat shotgun, shell box,
+    syndicate encryption key, and two C-4.
