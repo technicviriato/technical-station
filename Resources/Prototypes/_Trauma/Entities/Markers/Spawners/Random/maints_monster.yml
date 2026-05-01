@@ -10,10 +10,8 @@
       sprite: _Goobstation/Mobs/Animals/brullbar.rsi
   - type: EntityTableSpawner
     table: !type:GroupSelector
-      rolls: 2
       children:
-      - !type:RepeatSelector
-        count: 2
+      - !type:GroupSelector
         prob: 0.4
         children:
         - id: MobBrullbar
@@ -63,8 +61,7 @@
         - id: MobCoconutCrab
         - id: MobRatma
         - id: MobRatKing
-      - !type:RepeatSelector
-        count: 2
+      - !type:GroupSelector
         prob: 0.1
         children:
         - id: CMMobXenoDroneSentient
@@ -75,8 +72,7 @@
         - id: CMMobXenoKingSentient
         - id: CMMobXenoQueenSentient
         - id: CMMobXenoRogueKingSentient
-      - !type:RepeatSelector
-        count: 2
+      - !type:GroupSelector
         prob: 0.2
         children:
         - id: MobGhoulStalker
@@ -84,8 +80,7 @@
         - id: MobGhoulFireShark
         - id: MobGhoulMirrorMaid
         - id: MobGhoulRustWalker
-      - !type:RepeatSelector
-        count: 3
+      - !type:GroupSelector
         prob: 0.3
         children:
         - id: MobClownSpider
