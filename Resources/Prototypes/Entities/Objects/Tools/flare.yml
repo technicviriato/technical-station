@@ -126,3 +126,15 @@
           Quantity: 2
         - ReagentId: Sulfur
           Quantity: 2
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>

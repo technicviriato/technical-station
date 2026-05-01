@@ -73,6 +73,18 @@
     glowColorLit: "#FF0000"
   - type: PointLight
     color: "#FF0000"
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
 
 - type: entity
   parent: GlowstickBase
@@ -84,6 +96,18 @@
     glowColorLit: "#FF00FF"
   - type: PointLight
     color: "#FF00FF"
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
 
 - type: entity
   parent: GlowstickBase
@@ -95,6 +119,18 @@
     glowColorLit: "#FFFF00"
   - type: PointLight
     color: "#FFFF00"
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
 
 - type: entity
   parent: GlowstickBase
@@ -106,6 +142,18 @@
     glowColorLit: "#0000FF"
   - type: PointLight
     color: "#0000FF"
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
 
 - type: entity
   parent: GlowstickBase
@@ -117,6 +165,18 @@
     glowColorLit: "#00FF00"
   - type: PointLight
     color: "#00FF00"
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviours:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
 
 # ----------------------------------------------------------------------------
 # THE FOLLOWING ARE ALL DUMMY ENTITIES USED TO TEST THE LIGHT BEHAVIOUR SYSTEM
