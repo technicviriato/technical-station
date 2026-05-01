@@ -7,6 +7,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: SpawnPointGhostDerelictCyborgSyndicate
   components:
@@ -26,6 +27,7 @@
       state: synd_sec
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: tunnel clown antag spawn
   parent: BaseAntagSpawner
   id: SpawnPointGhostTunnelClown
@@ -46,6 +48,7 @@
       state: icon
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: Singuloth Knights antag spawn
   parent: BaseAntagSpawner
   id: SpawnPointGhostSingulothKnight
@@ -66,6 +69,7 @@
       state: icon
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: Dark Lord antag spawn
   parent: BaseAntagSpawner
   id: SpawnPointGhostDarkLord
@@ -87,6 +91,7 @@
   - type: DarkLord
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: mime assassin antag spawn
   parent: BaseAntagSpawner
   id: SpawnPointGhostMimeAssassin
@@ -107,6 +112,7 @@
       state: icon
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: Chosen One spawn
   parent: BaseAntagSpawner
   id: SpawnPointGhostChosenOne
@@ -127,6 +133,7 @@
       state: icon
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: Dark Priest Spawner
   parent: BaseAntagSpawner
   id: SpawnPointGhostDarkPriest
@@ -147,6 +154,7 @@
       state: icon
 
 - type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   name: Vox Raider Spawner
   parent: BaseAntagSpawner
   id: SpawnPointGhostVoxRaider
