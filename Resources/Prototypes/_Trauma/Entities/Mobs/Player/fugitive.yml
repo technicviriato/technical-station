@@ -4,6 +4,8 @@
   id: MobHumanHunter
   name: Fugitive Hunter
   components:
+  - type: RandomHumanoidAppearance
+    randomizeName: true
   - type: Loadout
     prototypes: [ HunterAntagGear ]
   - type: TriggerOnSpawn
@@ -18,6 +20,8 @@
   id: MobHumanFugitive
   name: Fugitive
   components:
+  - type: RandomHumanoidAppearance
+    randomizeName: true
   - type: Loadout
     prototypes: [ FugitiveAntagGear ]
   - type: TriggerOnSpawn
