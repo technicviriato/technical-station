@@ -1,4 +1,4 @@
-﻿# Hunters
+# Hunters
 - type: entity
   parent: MobHuman
   id: MobHumanHunter
