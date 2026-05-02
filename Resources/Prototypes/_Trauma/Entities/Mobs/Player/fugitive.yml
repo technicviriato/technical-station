@@ -5,7 +5,7 @@
   name: Fugitive Hunter
   components:
   - type: Loadout
-    prototypes: [ lorem ipsum ]
+    prototypes: [ HunterAntagGear ]
   - type: TriggerOnSpawn
   - type: EntityEffectOnTrigger
     effects:
@@ -19,7 +19,7 @@
   name: Fugitive
   components:
   - type: Loadout
-    prototypes: [ lorem ipsum ]
+    prototypes: [ FugitiveAntagGear ]
   - type: TriggerOnSpawn
   - type: EntityEffectOnTrigger
     effects:
