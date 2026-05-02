@@ -1,4 +1,4 @@
-﻿fugitive-round-end-agent-name = Fugitive
+fugitive-round-end-agent-name = Fugitive
 fugitive-spawn = You fall from the ceiling!
 fugitive-report-title = WANTED: {$name}
 fugitive-report-first-line = Escaped fugitive {$name} has been spotted in the sector. They may be a stowaway on a station somewhere.
