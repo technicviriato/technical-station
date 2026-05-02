@@ -1,0 +1,27 @@
+﻿# Hunters
+- type: entity
+  parent: MobHuman
+  id: MobHumanHunter
+  name: Fugitive Hunter
+  components:
+  - type: Loadout
+    prototypes: [ lorem ipsum ]
+  - type: TriggerOnSpawn
+  - type: EntityEffectOnTrigger
+    effects:
+    - !type:NestedEffect
+      proto: TraitorSkills
+
+# Fugitives
+- type: entity
+  parent: MobHuman
+  id: MobHumanFugitive
+  name: Fugitive
+  components:
+  - type: Loadout
+    prototypes: [ lorem ipsum ]
+  - type: TriggerOnSpawn
+  - type: EntityEffectOnTrigger
+    effects:
+    - !type:NestedEffect
+      proto: TraitorSkills
