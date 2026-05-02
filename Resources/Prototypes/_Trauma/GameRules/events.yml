@@ -119,7 +119,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    minimumPlayers: 40 # it's really easy to find fugitives on lowpop
+    minimumPlayers: 30 # it's really easy to find fugitives on lowpop
     weight: 15
     duration: null
   - type: FugitiveRule
