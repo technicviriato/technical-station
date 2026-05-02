@@ -14,7 +14,7 @@ fugitive-set-saboteur-description =
     Contains: two c-4s and an explosive grenade.
 
 fugitive-set-infiltrator-name = Infiltrator's Kit
-fugitive-set-infiltrator-name =
+fugitive-set-infiltrator-description =
     Truly infiltrate the station with this kit.
     Contains: agent id card and a fake mindshield implant.
 
