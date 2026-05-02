@@ -191,7 +191,7 @@
   name: fugitive-set-engineer-name
   description: fugitive-set-engineer-description
   sprite:
-    sprite: Clothing/Hands/Gloves/insuls.rsi
+    sprite: Clothing/Hands/Gloves/Color/yellow.rsi
     state: icon
   content:
   - ClothingHandsGlovesConducting
