@@ -1,0 +1,31 @@
+﻿# Hunters
+ # SpacePol
+- type: startingGear
+  id: HunterAntagGear
+  equipment:
+    head: ClothingHeadHelmetJustice
+    eyes: ClothingEyesGlassesSecurity
+    neck: Dinkystar
+    mask: ClothingMaskGasSwat
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    outerClothing: ClothingOuterArmourDurathread
+    shoes: ClothingShoesBootsJackFilled
+    belt: ClothingBeltSecurityFilled
+    id: VisitorPDA # maybe change title of id
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
+    ears: ClothingHeadsetAltFreelancer
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackUnremoveable
+
+# Fugitives
+- type: startingGear
+  id: FugitiveAntagGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    shoes: ClothingShoesColorBlack
+    id: PrisonerIDCard
+    pocket1: CombatKnife
+    pocket2: SoapSyndie
+  inhand:
+  - place with kit
