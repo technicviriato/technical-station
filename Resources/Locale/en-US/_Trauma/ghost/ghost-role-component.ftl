@@ -42,3 +42,11 @@ ghost-role-information-dwingle-description = Dwingle all over the place.
 
 ghost-role-information-disgustingbackpack-name = Evil backpack
 ghost-role-information-disgustingbackpack-description = Drive your owner completely insane and make him hurt people.
+
+ghost-role-information-hunter-name = Fugitive Hunter
+ghost-role-information-hunter-description = You're a Fugitive Hunter. Catch the fugitive.
+ghost-role-information-hunter-rules = Focus on catching the fugitive. Try not to kill them or security in the process.
+
+ghost-role-information-fugitive-name = Fugitive
+ghost-role-information-fugitive-description = You're an escaped prisoner. Make it out alive.
+ghost-role-information-fugitive-rules = Focus on laying low rather than engaging the hunters or security directly.
