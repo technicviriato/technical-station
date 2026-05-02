@@ -210,7 +210,7 @@
 
 - type: selectableSet
   id: FugitiveCommunicatorSet
-  name: fugitive-set-commmunicator-name
+  name: fugitive-set-communicator-name
   description: fugitive-set-communicator-description
   sprite:
     entity: EncryptionKeyStationMaster
