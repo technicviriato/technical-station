@@ -16,7 +16,6 @@
     pocket2: MagazinePistol
     ears: ClothingHeadsetAltFreelancer
     gloves: ClothingHandsGlovesCombat
-    back: ClothingBackpackUnremoveable
 
 # Fugitives
 - type: startingGear
