@@ -23,7 +23,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitPrisoner
     shoes: ClothingShoesColorBlack
-    id: PrisonerIDCard
+    id: IDCardTide
     pocket1: CombatKnife
     pocket2: SoapSyndie
   inhand:
