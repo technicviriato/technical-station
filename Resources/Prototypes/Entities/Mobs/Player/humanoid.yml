@@ -21,11 +21,6 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoidMindShielded
-  # <Trauma>
-  speciesBlacklist:
-  - Decapoid
-  - Plasmaman # spawns and instantly dies
-  # </Trauma>
   parent: EventHumanoid
   components:
     - type: AutoImplant
@@ -102,11 +97,6 @@
 
 - type: randomHumanoidSettings
   id: ERTLeader
-  # <Trauma>
-  speciesBlacklist:
-  - Decapoid
-  - Plasmaman # spawns and instantly dies
-  # </Trauma>
   parent: CentcommHumanoid # Goobstation
   components:
     - type: GhostRole
@@ -579,11 +569,6 @@
 
 - type: randomHumanoidSettings
   id: CBURNAgent
-# <Trauma>
-  speciesBlacklist:
-  - Decapoid
-  - Plasmaman
-# </Trauma>
   parent: CentcommHumanoid
   components:
     - type: AutoImplant
