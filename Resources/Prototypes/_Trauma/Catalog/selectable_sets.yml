@@ -179,7 +179,7 @@
 - type: selectableSet
   id: FugitiveInfiltratorSet
   name: fugitive-set-infiltrator-name
-  description: fugitive-set-infiltrator-name
+  description: fugitive-set-infiltrator-description
   sprite:
     entity: AgentIDCard
   content:
