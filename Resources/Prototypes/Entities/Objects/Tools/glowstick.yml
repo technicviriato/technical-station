@@ -109,7 +109,6 @@
   - type: PointLight
     color: "#FFFF00"
 
-
 - type: entity
   parent: GlowstickBase
   id: GlowstickBlue
