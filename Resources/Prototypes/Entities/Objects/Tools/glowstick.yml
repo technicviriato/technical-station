@@ -5,6 +5,18 @@
   name: glowstick
   description: Useful for raves and emergencies.
   components:
+  # <Trauma>
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # </Trauma>
   - type: SpaceGarbage
   - type: ExpendableLight
     glowDuration: 900 # time in seconds
@@ -68,18 +80,6 @@
   id: GlowstickRed
   name: red glowstick
   components:
-  # <Trauma>
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  # </Trauma>
   - type: ExpendableLight
     spentName: expendable-light-spent-red-glowstick-name
     glowColorLit: "#FF0000"
@@ -91,18 +91,6 @@
   id: GlowstickPurple
   name: purple glowstick
   components:
-  # <Trauma>
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  # </Trauma>
   - type: ExpendableLight
     spentName: expendable-light-spent-purple-glowstick-name
     glowColorLit: "#FF00FF"
@@ -115,18 +103,6 @@
   id: GlowstickYellow
   name: yellow glowstick
   components:
-  # <Trauma>
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  # </Trauma>
   - type: ExpendableLight
     spentName: expendable-light-spent-yellow-glowstick-name
     glowColorLit: "#FFFF00"
@@ -139,18 +115,7 @@
   id: GlowstickBlue
   name: blue glowstick
   components:
-  # <Trauma>
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  # </Trauma>
+
   - type: ExpendableLight
     spentName: expendable-light-spent-blue-glowstick-name
     glowColorLit: "#0000FF"
@@ -162,18 +127,6 @@
   id: GlowstickGreen
   name: green glowstick
   components:
-  # <Trauma>
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  # </Trauma>
   - type: ExpendableLight
     spentName: expendable-light-spent-green-glowstick-name
     glowColorLit: "#00FF00"
