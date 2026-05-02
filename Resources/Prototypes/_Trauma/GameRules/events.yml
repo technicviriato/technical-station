@@ -113,3 +113,35 @@
     table:
       id: MobCoconutCrab
       amount: 1, 4
+
+- type: entity
+  id: Fugitive
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    minimumPlayers: 40 # it's really easy to find fugitives on lowpop
+    weight: 15
+    duration: null
+  - type: FugitiveRule
+  - type: AntagLoadProfileRule
+  - type: AntagObjectives
+    objectives:
+    - FugitiveEscapeObjective
+  - type: AntagSelection
+    agentName: fugitive-round-end-agent-name
+    definitions:
+    - spawnerPrototype: SpawnPointGhostFugitive
+      min: 2
+      max: 2
+      pickPlayer: false
+      startingGear: FugitiveAntagGear
+      components:
+      - type: RandomMetadata
+        nameSegments:
+        - fake_human_first
+        - fake_human_last
+      - type: EmitSoundOnSpawn # fell out of the ceiling
+        sound: /Audio/Effects/clang.ogg
+      mindComponents:
+      - type: FugitiveRole
+        prototype: MobHumanFugitive
