@@ -48,7 +48,7 @@
     description: ghost-role-information-fugitive-description
     rules: ghost-role-information-fugitive-rules
     mindRoles:
-    - MindRoleGhostRole TODO
+    - MindRoleGhostRoleFugitive
     raffle:
       settings: default
   - type: Sprite
@@ -69,7 +69,7 @@
     description: ghost-role-information-hunter-description
     rules: ghost-role-information-hunter-rules
     mindRoles:
-    - MindRoleGhostRole TODO
+    - MindRoleGhostRoleHunter
     raffle:
       settings: default
   - type: Sprite
