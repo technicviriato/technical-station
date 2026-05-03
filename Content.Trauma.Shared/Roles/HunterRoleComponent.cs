@@ -3,7 +3,4 @@
 namespace Content.Trauma.Shared.Roles;
 
 [RegisterComponent]
-public sealed partial class HunterRoleComponent : BaseMindRoleComponent
-{
-
-}
+public sealed partial class HunterRoleComponent : BaseMindRoleComponent;
