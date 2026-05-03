@@ -132,7 +132,7 @@
 #      max: 2
 #      pickPlayer: false
 #      mindRoles:
-#      - MindRoleGhostRoleFugitive TODO
+#      - MindRoleGhostRoleFugitive
 #      briefing:
 #        text: fugitive-role-greeting (NOT DONE)
 #        color: Orange
@@ -165,9 +165,9 @@
 #      max: 2
 #      pickPlayer: false
 #      mindRoles:
-#      - MindRoleGhostRoleHunter TODO
+#      - MindRoleGhostRoleHunter
 #      briefing:
-#        text: fugitive-role-greeting (NOT DONE)
+#        text: hunter-role-greeting (NOT DONE)
 #        color: Blue
 #  - type: MAKE UP ONE
 #  - type: AntagObjectives
