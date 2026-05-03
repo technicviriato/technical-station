@@ -43,7 +43,7 @@
   id: SpawnPointGhostFugitive
   name: fugitive spawn
   components:
-  - type: Ghostrole
+  - type: GhostRole
     name: ghost-role-information-fugitive-name
     description: ghost-role-information-fugitive-description
     rules: ghost-role-information-fugitive-rules
@@ -63,7 +63,7 @@
   id: SpawnPointGhostHunter
   name: fugitive hunter spawn
   components:
-  - type: Ghostrole
+  - type: GhostRole
     name: ghost-role-information-hunter-name
     description: ghost-role-information-hunter-description
     rules: ghost-role-information-hunter-rules
