@@ -1,4 +1,5 @@
 # Hunters
+ # SpacePol
 - type: entity
   parent: MobHuman
   id: MobHumanHunter
