@@ -52,9 +52,9 @@
     raffle:
       settings: default
   - type: Sprite
-    sprite: _Goobstation/Markers/jobs.rsi
     layers:
-    - state: green
+    - sprite: Markers/jobs.rsi
+      state: green
     - sprite: Clothing/Uniform/Jumpsuit/color.rsi
       state: icon
 
@@ -73,8 +73,8 @@
     raffle:
       settings: default
   - type: Sprite
-    sprite: _Goobstation/Markers/jobs.rsi
     layers:
-    - state: green
+    - sprite: Markers/jobs.rsi
+      state: green
     - sprite: Clothing/Head/Helmets/justice.rsi
       state: icon
