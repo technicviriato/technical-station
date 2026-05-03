@@ -142,7 +142,7 @@
     - EscapeShuttleObjective
     components:
     - type: RandomMetadata
-  - type: EmitSoundOnSpawn # fell out of the ceiling
+  - type: EmitSoundOnSpawn
     sound: /Audio/Effects/clang.ogg
 - type: FugitiveRule
   hunterDelay: 300
