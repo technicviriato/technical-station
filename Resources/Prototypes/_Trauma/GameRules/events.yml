@@ -114,37 +114,36 @@
       id: MobCoconutCrab
       amount: 1, 4
 
-#- type: entity
-#  id: FugitiveSpawn
-#  parent: BaseGameRule
-#  components:
-#  - type: StationEvent
-#    weight: 10
-#    duration: null
-#    earliestStart: 10
-#    minimumPlayers: 30
-#  - type: AntagSpawner
-#    prototype: MobHumanFugitive
-#  - type: AntagSelection
-#    agentName: ghost-role-information-fugitive-name
-#  - spawnerPrototype: SpawnPointGhostRoleFugitive
-#    min: 2
-#    max: 2
-#    pickPlayer: false
-#    mindRoles:
-#    - MindRoleGhostRoleFugitive
-#    briefing:
-#      text: fugitive-role-greeting
-#      color: Orange
-#  - type: MaintsSpawnRule
-#  - type: AntagObjectives
-#    objectives:
-#    - EscapeShuttleObjective
-#    components:
-#    - type: RandomMetadata
-#  - type: EmitSoundOnSpawn
-#    sound: /Audio/Effects/clang.ogg
-#- type: FugitiveRule
+- type: entity
+  id: FugitiveSpawn
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: null
+    earliestStart: 10
+    minimumPlayers: 30
+  - type: AntagSpawner
+    prototype: MobHumanFugitive
+  - type: AntagSelection
+    agentName: ghost-role-information-fugitive-name
+  - spawnerPrototype: SpawnPointGhostRoleFugitive
+    min: 2
+    max: 2
+    pickPlayer: false
+    mindRoles:
+    - MindRoleGhostRoleFugitive
+    briefing:
+      text: fugitive-role-greeting
+      color: Orange
+  - type: MaintsSpawnRule
+  - type: AntagObjectives
+    objectives:
+    - EscapeShuttleObjective
+    components:
+    - type: RandomMetadata
+  - type: EmitSoundOnSpawn
+    sound: /Audio/Effects/clang.ogg
 #  hunterDelay: 300
 
 #- type: entity
