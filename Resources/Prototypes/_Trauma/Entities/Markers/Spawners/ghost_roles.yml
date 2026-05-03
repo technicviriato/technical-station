@@ -99,9 +99,9 @@
       settings: default
   - type: Sprite
     layers:
-    - sprite: Markers/jobs.rsi
+    - sprite: Markers/cross.rsi
       state: green
-    - sprite: Clothing/Uniform/Jumpsuit/color.rsi
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
       state: icon
 
 - type: entity
@@ -120,7 +120,7 @@
       settings: default
   - type: Sprite
     layers:
-    - sprite: Markers/jobs.rsi
+    - sprite: Markers/cross.rsi
       state: green
     - sprite: Clothing/Head/Helmets/justice.rsi
       state: icon
