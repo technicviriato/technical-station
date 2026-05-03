@@ -127,15 +127,15 @@
     prototype: MobHumanFugitive
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
-    - spawnerPrototype: SpawnPointGhostFugitive
-      min: 2
-      max: 2
-      pickPlayer: false
-      mindRoles:
-      - MindRoleGhostRoleFugitive
-      briefing:
-        text: fugitive-role-greeting (NOT DONE)
-        color: Orange
+  - spawnerPrototype: SpawnPointGhostRoleFugitive
+    min: 2
+    max: 2
+    pickPlayer: false
+    mindRoles:
+    - MindRoleGhostRoleFugitive
+    briefing:
+      text: fugitive-role-greeting
+      color: Orange
   - type: MaintsSpawnRule
   - type: AntagObjectives
     objectives:
@@ -157,15 +157,15 @@
     prototype: MobHumanHunter
   - type: AntagSelection
     agentName: ghost-role-information-hunter-name
-    - spawnerPrototype: SpawnPointGhostHunter
-      min: 2
-      max: 2
-      pickPlayer: false
-      mindRoles:
-      - MindRoleGhostRoleHunter
-      briefing:
-        text: hunter-role-greeting (NOT DONE)
-        color: Blue
+  - spawnerPrototype: SpawnPointGhostHunter
+    min: 2
+    max: 2
+    pickPlayer: false
+    mindRoles:
+    - MindRoleGhostRoleHunter
+    briefing:
+      text: hunter-role-greeting
+      color: Blue
   - type: MAKE UP ONE
   - type: AntagObjectives
     objectives:
