@@ -3,7 +3,7 @@
 namespace Content.Trauma.Shared.Roles;
 
 [RegisterComponent]
-public sealed class FugitiveRoleComponent : BaseMindRoleComponent
+public sealed partial class FugitiveRoleComponent : BaseMindRoleComponent
 {
 
 }
