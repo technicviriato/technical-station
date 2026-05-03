@@ -97,7 +97,8 @@
     - MindRoleGhostRole TODO
     raffle:
       settings: default
-  - type: _Goobstation/Markers/jobs.rsi
+  - type: Sprite
+    sprite: _Goobstation/Markers/jobs.rsi
     layers:
     - state: green
     - sprite: Clothing/Uniform/Jumpsuit/color.rsi
@@ -117,7 +118,8 @@
     - MindRoleGhostRole TODO
     raffle:
       settings: default
-  - type: _Goobstation/Markers/jobs.rsi
+  - type: Sprite
+    sprite: _Goobstation/Markers/jobs.rsi
     layers:
     - state: green
     - sprite: Clothing/Head/Helmets/justice.rsi
