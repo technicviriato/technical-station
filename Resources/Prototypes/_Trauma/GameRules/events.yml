@@ -114,59 +114,60 @@
       id: MobCoconutCrab
       amount: 1, 4
 
-#- type: entity
-#  id: FugitiveSpawn
-#  parent: BaseGameRule
-#  components:
-#  - type: StationEvent
-#    weight: 10
-#    duration: null
-#    earliestStart: 10
-#    minimumPlayers: 30
-#  - type: AntagSpawner
-#    prototype: MobHumanFugitive
-#  - type: AntagSelection
-#    agentName: ghost-role-information-fugitive-name
-#  - spawnerPrototype: SpawnPointGhostRoleFugitive
-#    min: 2
-#    max: 2
-#    pickPlayer: false
-#    mindRoles:
-#    - MindRoleGhostRoleFugitive
-#    briefing:
-#      text: fugitive-role-greeting
-#      color: Orange
-#  - type: MaintsSpawnRule
-#  - type: AntagObjectives
-#    objectives:
-#    - EscapeShuttleObjective
-#    components:
-#    - type: RandomMetadata
-#  - type: EmitSoundOnSpawn
-#    sound: /Audio/Effects/clang.ogg
+- type: entity
+  id: FugitiveSpawn
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: null
+    earliestStart: 10
+    minimumPlayers: 30
+  - type: AntagSpawner
+    prototype: MobHumanFugitive
+  - type: AntagSelection
+    agentName: ghost-role-information-fugitive-name
+  - spawnerPrototype: SpawnPointGhostRoleFugitive
+    min: 2
+    max: 2
+    pickPlayer: false
+    mindRoles:
+    - MindRoleGhostRoleFugitive
+    briefing:
+      text: fugitive-role-greeting
+      color: Orange
+  - type: MaintsSpawnRule
+  - type: AntagObjectives
+    objectives:
+    - EscapeShuttleObjective
+    components:
+    - type: RandomMetadata
+  - type: EmitSoundOnSpawn
+    sound: /Audio/Effects/clang.ogg
 #- type: FugitiveRule
 #  hunterDelay: 300
-#
-#- type: entity
-#  id: HunterSpawn
-#  parent: BaseGameRule
-#  components:
-#  - type: StationEvent
-#    duration: null
-#  - type: AntagSpawner
-#    prototype: MobHumanHunter
-#  - type: AntagSelection
-#    agentName: ghost-role-information-hunter-name
-#  - spawnerPrototype: SpawnPointGhostHunter
-#    min: 2
-#    max: 2
-#    pickPlayer: false
-#    mindRoles:
-#    - MindRoleGhostRoleHunter
-#    briefing:
-#      text: hunter-role-greeting
-#      color: Blue
-#  - type: MAKE UP ONE
+
+- type: entity
+  id: HunterSpawn
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    duration: null
+  - type: AntagSpawner
+    prototype: MobHumanHunter
+  - type: AntagSelection
+    agentName: ghost-role-information-hunter-name
+  - spawnerPrototype: SpawnPointGhostHunter
+    min: 2
+    max: 2
+    pickPlayer: false
+    mindRoles:
+    - MindRoleGhostRoleHunter
+    briefing:
+      text: hunter-role-greeting
+      color: Blue
+  - type: MaintsSpawnRule # temporary
+#  - type: MAKE UP ONE to spawn at arrivals or something?
 #  - type: AntagObjectives
 #    objectives:
 #    - CuffedOrKilledObjective # doesn't exist, needs to be made
