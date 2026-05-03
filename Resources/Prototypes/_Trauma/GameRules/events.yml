@@ -114,62 +114,62 @@
       id: MobCoconutCrab
       amount: 1, 4
 
-- type: entity
-  id: FugitiveSpawn
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    weight: 10
-    duration: null
-    earliestStart: 10
-    minimumPlayers: 30
-  - type: AntagSpawner
-    prototype: MobHumanFugitive
-  - type: AntagSelection
-    agentName: ghost-role-information-fugitive-name
-    - spawnerPrototype: SpawnPointGhostFugitive
-      min: 2
-      max: 2
-      pickPlayer: false
-      mindRoles:
-      - MindRoleGhostRoleFugitive TODO
-      briefing:
-        text: fugitive-role-greeting (NOT DONE)
-        color: Orange
-  - type: MaintsSpawnRule
-  - type: AntagObjectives
-    objectives:
-    - EscapeShuttleObjective
-    components:
-    - type: RandomMetadata
-      nameSegments:
-       - fake_human_first
-       - fake_human_last
-  - type: EmitSoundOnSpawn # fell out of the ceiling
-    sound: /Audio/Effects/clang.ogg
-- type: FugitiveRule
-  hunterDelay: 300
-
-- type: entity
-  id: HunterSpawn
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    duration: null
-  - type: AntagSpawner
-    prototype: MobHumanHunter
-  - type: AntagSelection
-    agentName: ghost-role-information-hunter-name
-    - spawnerPrototype: SpawnPointGhostHunter
-      min: 2
-      max: 2
-      pickPlayer: false
-      mindRoles:
-      - MindRoleGhostRoleHunter TODO
-      briefing:
-        text: fugitive-role-greeting (NOT DONE)
-        color: Blue
-  - type: MAKE UP ONE
-  - type: AntagObjectives
-    objectives:
-    - CUFF OR KILL X PERSON
+#- type: entity
+#  id: FugitiveSpawn
+#  parent: BaseGameRule
+#  components:
+#  - type: StationEvent
+#    weight: 10
+#    duration: null
+#    earliestStart: 10
+#    minimumPlayers: 30
+#  - type: AntagSpawner
+#    prototype: MobHumanFugitive
+#  - type: AntagSelection
+#    agentName: ghost-role-information-fugitive-name
+#    - spawnerPrototype: SpawnPointGhostFugitive
+#      min: 2
+#      max: 2
+#      pickPlayer: false
+#      mindRoles:
+#      - MindRoleGhostRoleFugitive TODO
+#      briefing:
+#        text: fugitive-role-greeting (NOT DONE)
+#        color: Orange
+#  - type: MaintsSpawnRule
+#  - type: AntagObjectives
+#    objectives:
+#    - EscapeShuttleObjective
+#    components:
+#    - type: RandomMetadata
+#      nameSegments:
+#       - fake_human_first
+#       - fake_human_last
+#  - type: EmitSoundOnSpawn # fell out of the ceiling
+#    sound: /Audio/Effects/clang.ogg
+#- type: FugitiveRule
+#  hunterDelay: 300
+#
+#- type: entity
+#  id: HunterSpawn
+#  parent: BaseGameRule
+#  components:
+#  - type: StationEvent
+#    duration: null
+#  - type: AntagSpawner
+#    prototype: MobHumanHunter
+#  - type: AntagSelection
+#    agentName: ghost-role-information-hunter-name
+#    - spawnerPrototype: SpawnPointGhostHunter
+#      min: 2
+#      max: 2
+#      pickPlayer: false
+#      mindRoles:
+#      - MindRoleGhostRoleHunter TODO
+#      briefing:
+#        text: fugitive-role-greeting (NOT DONE)
+#        color: Blue
+#  - type: MAKE UP ONE
+#  - type: AntagObjectives
+#    objectives:
+#    - CUFF OR KILL X PERSON
