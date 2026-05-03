@@ -169,4 +169,4 @@
   - type: MAKE UP ONE
   - type: AntagObjectives
     objectives:
-    - CUFF OR KILL X PERSON
+    - CuffedOrKilledObjective # doesn't exist, needs to be made
