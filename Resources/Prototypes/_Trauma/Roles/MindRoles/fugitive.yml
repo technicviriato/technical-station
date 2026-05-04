@@ -4,7 +4,7 @@
   name: Fugitive Role
   components:
   - type: MindRole
-    roleType: TeamAntagonist
+    roleType: SoloAntagonist
     subtype: role-subtype-fugitive
     exclusiveAntag: false
     antagPrototype: Traitor
