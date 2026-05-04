@@ -1,4 +1,6 @@
-﻿using Content.Server.Antag;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.Antag;
 using Content.Server.Communications;
 using Content.Server.StationEvents.Events;
 using Content.Shared.Forensics.Components;
