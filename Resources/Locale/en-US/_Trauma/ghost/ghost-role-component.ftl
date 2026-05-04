@@ -46,9 +46,7 @@ ghost-role-information-disgustingbackpack-description = Drive your owner complet
 ghost-role-information-hunter-name = Fugitive Hunter
 ghost-role-information-hunter-description = You're a Fugitive Hunter. Catch the fugitive.
 ghost-role-information-hunter-rules = Focus on catching the fugitive. Try not to kill them or security in the process.
-fugitive-role-greeting = You are an Escaped Convict. Your past has finally caught up to you, but you won't let it catch you. Not today.
 
 ghost-role-information-fugitive-name = Fugitive
 ghost-role-information-fugitive-description = You're an escaped prisoner. Make it out alive.
 ghost-role-information-fugitive-rules = Focus on laying low rather than engaging the hunter or security directly.
-hunter-role-greeting = You are a Space Police Officer. You have been tasked with catching a fugitive hiding out in this station.

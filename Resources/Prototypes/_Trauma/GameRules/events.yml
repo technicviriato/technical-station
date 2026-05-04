@@ -138,6 +138,7 @@
     briefing:
       text: fugitive-role-greeting
       color: Orange
+      sound: /Audio/Misc/thief_greeting.ogg
   - type: MaintsSpawnRule
   - type: AntagObjectives
     objectives:
