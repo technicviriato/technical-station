@@ -15,19 +15,19 @@
     - !type:NestedEffect
       proto: TraitorSkills
 
-- type: entity
-  parent: BaseMindRoleAntag
-  id: MindRoleGhostRoleHunter
-  name: Fugitive Hunter Role
-  components:
-  - type: MindRole
-    roleType: TeamAntagonist
-    subtype: role-subtype-hunter
-    exclusiveAntag: false
-    antagPrototype: Traitor
-  - type: HunterRole
-  - type: RoleEffects
-    singleUse: true
-    added:
-    - !type:NestedEffect
-      proto: TraitorSkills
+#- type: entity
+#  parent: BaseMindRoleAntag
+#  id: MindRoleGhostRoleHunter
+#  name: Fugitive Hunter Role
+#  components:
+#  - type: MindRole
+#    roleType: TeamAntagonist
+#    subtype: role-subtype-hunter
+#    exclusiveAntag: false
+#    antagPrototype: Traitor
+#  - type: HunterRole
+#  - type: RoleEffects
+#    singleUse: true
+#    added:
+#    - !type:NestedEffect
+#      proto: TraitorSkills
