@@ -190,7 +190,6 @@
         volume: -8
   - type: MeleeWeapon
     animationRotation: -45
-    canWideSwing: false
     damage:
       types:
         Slash: 12
