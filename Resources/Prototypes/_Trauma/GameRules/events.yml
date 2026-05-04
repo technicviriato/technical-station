@@ -115,7 +115,7 @@
       amount: 1, 4
 
 - type: entity
-  id: FugitiveSpawn
+  id: Fugitive
   parent: BaseGameRule
   components:
   - type: StationEvent
