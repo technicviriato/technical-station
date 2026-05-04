@@ -127,6 +127,7 @@
     prototype: MobHumanFugitive
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
+    definitions:
   - spawnerPrototype: SpawnPointGhostRoleFugitive
     min: 1
     max: 1
