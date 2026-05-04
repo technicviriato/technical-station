@@ -1,7 +1,7 @@
 fugitive-round-end-agent-name = Fugitive
 fugitive-spawn = You fall from the ceiling!
-fugitive-report-title = WANTED: {$name}
-fugitive-report-first-line = Escaped fugitive {$name} has been spotted in the sector. They may be a stowaway on a station somewhere.
+fugitive-report-title = WANTED FUGITIVE!
+fugitive-report-first-line = An escaped fugitive has been spotted in the sector and disguised their identity. They may be a stowaway on a station somewhere.
 fugitive-report-inhuman = {CAPITALIZE(THE($name))} {CONJUGATE-BE($name)} inhuman. We have no further details.
 fugitive-report-morphotype = MORPHOTYPE: {$species}
 fugitive-report-age = AGE: {$age}
@@ -10,6 +10,11 @@ fugitive-report-sex = SEX: {$sex ->
     [Female] F
     *[none] N/A
 }
+
+# Random details
+fugitive-report-detail-dna = DNA: {$dna}
+fugitive-report-detail-prints = FINGERPRINT: {$prints}
+
 fugitive-report-crimes-header = The above individual is wanted across the sector for the following:
 fugitive-report-crime = - {$count ->
     [1] One count
