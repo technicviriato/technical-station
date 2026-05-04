@@ -126,29 +126,30 @@
     minimumPlayers: 30
     reoccurDelay: 30
     maxOccurrences: 2
-  - type: AntagSpawner
-    prototype: MobHuman
+  - type: MaintsSpawnRule
+  - type: AntagGhostCharacterRule
+  - type: AntagObjectives
+    objectives:
+    - EscapeShuttleObjective
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
     definitions:
-    - type: RandomMetadata
     - spawnerPrototype: SpawnPointGhostRoleFugitive
       min: 1
       max: 1
       pickPlayer: false
-      mindRoles:
-      - MindRoleGhostRoleFugitive
       startingGear: FugitiveAntagGear
       briefing:
         text: fugitive-role-greeting
         color: Orange
         sound: /Audio/Misc/thief_greeting.ogg
-  - type: MaintsSpawnRule
-  - type: AntagObjectives
-    objectives:
-    - EscapeShuttleObjective
-  - type: EmitSoundOnSpawn
-    sound: /Audio/Effects/clang.ogg
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: RandomMetadata
+      mindRoles:
+      - MindRoleGhostRoleFugitive
   - type: AntagPlayerEffects
     effects:
     - !type:NestedEffect
