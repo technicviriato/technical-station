@@ -23,6 +23,7 @@
     - id: WraithMidround # Unchuddified version | no evolution | no absorbing corpses
     - id: ParadoxCloneSpawn
     - id: MorphRule
+    - id: FugitiveSpawn
 
 - type: entityTable
   id: ModerateAntagEventsTrauma
@@ -115,7 +116,7 @@
       amount: 1, 4
 
 - type: entity
-  id: Fugitive
+  id: FugitiveSpawn
   parent: BaseGameRule
   components:
   - type: StationEvent
