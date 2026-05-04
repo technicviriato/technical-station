@@ -44,9 +44,9 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         ChatSystem.DispatchGlobalAnnouncement(announcement, sender: sender, colorOverride: component.Color);
 
         // send the report to every comms console on the station
-        var query = EntityQueryEnumerator<TransformComponent, CommunicationsConsoleComponent>();
+        var query = EntityQueryEnumerator<CommunicationsConsoleComponent, TransformComponent>();
         var consoles = new List<TransformComponent>();
-        while (query.MoveNext(out var console, out var xform, out _))
+        while (query.MoveNext(out var console, out _, out var xform))
         {
             if (StationSystem.GetOwningStation(console, xform) != component.Station || HasComp<GhostComponent>(console))
                 continue;
