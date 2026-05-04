@@ -31,9 +31,7 @@
 - type: latheRecipePack
   id: SurgeryStatic
   recipes:
-  # <Trauma>
-  - SawElectric
-  # </Trauma>
+  - SawElectric # Trauma
   - Scalpel
   - Retractor
   - Cautery
