@@ -124,7 +124,7 @@
     duration: null
     earliestStart: 10
     minimumPlayers: 30
-    reoccurDelay: 30
+    reoccurrenceDelay: 30
     maxOccurrences: 2
   - type: MaintsSpawnRule
   - type: AntagGhostCharacterRule
