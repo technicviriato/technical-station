@@ -7,6 +7,7 @@
   recipes:
   - MedicalHyposprayEmpty
   - MedicalCigCarton
+  - SawElectric
 
 - type: latheRecipePack
   id: TraumaCyberneticsStatic
