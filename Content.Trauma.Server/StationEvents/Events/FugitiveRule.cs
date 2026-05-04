@@ -9,6 +9,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Inventory;
 using Content.Shared.Paper;
 using Content.Shared.Popups;
+using Content.Shared.Random.Helpers;
 using Content.Shared.Storage.EntitySystems;
 using Content.Trauma.Server.StationEvents.Components;
 using Robust.Shared.Physics.Components;
@@ -159,7 +160,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
     private void AddCharges(FormattedMessage report, FugitiveRuleComponent rule)
     {
-        var crimeTypes = PrototypeManager.Index(rule.CrimesDataset);
+        var crimeTypes = PrototypeManager.Index(rule.CrimeDataset);
         var crimes = new HashSet<LocId>();
         var total = RobustRandom.Next(rule.MinCrimes, rule.MaxCrimes + 1);
         while (crimes.Count < total)
