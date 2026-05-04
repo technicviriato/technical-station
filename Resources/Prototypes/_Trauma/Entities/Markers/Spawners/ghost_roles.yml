@@ -87,7 +87,7 @@
   categories: [ HideSpawnMenu, Spawner]
   parent: BaseAntagSpawner
   name: fugitive spawn
-  id: SpawnPointGhostFugitive
+  id: SpawnPointGhostRoleFugitive
   components:
   - type: GhostRole
     name: ghost-role-information-fugitive-name
