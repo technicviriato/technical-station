@@ -8,7 +8,7 @@ namespace Content.Trauma.Server.StationEvents.Components;
 /// Makes a SpacePol announcement and creates a report some time after an antag spawns.
 /// Removed after this is done.
 /// </summary>
-[RegisterComponent, Access(typeof(FugitiveRule))]
+[RegisterComponent]
 [AutoGenerateComponentPause]
 public sealed partial class FugitiveRuleComponent : Component
 {
