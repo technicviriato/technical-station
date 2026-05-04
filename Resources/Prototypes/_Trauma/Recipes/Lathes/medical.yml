@@ -37,6 +37,8 @@
 - type: latheRecipe
   id: SawElectric
   result: SawElectric
+  categories:
+  - Tools
   completetime: 2
   materials:
     Steel: 500
