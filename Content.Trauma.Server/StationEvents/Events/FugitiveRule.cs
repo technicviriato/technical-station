@@ -121,7 +121,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         var species = PrototypeManager.Index(humanoid.Species);
 
-        report.AddMarkupOrThrow(Loc.GetString("fugitive-report-morphotype", ("species", Loc.GetString(species.Name))));
+        report.AddMarkupOrThrow(Loc.GetString("fugitive-report-species", ("species", Loc.GetString(species.Name))));
         report.AddMarkupOrThrow(Loc.GetString("fugitive-report-age", ("age", humanoid.Age)));
         report.AddMarkupOrThrow(Loc.GetString("fugitive-report-sex", ("sex", humanoid.Sex.ToString())));
 

@@ -124,17 +124,21 @@
     duration: null
     earliestStart: 10
     minimumPlayers: 30
+    reoccurDelay: 30
+    maxOccurrences: 2
   - type: AntagSpawner
-    prototype: MobHumanFugitive
+    prototype: MobHuman
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
     definitions:
+    - type: RandomMetadata
     - spawnerPrototype: SpawnPointGhostRoleFugitive
       min: 1
       max: 1
       pickPlayer: false
       mindRoles:
       - MindRoleGhostRoleFugitive
+      startingGear: FugitiveAntagGear
       briefing:
         text: fugitive-role-greeting
         color: Orange
@@ -143,33 +147,9 @@
   - type: AntagObjectives
     objectives:
     - EscapeShuttleObjective
-  - type: RandomMetadata
-  - type: RandomHumanoidAppearance
-    randomizeName: true
   - type: EmitSoundOnSpawn
     sound: /Audio/Effects/clang.ogg
-#  hunterDelay: 300
-
-#- type: entity
-#  id: HunterSpawn
-#  parent: BaseGameRule
-#  components:
-#  - type: StationEvent
-#    duration: null
-#  - type: AntagSpawner
-#    prototype: MobHumanHunter
-#  - type: AntagSelection
-#    agentName: ghost-role-information-hunter-name
-#  - spawnerPrototype: SpawnPointGhostHunter
-#    min: 1
-#    max: 1
-#    pickPlayer: false
-#    mindRoles:
-#    - MindRoleGhostRoleHunter
-#    briefing:
-#      text: hunter-role-greeting
-#      color: Blue
-#  - type: MAKE UP ONE to spawn at arrivals or something?
-#  - type: AntagObjectives
-#    objectives:
-#    - CuffedOrKilledObjective # doesn't exist, needs to be made
+  - type: AntagPlayerEffects
+    effects:
+    - !type:NestedEffect
+      proto: TraitorSkills
