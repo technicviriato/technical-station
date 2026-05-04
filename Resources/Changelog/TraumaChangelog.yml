@@ -7812,3 +7812,31 @@ Entries:
   id: 902
   time: '2026-05-03T01:10:24.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2377
+- author: assripper.
+  changes:
+  - type: Fix
+    message: maintspawnrule no longer spawns antags inside walls
+  id: 903
+  time: '2026-05-03T13:32:03.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2382
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Electropack now has an internal self-charging battery
+  id: 904
+  time: '2026-05-03T19:52:14.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2389
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Increased folded wheelchair's item size to 3x2.
+  id: 905
+  time: '2026-05-03T20:03:31.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2390
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: xenomorph music is now quieter
+  id: 906
+  time: '2026-05-04T00:57:24.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2392
