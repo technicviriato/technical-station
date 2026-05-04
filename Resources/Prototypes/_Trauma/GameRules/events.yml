@@ -142,8 +142,7 @@
   - type: AntagObjectives
     objectives:
     - EscapeShuttleObjective
-    components:
-    - type: RandomMetadata
+  - type: RandomMetadata
   - type: RandomHumanoidAppearance
     randomizeName: true
   - type: EmitSoundOnSpawn
