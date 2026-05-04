@@ -119,12 +119,6 @@
   id: FugitiveSpawn
   parent: BaseGameRule
   components:
-  - type: RandomHumanoidAppearance
-    randomizeName: true
-  - type: RandomMetadata
-    nameSegments:
-  - names_first
-  - names_last
   - type: StationEvent
     weight: 10
     duration: null
@@ -137,6 +131,7 @@
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
     definitions:
+    - type: RandomMetadata
     - spawnerPrototype: SpawnPointGhostRoleFugitive
       min: 1
       max: 1
