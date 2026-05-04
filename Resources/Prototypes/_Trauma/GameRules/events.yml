@@ -134,11 +134,11 @@
       max: 1
       pickPlayer: false
       mindRoles:
-    - MindRoleGhostRoleFugitive
-    briefing:
-      text: fugitive-role-greeting
-      color: Orange
-      sound: /Audio/Misc/thief_greeting.ogg
+      - MindRoleGhostRoleFugitive
+      briefing:
+        text: fugitive-role-greeting
+        color: Orange
+        sound: /Audio/Misc/thief_greeting.ogg
   - type: MaintsSpawnRule
   - type: AntagObjectives
     objectives:
