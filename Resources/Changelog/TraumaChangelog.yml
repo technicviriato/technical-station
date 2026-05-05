@@ -7921,3 +7921,31 @@ Entries:
   id: 915
   time: '2026-05-04T21:33:11.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2321
+- author: MayasMischief
+  changes:
+  - type: Tweak
+    message: Ghosts can now use the Boo ability more often.
+  id: 916
+  time: '2026-05-05T09:15:05.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2416
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed abductors not being listed in the round end summary.
+  id: 917
+  time: '2026-05-05T13:02:04.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2421
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed new decals drawing on every map.
+  id: 918
+  time: '2026-05-05T13:01:36.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2420
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed new decals drawing on every map.
+  id: 919
+  time: '2026-05-05T13:01:36.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2420
