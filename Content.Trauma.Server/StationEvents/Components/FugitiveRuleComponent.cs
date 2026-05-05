@@ -60,14 +60,14 @@ public sealed partial class FugitiveRuleComponent : Component
     public ProtoId<LocalizedDatasetPrototype> CrimeDataset = "FugitiveCrimes";
 
     /// <summary>
-    /// Max number of unique crimes they can be charged with.
+    /// Min number of unique crimes they can be charged with.
     /// Does not affect the counts of each crime.
     /// </summary>
     [DataField]
     public int MinCrimes = 4;
 
     /// <summary>
-    /// Min number of unique crimes they can be charged with.
+    /// Max number of unique crimes they can be charged with.
     /// Does not affect the counts of each crime.
     /// </summary>
     [DataField]
