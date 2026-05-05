@@ -34,7 +34,7 @@
   parent: PaperStationWarrant
   id: PaperFugitiveReport
   name: fugitive report
-  description: An arrest warrant for a space fugitive sent from GALPOL.
+  description: An arrest warrant for a space fugitive sent from SpacePol. # TODO: change to be more generic once more hunter variants are added
 
 - type: entity
   parent: Paper
