@@ -4,7 +4,7 @@
   id: BaseFugitiveObjective
   components:
   - type: Objective
-    issuer: self
+    issuer: Yourself
   - type: RoleRequirement
     roles:
     - FugitiveRole
