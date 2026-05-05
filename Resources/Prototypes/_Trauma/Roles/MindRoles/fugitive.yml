@@ -9,8 +9,3 @@
     exclusiveAntag: false
     antagPrototype: Traitor
   - type: FugitiveRole
-  - type: RoleEffects
-    singleUse: true
-    added:
-    - !type:NestedEffect
-      proto: TraitorSkills

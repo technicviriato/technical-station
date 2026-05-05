@@ -5,11 +5,9 @@
   components:
   - type: Objective
     issuer: self
-    difficulty: 1
   - type: RoleRequirement
     roles:
-      components:
-      - FugitiveRole
+    - FugitiveRole
 
 - type: entity
   parent: [BaseFugitiveObjective, BaseLivingObjective]
@@ -18,6 +16,7 @@
   description: You will never atone for your crimes, make sure of it by blending into the crowd.
   components:
   - type: Objective
+    difficulty: 1
     icon:
       sprite: Markers/jobs.rsi
       state: prisoner
