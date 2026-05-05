@@ -18,7 +18,7 @@ public sealed partial class FugitiveRuleComponent : Component
     public LocId Announcement = "station-event-fugitive-hunt-announcement";
 
     [DataField]
-    public LocId Sender = "fugitive-announcement-SpacePol";
+    public LocId Sender = "fugitive-announcement-spacepol";
 
     [DataField]
     public Color Color = Color.Blue;
