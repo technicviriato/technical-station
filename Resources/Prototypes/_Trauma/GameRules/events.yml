@@ -149,6 +149,8 @@
         factions:
         - Syndicate
       - type: RandomMetadata
+      - type: EmitSoundOnSpawn # fell out of the ceiling
+        sound: /Audio/Effects/clang.ogg
       mindRoles:
       - MindRoleGhostRoleFugitive
   - type: AntagPlayerEffects
