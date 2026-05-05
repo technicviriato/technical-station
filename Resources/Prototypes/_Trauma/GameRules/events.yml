@@ -131,7 +131,7 @@
   - type: AntagGhostCharacterRule
   - type: AntagObjectives
     objectives:
-    - EscapeShuttleObjective
+    - FugitiveEscapeObjective
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
     definitions:
