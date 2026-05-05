@@ -49,4 +49,4 @@ ghost-role-information-hunter-rules = Focus on catching the fugitive. Try not to
 
 ghost-role-information-fugitive-name = Fugitive
 ghost-role-information-fugitive-description = You're an escaped prisoner. Make it out alive.
-ghost-role-information-fugitive-rules = Focus on laying low rather than engaging the hunter or security directly.
+ghost-role-information-fugitive-rules = Focus on laying low rather than engaging the hunter or security directly. # TODO add colors
