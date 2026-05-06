@@ -8,24 +8,19 @@ using Content.Shared.GameTicking.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Humanoid;
-using Content.Shared.Inventory;
 using Content.Shared.Paper;
 using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
-using Content.Shared.Storage.EntitySystems;
 using Content.Trauma.Server.StationEvents.Components;
-using Robust.Shared.Physics.Components;
 using Robust.Shared.Utility;
 
 namespace Content.Trauma.Server.StationEvents.Events;
 
 public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 {
-    [Dependency] private readonly InventorySystem _inventory = null!;
-    [Dependency] private readonly PaperSystem _paper = null!;
-    [Dependency] private readonly SharedHandsSystem _hands = null!;
-    [Dependency] private readonly SharedPopupSystem _popup = null!;
-    [Dependency] private readonly SharedStorageSystem _storage = null!;
+    [Dependency] private readonly PaperSystem _paper = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -64,7 +59,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         RemCompDeferred(uid, component);
     }
-
+     // Called when the fugitive is selected.
      private void OnEntitySelected(Entity<FugitiveRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
      {
         var (uid, comp) = ent;
@@ -73,7 +68,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
             Log.Error("Fugitive rule spawning multiple fugitives isn't supported, sorry.");
             return;
         }
-
+        // Generates the report and schedules the station announcement
         var fugi = args.EntityUid;
         comp.Report = GenerateReport(fugi, comp).ToMarkup();
         comp.Station = StationSystem.GetOwningStation(fugi);
@@ -84,18 +79,10 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         // give the fugi a report so they know what their charges are
         var report = SpawnReport(comp, Transform(fugi));
 
-        // try to insert it into their bag
-        if (_inventory.TryGetSlotEntity(fugi, "back", out var backpack))
-        {
-            _storage.Insert(backpack.Value, report, out _, playSound: false);
-        }
-        else
-        {
-            // no bag somehow, at least pick it up
-            _hands.TryPickup(fugi, report);
-        }
-     }
+        _hands.TryPickup(fugi, report);
 
+     }
+     // Spawns the fugitive report at a given location
      private Entity<PaperComponent> SpawnReport(FugitiveRuleComponent rule, TransformComponent xform)
      {
          var report = Spawn(rule.ReportPaper, xform.Coordinates);
@@ -104,7 +91,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
          _paper.SetContent(ent, rule.Report);
          return ent;
     }
-
+    // Adds the content to the fugitive report: crime list, species, age, etc
     private FormattedMessage GenerateReport(EntityUid uid, FugitiveRuleComponent rule)
     {
         var report = new FormattedMessage();
@@ -148,18 +135,18 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         return report;
     }
-
+    // DNA string of fugitive, or "?" if unavailable somehow
     private string GetDNA(EntityUid uid)
     {
         return CompOrNull<DnaComponent>(uid)?.DNA ?? "?";
     }
-
+    // Fingerprints of fugitive, or "?" if unavailable somehow
     private string GetPrints(EntityUid uid)
     {
         return CompOrNull<FingerprintComponent>(uid)?.Fingerprint ?? "?";
     }
 
-
+    // Picks a random set of unique crimes from the dataset and adds them to the report, each with a random count(within the range)
     private void AddCharges(FormattedMessage report, FugitiveRuleComponent rule)
     {
         var crimeTypes = PrototypeManager.Index(rule.CrimeDataset);
