@@ -28,7 +28,9 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         SubscribeLocalEvent<FugitiveRuleComponent, AfterAntagEntitySelectedEvent>(OnEntitySelected);
     }
-
+    /// <summary>
+    /// Sends the report to every comms console on the station, and prevents any possible funnies
+    /// </summary>
     protected override void ActiveTick(EntityUid uid, FugitiveRuleComponent component, GameRuleComponent gameRule, float frameTime)
     {
         if (component.NextAnnounce is not { } next || next > Timing.CurTime)
@@ -38,7 +40,6 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         var sender = Loc.GetString(component.Sender);
         ChatSystem.DispatchGlobalAnnouncement(announcement, sender: sender, colorOverride: component.Color);
 
-        // send the report to every comms console on the station
         var query = EntityQueryEnumerator<CommunicationsConsoleComponent, TransformComponent>();
         var consoles = new List<TransformComponent>();
         while (query.MoveNext(out var console, out _, out var xform))
@@ -54,12 +55,14 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
             SpawnReport(component, xform);
         }
 
-        // prevent any possible funnies
         component.NextAnnounce = null;
 
         RemCompDeferred(uid, component);
     }
-     // Called when the fugitive is selected.
+     /// <summary>
+     /// Called when the fugitive is selected.
+     /// Generates the report, schedules the station announcement, and gives the fugitive a report.
+     /// </summary>
      private void OnEntitySelected(Entity<FugitiveRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
      {
         var (uid, comp) = ent;
@@ -68,7 +71,6 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
             Log.Error("Fugitive rule spawning multiple fugitives isn't supported, sorry.");
             return;
         }
-        // Generates the report and schedules the station announcement
         var fugi = args.EntityUid;
         comp.Report = GenerateReport(fugi, comp).ToMarkup();
         comp.Station = StationSystem.GetOwningStation(fugi);
@@ -76,13 +78,14 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         _popup.PopupEntity(Loc.GetString("fugitive-spawn"), fugi, fugi);
 
-        // give the fugi a report so they know what their charges are
         var report = SpawnReport(comp, Transform(fugi));
 
-        _hands.TryPickup(fugi, report);
+        _hands.TryPickupAnyHand(fugi, report);
 
      }
-     // Spawns the fugitive report at a given location
+     /// <summary>
+     /// Spawns the fugitive report at a given location
+     /// </summary>
      private Entity<PaperComponent> SpawnReport(FugitiveRuleComponent rule, TransformComponent xform)
      {
          var report = Spawn(rule.ReportPaper, xform.Coordinates);
@@ -91,7 +94,11 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
          _paper.SetContent(ent, rule.Report);
          return ent;
     }
-    // Adds the content to the fugitive report: crime list, species, age, etc
+    /// <summary>
+    /// Adds the content to the fugitive report: crime list, species, age, etc
+    /// Adds a random identifying quality that officers can use to track them down
+    /// Generates some random crimes
+    /// </summary>
     private FormattedMessage GenerateReport(EntityUid uid, FugitiveRuleComponent rule)
     {
         var report = new FormattedMessage();
@@ -115,7 +122,6 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         report.AddMarkupOrThrow(Loc.GetString("fugitive-report-sex", ("sex", humanoid.Sex.ToString())));
         report.PushNewline();
 
-        // add a random identifying quality that officers can use to track them down
         report.AddMarkupOrThrow(RobustRandom.Next(0, 2) switch
         {
             0 => Loc.GetString("fugitive-report-detail-dna", ("dna", GetDNA(uid))),
@@ -125,9 +131,6 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         report.PushNewline();
         report.AddMarkupOrThrow(Loc.GetString("fugitive-report-crimes-header"));
 
-        // generate some random crimes to avoid this situation
-        // "officer what are my charges?"
-        // "uh i dunno a piece of paper said to arrest you that's it"
         AddCharges(report, rule);
 
         report.PushNewline();
@@ -135,18 +138,24 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         return report;
     }
-    // DNA string of fugitive, or "?" if unavailable somehow
+    /// <summary>
+    /// DNA string of fugitive, or "?" if unavailable somehow
+    /// </summary>
     private string GetDNA(EntityUid uid)
     {
         return CompOrNull<DnaComponent>(uid)?.DNA ?? "?";
     }
-    // Fingerprints of fugitive, or "?" if unavailable somehow
+    /// <summary>
+    /// Fingerprints of fugitive, or "?" if unavailable somehow
+    /// </summary>
     private string GetPrints(EntityUid uid)
     {
         return CompOrNull<FingerprintComponent>(uid)?.Fingerprint ?? "?";
     }
 
-    // Picks a random set of unique crimes from the dataset and adds them to the report, each with a random count(within the range)
+    /// <summary>
+    /// Picks a random set of unique crimes from the dataset and adds them to the report, each with a random count(within the range)
+    /// </summary>
     private void AddCharges(FormattedMessage report, FugitiveRuleComponent rule)
     {
         var crimeTypes = PrototypeManager.Index(rule.CrimeDataset);
