@@ -151,7 +151,6 @@
   content:
   - WeaponPistolViper
   - MagazinePistolHighCapacity
-  - BriefcaseBrown
 
 - type: selectableSet
   id: FugitiveGhostSet

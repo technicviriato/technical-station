@@ -1,7 +1,7 @@
 fugitive-set-hitman-name = Hitman's Kit
 fugitive-set-hitman-description =
    You're no stranger to killing, you'll do it again if necessary.
-   Contains: viper, machine pistol magazine and a brown briefcase.
+   Contains: viper and a machine pistol magazine.
 
 fugitive-set-ghost-name = Ghost's Kit
 fugitive-set-ghost-description =
