@@ -33,3 +33,810 @@
   materials:
     Plastic: 2500
     Cloth: 2500
+
+- type: latheRecipe
+  abstract: true
+  id: HumanOrgan
+  parent: SynthOrgan
+  categories:
+  - HumanOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: HumanPart
+  parent: SynthPart
+  categories:
+  - HumanOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: VoxOrgan
+  parent: SynthOrgan
+  categories:
+  - VoxOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: VoxPart
+  parent: SynthPart
+  categories:
+  - VoxOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: MothOrgan
+  parent: SynthOrgan
+  categories:
+  - MothOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: MothPart
+  parent: SynthPart
+  categories:
+  - MothOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: ReptilianOrgan
+  parent: SynthOrgan
+  categories:
+  - ReptilianOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: ReptilianPart
+  parent: SynthPart
+  categories:
+  - ReptilianOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: ArachnidOrgan
+  parent: SynthOrgan
+  categories:
+  - ArachnidOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: ArachnidPart
+  parent: SynthPart
+  categories:
+  - ArachnidOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: DwarfOrgan
+  parent: SynthOrgan
+  categories:
+  - DwarfOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: DwarfPart
+  parent: SynthPart
+  categories:
+  - DwarfOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: SlimePersonOrgan
+  parent: SynthOrgan
+  categories:
+  - SlimePersonOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: SlimePersonPart
+  parent: SynthPart
+  categories:
+  - SlimePersonOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: DecapoidOrgan
+  parent: SynthOrgan
+  categories:
+  - DecapoidOrgans
+
+- type: latheRecipe
+  abstract: true
+  id: DecapoidPart
+  parent: SynthPart
+  categories:
+  - DecapoidOrgans
+
+## Human
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthEyes
+  result: OrganBioSynthEyes
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthTongue
+  result: OrganBioSynthTongue
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthEars
+  result: OrganBioSynthEars
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthLungs
+  result: OrganBioSynthLungs
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthHeart
+  result: OrganBioSynthHeart
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthStomach
+  result: OrganBioSynthStomach
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthLiver
+  result: OrganBioSynthLiver
+
+- type: latheRecipe
+  parent: HumanOrgan
+  id: OrganBioSynthKidneys
+  result: OrganBioSynthKidneys
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthHead
+  result: OrganBioSynthHead
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthArmLeft
+  result: OrganBioSynthArmLeft
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthHandLeft
+  result: OrganBioSynthHandLeft
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthArmRight
+  result: OrganBioSynthArmRight
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthHandRight
+  result: OrganBioSynthHandRight
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthLegLeft
+  result: OrganBioSynthLegLeft
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthLegRight
+  result: OrganBioSynthLegRight
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthFootLeft
+  result: OrganBioSynthFootLeft
+
+- type: latheRecipe
+  parent: HumanPart
+  id: OrganBioSynthFootRight
+  result: OrganBioSynthFootRight
+
+## Vox
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxEyes
+  result: OrganVoxEyes
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxHeart
+  result: OrganVoxHeart
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxLungs
+  result: OrganVoxLungs
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxStomach
+  result: OrganVoxStomach
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxTongue
+  result: OrganVoxTongue
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxLiver
+  result: OrganVoxLiver
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxKidneys
+  result: OrganVoxKidneys
+
+- type: latheRecipe
+  parent: VoxOrgan
+  id: OrganVoxEars
+  result: OrganVoxEars
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxHead
+  result: OrganVoxHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxArmLeft
+  result: OrganVoxArmLeft
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxHandLeft
+  result: OrganVoxHandLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxArmRight
+  result: OrganVoxArmRight
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxHandRight
+  result: OrganVoxHandRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxLegLeft
+  result: OrganVoxLegLeft
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxLegRight
+  result: OrganVoxLegRight
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxFootLeft
+  result: OrganVoxFootLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxFootRight
+  result: OrganVoxFootRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: VoxPart
+  id: OrganVoxTail
+  result: OrganVoxTail
+
+## Moth
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothEyes
+  result: OrganMothEyes
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothHeart
+  result: OrganMothHeart
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothLungs
+  result: OrganMothLungs
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothStomach
+  result: OrganMothStomach
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothTongue
+  result: OrganMothTongue
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothLiver
+  result: OrganMothLiver
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothKidneys
+  result: OrganMothKidneys
+
+- type: latheRecipe
+  parent: MothOrgan
+  id: OrganMothEars
+  result: OrganMothEars
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothHead
+  result: OrganMothHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothArmLeft
+  result: OrganMothArmLeft
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothHandLeft
+  result: OrganMothHandLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothArmRight
+  result: OrganMothArmRight
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothHandRight
+  result: OrganMothHandRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothLegLeft
+  result: OrganMothLegLeft
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothLegRight
+  result: OrganMothLegRight
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothFootLeft
+  result: OrganMothFootLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothFootRight
+  result: OrganMothFootRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: MothPart
+  id: OrganMothWings
+  result: OrganMothWings
+
+## Reptilian
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianEyes
+  result: OrganReptilianEyes
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianHeart
+  result: OrganReptilianHeart
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianLungs
+  result: OrganReptilianLungs
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianStomach
+  result: OrganReptilianStomach
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianTongue
+  result: OrganReptilianTongue
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianLiver
+  result: OrganReptilianLiver
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianKidneys
+  result: OrganReptilianKidneys
+
+- type: latheRecipe
+  parent: ReptilianOrgan
+  id: OrganReptilianEars
+  result: OrganReptilianEars
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianHead
+  result: OrganReptilianHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianArmLeft
+  result: OrganReptilianArmLeft
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianHandLeft
+  result: OrganReptilianHandLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianArmRight
+  result: OrganReptilianArmRight
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianHandRight
+  result: OrganReptilianHandRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianLegLeft
+  result: OrganReptilianLegLeft
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianLegRight
+  result: OrganReptilianLegRight
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianFootLeft
+  result: OrganReptilianFootLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianFootRight
+  result: OrganReptilianFootRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ReptilianPart
+  id: OrganReptilianTail
+  result: OrganReptilianTail
+
+## Arachnid
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidEyes
+  result: OrganArachnidEyes
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidHeart
+  result: OrganArachnidHeart
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidLungs
+  result: OrganArachnidLungs
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidStomach
+  result: OrganArachnidStomach
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidTongue
+  result: OrganArachnidTongue
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidLiver
+  result: OrganArachnidLiver
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidKidneys
+  result: OrganArachnidKidneys
+
+- type: latheRecipe
+  parent: ArachnidOrgan
+  id: OrganArachnidEars
+  result: OrganArachnidEars
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidHead
+  result: OrganArachnidHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidArmLeft
+  result: OrganArachnidArmLeft
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidHandLeft
+  result: OrganArachnidHandLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidArmRight
+  result: OrganArachnidArmRight
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidHandRight
+  result: OrganArachnidHandRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidLegLeft
+  result: OrganArachnidLegLeft
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidLegRight
+  result: OrganArachnidLegRight
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidFootLeft
+  result: OrganArachnidFootLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidFootRight
+  result: OrganArachnidFootRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: ArachnidPart
+  id: OrganArachnidAppendages
+  result: OrganArachnidAppendages
+
+## Dwarf
+
+- type: latheRecipe
+  parent: DwarfOrgan
+  id: OrganDwarfHeart
+  result: OrganDwarfHeart
+
+- type: latheRecipe
+  parent: DwarfOrgan
+  id: OrganDwarfStomach
+  result: OrganDwarfStomach
+
+- type: latheRecipe
+  parent: DwarfOrgan
+  id: OrganDwarfLiver
+  result: OrganDwarfLiver
+
+- type: latheRecipe
+  parent: DwarfPart
+  id: OrganDwarfHead
+  result: OrganDwarfHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+## SlimePerson
+
+- type: latheRecipe
+  parent: SlimePersonOrgan
+  id: OrganSlimePersonEyes
+  result: OrganSlimePersonEyes
+
+- type: latheRecipe
+  parent: SlimePersonOrgan
+  id: OrganSlimePersonLungs
+  result: OrganSlimePersonLungs
+
+- type: latheRecipe
+  parent: SlimePersonOrgan
+  id: OrganSlimePersonTongue
+  result: OrganSlimePersonTongue
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonHead
+  result: OrganSlimePersonHead
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonArmLeft
+  result: OrganSlimePersonArmLeft
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonHandLeft
+  result: OrganSlimePersonHandLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonArmRight
+  result: OrganSlimePersonArmRight
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonHandRight
+  result: OrganSlimePersonHandRight
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonLegLeft
+  result: OrganSlimePersonLegLeft
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonLegRight
+  result: OrganSlimePersonLegRight
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonFootLeft
+  result: OrganSlimePersonFootLeft
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: SlimePersonPart
+  id: OrganSlimePersonFootRight
+  result: OrganSlimePersonFootRight
+  materials:
+    Biomass: 3
+
+## Decapoid
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidEyes
+  result: OrganDecapoidEyes
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidHeart
+  result: OrganDecapoidHeart
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidLungs
+  result: OrganDecapoidLungs
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidStomach
+  result: OrganDecapoidStomach
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidTongue
+  result: OrganDecapoidTongue
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidLiver
+  result: OrganDecapoidLiver
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidKidneys
+  result: OrganDecapoidKidneys
+
+- type: latheRecipe
+  parent: DecapoidOrgan
+  id: OrganDecapoidEars
+  result: OrganDecapoidEars
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: HeadDecapoid
+  result: HeadDecapoid
+  completetime: 10
+  materials:
+    Biomass: 5
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: LeftArmDecapoid
+  result: LeftArmDecapoid
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: LeftHandDecapoid
+  result: LeftHandDecapoid
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: RightArmDecapoid
+  result: RightArmDecapoid
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: RightHandDecapoid
+  result: RightHandDecapoid
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: LeftLegDecapoid
+  result: LeftLegDecapoid
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: RightLegDecapoid
+  result: RightLegDecapoid
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: LeftFootDecapoid
+  result: LeftFootDecapoid
+  materials:
+    Biomass: 3
+
+- type: latheRecipe
+  parent: DecapoidPart
+  id: RightFootDecapoid
+  result: RightFootDecapoid
+  materials:
+    Biomass: 3
