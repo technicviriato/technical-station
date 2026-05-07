@@ -672,7 +672,7 @@ public sealed partial class ChangelingSystem
         // Unwelds containers containing changeling
         var parent = Transform(uid).ParentUid;
 
-        if (parent != null && TryComp<WeldableComponent>(parent, out var weldable))
+        if (parent.IsValid() && TryComp<WeldableComponent>(parent, out var weldable))
         {
             if (weldable.IsWelded)
             {
