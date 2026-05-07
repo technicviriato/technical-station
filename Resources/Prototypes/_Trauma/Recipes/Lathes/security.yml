@@ -13,3 +13,9 @@
     Steel: 1000
     Glass: 800
     Plastic: 500
+
+- type: latheRecipe
+  id: ClothingOuterStraitJacket
+  result: ClothingOuterStraitJacket
+  materials:
+    Cloth: 300
