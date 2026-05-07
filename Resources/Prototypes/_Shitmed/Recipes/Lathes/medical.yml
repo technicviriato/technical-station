@@ -80,7 +80,7 @@
     Plasma: 150
 
 - type: latheRecipe
-  parent: BaseSurgivalRecipe
+  parent: BaseSurgicalRecipe
   id: AdvancedBoneGel
   result: AdvancedBoneGel
   completetime: 2
