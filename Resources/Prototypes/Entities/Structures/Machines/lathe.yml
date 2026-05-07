@@ -487,6 +487,7 @@
     - PowerCellsStatic
     - ScienceExplosives
     - GrenadeTriggersStatic
+    - TraumaSecurityMisc
     dynamicPacks:
     - SalvageSecurityBoards
     - SalvageSecurityWeapons

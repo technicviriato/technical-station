@@ -169,7 +169,16 @@
     Glass: 100
     Plastic: 200
     Steel: 100
-
+# <Trauma>
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: ClothingOuterStraitJacket
+  result: ClothingOuterStraightjacket
+  categories:
+  - Clothing
+  materials:
+    Cloth: 300
+# </Trauma>
 ## Weapons
 
 # Melee
