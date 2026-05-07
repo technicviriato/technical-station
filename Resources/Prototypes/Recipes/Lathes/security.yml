@@ -172,8 +172,9 @@
 # <Trauma>
 - type: latheRecipe
   parent: BaseToolRecipe
-  id: ClothingOuterStraitJacket
+  id: ClothingOuterStraightjacket
   result: ClothingOuterStraightjacket
+  completetime: 10
   categories:
   - Clothing
   materials:
