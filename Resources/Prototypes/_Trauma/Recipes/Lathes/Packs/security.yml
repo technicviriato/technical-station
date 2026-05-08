@@ -19,7 +19,6 @@
   - EDWeaponControlsElectronics
 
 - type: latheRecipePack
-  parent: SecurityEquipmentStatic
   id: TraumaSecurityEquipmentStatic
   recipes:
   - ClothingOuterStraightjacket
