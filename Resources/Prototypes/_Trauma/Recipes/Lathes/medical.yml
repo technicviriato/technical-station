@@ -840,6 +840,8 @@
   result: RightFootDecapoid
   materials:
     Biomass: 3
+
+- type: latheRecipe
   id: SawElectric
   result: SawElectric
   categories:
