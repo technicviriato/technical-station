@@ -840,3 +840,10 @@
   result: RightFootDecapoid
   materials:
     Biomass: 3
+  id: SawElectric
+  result: SawElectric
+  categories:
+  - Tools
+  completetime: 2
+  materials:
+    Steel: 500
