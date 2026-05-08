@@ -18,57 +18,41 @@
   parent: SynthOrgan
   id: OrganBioSynthEyes
   result: OrganBioSynthEyes
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthTongue
   result: OrganBioSynthTongue
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthEars
   result: OrganBioSynthEars
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthLungs
   result: OrganBioSynthLungs
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthHeart
   result: OrganBioSynthHeart
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthStomach
   result: OrganBioSynthStomach
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthLiver
   result: OrganBioSynthLiver
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthOrgan
   id: OrganBioSynthKidneys
   result: OrganBioSynthKidneys
-  categories:
-  - HumanOrgans
 
 ## Parts
 
@@ -76,8 +60,6 @@
   parent: SynthPart
   id: OrganBioSynthHead
   result: OrganBioSynthHead
-  categories:
-  - HumanOrgans
   completetime: 10
   materials:
     Biomass: 5
@@ -86,15 +68,11 @@
   parent: SynthPart
   id: OrganBioSynthArmLeft
   result: OrganBioSynthArmLeft
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthPart
   id: OrganBioSynthHandLeft
   result: OrganBioSynthHandLeft
-  categories:
-  - HumanOrgans
   materials:
     Biomass: 3
 
@@ -102,15 +80,11 @@
   parent: SynthPart
   id: OrganBioSynthArmRight
   result: OrganBioSynthArmRight
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthPart
   id: OrganBioSynthHandRight
   result: OrganBioSynthHandRight
-  categories:
-  - HumanOrgans
   materials:
     Biomass: 3
 
@@ -118,22 +92,16 @@
   parent: SynthPart
   id: OrganBioSynthLegLeft
   result: OrganBioSynthLegLeft
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthPart
   id: OrganBioSynthLegRight
   result: OrganBioSynthLegRight
-  categories:
-  - HumanOrgans
 
 - type: latheRecipe
   parent: SynthPart
   id: OrganBioSynthFootLeft
   result: OrganBioSynthFootLeft
-  categories:
-  - HumanOrgans
   materials:
     Biomass: 3
 
@@ -141,8 +109,6 @@
   parent: SynthPart
   id: OrganBioSynthFootRight
   result: OrganBioSynthFootRight
-  categories:
-  - HumanOrgans
   materials:
     Biomass: 3
 
