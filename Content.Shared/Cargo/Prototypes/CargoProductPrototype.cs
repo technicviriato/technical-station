@@ -107,7 +107,7 @@ namespace Content.Shared.Cargo.Prototypes
         /// <summary>
         ///     The prototype category of the product. (e.g. Engineering, Medical)
         /// </summary>
-        [DataField]
+        [DataField(required: true)]
         public string Category { get; private set; } = string.Empty;
 
         /// <summary>
