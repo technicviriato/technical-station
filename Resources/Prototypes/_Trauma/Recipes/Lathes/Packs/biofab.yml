@@ -8,9 +8,6 @@
   - OrganVoxLungs
   - OrganVoxStomach
   - OrganVoxTongue
-  - OrganVoxLiver
-  - OrganVoxKidneys
-  - OrganVoxEars
   - OrganVoxHead
   - OrganVoxArmRight
   - OrganVoxArmLeft
@@ -22,14 +19,6 @@
   - OrganVoxFootLeft
   - OrganVoxTail
   # Moth
-  - OrganMothEyes
-  - OrganMothHeart
-  - OrganMothLungs
-  - OrganMothStomach
-  - OrganMothTongue
-  - OrganMothLiver
-  - OrganMothKidneys
-  - OrganMothEars
   - OrganMothHead
   - OrganMothArmRight
   - OrganMothArmLeft
@@ -41,14 +30,6 @@
   - OrganMothFootLeft
   - OrganMothWings
   # Reptilian
-  - OrganReptilianEyes
-  - OrganReptilianHeart
-  - OrganReptilianLungs
-  - OrganReptilianStomach
-  - OrganReptilianTongue
-  - OrganReptilianLiver
-  - OrganReptilianKidneys
-  - OrganReptilianEars
   - OrganReptilianHead
   - OrganReptilianArmRight
   - OrganReptilianArmLeft
@@ -66,8 +47,6 @@
   - OrganArachnidStomach
   - OrganArachnidTongue
   - OrganArachnidLiver
-  - OrganArachnidKidneys
-  - OrganArachnidEars
   - OrganArachnidHead
   - OrganArachnidArmRight
   - OrganArachnidArmLeft
@@ -79,14 +58,10 @@
   - OrganArachnidFootLeft
   - OrganArachnidAppendages
   # Dwarf
-  - OrganDwarfHeart
-  - OrganDwarfStomach
   - OrganDwarfLiver
   - OrganDwarfHead
   # SlimePerson
-  - OrganSlimePersonEyes
   - OrganSlimePersonLungs
-  - OrganSlimePersonTongue
   - OrganSlimePersonHead
   - OrganSlimePersonArmRight
   - OrganSlimePersonArmLeft
@@ -97,14 +72,7 @@
   - OrganSlimePersonFootRight
   - OrganSlimePersonFootLeft
   # Decapoid
-  - OrganDecapoidEyes
-  - OrganDecapoidHeart
   - OrganDecapoidLungs
-  - OrganDecapoidStomach
-  - OrganDecapoidTongue
-  - OrganDecapoidLiver
-  - OrganDecapoidKidneys
-  - OrganDecapoidEars
   - HeadDecapoid
   - RightArmDecapoid
   - LeftArmDecapoid

@@ -183,21 +183,6 @@
   result: OrganVoxTongue
 
 - type: latheRecipe
-  parent: VoxOrgan
-  id: OrganVoxLiver
-  result: OrganVoxLiver
-
-- type: latheRecipe
-  parent: VoxOrgan
-  id: OrganVoxKidneys
-  result: OrganVoxKidneys
-
-- type: latheRecipe
-  parent: VoxOrgan
-  id: OrganVoxEars
-  result: OrganVoxEars
-
-- type: latheRecipe
   parent: VoxPart
   id: OrganVoxHead
   result: OrganVoxHead
@@ -261,46 +246,6 @@
 ## Moth
 
 - type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothEyes
-  result: OrganMothEyes
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothHeart
-  result: OrganMothHeart
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothLungs
-  result: OrganMothLungs
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothStomach
-  result: OrganMothStomach
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothTongue
-  result: OrganMothTongue
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothLiver
-  result: OrganMothLiver
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothKidneys
-  result: OrganMothKidneys
-
-- type: latheRecipe
-  parent: MothOrgan
-  id: OrganMothEars
-  result: OrganMothEars
-
-- type: latheRecipe
   parent: MothPart
   id: OrganMothHead
   result: OrganMothHead
@@ -362,46 +307,6 @@
   result: OrganMothWings
 
 ## Reptilian
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianEyes
-  result: OrganReptilianEyes
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianHeart
-  result: OrganReptilianHeart
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianLungs
-  result: OrganReptilianLungs
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianStomach
-  result: OrganReptilianStomach
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianTongue
-  result: OrganReptilianTongue
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianLiver
-  result: OrganReptilianLiver
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianKidneys
-  result: OrganReptilianKidneys
-
-- type: latheRecipe
-  parent: ReptilianOrgan
-  id: OrganReptilianEars
-  result: OrganReptilianEars
 
 - type: latheRecipe
   parent: ReptilianPart
@@ -497,16 +402,6 @@
   result: OrganArachnidLiver
 
 - type: latheRecipe
-  parent: ArachnidOrgan
-  id: OrganArachnidKidneys
-  result: OrganArachnidKidneys
-
-- type: latheRecipe
-  parent: ArachnidOrgan
-  id: OrganArachnidEars
-  result: OrganArachnidEars
-
-- type: latheRecipe
   parent: ArachnidPart
   id: OrganArachnidHead
   result: OrganArachnidHead
@@ -571,16 +466,6 @@
 
 - type: latheRecipe
   parent: DwarfOrgan
-  id: OrganDwarfHeart
-  result: OrganDwarfHeart
-
-- type: latheRecipe
-  parent: DwarfOrgan
-  id: OrganDwarfStomach
-  result: OrganDwarfStomach
-
-- type: latheRecipe
-  parent: DwarfOrgan
   id: OrganDwarfLiver
   result: OrganDwarfLiver
 
@@ -596,18 +481,8 @@
 
 - type: latheRecipe
   parent: SlimePersonOrgan
-  id: OrganSlimePersonEyes
-  result: OrganSlimePersonEyes
-
-- type: latheRecipe
-  parent: SlimePersonOrgan
   id: OrganSlimePersonLungs
   result: OrganSlimePersonLungs
-
-- type: latheRecipe
-  parent: SlimePersonOrgan
-  id: OrganSlimePersonTongue
-  result: OrganSlimePersonTongue
 
 - type: latheRecipe
   parent: SlimePersonPart
@@ -669,43 +544,8 @@
 
 - type: latheRecipe
   parent: DecapoidOrgan
-  id: OrganDecapoidEyes
-  result: OrganDecapoidEyes
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidHeart
-  result: OrganDecapoidHeart
-
-- type: latheRecipe
-  parent: DecapoidOrgan
   id: OrganDecapoidLungs
   result: OrganDecapoidLungs
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidStomach
-  result: OrganDecapoidStomach
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidTongue
-  result: OrganDecapoidTongue
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidLiver
-  result: OrganDecapoidLiver
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidKidneys
-  result: OrganDecapoidKidneys
-
-- type: latheRecipe
-  parent: DecapoidOrgan
-  id: OrganDecapoidEars
-  result: OrganDecapoidEars
 
 - type: latheRecipe
   parent: DecapoidPart
