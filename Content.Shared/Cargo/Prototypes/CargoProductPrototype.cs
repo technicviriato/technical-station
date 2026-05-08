@@ -124,7 +124,7 @@ namespace Content.Shared.Cargo.Prototypes
         /// <summary>
         /// What entity to spawn as the container.
         /// </summary>
-        [DataField(required: true)] // Trauma - made required
+        [DataField(required: true)] // Trauma - was [Datafield], made required: true
         public EntProtoId<ContainerManagerComponent> Entity;
 
         /// <summary>
