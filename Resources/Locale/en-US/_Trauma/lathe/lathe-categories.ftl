@@ -1,4 +1,4 @@
-﻿
+
 lathe-category-HumanOrgans = Human
 lathe-category-VoxOrgans = Vox
 lathe-category-MothOrgans = Moth
