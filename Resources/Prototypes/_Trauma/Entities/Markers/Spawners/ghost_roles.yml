@@ -39,7 +39,6 @@
       state: morph
 
 - type: entity
-<<<<<<< HEAD
   categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: GhostRoleSpawnerShadowling
