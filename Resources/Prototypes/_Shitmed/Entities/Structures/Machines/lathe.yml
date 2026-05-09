@@ -31,7 +31,6 @@
     runningState: limbgrower_idleon
     staticPacks:
     - BiofabPartsStatic
-    - TraumaAllOrgansStatic
   - type: EmagLatheRecipes
     emagStaticPacks:
     - BiofabPartsEmagStatic
