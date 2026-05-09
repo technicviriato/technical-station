@@ -1,5 +1,17 @@
 - type: entity
   parent: BaseMindRoleAntag
+  id: MindRoleGhostRoleHunter
+  name: Fugitive Hunter Role
+  components:
+  - type: MindRole
+    roleType: TeamAntagonist
+    subtype: role-subtype-hunter
+    exclusiveAntag: false
+    antagPrototype: Traitor
+  - type: HunterRole
+
+- type: entity
+  parent: BaseMindRoleAntag
   id: MindRoleGhostRoleFugitive
   name: Fugitive Role
   components:

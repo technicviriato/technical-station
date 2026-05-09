@@ -9,6 +9,7 @@
     mask: ClothingMaskGasSwat
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     outerClothing: ClothingOuterArmourDurathread
+    back: ClothingBackpackSatchelLeather
     shoes: ClothingShoesBootsJackFilled
     belt: ClothingBeltSecurityFilled
     id: VisitorPDA # maybe change title of id

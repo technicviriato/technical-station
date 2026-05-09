@@ -13,6 +13,10 @@ using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
 using Content.Trauma.Server.StationEvents.Components;
 using Robust.Shared.Utility;
+using Content.Trauma.Shared.Roles;
+using Robust.Shared.Containers;
+using System.Linq;
+using Content.Trauma.Common.Roles;
 
 namespace Content.Trauma.Server.StationEvents.Events;
 
@@ -21,12 +25,14 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
     [Dependency] private readonly PaperSystem _paper = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<FugitiveRuleComponent, AfterAntagEntitySelectedEvent>(OnEntitySelected);
+        SubscribeLocalEvent<HunterRoleComponent, RoleMindAddedEvent>(OnHunterAdded);
     }
 
     /// <summary>
@@ -66,7 +72,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
      /// <summary>
      /// Called when the fugitive is selected.
-     /// Generates the report, schedules the station announcement, and gives the fugitive a report.
+     /// Generates the report, schedules the station announcement, and gives the fugitive a report
      /// </summary>
      private void OnEntitySelected(Entity<FugitiveRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
      {
@@ -89,6 +95,39 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
          var report = SpawnReport(comp.Reports[^1], comp, Transform(fugi));
          _hands.TryPickupAnyHand(fugi, report);
+     }
+
+     /// <summary>
+     /// When a hunter role is added, give them a report for each fugitive that has already spawned
+     /// </summary>
+     private void OnHunterAdded(Entity<HunterRoleComponent> ent, ref RoleMindAddedEvent args)
+     {
+         var query = EntityQueryEnumerator<FugitiveRuleComponent>();
+         if (!query.MoveNext(out _, out var rule))
+             return;
+
+         if (rule.Reports.Count == 0)
+             return;
+
+         var hunter = args.Mob;
+
+         if (!_container.TryGetContainer(hunter, "back", out var backContainer))
+             return;
+
+         var backItem = backContainer.ContainedEntities.FirstOrDefault();
+         if (backItem == default)
+             return;
+
+         if (!_container.TryGetContainer(backItem, "storage", out var storage))
+             return;
+
+         foreach (var reportContent in rule.Reports)
+         {
+             var report = Spawn(rule.ReportPaper, Transform(hunter).Coordinates);
+             var paper = Comp<PaperComponent>(report);
+             _paper.SetContent((report, paper), reportContent);
+             _container.Insert(report, storage);
+         }
      }
 
      /// <summary>
