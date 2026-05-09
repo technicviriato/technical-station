@@ -30,7 +30,7 @@
     idleState: limbgrower_idleoff
     runningState: limbgrower_idleon
     staticPacks:
-    - BiofabPartsStatic
+    - BiofabPartsStati
   - type: EmagLatheRecipes
     emagStaticPacks:
     - BiofabPartsEmagStatic
