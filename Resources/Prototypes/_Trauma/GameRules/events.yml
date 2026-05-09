@@ -136,8 +136,8 @@
     agentName: ghost-role-information-fugitive-name
     definitions:
     - spawnerPrototype: SpawnPointGhostRoleFugitive
-      min: 1
-      max: 1
+      min: 2
+      max: 2
       pickPlayer: false
       startingGear: FugitiveAntagGear
       briefing:
@@ -157,3 +157,39 @@
     effects:
     - !type:NestedEffect
       proto: TraitorSkills
+
+
+#- type: entity
+#  id: HunterSpawn
+#  parent: BaseGameRule
+#  components:
+#  - type: FugitiveRule
+#  - type: AntagGhostCharacterRule
+#  - type: AntagObjectives
+#    objectives:
+#    - # Hunter Objectives TODO
+#  - type: RuleGrids
+#  - type: LoadMapRule
+#    gridPath: /Maps/_Trauma/Shuttles/SpacePolShuttle.yml
+#  - type: AntagSelection
+#    agentName: ghost-role-information-fugitive-name
+#    definitions:
+#    - spawnerPrototype: SpawnPointGhostRoleHunter
+#      min: 2
+#      max: 2
+#      pickPlayer: false
+#      startingGear: HunterAntagGear
+#      briefing:
+#        text: humter-role-greeting
+#        color: Blue
+#      components:
+#      - type: NpcFactionMember
+#        factions:
+#        - Syndicate
+#      - type: RandomMetadata
+#      mindRoles:
+#      - MindRoleGhostRoleHunter
+#  - type: AntagPlayerEffects
+#    effects:
+#    - !type:NestedEffect
+#      proto: TraitorSkills
