@@ -84,7 +84,7 @@
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner]
-  parent: BaseAntagSpawner
+  parent: BaseAntagSpawne
   name: fugitive spawn
   id: SpawnPointGhostRoleFugitive
   components:
