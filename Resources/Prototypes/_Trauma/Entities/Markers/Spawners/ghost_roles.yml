@@ -80,3 +80,24 @@
       state: green
     - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
       state: icon
+
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
+  parent: BaseAntagSpawner
+  name: fugitive hunter spawn
+  id: SpawnPointGhostRoleHunter
+  components:
+  - type: GhostRole
+    name: ghost-role-information-hunter-name
+    description: ghost-role-information-hunter-description
+    rules: ghost-role-information-hunter-rules
+    mindRoles:
+    - MindRoleGhostRoleHunter
+    raffle:
+      settings: default
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: green
+    - sprite: Clothing/Head/Helmets/justice.rsi
+      state: icon
