@@ -41,10 +41,16 @@ public sealed partial class FugitiveRuleComponent : Component
     public EntityUid? Station;
 
     /// <summary>
-    /// The report generated for the spawned fugitive.
+    /// The report generated for each spawned fugitive.
     /// </summary>
     [DataField]
-    public string Report = string.Empty;
+    public List<string>  Reports = new();
+
+    /// <summary>
+    /// Max number of fugitives supported.
+    /// </summary>
+    [DataField]
+    public int MaxFugitives = 2;
 
     /// <summary>
     /// When the announcement will be made, if an antag has spawned yet.

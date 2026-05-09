@@ -28,6 +28,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         SubscribeLocalEvent<FugitiveRuleComponent, AfterAntagEntitySelectedEvent>(OnEntitySelected);
     }
+
     /// <summary>
     /// Sends the report to every comms console on the station, and prevents any possible funnies
     /// </summary>
@@ -52,48 +53,56 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         foreach (var xform in consoles)
         {
-            SpawnReport(component, xform);
+            foreach (var reportContent in component.Reports)
+            {
+                SpawnReport(reportContent, component, xform);
+            }
         }
 
         component.NextAnnounce = null;
 
         RemCompDeferred(uid, component);
     }
+
      /// <summary>
      /// Called when the fugitive is selected.
      /// Generates the report, schedules the station announcement, and gives the fugitive a report.
      /// </summary>
      private void OnEntitySelected(Entity<FugitiveRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
      {
-        var (uid, comp) = ent;
-        if (comp.NextAnnounce != null)
-        {
-            Log.Error("Fugitive rule spawning multiple fugitives isn't supported, sorry.");
-            return;
-        }
-        var fugi = args.EntityUid;
-        comp.Report = GenerateReport(fugi, comp).ToMarkup();
-        comp.Station = StationSystem.GetOwningStation(fugi);
-        comp.NextAnnounce = Timing.CurTime + comp.AnnounceDelay;
+         var (uid, comp) = ent;
 
-        _popup.PopupEntity(Loc.GetString("fugitive-spawn"), fugi, fugi);
+         if (comp.Reports.Count >= comp.MaxFugitives)
+         {
+             Log.Error($"Fugitive rule only supports up to {comp.MaxFugitives} fugitives.");
+             return;
+         }
 
-        var report = SpawnReport(comp, Transform(fugi));
+         var fugi = args.EntityUid;
+         comp.Reports.Add(GenerateReport(fugi, comp).ToMarkup());
+         comp.Station ??= StationSystem.GetOwningStation(fugi);
 
-        _hands.TryPickupAnyHand(fugi, report);
+         if (comp.NextAnnounce == null)
+             comp.NextAnnounce = Timing.CurTime + comp.AnnounceDelay;
 
+         _popup.PopupEntity(Loc.GetString("fugitive-spawn"), fugi, fugi);
+
+         var report = SpawnReport(comp.Reports[^1], comp, Transform(fugi));
+         _hands.TryPickupAnyHand(fugi, report);
      }
+
      /// <summary>
      /// Spawns the fugitive report at a given location
      /// </summary>
-     private Entity<PaperComponent> SpawnReport(FugitiveRuleComponent rule, TransformComponent xform)
+     private Entity<PaperComponent> SpawnReport(string reportContent, FugitiveRuleComponent rule, TransformComponent xform)
      {
          var report = Spawn(rule.ReportPaper, xform.Coordinates);
          var paper = Comp<PaperComponent>(report);
          var ent = (report, paper);
-         _paper.SetContent(ent, rule.Report);
+         _paper.SetContent(ent, reportContent);
          return ent;
-    }
+     }
+
     /// <summary>
     /// Adds the content to the fugitive report: crime list, species, age, etc
     /// Adds a random identifying quality that officers can use to track them down
@@ -138,6 +147,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 
         return report;
     }
+
     /// <summary>
     /// DNA string of fugitive, or "?" if unavailable somehow
     /// </summary>
@@ -145,6 +155,7 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
     {
         return CompOrNull<DnaComponent>(uid)?.DNA ?? "?";
     }
+
     /// <summary>
     /// Fingerprints of fugitive, or "?" if unavailable somehow
     /// </summary>
