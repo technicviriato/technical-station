@@ -43,6 +43,18 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Airlocks
+
+# <Trauma>
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandUnlocked
+  suffix: Unlocked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
+# </Trauma>
+
 - type: entity
   parent: Airlock
   id: AirlockServiceLocked
