@@ -20,7 +20,7 @@ fugitive-report-crime = - {$count ->
     [1] One count
     *[other] {$count} counts
 } of {$crime}
-fugitive-report-last-line = SpacePol prefers the fugitive to be returned alive so they may face trial at Central Command.
+fugitive-report-last-line = SpacePol wants the fugitive back. Dead or Alive. Make sure they don't escape via the Evacuation Shuttle.
 
 fugitive-crime-1 = Mail Tampering
 fugitive-crime-2 = Theft

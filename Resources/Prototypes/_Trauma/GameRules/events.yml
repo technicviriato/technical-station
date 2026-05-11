@@ -167,7 +167,8 @@
   - type: AntagGhostCharacterRule
   - type: AntagObjectives
     objectives:
-    - # Hunter Objectives TODO
+    - HunterKillFugitiveObjective
+    - HunterArrestFugitiveObjective
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/_Trauma/Shuttles/SpacePolShuttle.yml
