@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: AccessConfiguratorSyndicate
   name: syndicate access configurator
