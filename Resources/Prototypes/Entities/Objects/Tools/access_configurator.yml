@@ -98,18 +98,18 @@
   - type: Clothing
     sprite: Objects/Tools/universal_access_configurator.rsi
   - type: AccessOverrider
-    # <Trauma>
     accessLevels:
     - BasicSilicon
     - Borg
     - CentralCommand
+    # <Trauma>
     - Revolutionary
+    # </Trauma>
     - StationAi
     - NuclearOperative
     - SyndicateAgent
     - Wizard
     - Xenoborg
-    # </Trauma>
     privilegedIdSlot:
       startingItem: UniversalIDCard
       swap: false
