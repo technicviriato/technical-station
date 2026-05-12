@@ -98,68 +98,21 @@
   - type: Clothing
     sprite: Objects/Tools/universal_access_configurator.rsi
   - type: AccessOverrider
-    accessLevels:
     # <Trauma>
-    - NanotrasenRepresentative
-    - Journalism
-    - Library
-    - Robotics
-    - Genetics
-    - Revolutionary
-    # </Trauma>
-    - Armory
-    - Atmospherics
-    - Bar
+    accessLevels:
     - BasicSilicon
     - Borg
-    - Brig
-    - Detective
-    - Captain
-    - Cargo
-    - Chapel
-    - Chemistry
-    - ChiefEngineer
-    - ChiefMedicalOfficer
-    - Command
-    - Cryogenics
-    - EmergencyShuttleRepealAll
-    - Engineering
-    - External
-    - HeadOfPersonnel
-    - HeadOfSecurity
-    - Hydroponics
-    - Janitor
-    - Kitchen
-    - Lawyer
-    - Maintenance
-    - Medical
-    - Quartermaster
-    - Research
-    - ResearchDirector
-    - Salvage
-    - Security
-    - Service
-    - StationAi
-    - Theatre
     - CentralCommand
+    - Revolutionary
+    - StationAi
     - NuclearOperative
     - SyndicateAgent
     - Wizard
     - Xenoborg
-    - GenpopEnter
-    - GenpopLeave
+    # </Trauma>
     privilegedIdSlot:
-      name: id-card-console-privileged-id
       startingItem: UniversalIDCard
-      ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-      ejectOnBreak: true
       swap: false
-      whitelist:
-        components:
-        - IdCard
-    denialSound:
-      path: /Audio/Machines/custom_deny.ogg
     doAfter: 0.5
 
 - type: entity
