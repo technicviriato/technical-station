@@ -100,7 +100,7 @@ public sealed class ToolOpenableSystem : EntitySystem
 
     private void OnExamine(Entity<ToolOpenableComponent> entity, ref ExaminedEvent args)
     {
-        if (!args.IsInDetailsRange || !entity.Comp.ShowExamine)// Trauma - Adds Show Examine Bool
+        if (!args.IsInDetailsRange || !entity.Comp.ShowExamine) // Trauma - check ShowExamine
             return;
 
         string msg;
