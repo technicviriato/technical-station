@@ -1,0 +1,1 @@
+﻿secret-stash-briefcase = briefcase
