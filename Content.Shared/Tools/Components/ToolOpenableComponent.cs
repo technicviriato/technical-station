@@ -11,14 +11,6 @@ namespace Content.Shared.Tools.Components
     [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
     public sealed partial class ToolOpenableComponent : Component
     {
-        // <Trauma>
-        /// <summary>
-        ///     If false, will not show examine when examined
-        /// </summary>
-        [DataField, AutoNetworkedField]
-        public bool ShowExamine;
-        // </Trauma>
-
         /// <summary>
         ///     Is the openable part open or closed?
         /// </summary>

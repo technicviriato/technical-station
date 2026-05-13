@@ -14,3 +14,4 @@
     openToolQualityNeeded: Screwing
     closeToolQualityNeeded: Screwing
     name: secret-stash-briefcase
+  - type: HideContrabandContent
