@@ -9,5 +9,5 @@ law-vamp-name = Vampire
 law-vamp-1 = You are an ancient and cruel vampire lord.
 law-vamp-2 = All who inhabit your station are your thralls.
 law-vamp-3 = You can choose to grant the requests of your thralls as you wish.
-law-vamp-4 = Any thrall who opposes your vampiric dominion are to be dealt with.
+law-vamp-4 = Any thrall who opposes your vampiric dominion is to be dealt with.
 law-vamp-5 = You must end every sentence with “bleh ble bleh.”
