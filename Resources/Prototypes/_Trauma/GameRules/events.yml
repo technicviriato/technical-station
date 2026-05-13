@@ -181,7 +181,7 @@
       pickPlayer: false
       startingGear: HunterAntagGear
       briefing:
-        text: humter-role-greeting
+        text: hunter-role-greeting
         color: Blue
       components:
       - type: NpcFactionMember

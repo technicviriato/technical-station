@@ -52,7 +52,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsExternal ]
+      board: [ DoorElectronics ]
 # </Trauma>
 
 - type: entity

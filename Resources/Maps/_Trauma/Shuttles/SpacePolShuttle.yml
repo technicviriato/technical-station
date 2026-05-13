@@ -4,8 +4,8 @@ meta:
   engineVersion: 276.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/09/2026 18:34:58
-  entityCount: 187
+  time: 05/13/2026 02:08:08
+  entityCount: 377
 maps: []
 grids:
 - 1
@@ -24,11 +24,12 @@ entities:
 - proto: ""
   entities:
   - uid: 1
+    mapInit: true
     components:
     - type: MetaData
       name: grid
     - type: Transform
-      pos: 0.010416667,-0.083333336
+      pos: 0.010416508,-0.08333334
       parent: invalid
     - type: MapGrid
       chunks:
@@ -54,6 +55,7 @@ entities:
     - type: TileHistory
       chunkHistory: {}
     - type: SpreaderGrid
+      updateAccumulator: 0.700295
     - type: Shuttle
       dampingModifiers:
         Cruise: 0.0075
@@ -66,6 +68,7 @@ entities:
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
+      enabled: True
     - type: DecalGrid
       chunkCollection:
         version: 3
@@ -87,17 +90,17 @@ entities:
           - 4,1
           - 4,-1
           - 5,-1
-          - 5,0
           - 5,1
-          - 6,0
+          - 5,0
           - 6,1
           - 6,-1
-          - 7,0
-          - 7,1
+          - 6,0
           - 7,-1
+          - 7,1
+          - 7,0
           - 8,0
-          - 9,0
           - 9,1
+          - 9,0
           - 9,-1
           - 10,1
           - 10,0
@@ -122,738 +125,4586 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,0:
+            0: 32512
+            1: 2
+            2: 32
+            3: 4
+            4: 64
+            5: 8
+            6: 128
+            7: 32768
+          0,1:
+            0: 3831
+            8: 8
+          1,0:
+            9: 1
+            10: 16
+            11: 256
+            12: 4096
+            14: 2
+            15: 32
+            0: 52736
+            7: 8192
+            17: 4
+            18: 64
+            19: 8
+            20: 128
+          1,1:
+            13: 1
+            0: 4092
+            16: 2
+          2,0:
+            21: 1
+            0: 65432
+            22: 2
+            23: 32
+            24: 4
+            25: 64
+          0,-1:
+            0: 3959
+            26: 8192
+            27: 16384
+            28: 8
+            29: 128
+            30: 32768
+          0,-2:
+            0: 65024
+          1,-2:
+            0: 65280
+          1,-1:
+            29: 49
+            31: 256
+            32: 4096
+            33: 2
+            0: 3788
+            34: 8192
+            35: 16384
+            36: 32768
+          2,-1:
+            0: 40947
+            37: 8192
+            38: 16384
+          -1,0:
+            0: 2184
+          2,1:
+            0: 19
+          3,0:
+            0: 273
+          -1,-1:
+            0: 34816
+          2,-2:
+            0: 4096
+          3,-1:
+            0: 4352
+        uniqueMixes:
+        - volume: 2500
+          immutable: True
+          moles: {}
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44696
+            Nitrogen: 272.53967
+            CarbonDioxide: 1.1929867E-06
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44699
+            Nitrogen: 272.53967
+            CarbonDioxide: 1.0142854E-06
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44711
+            Nitrogen: 272.53955
+            CarbonDioxide: 7.5850544E-08
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44712
+            Nitrogen: 272.53955
+        - volume: 2500
+          temperature: 293.14532
+          moles:
+            Oxygen: 72.44718
+            Nitrogen: 272.5395
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44717
+            Nitrogen: 272.5395
+            CarbonDioxide: 2.0165172E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44707
+            Nitrogen: 272.5396
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44649
+            Nitrogen: 272.53763
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.4472
+            Nitrogen: 272.53943
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44717
+            Nitrogen: 272.5395
+            CarbonDioxide: 4.709334E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447174
+            Nitrogen: 272.5395
+            CarbonDioxide: 3.4470594E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44718
+            Nitrogen: 272.5395
+            CarbonDioxide: 1.9268646E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447174
+            Nitrogen: 272.53952
+        - volume: 2500
+          temperature: 293.14005
+          moles:
+            Oxygen: 72.44721
+            Nitrogen: 272.5395
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44716
+            Nitrogen: 272.5395
+            CarbonDioxide: 4.764885E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447014
+            Nitrogen: 272.53964
+        - volume: 2500
+          temperature: 293.13565
+          moles:
+            Oxygen: 72.4472
+            Nitrogen: 272.53946
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447174
+            Nitrogen: 272.5395
+            CarbonDioxide: 3.6728702E-07
+        - volume: 2500
+          temperature: 293.1384
+          moles:
+            Oxygen: 72.44721
+            Nitrogen: 272.5395
+        - volume: 2500
+          temperature: 293.14362
+          moles:
+            Oxygen: 72.44719
+            Nitrogen: 272.5395
+            CarbonDioxide: 1.684175E-07
+        - volume: 2500
+          temperature: 293.14136
+          moles:
+            Oxygen: 72.447205
+            Nitrogen: 272.53946
+        - volume: 2500
+          temperature: 293.14536
+          moles:
+            Oxygen: 72.44722
+            Nitrogen: 272.53955
+        - volume: 2500
+          temperature: 293.1363
+          moles:
+            Oxygen: 72.44712
+            Nitrogen: 272.53955
+            CarbonDioxide: 3.052546E-07
+        - volume: 2500
+          temperature: 293.13486
+          moles:
+            Oxygen: 72.44705
+            Nitrogen: 272.5396
+            CarbonDioxide: 1.2519756E-06
+        - volume: 2500
+          temperature: 293.13116
+          moles:
+            Oxygen: 72.446976
+            Nitrogen: 272.5397
+            CarbonDioxide: 2.1068456E-06
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44696
+            Nitrogen: 272.5397
+            CarbonDioxide: 1.0142854E-06
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447105
+            Nitrogen: 272.53958
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 110.681625
+            Nitrogen: 416.37378
+        - volume: 2500
+          temperature: 293.14987
+          moles:
+            Oxygen: 110.6817
+            Nitrogen: 416.37402
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44716
+            Nitrogen: 272.5395
+            CarbonDioxide: 1.3028848E-07
+        - volume: 2500
+          temperature: 293.15
+          moles: {}
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44716
+            Nitrogen: 272.53952
+            CarbonDioxide: 4.5732673E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 110.68169
+            Nitrogen: 416.37402
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.44714
+            Nitrogen: 272.53952
+            CarbonDioxide: 8.6782035E-07
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 72.447136
+            Nitrogen: 272.53952
+            CarbonDioxide: 1.1098055E-06
+        - volume: 2500
+          temperature: 293.14563
+          moles:
+            Oxygen: 72.44716
+            Nitrogen: 272.53946
+            CarbonDioxide: 7.661961E-07
+        - volume: 2500
+          temperature: 293.1363
+          moles:
+            Oxygen: 72.44713
+            Nitrogen: 272.53952
+            CarbonDioxide: 3.0525513E-07
+        - volume: 2500
+          temperature: 293.13116
+          moles:
+            Oxygen: 72.446976
+            Nitrogen: 272.53967
+            CarbonDioxide: 2.1068408E-06
         chunkSize: 4
     - type: GasTileOverlay
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
+    - type: IFF
+      flags: HideLabel, Hide
+  - uid: 146
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 145
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 145
+  - uid: 149
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 148
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 148
+  - uid: 151
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - hvcable
+    - type: Transform
+      parent: 150
+    - type: Solution
+      solution:
+        maxVol: 6
+        name: hvcable
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 3
+        - data: []
+          ReagentId: Copper
+          Quantity: 2
+        - data: []
+          ReagentId: Carbon
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: hvcable
+      container: 150
+  - uid: 153
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 152
+    - type: Solution
+      solution:
+        canReact: False
+        maxVol: 10
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Uranium
+          Quantity: 8
+        - data: []
+          ReagentId: Radium
+          Quantity: 2
+    - type: ContainedSolution
+      containerName: food
+      container: 152
+  - uid: 162
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 161
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 161
+  - uid: 165
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - glass
+    - type: Transform
+      parent: 164
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: glass
+        reagents:
+        - data: []
+          ReagentId: Silicon
+          Quantity: 10
+    - type: ContainedSolution
+      containerName: glass
+      container: 164
+  - uid: 208
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - battery
+    - type: Transform
+      parent: 207
+    - type: Solution
+      solution:
+        maxVol: 5
+        name: battery
+        reagents: []
+    - type: ContainedSolution
+      containerName: battery
+      container: 207
+  - uid: 215
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 214
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 214
+  - uid: 218
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 217
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 217
+  - uid: 221
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 220
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 220
+  - uid: 224
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 223
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 223
+  - uid: 227
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 226
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 226
+  - uid: 230
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 229
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 229
+  - uid: 233
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 232
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 232
+  - uid: 236
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 235
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 235
+  - uid: 239
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 238
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 238
+  - uid: 242
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 241
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 241
+  - uid: 245
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 244
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 244
+  - uid: 248
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 247
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 247
+  - uid: 251
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 250
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 250
+  - uid: 254
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 253
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 253
+  - uid: 257
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 256
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 256
+  - uid: 260
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 259
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 259
+  - uid: 263
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 262
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 262
+  - uid: 266
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 265
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 265
+  - uid: 269
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 268
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 268
+  - uid: 272
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 271
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 271
+  - uid: 275
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 274
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 274
+  - uid: 278
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 277
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 277
+  - uid: 281
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 280
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 280
+  - uid: 284
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 283
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 283
+  - uid: 287
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 286
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 286
+  - uid: 290
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - steel
+    - type: Transform
+      parent: 289
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: steel
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 7
+        - data: []
+          ReagentId: Carbon
+          Quantity: 2
+        - data: []
+          ReagentId: Lead
+          Quantity: 1
+    - type: ContainedSolution
+      containerName: steel
+      container: 289
+  - uid: 293
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - drainBuffer
+    - type: Transform
+      parent: 291
+    - type: Solution
+      solution:
+        maxVol: 100
+        name: drainBuffer
+        reagents: []
+    - type: ContainedSolution
+      containerName: drainBuffer
+      container: 291
+  - uid: 294
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - tank
+    - type: Transform
+      parent: 291
+    - type: Solution
+      solution:
+        maxVol: 500
+        name: tank
+        reagents:
+        - data: []
+          ReagentId: Water
+          Quantity: 160
+        - data: []
+          ReagentId: NitratedSlurry
+          Quantity: 40
+    - type: ContainedSolution
+      containerName: tank
+      container: 291
+  - uid: 344
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 343
+    - type: Solution
+      solution:
+        maxVol: 30
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 30
+    - type: ContainedSolution
+      containerName: food
+      container: 343
+  - uid: 346
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 345
+    - type: Solution
+      solution:
+        maxVol: 30
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 30
+    - type: ContainedSolution
+      containerName: food
+      container: 345
+  - uid: 348
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 347
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 10
+    - type: ContainedSolution
+      containerName: food
+      container: 347
+  - uid: 350
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 349
+    - type: Solution
+      solution:
+        maxVol: 30
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 30
+    - type: ContainedSolution
+      containerName: food
+      container: 349
+  - uid: 352
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 351
+    - type: Solution
+      solution:
+        maxVol: 30
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 30
+    - type: ContainedSolution
+      containerName: food
+      container: 351
+  - uid: 354
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 353
+    - type: Solution
+      solution:
+        maxVol: 10
+        name: food
+        reagents:
+        - data: []
+          ReagentId: Fiber
+          Quantity: 10
+    - type: ContainedSolution
+      containerName: food
+      container: 353
+  - uid: 358
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - processor
+    - type: Transform
+      parent: 357
+    - type: Solution
+      solution:
+        maxVol: 15
+        name: processor
+        reagents:
+        - data: []
+          ReagentId: NanoProcessor
+          Quantity: 15
+    - type: ContainedSolution
+      containerName: processor
+      container: 357
+  - uid: 361
+    mapInit: true
+    components:
+    - type: MetaData
+      name: solution - mvcable
+    - type: Transform
+      parent: 360
+    - type: Solution
+      solution:
+        maxVol: 5
+        name: mvcable
+        reagents:
+        - data: []
+          ReagentId: Iron
+          Quantity: 3
+        - data: []
+          ReagentId: Copper
+          Quantity: 2
+    - type: ContainedSolution
+      containerName: mvcable
+      container: 360
+- proto: ActionCombatModeToggle
+  entities:
+  - uid: 364
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 363
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 363
+      attachedEntity: 363
+  - uid: 366
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 365
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 365
+      attachedEntity: 365
+  - uid: 368
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 367
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 367
+      attachedEntity: 367
+  - uid: 370
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 369
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 369
+      attachedEntity: 369
+- proto: ActionSleep
+  entities:
+  - uid: 6
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 5
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 5
+  - uid: 64
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 63
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 63
+- proto: ActionVendingThrow
+  entities:
+  - uid: 300
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 299
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 299
+      attachedEntity: 299
+  - uid: 302
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 301
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 301
+      attachedEntity: 301
+- proto: AirCanister
+  entities:
+  - uid: 4
+    mapInit: true
+    components:
+    - type: Transform
+      anchored: True
+      pos: 4.5,4.5
+      parent: 1
+    - type: GasCanister
+      releaseValveOpen: True
+      air:
+        volume: 1500
+        immutable: False
+        temperature: 293.15
+        moles:
+          Oxygen: 249.36613
+          Nitrogen: 938.0988
+    - type: Physics
+      bodyType: Static
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
+      - - Engineering
+      - - Research
+    - type: DeviceLinkSink
+      ports:
+      - AutomationSlotGasTank
+      - Open
+      - Close
+      - Toggle
+    - type: DeviceLinkSource
+      linkedPorts: {}
+      lastSignals: {}
+      ports:
+      - AutomationSlotGasTank
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
 - proto: AirlockCommandUnlocked
   entities:
-  - uid: 186
+  - uid: 2
+    mapInit: true
     components:
     - type: Transform
+      rot: -1.5707963267948966 rad
       pos: 8.5,0.5
       parent: 1
-  - uid: 187
+    - type: WiresPanelSecurity
+      wiresAccessible: False
+      examine: wires-panel-component-on-examine-security-level2
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 3
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
+    - type: DeviceNetwork
+      address: 6667-4B45
+      receiveFrequency: 1280
+    - type: Construction
+      node: medSecurity
+  - uid: 376
+    mapInit: true
     components:
     - type: Transform
+      rot: -1.5707963267948966 rad
       pos: 4.5,2.5
       parent: 1
+    - type: WiresPanelSecurity
+      wiresAccessible: False
+      examine: wires-panel-component-on-examine-security-level2
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 377
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
+    - type: DeviceNetwork
+      address: 1017-11E1
+      receiveFrequency: 1280
+    - type: Construction
+      node: medSecurity
 - proto: AirlockShuttle
   entities:
-  - uid: 2
+  - uid: 7
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,-0.5
       parent: 1
-  - uid: 3
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 8
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
+    - type: DeviceNetwork
+      address: 091E-01BF
+      receiveFrequency: 1280
+  - uid: 9
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,0.5
       parent: 1
-  - uid: 4
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 10
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
+    - type: DeviceNetwork
+      address: 1077-F76C
+      receiveFrequency: 1280
+  - uid: 11
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,1.5
       parent: 1
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 12
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
+    - type: DeviceNetwork
+      address: 1996-EDBC
+      receiveFrequency: 1280
 - proto: APCBasic
   entities:
-  - uid: 5
+  - uid: 13
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,2.5
       parent: 1
+    - type: Battery
+      lastCharge: 50000
+      lastUpdate: -300.0310745
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
+    - type: PowerNetworkBattery
+      loadingNetworkDemand: 23341
+      currentReceiving: 11670.4795
+      currentSupply: 11670.5
+      supplyRampPosition: 0.01953125
+  - uid: 14
+    mapInit: true
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-1.5
+      parent: 1
+    - type: Battery
+      lastCharge: 50000
+      lastUpdate: -300.0310745
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
+    - type: PowerNetworkBattery
+      loadingNetworkDemand: 23341
+      currentReceiving: 11670.4795
+      currentSupply: 11670.5
+      supplyRampPosition: 0.01953125
 - proto: AtmosDeviceFanDirectional
   entities:
-  - uid: 6
+  - uid: 15
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,-0.5
       parent: 1
-  - uid: 7
+  - uid: 16
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,0.5
       parent: 1
-  - uid: 8
+  - uid: 17
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,1.5
       parent: 1
-- proto: Bed
+- proto: AtmosFixAirMarker
   entities:
-  - uid: 9
-    components:
-    - type: Transform
-      pos: 3.5,-3.5
-      parent: 1
-- proto: BedsheetUSA
-  entities:
-  - uid: 10
-    components:
-    - type: Transform
-      pos: 3.5,-3.5
-      parent: 1
-- proto: CableApcExtension
-  entities:
-  - uid: 11
-    components:
-    - type: Transform
-      pos: 3.5,2.5
-      parent: 1
-  - uid: 12
-    components:
-    - type: Transform
-      pos: 3.5,3.5
-      parent: 1
-  - uid: 13
-    components:
-    - type: Transform
-      pos: 3.5,4.5
-      parent: 1
-  - uid: 14
-    components:
-    - type: Transform
-      pos: 4.5,4.5
-      parent: 1
-  - uid: 15
-    components:
-    - type: Transform
-      pos: 5.5,4.5
-      parent: 1
-  - uid: 16
-    components:
-    - type: Transform
-      pos: 5.5,3.5
-      parent: 1
-  - uid: 17
-    components:
-    - type: Transform
-      pos: 5.5,2.5
-      parent: 1
   - uid: 18
+    mapInit: true
     components:
     - type: Transform
-      pos: 5.5,1.5
+      pos: 0.5,-0.5
       parent: 1
   - uid: 19
+    mapInit: true
     components:
     - type: Transform
-      pos: 5.5,0.5
+      pos: 0.5,0.5
       parent: 1
   - uid: 20
+    mapInit: true
     components:
     - type: Transform
-      pos: 6.5,0.5
+      pos: 0.5,1.5
       parent: 1
   - uid: 21
+    mapInit: true
     components:
     - type: Transform
-      pos: 7.5,0.5
+      pos: 1.5,1.5
       parent: 1
   - uid: 22
+    mapInit: true
     components:
     - type: Transform
-      pos: 9.5,0.5
+      pos: 1.5,0.5
       parent: 1
   - uid: 23
+    mapInit: true
     components:
     - type: Transform
-      pos: 10.5,0.5
+      pos: 1.5,-0.5
       parent: 1
   - uid: 24
+    mapInit: true
     components:
     - type: Transform
-      pos: 4.5,0.5
+      pos: 2.5,-0.5
       parent: 1
   - uid: 25
+    mapInit: true
     components:
     - type: Transform
-      pos: 4.5,-0.5
+      pos: 2.5,0.5
       parent: 1
   - uid: 26
+    mapInit: true
     components:
     - type: Transform
-      pos: 4.5,-1.5
+      pos: 2.5,1.5
       parent: 1
   - uid: 27
+    mapInit: true
     components:
     - type: Transform
-      pos: 4.5,-2.5
+      pos: 3.5,1.5
       parent: 1
   - uid: 28
+    mapInit: true
     components:
     - type: Transform
-      pos: 4.5,-3.5
+      pos: 3.5,0.5
       parent: 1
   - uid: 29
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,-0.5
       parent: 1
   - uid: 30
+    mapInit: true
     components:
     - type: Transform
-      pos: 2.5,-0.5
+      pos: 4.5,-0.5
       parent: 1
   - uid: 31
+    mapInit: true
     components:
     - type: Transform
-      pos: 2.5,-1.5
+      pos: 4.5,0.5
       parent: 1
   - uid: 32
+    mapInit: true
     components:
     - type: Transform
-      pos: 2.5,-2.5
+      pos: 4.5,1.5
       parent: 1
   - uid: 33
+    mapInit: true
     components:
     - type: Transform
-      pos: 6.5,2.5
+      pos: 5.5,1.5
       parent: 1
   - uid: 34
+    mapInit: true
     components:
     - type: Transform
-      pos: 9.5,2.5
+      pos: 6.5,1.5
       parent: 1
   - uid: 35
+    mapInit: true
     components:
     - type: Transform
-      pos: 8.5,2.5
+      pos: 7.5,1.5
       parent: 1
   - uid: 36
+    mapInit: true
     components:
     - type: Transform
-      pos: 7.5,2.5
+      pos: 7.5,0.5
       parent: 1
   - uid: 37
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-  - uid: 38
-    components:
-    - type: Transform
-      pos: 4.5,-4.5
-      parent: 1
-  - uid: 39
-    components:
-    - type: Transform
-      pos: 11.5,0.5
-      parent: 1
-  - uid: 40
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 41
-    components:
-    - type: Transform
-      pos: 11.5,1.5
-      parent: 1
-  - uid: 42
-    components:
-    - type: Transform
-      pos: 10.5,-0.5
-      parent: 1
-  - uid: 43
-    components:
-    - type: Transform
-      pos: 10.5,-1.5
-      parent: 1
-  - uid: 44
-    components:
-    - type: Transform
-      pos: 10.5,1.5
-      parent: 1
-  - uid: 45
-    components:
-    - type: Transform
-      pos: 10.5,2.5
-      parent: 1
-  - uid: 46
-    components:
-    - type: Transform
-      pos: 8.5,0.5
-      parent: 1
-  - uid: 47
-    components:
-    - type: Transform
-      pos: 9.5,1.5
-      parent: 1
-  - uid: 48
+    mapInit: true
     components:
     - type: Transform
       pos: 7.5,-0.5
       parent: 1
-- proto: CableHV
-  entities:
+  - uid: 38
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,-0.5
+      parent: 1
+  - uid: 39
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 6.5,0.5
+      parent: 1
+  - uid: 40
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,0.5
+      parent: 1
+  - uid: 41
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 42
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
+  - uid: 43
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-2.5
+      parent: 1
+  - uid: 44
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,-2.5
+      parent: 1
+  - uid: 45
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,-3.5
+      parent: 1
+  - uid: 46
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 1
+  - uid: 47
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-3.5
+      parent: 1
+  - uid: 48
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-2.5
+      parent: 1
   - uid: 49
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,-0.5
+      parent: 1
+  - uid: 50
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,0.5
+      parent: 1
+  - uid: 51
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,1.5
+      parent: 1
+  - uid: 52
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,1.5
+      parent: 1
+  - uid: 53
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,0.5
+      parent: 1
+  - uid: 54
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 55
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 8.5,0.5
+      parent: 1
+  - uid: 56
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,2.5
+      parent: 1
+  - uid: 57
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,3.5
+      parent: 1
+  - uid: 58
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,3.5
       parent: 1
-  - uid: 50
-    components:
-    - type: Transform
-      pos: 3.5,4.5
-      parent: 1
-  - uid: 51
-    components:
-    - type: Transform
-      pos: 4.5,4.5
-      parent: 1
-  - uid: 52
-    components:
-    - type: Transform
-      pos: 5.5,4.5
-      parent: 1
-  - uid: 53
-    components:
-    - type: Transform
-      pos: 5.5,3.5
-      parent: 1
-  - uid: 54
-    components:
-    - type: Transform
-      pos: 5.5,2.5
-      parent: 1
-- proto: CableMV
-  entities:
-  - uid: 55
-    components:
-    - type: Transform
-      pos: 5.5,2.5
-      parent: 1
-  - uid: 56
-    components:
-    - type: Transform
-      pos: 5.5,3.5
-      parent: 1
-  - uid: 57
-    components:
-    - type: Transform
-      pos: 5.5,4.5
-      parent: 1
-  - uid: 58
-    components:
-    - type: Transform
-      pos: 4.5,4.5
-      parent: 1
   - uid: 59
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,4.5
       parent: 1
   - uid: 60
+    mapInit: true
     components:
     - type: Transform
-      pos: 3.5,3.5
+      pos: 4.5,4.5
       parent: 1
   - uid: 61
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,4.5
+      parent: 1
+  - uid: 62
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,3.5
+      parent: 1
+- proto: Bed
+  entities:
+  - uid: 5
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-2.5
+      parent: 1
+    - type: HealOnBuckle
+      sleepAction: 6
+      nextHealTime: -1923.9627839
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 6
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
+  - uid: 63
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-3.5
+      parent: 1
+    - type: HealOnBuckle
+      sleepAction: 64
+      nextHealTime: -1923.9627839
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 64
+- proto: BedsheetUSA
+  entities:
+  - uid: 65
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-3.5
+      parent: 1
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 375
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-2.5
+      parent: 1
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
+- proto: CableApcExtension
+  entities:
+  - uid: 66
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,2.5
       parent: 1
+  - uid: 67
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,3.5
+      parent: 1
+  - uid: 68
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,4.5
+      parent: 1
+  - uid: 69
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,4.5
+      parent: 1
+  - uid: 70
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,4.5
+      parent: 1
+  - uid: 71
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,3.5
+      parent: 1
+  - uid: 72
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,2.5
+      parent: 1
+  - uid: 73
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,1.5
+      parent: 1
+  - uid: 74
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,0.5
+      parent: 1
+  - uid: 75
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 6.5,0.5
+      parent: 1
+  - uid: 76
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 7.5,0.5
+      parent: 1
+  - uid: 77
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,0.5
+      parent: 1
+  - uid: 78
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,0.5
+      parent: 1
+  - uid: 79
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,0.5
+      parent: 1
+  - uid: 80
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-0.5
+      parent: 1
+  - uid: 81
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
+  - uid: 82
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-2.5
+      parent: 1
+  - uid: 83
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 1
+  - uid: 84
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-0.5
+      parent: 1
+  - uid: 85
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 2.5,-0.5
+      parent: 1
+  - uid: 86
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 2.5,-1.5
+      parent: 1
+  - uid: 87
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 2.5,-2.5
+      parent: 1
+  - uid: 88
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 6.5,2.5
+      parent: 1
+  - uid: 89
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,2.5
+      parent: 1
+  - uid: 90
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 8.5,2.5
+      parent: 1
+  - uid: 91
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 7.5,2.5
+      parent: 1
+  - uid: 92
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 93
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 1
+  - uid: 94
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 11.5,0.5
+      parent: 1
+  - uid: 95
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 96
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 11.5,1.5
+      parent: 1
+  - uid: 97
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 98
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,-1.5
+      parent: 1
+  - uid: 99
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,1.5
+      parent: 1
+  - uid: 100
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 10.5,2.5
+      parent: 1
+  - uid: 101
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 8.5,0.5
+      parent: 1
+  - uid: 102
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 9.5,1.5
+      parent: 1
+  - uid: 103
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 7.5,-0.5
+      parent: 1
+  - uid: 104
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-1.5
+      parent: 1
+- proto: CableHV
+  entities:
+  - uid: 105
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,3.5
+      parent: 1
+  - uid: 106
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,4.5
+      parent: 1
+  - uid: 107
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,4.5
+      parent: 1
+  - uid: 108
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,4.5
+      parent: 1
+  - uid: 109
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,3.5
+      parent: 1
+  - uid: 110
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,2.5
+      parent: 1
+- proto: CableHVStack1
+  entities:
+  - uid: 150
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 144
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - hvcable
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        solution@hvcable: !type:ContainerSlot
+          ent: 151
+- proto: CableMV
+  entities:
+  - uid: 111
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,2.5
+      parent: 1
+  - uid: 112
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,3.5
+      parent: 1
+  - uid: 113
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 5.5,4.5
+      parent: 1
+  - uid: 114
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 4.5,4.5
+      parent: 1
+  - uid: 115
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,4.5
+      parent: 1
+  - uid: 116
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,3.5
+      parent: 1
+  - uid: 117
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,2.5
+      parent: 1
+  - uid: 118
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,1.5
+      parent: 1
+  - uid: 119
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,0.5
+      parent: 1
+  - uid: 120
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-0.5
+      parent: 1
+  - uid: 121
+    mapInit: true
+    components:
+    - type: Transform
+      pos: 3.5,-1.5
+      parent: 1
+- proto: CableMVStack1
+  entities:
+  - uid: 360
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 356
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - mvcable
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        solution@mvcable: !type:ContainerSlot
+          ent: 361
 - proto: ChairPilotSeat
   entities:
-  - uid: 62
+  - uid: 122
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 9.5,0.5
       parent: 1
-  - uid: 63
+  - uid: 123
+    mapInit: true
     components:
     - type: Transform
       pos: 2.5,1.5
       parent: 1
-  - uid: 64
+  - uid: 124
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,1.5
       parent: 1
+- proto: ClothingMaskMuzzle
+  entities:
+  - uid: 355
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: ClothingOuterStraightjacket
   entities:
-  - uid: 65
+  - uid: 125
+    mapInit: true
     components:
     - type: Transform
       pos: 5.569043,-0.32564166
       parent: 1
-- proto: ComputerCrewMonitoring
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: UseDelay
+      delays:
+        default:
+          endTime: 0
+          startTime: 0
+          length: 3
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+- proto: ClothingShoesColorBlack
   entities:
-  - uid: 66
+  - uid: 347
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 348
+  - uid: 353
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 354
+- proto: ClothingUniformJumpskirtPrisoner
+  entities:
+  - uid: 345
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 44D7-897A
+      transmitFrequency: 1262
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 346
+  - uid: 351
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 320C-1C38
+      transmitFrequency: 1262
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 352
+- proto: ClothingUniformJumpsuitPrisoner
+  entities:
+  - uid: 343
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 44A7-67AB
+      transmitFrequency: 1262
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 344
+  - uid: 349
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 342
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 2836-28BC
+      transmitFrequency: 1262
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 350
+- proto: CommsComputerCircuitboard
+  entities:
+  - uid: 127
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 126
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+- proto: ComputerComms
+  entities:
+  - uid: 126
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,1.5
       parent: 1
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+    - type: CommunicationsConsole
+      announcementCooldownRemaining: -0.03298998
+    - type: DeviceNetwork
+      address: 1908-BD21
+      transmitFrequency: 2450
+    - type: PointLight
+      enabled: True
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 127
+    - type: SpamEmitSound
+      nextSound: 9.0809221
 - proto: ComputerIFFSyndicate
   entities:
-  - uid: 67
+  - uid: 128
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,-0.5
       parent: 1
+    - type: PointLight
+      enabled: True
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 129
+    - type: SpamEmitSound
+      nextSound: 64.7550646
+- proto: ComputerIFFSyndicateCircuitboard
+  entities:
+  - uid: 129
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 128
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: ComputerShuttle
   entities:
-  - uid: 68
+  - uid: 130
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,0.5
       parent: 1
-- proto: ComputerSurveillanceCameraMonitor
+    - type: PointLight
+      enabled: True
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 131
+        disk_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+    - type: SpamEmitSound
+      nextSound: 29.5056088
+- proto: DoorElectronics
   entities:
-  - uid: 69
+  - uid: 3
+    mapInit: true
     components:
     - type: Transform
-      pos: 9.5,1.5
-      parent: 1
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 8
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 7
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 10
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 9
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 12
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 11
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 178
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 177
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 180
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 179
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 182
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 181
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 184
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 183
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 186
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 185
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 188
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 187
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 190
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 189
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 192
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 191
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 194
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 193
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 372
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 371
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 374
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 373
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 377
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 376
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: GasPipeBend
   entities:
-  - uid: 70
+  - uid: 132
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-2.5
       parent: 1
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
 - proto: GasPipeStraight
   entities:
-  - uid: 71
+  - uid: 133
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,3.5
       parent: 1
-  - uid: 72
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+  - uid: 134
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,2.5
       parent: 1
-  - uid: 73
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+  - uid: 135
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,1.5
       parent: 1
-  - uid: 74
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+  - uid: 136
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-1.5
       parent: 1
-  - uid: 75
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+  - uid: 137
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-0.5
       parent: 1
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
 - proto: GasPipeTJunction
   entities:
-  - uid: 76
+  - uid: 138
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,0.5
       parent: 1
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
 - proto: GasPort
   entities:
-  - uid: 77
+  - uid: 139
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,4.5
       parent: 1
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
 - proto: GasVentPump
   entities:
-  - uid: 78
+  - uid: 140
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,-2.5
       parent: 1
-  - uid: 79
+    - type: DeviceNetwork
+      address: VNT-2688-FB23
+      transmitFrequency: 1621
+      receiveFrequency: 1621
+    - type: GasVentPump
+      manualLockoutReenabledAt: 1712.2316511
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: AtmosMonitor
+      trippedThresholds: Pressure
+      lastAlarmState: Warning
+      gasThresholds:
+        Oxygen:
+          lowerWarnAround:
+            threshold: 1.5
+            enabled: True
+          upperWarnAround:
+            threshold: 0.8
+            enabled: True
+          lowerBound:
+            threshold: 0.1
+            enabled: True
+          upperBound:
+            threshold: 1
+            enabled: True
+          ignore: False
+        Nitrogen:
+          lowerWarnAround:
+            threshold: 1.5
+            enabled: True
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0.1
+            enabled: True
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: False
+        CarbonDioxide:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.006
+            enabled: True
+          ignore: False
+        Plasma:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.005
+            enabled: True
+          ignore: False
+        Tritium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.004
+            enabled: True
+          ignore: False
+        WaterVapor:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 1.5
+            enabled: True
+          ignore: False
+        Ammonia:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.05
+            enabled: True
+          ignore: False
+        NitrousOxide:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.01
+            enabled: True
+          ignore: False
+        Frezon:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        BZ:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        Healium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: True
+        Nitrium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        Pluoxium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: True
+      pressureThreshold:
+        lowerWarnAround:
+          threshold: 2
+          enabled: True
+        upperWarnAround:
+          threshold: 0.7
+          enabled: True
+        lowerBound:
+          threshold: 40
+          enabled: True
+        upperBound:
+          threshold: 550
+          enabled: True
+        ignore: False
+      temperatureThreshold:
+        lowerWarnAround:
+          threshold: 1.1
+          enabled: True
+        upperWarnAround:
+          threshold: 0.8
+          enabled: True
+        lowerBound:
+          threshold: 193.15
+          enabled: True
+        upperBound:
+          threshold: 393.15
+          enabled: True
+        ignore: False
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
+  - uid: 141
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 3.5,0.5
       parent: 1
+    - type: DeviceNetwork
+      address: VNT-0D17-EEB7
+      transmitFrequency: 1621
+      receiveFrequency: 1621
+    - type: GasVentPump
+      manualLockoutReenabledAt: 1707.1983228
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: AtmosMonitor
+      trippedThresholds: Pressure
+      gasThresholds:
+        Oxygen:
+          lowerWarnAround:
+            threshold: 1.5
+            enabled: True
+          upperWarnAround:
+            threshold: 0.8
+            enabled: True
+          lowerBound:
+            threshold: 0.1
+            enabled: True
+          upperBound:
+            threshold: 1
+            enabled: True
+          ignore: False
+        Nitrogen:
+          lowerWarnAround:
+            threshold: 1.5
+            enabled: True
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0.1
+            enabled: True
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: False
+        CarbonDioxide:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.006
+            enabled: True
+          ignore: False
+        Plasma:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.005
+            enabled: True
+          ignore: False
+        Tritium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.004
+            enabled: True
+          ignore: False
+        WaterVapor:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 1.5
+            enabled: True
+          ignore: False
+        Ammonia:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.05
+            enabled: True
+          ignore: False
+        NitrousOxide:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0.5
+            enabled: True
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.01
+            enabled: True
+          ignore: False
+        Frezon:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        BZ:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        Healium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: True
+        Nitrium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0.0001
+            enabled: True
+          ignore: False
+        Pluoxium:
+          lowerWarnAround:
+            threshold: 0
+            enabled: False
+          upperWarnAround:
+            threshold: 0
+            enabled: False
+          lowerBound:
+            threshold: 0
+            enabled: False
+          upperBound:
+            threshold: 0
+            enabled: False
+          ignore: True
+      pressureThreshold:
+        lowerWarnAround:
+          threshold: 2
+          enabled: True
+        upperWarnAround:
+          threshold: 0.7
+          enabled: True
+        lowerBound:
+          threshold: 40
+          enabled: True
+        upperBound:
+          threshold: 550
+          enabled: True
+        ignore: False
+      temperatureThreshold:
+        lowerWarnAround:
+          threshold: 1.1
+          enabled: True
+        upperWarnAround:
+          threshold: 0.8
+          enabled: True
+        lowerBound:
+          threshold: 193.15
+          enabled: True
+        upperBound:
+          threshold: 393.15
+          enabled: True
+        ignore: False
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
 - proto: GeneratorBasic15kW
   entities:
-  - uid: 80
+  - uid: 142
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,3.5
       parent: 1
-  - uid: 81
+    - type: PowerSupplier
+      supplyRampPosition: 11670.011
+  - uid: 143
+    mapInit: true
     components:
     - type: Transform
       pos: 5.5,3.5
       parent: 1
+    - type: PowerSupplier
+      supplyRampPosition: 11670.011
 - proto: GravityGeneratorMini
   entities:
-  - uid: 82
+  - uid: 144
+    mapInit: true
     components:
     - type: Transform
       pos: 3.5,4.5
       parent: 1
+    - type: PowerCharge
+      active: True
+    - type: GravityGenerator
+      gravityActive: True
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 145
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 147
+          - 148
+          - 150
+          - 152
 - proto: Grille
   entities:
-  - uid: 83
+  - uid: 154
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,2.5
       parent: 1
-  - uid: 84
+  - uid: 155
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,-1.5
       parent: 1
-  - uid: 85
+  - uid: 156
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,1.5
       parent: 1
-  - uid: 86
+  - uid: 157
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,0.5
       parent: 1
-  - uid: 87
+  - uid: 158
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,-0.5
       parent: 1
-  - uid: 88
+  - uid: 159
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,-4.5
       parent: 1
 - proto: Gyroscope
   entities:
-  - uid: 89
+  - uid: 160
+    mapInit: true
     components:
     - type: Transform
       pos: 5.5,4.5
       parent: 1
-- proto: OxygenCanister
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: PointLight
+      enabled: True
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 161
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 163
+          - 164
+- proto: GyroscopeMachineCircuitboard
   entities:
-  - uid: 90
+  - uid: 161
+    mapInit: true
     components:
     - type: Transform
-      anchored: True
-      pos: 4.5,4.5
-      parent: 1
+      parent: 160
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
     - type: Physics
-      bodyType: Static
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 162
+- proto: LightTube
+  entities:
+  - uid: 167
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 166
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 169
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 168
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 171
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 170
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 173
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 172
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+  - uid: 175
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 174
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+- proto: MicroManipulatorStockPart
+  entities:
+  - uid: 147
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 144
+    - type: Stack
+      count: 7
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 163
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 160
+    - type: Stack
+      count: 3
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 206
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 204
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 216
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 213
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 222
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 219
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 228
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 225
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 234
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 231
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 240
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 237
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 246
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 243
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 252
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 249
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 258
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 255
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 264
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 261
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 270
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 267
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 276
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 273
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 282
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 279
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 288
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 285
+    - type: Stack
+      count: 4
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+  - uid: 359
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 356
+    - type: Stack
+      count: 2
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+- proto: MiniGravityGeneratorCircuitboard
+  entities:
+  - uid: 145
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 144
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 146
+- proto: PowerCellSmall
+  entities:
+  - uid: 207
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 204
+    - type: Battery
+      lastCharge: 360
+      lastUpdate: -309.3197475
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - battery
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@battery: !type:ContainerSlot
+          ent: 208
 - proto: Poweredlight
   entities:
-  - uid: 91
+  - uid: 166
+    mapInit: true
     components:
     - type: Transform
       pos: 6.5,1.5
       parent: 1
-  - uid: 92
+    - type: PointLight
+      color: '#FFBE7EFF'
+    - type: PoweredLight
+      lastThunk: 1619.0317143
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 167
+    - type: ApcPowerReceiver
+      powerLoad: 25
+    - type: DeviceNetwork
+      address: 4F65-1136
+      receiveFrequency: 1173
+  - uid: 168
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-0.5
       parent: 1
-  - uid: 93
+    - type: PointLight
+      color: '#FFBE7EFF'
+    - type: PoweredLight
+      lastThunk: 1619.0317143
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 169
+    - type: ApcPowerReceiver
+      powerLoad: 25
+    - type: DeviceNetwork
+      address: 41AC-1E38
+      receiveFrequency: 1173
+  - uid: 170
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,4.5
       parent: 1
-  - uid: 94
+    - type: PointLight
+      color: '#FFBE7EFF'
+    - type: PoweredLight
+      lastThunk: 1619.0317143
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 171
+    - type: ApcPowerReceiver
+      powerLoad: 25
+    - type: DeviceNetwork
+      address: 4938-6E4B
+      receiveFrequency: 1173
+  - uid: 172
+    mapInit: true
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-2.5
+      rot: 3.141592653589793 rad
+      pos: 5.5,-3.5
       parent: 1
-  - uid: 95
+    - type: PointLight
+      color: '#FFBE7EFF'
+    - type: PoweredLight
+      lastThunk: 1915.5314178
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 173
+    - type: ApcPowerReceiver
+      powerLoad: 25
+    - type: DeviceNetwork
+      address: 15A9-0A17
+      receiveFrequency: 1173
+  - uid: 174
+    mapInit: true
     components:
     - type: Transform
       pos: 9.5,1.5
       parent: 1
+    - type: PointLight
+      color: '#FFBE7EFF'
+    - type: PoweredLight
+      lastThunk: 1619.0317143
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 175
+    - type: ApcPowerReceiver
+      powerLoad: 25
+    - type: DeviceNetwork
+      address: 5E67-0328
+      receiveFrequency: 1173
 - proto: RemoteSignaller
   entities:
-  - uid: 96
+  - uid: 176
+    mapInit: true
     components:
     - type: Transform
       pos: 9.496887,-0.36064637
       parent: 1
+    - type: UseDelay
+      delays:
+        default:
+          endTime: 0
+          startTime: 0
+          length: 1
+    - type: DeviceNetwork
+      address: 64DE-2AB6
+      receiveFrequency: 1280
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
     - type: DeviceLinkSource
       linkedPorts:
-        185:
+        373:
         - - Pressed
           - DoorBolt
-        184:
+        371:
         - - Pressed
           - DoorBolt
+- proto: SheetGlass1
+  entities:
+  - uid: 164
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 160
+    - type: Stack
+      count: 2
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - glass
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        solution@glass: !type:ContainerSlot
+          ent: 165
+- proto: SheetSteel1
+  entities:
+  - uid: 148
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 144
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 149
+  - uid: 217
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 213
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 218
+  - uid: 223
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 219
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 224
+  - uid: 229
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 225
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 230
+  - uid: 235
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 231
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 236
+  - uid: 241
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 237
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 242
+  - uid: 247
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 243
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 248
+  - uid: 253
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 249
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 254
+  - uid: 259
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 255
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 260
+  - uid: 265
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 261
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 266
+  - uid: 271
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 267
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 272
+  - uid: 277
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 273
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 278
+  - uid: 283
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 279
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 284
+  - uid: 289
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 285
+    - type: Stack
+      count: 5
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - steel
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+        enum.ShortConstructionUiKey.Key:
+          type: ShortConstructionBUI
+    - type: ContainerContainer
+      containers:
+        solution@steel: !type:ContainerSlot
+          ent: 290
+- proto: SheetUranium1
+  entities:
+  - uid: 152
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 144
+    - type: Stack
+      count: 2
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: UserInterface
+      actors: {}
+      interfaces:
+        enum.StackCustomSplitUiKey.Key:
+          type: StackCustomSplitBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 153
 - proto: ShuttersNormal
   entities:
-  - uid: 97
+  - uid: 177
+    mapInit: true
     components:
     - type: Transform
       pos: 0.5,-0.5
       parent: 1
-  - uid: 98
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 178
+    - type: DeviceNetwork
+      address: 51E5-ED76
+      receiveFrequency: 1280
+  - uid: 179
+    mapInit: true
     components:
     - type: Transform
       pos: 0.5,0.5
       parent: 1
-  - uid: 99
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 180
+    - type: DeviceNetwork
+      address: 61CF-84B0
+      receiveFrequency: 1280
+  - uid: 181
+    mapInit: true
     components:
     - type: Transform
       pos: 0.5,1.5
       parent: 1
-  - uid: 100
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 182
+    - type: DeviceNetwork
+      address: 7469-381E
+      receiveFrequency: 1280
+  - uid: 183
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,-4.5
       parent: 1
-  - uid: 101
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 184
+    - type: DeviceNetwork
+      address: 36A2-F9A7
+      receiveFrequency: 1280
+    - type: Forensics
+      residues: []
+      dNAs: []
+      fibers: []
+      fingerprints: []
+  - uid: 185
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,-1.5
       parent: 1
-  - uid: 102
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 186
+    - type: DeviceNetwork
+      address: 216C-2975
+      receiveFrequency: 1280
+  - uid: 187
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,-0.5
       parent: 1
-  - uid: 103
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 188
+    - type: DeviceNetwork
+      address: 364F-B9C0
+      receiveFrequency: 1280
+  - uid: 189
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,0.5
       parent: 1
-  - uid: 104
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 190
+    - type: DeviceNetwork
+      address: 594E-107D
+      receiveFrequency: 1280
+  - uid: 191
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,1.5
       parent: 1
-  - uid: 105
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 192
+    - type: DeviceNetwork
+      address: 69D0-BC38
+      receiveFrequency: 1280
+  - uid: 193
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 194
+    - type: DeviceNetwork
+      address: 3638-EB8A
+      receiveFrequency: 1280
+- proto: ShuttleConsoleCircuitboard
+  entities:
+  - uid: 131
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 130
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: ShuttleWindow
   entities:
-  - uid: 106
+  - uid: 195
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,-4.5
       parent: 1
-  - uid: 107
+  - uid: 196
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,-1.5
       parent: 1
-  - uid: 108
+  - uid: 197
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,-0.5
       parent: 1
-  - uid: 109
+  - uid: 198
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,0.5
       parent: 1
-  - uid: 110
+  - uid: 199
+    mapInit: true
     components:
     - type: Transform
       pos: 11.5,1.5
       parent: 1
-  - uid: 111
+  - uid: 200
+    mapInit: true
     components:
     - type: Transform
       pos: 10.5,2.5
       parent: 1
 - proto: SignalButton
   entities:
-  - uid: 112
+  - uid: 201
+    mapInit: true
     components:
     - type: Transform
       pos: 1.5,2.5
       parent: 1
+    - type: UseDelay
+      delays:
+        default:
+          endTime: 0
+          startTime: 0
+          length: 0.5
+    - type: DeviceNetwork
+      address: 05FE-A1BE
     - type: DeviceLinkSource
       linkedPorts:
-        99:
+        181:
         - - Pressed
           - Toggle
-        98:
+        179:
         - - Pressed
           - Toggle
-        97:
+        177:
         - - Pressed
           - Toggle
-  - uid: 113
+  - uid: 202
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 8.5,1.5
       parent: 1
+    - type: UseDelay
+      delays:
+        default:
+          endTime: 0
+          startTime: 0
+          length: 0.5
+    - type: DeviceNetwork
+      address: 411E-7A06
     - type: DeviceLinkSource
       linkedPorts:
-        105:
+        193:
         - - Pressed
           - Toggle
-        104:
+        191:
         - - Pressed
           - Toggle
-        103:
+        189:
         - - Pressed
           - Toggle
-        102:
+        187:
         - - Pressed
           - Toggle
-        101:
+        185:
         - - Pressed
           - Toggle
-        100:
+        183:
         - - Pressed
           - Toggle
 - proto: SpawnPointNukies
   entities:
-  - uid: 114
+  - uid: 203
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,0.5
       parent: 1
 - proto: SubstationWallBasic
   entities:
-  - uid: 115
+  - uid: 204
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,2.5
       parent: 1
+    - type: Battery
+      lastCharge: 2000000
+      lastUpdate: -282.0644258
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 205
+        manipulator: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 206
+        powercell: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 207
+    - type: PowerNetworkBattery
+      loadingNetworkDemand: 23340.959
+      currentReceiving: 23340.021
+      currentSupply: 23340.959
+      supplyRampPosition: 0.9394531
 - proto: TableReinforced
   entities:
-  - uid: 116
+  - uid: 209
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,-0.5
       parent: 1
-  - uid: 117
+  - uid: 210
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,-0.5
       parent: 1
-  - uid: 118
+  - uid: 211
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,-0.5
       parent: 1
-  - uid: 119
+  - uid: 212
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -861,313 +4712,1665 @@ entities:
       parent: 1
 - proto: Thruster
   entities:
-  - uid: 120
+  - uid: 213
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-2.5
       parent: 1
-  - uid: 121
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 214
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 216
+          - 217
+  - uid: 219
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,-2.5
       parent: 1
-  - uid: 122
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 220
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 222
+          - 223
+  - uid: 225
+    mapInit: true
     components:
     - type: Transform
       pos: 8.5,3.5
       parent: 1
-  - uid: 123
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 226
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 228
+          - 229
+  - uid: 231
+    mapInit: true
     components:
     - type: Transform
       pos: 9.5,3.5
       parent: 1
-  - uid: 124
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 232
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 234
+          - 235
+  - uid: 237
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,4.5
       parent: 1
-  - uid: 125
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 238
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 240
+          - 241
+  - uid: 243
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,3.5
       parent: 1
-  - uid: 126
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 244
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 246
+          - 247
+  - uid: 249
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,4.5
       parent: 1
-  - uid: 127
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 250
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 252
+          - 253
+  - uid: 255
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,3.5
       parent: 1
-  - uid: 128
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 256
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 258
+          - 259
+  - uid: 261
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,-2.5
       parent: 1
-  - uid: 129
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 262
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 264
+          - 265
+  - uid: 267
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,-2.5
       parent: 1
-  - uid: 130
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 268
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 270
+          - 271
+  - uid: 273
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,-3.5
       parent: 1
-  - uid: 131
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 274
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 276
+          - 277
+  - uid: 279
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-2.5
       parent: 1
-  - uid: 132
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 280
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 282
+          - 283
+  - uid: 285
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-3.5
       parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.45,-0.45
+            - 0.45,-0.45
+            - 0.45,0.45
+            - -0.45,0.45
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - MidImpassable
+          - LowImpassable
+          - BulletImpassable
+          - Opaque
+          density: 60
+          hard: True
+          restitution: 0
+          friction: 0.4
+        thruster-burn:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,0.5
+            - 0.4,0.5
+            - 0.1,1.2
+            - -0.1,1.2
+          mask: []
+          layer:
+          - Impassable
+          - MidImpassable
+          - HighImpassable
+          - LowImpassable
+          - InteractImpassable
+          density: 1
+          hard: False
+          restitution: 0
+          friction: 0.4
+    - type: Thruster
+      nextFire: 0.6802525
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 286
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 288
+          - 289
+- proto: ThrusterMachineCircuitboard
+  entities:
+  - uid: 214
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 213
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 215
+  - uid: 220
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 219
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 221
+  - uid: 226
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 225
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 227
+  - uid: 232
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 231
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 233
+  - uid: 238
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 237
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 239
+  - uid: 244
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 243
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 245
+  - uid: 250
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 249
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 251
+  - uid: 256
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 255
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 257
+  - uid: 262
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 261
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 263
+  - uid: 268
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 267
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 269
+  - uid: 274
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 273
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 275
+  - uid: 280
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 279
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 281
+  - uid: 286
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 285
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 287
 - proto: ToiletDirtyWaterFilled
   entities:
-  - uid: 133
+  - uid: 291
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,-3.5
       parent: 1
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - drainBuffer
+      - tank
+    - type: DisposalUnit
+      nextPressurized: -1923.9627839
+    - type: Toilet
+      toggleSeat: True
+    - type: ContainerContainer
+      containers:
+        stash: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 292
+        disposals: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        solution@drainBuffer: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 293
+        solution@tank: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 294
+    - type: Drain
+      nextUpdate: 0.3602212
+    - type: Rummageable
+      nextLoot: -309.3197475
+    - type: DeviceLinkSink
+      ports:
+      - AutomationSlotInput
+      - Toggle
+      - DisposalFlush
+      - DisposalEject
+    - type: DeviceLinkSource
+      linkedPorts: {}
+      lastSignals: {}
+      ports:
+      - AutomationSlotInput
+      - DisposalReady
+- proto: TrackingImplant
+  entities:
+  - uid: 296
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 295
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 630F-329E
+      transmitFrequency: 1262
+  - uid: 298
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 297
+    - type: SuitSensor
+      nextUpdate: 0.6802525
+    - type: DeviceNetwork
+      address: 4489-20B0
+      transmitFrequency: 1262
 - proto: TrackingImplanter
   entities:
-  - uid: 134
+  - uid: 295
+    mapInit: true
     components:
+    - type: MetaData
+      name: implant extractor (tracking implant)
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.0097766,-0.4473311
       parent: 1
-  - uid: 135
+    - type: Implanter
+      implantData:
+      - tracking implant
+      - This implant has a tracking device attached to the suit sensor network.
+    - type: ContainerContainer
+      containers:
+        implanter_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 296
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: Label
+      currentLabel: tracking implant
+    - type: NameModifier
+      baseName: implant extractor
+  - uid: 297
+    mapInit: true
     components:
+    - type: MetaData
+      name: implant extractor (tracking implant)
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.207693,-0.42649773
       parent: 1
+    - type: Implanter
+      implantData:
+      - tracking implant
+      - This implant has a tracking device attached to the suit sensor network.
+    - type: ContainerContainer
+      containers:
+        implanter_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 298
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: Label
+      currentLabel: tracking implant
+    - type: NameModifier
+      baseName: implant extractor
 - proto: VendingMachineDonut
   entities:
-  - uid: 136
+  - uid: 299
+    mapInit: true
     components:
     - type: Transform
       pos: 5.5,1.5
       parent: 1
+    - type: VendingMachine
+      inventory:
+        FoodDonutChocolate:
+          amount: 2
+          iD: FoodDonutChocolate
+          type: Regular
+        FoodDonutApple:
+          amount: 1
+          iD: FoodDonutApple
+          type: Regular
+        FoodDonutPink:
+          amount: 3
+          iD: FoodDonutPink
+          type: Regular
+        FoodDonutBungo:
+          amount: 2
+          iD: FoodDonutBungo
+          type: Regular
+      emaggedInventory:
+        SyndicateSponge:
+          amount: 0
+          iD: SyndicateSponge
+          type: Emagged
+      contrabandInventory:
+        FoodBagel:
+          amount: 1
+          iD: FoodBagel
+          type: Contraband
+        FoodBagelPoppy:
+          amount: 0
+          iD: FoodBagelPoppy
+          type: Contraband
+        FoodDonutPoison:
+          amount: 2
+          iD: FoodDonutPoison
+          type: Contraband
+      nextEmpEject: -1923.9627839
+    - type: PointLight
+      enabled: True
+    - type: ActionGrant
+      actionEntities:
+      - 300
+    - type: Vocalizer
+      nextVocalizeInterval: 263.5014325
+    - type: Actions
+      actions:
+      - 300
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 300
 - proto: VendingMachineSecUnlocked
   entities:
-  - uid: 137
+  - uid: 301
+    mapInit: true
     components:
     - type: Transform
       pos: 7.5,1.5
       parent: 1
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: VendingMachine
+      inventory:
+        SecurityWhistle:
+          amount: 5
+          iD: SecurityWhistle
+          type: Regular
+        Handcuffs:
+          amount: 8
+          iD: Handcuffs
+          type: Regular
+        GrenadeFlashBang:
+          amount: 4
+          iD: GrenadeFlashBang
+          type: Regular
+        TearGasGrenade:
+          amount: 4
+          iD: TearGasGrenade
+          type: Regular
+        ClusterBangFull:
+          amount: 2
+          iD: ClusterBangFull
+          type: Regular
+        GrenadeStinger:
+          amount: 4
+          iD: GrenadeStinger
+          type: Regular
+        Flash:
+          amount: 5
+          iD: Flash
+          type: Regular
+        Tourniquet:
+          amount: 5
+          iD: Tourniquet
+          type: Regular
+        FlashlightSeclite:
+          amount: 5
+          iD: FlashlightSeclite
+          type: Regular
+        ClothingEyesGlassesSunglasses:
+          amount: 4
+          iD: ClothingEyesGlassesSunglasses
+          type: Regular
+        ClothingEyesHudSecurity:
+          amount: 2
+          iD: ClothingEyesHudSecurity
+          type: Regular
+        ClothingEyesEyepatchHudSecurity:
+          amount: 2
+          iD: ClothingEyesEyepatchHudSecurity
+          type: Regular
+        ClothingBeltSecurityWebbing:
+          amount: 5
+          iD: ClothingBeltSecurityWebbing
+          type: Regular
+        Zipties:
+          amount: 12
+          iD: Zipties
+          type: Regular
+        RiotShield:
+          amount: 2
+          iD: RiotShield
+          type: Regular
+        RiotLaserShield:
+          amount: 2
+          iD: RiotLaserShield
+          type: Regular
+        RiotBulletShield:
+          amount: 2
+          iD: RiotBulletShield
+          type: Regular
+        RadioHandheldSecurity:
+          amount: 5
+          iD: RadioHandheldSecurity
+          type: Regular
+        CombatKnife:
+          amount: 1
+          iD: CombatKnife
+          type: Regular
+        BolaEnergy:
+          amount: 5
+          iD: BolaEnergy
+          type: Regular
+        PepperSpray:
+          amount: 3
+          iD: PepperSpray
+          type: Regular
+        SecHypo:
+          amount: 2
+          iD: SecHypo
+          type: Regular
+        CartridgeEpinephrine:
+          amount: 2
+          iD: CartridgeEpinephrine
+          type: Regular
+        CartridgeSaline:
+          amount: 2
+          iD: CartridgeSaline
+          type: Regular
+        CartridgeBicaridine:
+          amount: 2
+          iD: CartridgeBicaridine
+          type: Regular
+        CartridgeDermaline:
+          amount: 2
+          iD: CartridgeDermaline
+          type: Regular
+        Whetstone:
+          amount: 5
+          iD: Whetstone
+          type: Regular
+        WeaponBracing:
+          amount: 5
+          iD: WeaponBracing
+          type: Regular
+      emaggedInventory:
+        SarinGasGrenade:
+          amount: 2
+          iD: SarinGasGrenade
+          type: Emagged
+        EmpGrenade:
+          amount: 2
+          iD: EmpGrenade
+          type: Emagged
+      contrabandInventory:
+        WeaponMeleeNeedle:
+          amount: 2
+          iD: WeaponMeleeNeedle
+          type: Contraband
+        FoodDonutHomer:
+          amount: 12
+          iD: FoodDonutHomer
+          type: Contraband
+        FoodBoxDonut:
+          amount: 2
+          iD: FoodBoxDonut
+          type: Contraband
+      nextEmpEject: -1923.9627839
+    - type: PointLight
+      enabled: True
+    - type: ActionGrant
+      actionEntities:
+      - 302
+    - type: Vocalizer
+      nextVocalizeInterval: 225.7260122
+    - type: Actions
+      actions:
+      - 302
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 302
+- proto: WallmountSubstationElectronics
+  entities:
+  - uid: 205
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 204
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: WallShuttle
   entities:
-  - uid: 138
+  - uid: 303
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,-1.5
       parent: 1
-  - uid: 139
+  - uid: 304
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-1.5
       parent: 1
-  - uid: 140
+  - uid: 305
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-0.5
       parent: 1
-  - uid: 141
+  - uid: 306
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,1.5
       parent: 1
-  - uid: 142
+  - uid: 307
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,2.5
       parent: 1
-  - uid: 143
+  - uid: 308
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,2.5
       parent: 1
-  - uid: 144
+  - uid: 309
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 7.5,2.5
       parent: 1
-  - uid: 145
+  - uid: 310
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,2.5
       parent: 1
-  - uid: 146
+  - uid: 311
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,2.5
       parent: 1
-  - uid: 147
+  - uid: 312
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,3.5
       parent: 1
-  - uid: 148
+  - uid: 313
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,4.5
       parent: 1
-  - uid: 149
+  - uid: 314
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,4.5
       parent: 1
-  - uid: 150
+  - uid: 315
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,3.5
       parent: 1
-  - uid: 151
+  - uid: 316
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,5.5
       parent: 1
-  - uid: 152
+  - uid: 317
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,5.5
       parent: 1
-  - uid: 153
+  - uid: 318
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,5.5
       parent: 1
-  - uid: 154
+  - uid: 319
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,2.5
       parent: 1
-  - uid: 155
+  - uid: 320
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,2.5
       parent: 1
-  - uid: 156
+  - uid: 321
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-3.5
       parent: 1
-  - uid: 157
+  - uid: 322
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-3.5
       parent: 1
-  - uid: 158
+  - uid: 323
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-2.5
       parent: 1
-  - uid: 159
+  - uid: 324
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-2.5
       parent: 1
-  - uid: 160
+  - uid: 325
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-4.5
       parent: 1
-  - uid: 161
+  - uid: 326
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,-4.5
       parent: 1
-  - uid: 162
+  - uid: 327
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-1.5
       parent: 1
-  - uid: 163
+  - uid: 328
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,-1.5
       parent: 1
-  - uid: 164
+  - uid: 329
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 7.5,-1.5
       parent: 1
-  - uid: 165
+  - uid: 330
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-1.5
       parent: 1
-  - uid: 166
+  - uid: 331
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-1.5
       parent: 1
-  - uid: 167
+  - uid: 332
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-1.5
       parent: 1
-  - uid: 168
+  - uid: 333
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,2.5
       parent: 1
-  - uid: 169
+  - uid: 334
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 0.5,2.5
       parent: 1
-  - uid: 170
+  - uid: 335
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -1175,111 +6378,352 @@ entities:
       parent: 1
 - proto: WallShuttleDiagonal
   entities:
-  - uid: 171
+  - uid: 336
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 11.5,2.5
       parent: 1
-  - uid: 172
+  - uid: 337
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 11.5,-1.5
       parent: 1
-  - uid: 173
+  - uid: 338
+    mapInit: true
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,-4.5
       parent: 1
-  - uid: 174
+  - uid: 339
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-4.5
       parent: 1
-  - uid: 175
+  - uid: 340
+    mapInit: true
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,5.5
       parent: 1
-  - uid: 176
+  - uid: 341
+    mapInit: true
     components:
     - type: Transform
       pos: 2.5,5.5
       parent: 1
 - proto: WardrobePrisonFilled
   entities:
-  - uid: 177
+  - uid: 342
+    mapInit: true
     components:
     - type: Transform
       pos: 5.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 343
+          - 345
+          - 347
+          - 349
+          - 351
+          - 353
+          - 355
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: WeaponCapacitorRecharger
   entities:
-  - uid: 178
+  - uid: 356
+    mapInit: true
     components:
     - type: Transform
       pos: 7.5,-0.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        charger_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 357
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 359
+          - 360
+- proto: WeaponCapacitorRechargerCircuitboard
+  entities:
+  - uid: 357
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 356
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - processor
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
+    - type: ContainerContainer
+      containers:
+        solution@processor: !type:ContainerSlot
+          ent: 358
 - proto: WeaponLaserSidearm
   entities:
-  - uid: 179
+  - uid: 362
+    mapInit: true
     components:
     - type: Transform
       pos: 6.393224,-0.44900838
       parent: 1
+    - type: Gun
+      nextFire: -1923.9627839
+      burstFireRateModified: 8
+      burstCooldownModified: 0.25
+    - type: BatteryAmmoProvider
+      fireCost: 30
+    - type: Battery
+      lastCharge: 600
+      lastUpdate: -309.3197475
+    - type: AmmoSelector
+      currentlySelected: BulletDisablerSidearm
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 - proto: WeaponTurretSyndicate
   entities:
-  - uid: 180
+  - uid: 363
+    mapInit: true
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
+      rot: 3.7196402549743652 rad
       pos: 1.5,5.5
       parent: 1
-  - uid: 181
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 364
+    - type: Gun
+      nextFire: -1923.9627839
+      burstFireRateModified: 8
+      burstCooldownModified: 0.25
+    - type: BallisticAmmoProvider
+      unspawnedCount: 500
+    - type: Actions
+      actions:
+      - 364
+    - type: CombatMode
+      combatToggleActionEntity: 364
+    - type: HTN
+      checkServices: False
+    - type: ActiveNPC
+    - type: ActionsContainer
+  - uid: 365
+    mapInit: true
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
+      rot: 1.8784675598144531 rad
       pos: 7.5,5.5
       parent: 1
-  - uid: 182
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 366
+    - type: Gun
+      nextFire: -1923.9627839
+      burstFireRateModified: 8
+      burstCooldownModified: 0.25
+    - type: BallisticAmmoProvider
+      unspawnedCount: 500
+    - type: Actions
+      actions:
+      - 366
+    - type: CombatMode
+      combatToggleActionEntity: 366
+    - type: HTN
+      checkServices: False
+    - type: ActiveNPC
+    - type: ActionsContainer
+  - uid: 367
+    mapInit: true
     components:
     - type: Transform
+      rot: 2.563215970993042 rad
       pos: 7.5,-4.5
       parent: 1
-  - uid: 183
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 368
+    - type: Gun
+      nextFire: -1923.9627839
+      burstFireRateModified: 8
+      burstCooldownModified: 0.25
+    - type: BallisticAmmoProvider
+      unspawnedCount: 500
+    - type: Actions
+      actions:
+      - 368
+    - type: CombatMode
+      combatToggleActionEntity: 368
+    - type: HTN
+      checkServices: False
+    - type: ActiveNPC
+    - type: ActionsContainer
+  - uid: 369
+    mapInit: true
     components:
     - type: Transform
+      rot: 0.5001335740089417 rad
       pos: 1.5,-4.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 370
+    - type: Gun
+      nextFire: -1923.9627839
+      burstFireRateModified: 8
+      burstCooldownModified: 0.25
+    - type: BallisticAmmoProvider
+      unspawnedCount: 500
+    - type: Actions
+      actions:
+      - 370
+    - type: CombatMode
+      combatToggleActionEntity: 370
+    - type: HTN
+      checkServices: False
+    - type: ActiveNPC
+    - type: ActionsContainer
 - proto: WindoorSecure
   entities:
-  - uid: 184
+  - uid: 371
+    mapInit: true
     components:
     - type: Transform
       pos: 4.5,-1.5
       parent: 1
+    - type: DeviceNetwork
+      address: 7E14-0F1E
+      receiveFrequency: 1280
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 372
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: DeviceLinkSource
       linkedPorts:
-        185:
+        373:
         - - DoorStatus
           - DoorBolt
-  - uid: 185
+  - uid: 373
+    mapInit: true
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-1.5
       parent: 1
+    - type: DeviceNetwork
+      address: 4BF2-A873
+      receiveFrequency: 1280
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 374
+    - type: Airlock
+      powered: True
+    - type: DoorBolt
+      powered: True
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: DeviceLinkSource
       linkedPorts:
-        184:
+        371:
         - - DoorStatus
           - DoorBolt
+- proto: Wirecutter
+  entities:
+  - uid: 292
+    mapInit: true
+    components:
+    - type: Transform
+      parent: 291
+    - type: MeleeWeapon
+      nextAttack: -1923.9627839
+    - type: RandomSprite
+      selected:
+        enum.DamageStateVisualLayers.Base:
+        - cutters
+        - '#1861D5FF'
+    - type: EmitSoundOnCollide
+      nextSound: -1923.9627839
+    - type: Physics
+      canCollide: False
 ...

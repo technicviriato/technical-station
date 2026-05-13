@@ -42,6 +42,8 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
     /// </summary>
     public override void Update(float frameTime)
     {
+        var spawnHunters = false;
+
         var query = EntityQueryEnumerator<FugitiveRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var comp, out var gameRule))
         {
@@ -53,9 +55,13 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
                 && Timing.CurTime >= spawnCheck - comp.HunterSpawnDelay)
             {
                 comp.HuntersSpawned = true;
-                _gameTicker.StartGameRule("HunterSpawn");
+                spawnHunters = true;
             }
         }
+
+        // Spawn hunters after the loop to avoid modifying the collection mid-iteration
+        if (spawnHunters)
+            _gameTicker.StartGameRule("HunterSpawn");
 
         base.Update(frameTime);
     }
