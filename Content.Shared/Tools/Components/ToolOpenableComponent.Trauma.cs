@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Tools.Components;
+namespace Content.Shared.Tools.Components;
 
 public sealed partial class ToolOpenableComponent
 {
