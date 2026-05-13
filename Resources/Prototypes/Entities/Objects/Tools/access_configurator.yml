@@ -99,18 +99,18 @@
     sprite: Objects/Tools/universal_access_configurator.rsi
   - type: AccessOverrider
     accessLevels:
-    # <Trauma> - Added some accesses that weren't put in the universal config due to an oversight
+    # <Trauma>
     - BasicSilicon
     - Borg
     - CentralCommand
     - Revolutionary
     - Xenomorph
-    # </Trauma>
     - StationAi
     - NuclearOperative
     - SyndicateAgent
     - Wizard
     - Xenoborg
+    # </Trauma>
     privilegedIdSlot:
       name: id-card-console-privileged-id
       startingItem: UniversalIDCard
