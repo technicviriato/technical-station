@@ -63,8 +63,8 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner]
   parent: BaseAntagSpawner
-  name: fugitive spawn
   id: SpawnPointGhostRoleFugitive
+  name: fugitive spawn
   components:
   - type: GhostRole
     name: ghost-role-information-fugitive-name
@@ -84,8 +84,8 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
-  name: fugitive hunter spawn
   id: SpawnPointGhostRoleHunter
+  name: fugitive hunter spawn
   components:
   - type: GhostRole
     name: ghost-role-information-hunter-name

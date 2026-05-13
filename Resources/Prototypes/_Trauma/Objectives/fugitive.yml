@@ -51,7 +51,7 @@
     - !type:HasRoleMindFilter
       whitelist:
         components:
-        - FugitiveRoleComponent
+        - FugitiveRole
     - !type:TargetObjectiveMindFilter
       blacklist:
         components:
@@ -78,7 +78,7 @@
     - !type:HasRoleMindFilter
       whitelist:
         components:
-        - FugitiveRoleComponent
+        - FugitiveRole
     - !type:TargetObjectiveMindFilter
       blacklist:
         components:

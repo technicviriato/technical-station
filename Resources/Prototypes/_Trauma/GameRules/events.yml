@@ -163,7 +163,6 @@
   id: HunterSpawn
   parent: BaseGameRule
   components:
-  - type: FugitiveRule
   - type: AntagGhostCharacterRule
   - type: AntagObjectives
     objectives:

@@ -79,17 +79,11 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         ChatSystem.DispatchGlobalAnnouncement(announcement, sender: sender, colorOverride: component.Color);
 
         var query = EntityQueryEnumerator<CommunicationsConsoleComponent, TransformComponent>();
-        var consoles = new List<TransformComponent>();
         while (query.MoveNext(out var console, out _, out var xform))
         {
-            if (StationSystem.GetOwningStation(console, xform) != component.Station || HasComp<GhostComponent>(console))
+            if (HasComp<GhostComponent>(console))
                 continue;
 
-            consoles.Add(xform);
-        }
-
-        foreach (var xform in consoles)
-        {
             foreach (var reportContent in component.Reports)
             {
                 SpawnReport(reportContent, component, xform);
