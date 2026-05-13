@@ -99,7 +99,7 @@
     sprite: Objects/Tools/universal_access_configurator.rsi
   - type: AccessOverrider
     accessLevels:
-    # <Trauma>
+    # <Trauma> - Adds new accesses that weren't present before and removes duplicate ones that parent already has
     - BasicSilicon
     - Borg
     - CentralCommand
