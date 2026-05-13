@@ -46,6 +46,7 @@
       sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
       state: base
   - type: TargetObjective
+  - type: FugitiveTarget
   - type: PickRandomPerson
     filters:
     - !type:HasRoleMindFilter
@@ -73,6 +74,7 @@
       sprite: Objects/Weapons/Melee/stunbaton.rsi
       state: stunbaton_on
   - type: TargetObjective
+  - type: FugitiveTarget
   - type: PickRandomPerson
     filters:
     - !type:HasRoleMindFilter
