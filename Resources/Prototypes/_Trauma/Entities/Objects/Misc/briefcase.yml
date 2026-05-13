@@ -15,3 +15,7 @@
     closeToolQualityNeeded: Screwing
     name: secret-stash-briefcase
   - type: HideContrabandContent
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+      stash: !type:ContainerSlot
