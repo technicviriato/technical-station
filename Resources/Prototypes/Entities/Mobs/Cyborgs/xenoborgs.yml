@@ -53,6 +53,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
+  # <Trauma>
   - type: ModifyKnowledgeGrant
     skills:
       FabricationKnowledge: 60
@@ -69,6 +70,7 @@
       GunsmithingKnowledge: 60
       MechanicsKnowledge: 60
       BotsKnowledge: 60
+  # </Trauma>
 
 - type: entity
   parent: [ BaseXenoborgChassis, BaseXenoborgTransponder ]
@@ -161,6 +163,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
+  # <Trauma>
   - type: ModifyKnowledgeGrant
     skills:
       FabricationKnowledge: 20
@@ -177,6 +180,7 @@
       ToughnessKnowledge: 51
       AthleticsKnowledge: 51
       WeaponsKnowledge: 51
+  # </Trauma>
 
 - type: entity
   parent: [ BaseXenoborgChassis, BaseXenoborgTransponder ]
@@ -231,6 +235,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
+  # <Trauma>
   - type: ModifyKnowledgeGrant
     skills:
       FabricationKnowledge: 20
@@ -248,6 +253,7 @@
       ToughnessKnowledge: 51
       AthleticsKnowledge: 51
       WeaponsKnowledge: 51
+  # </Trauma>
 
 - type: entity
   parent: [ BaseXenoborgChassis, BaseXenoborgTransponder ]
@@ -302,6 +308,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
+  # <Trauma>
   - type: ModifyKnowledgeGrant
     skills:
       FabricationKnowledge: 20
@@ -318,7 +325,7 @@
       ToughnessKnowledge: 51
       AthleticsKnowledge: 51
       WeaponsKnowledge: 51
-
+  # </Trauma>
 
 # xenoborgs empty
 - type: entity
