@@ -65,7 +65,6 @@
       ElectronicsKnowledge: 60
       WallsKnowledge: 60
       WindowsKnowledge: 60
-      SmokeablesKnowledge: 60
       MetalworkingKnowledge: 60
       GunsmithingKnowledge: 60
       MechanicsKnowledge: 60
@@ -175,7 +174,6 @@
       ElectronicsKnowledge: 20
       WallsKnowledge: 20
       WindowsKnowledge: 20
-      SmokeablesKnowledge: 50
       ShootingKnowledge: 51
       ToughnessKnowledge: 51
       AthleticsKnowledge: 51
@@ -247,7 +245,6 @@
       ElectronicsKnowledge: 20
       WallsKnowledge: 20
       WindowsKnowledge: 20
-      SmokeablesKnowledge: 50
       MeleeKnowledge: 51
       StrengthKnowledge: 51
       ToughnessKnowledge: 51
@@ -320,7 +317,6 @@
       ElectronicsKnowledge: 20
       WallsKnowledge: 20
       WindowsKnowledge: 20
-      SmokeablesKnowledge: 50
       ShootingKnowledge: 51
       ToughnessKnowledge: 51
       AthleticsKnowledge: 51
