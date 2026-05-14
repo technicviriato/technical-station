@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Based on: https://github.com/space-wizards/space-station-14/commit/253a9fbdf1372f80dad65a80dcb8e5d169861804#diff-cdb9fa29dbdddfde3feaa8cbd4e96626f583f99e4a4a8e77aad11e350805ab7d. Heavily modified by TheAmazingCoder (github)",
+    "copyright": "Based on: https://github.com/space-wizards/space-station-14/blob/253a9fbdf1372f80dad65a80dcb8e5d169861804/Resources/Textures/Objects/Tools/access_breaker.rsi/meta.json. Heavily modified by TheAmazingCoder (github)",
     "size": {
         "x": 32,
         "y": 32
