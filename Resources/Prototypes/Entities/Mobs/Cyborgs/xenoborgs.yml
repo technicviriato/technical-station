@@ -155,7 +155,7 @@
       - MMIFilled
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleLaser
       - XenoborgModuleJammer
   - type: ItemSlots
@@ -227,7 +227,7 @@
       - MMIFilled
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleSword
       - XenoborgModuleSpaceMovement
   - type: ItemSlots
@@ -299,7 +299,7 @@
       - MMIFilled
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleHypo
       - XenoborgModuleChameleonProjector
       - XenoborgModuleCloakDevice
@@ -362,7 +362,7 @@
       - MMI
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleLaser
       - XenoborgModuleJammer
   - type: ItemSlots
@@ -382,7 +382,7 @@
       - MMI
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleSword
       - XenoborgModuleSpaceMovement
   - type: ItemSlots
@@ -402,7 +402,7 @@
       - MMI
       borg_module:
       - XenoborgModuleBasic
-      - XenoborgModuleTool
+      #- XenoborgModuleTool # Trauma - engi xorg exists
       - XenoborgModuleHypo
       - XenoborgModuleChameleonProjector
       - XenoborgModuleCloakDevice
