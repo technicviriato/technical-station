@@ -13,7 +13,6 @@
   - !type:ModifyStatusEffect
     effectProto: JudoDiscombobulateStatusEffect # slowdown is roughly confusion
     time: 5
-    type: Add # paradise parity...
   - !type:TakeStaminaDamage
     amount: 10
   levelRequired: 0

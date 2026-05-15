@@ -29,6 +29,7 @@
         Blunt: 15
   - !type:ModifyParalysis
     time: 6
+    type: Update
   levelRequired: 10
 
 - type: combo
@@ -47,4 +48,5 @@
         Blunt: 40
   - !type:ModifyParalysis
     time: 2
+    type: Update
   levelRequired: 10
