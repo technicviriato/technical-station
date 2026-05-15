@@ -68,7 +68,7 @@
     state: shatter
   add:
   action: ActionCosmicConversion
-  tier: 2
+  tier: 1
 
 - type: influence
   id: InfluenceAstralStride
