@@ -49,7 +49,7 @@
     transmuteTo: null # No reforging
   - type: Parry
     maxParries: 2
-    maxReflects: 6 # No Armok, a melee-focused antag needs some counter to ranged weapons. They don't even get all 6 anyawy because not 100 melee skill.
+    maxReflects: 0
     soundOnReflect:
       path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
       params:
