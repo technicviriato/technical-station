@@ -42,3 +42,9 @@ ghost-role-information-dwingle-description = Dwingle all over the place.
 
 ghost-role-information-disgustingbackpack-name = Evil backpack
 ghost-role-information-disgustingbackpack-description = Drive your owner completely insane and make him hurt people.
+
+ghost-role-information-pirate-name = Pirate Scooner Crewman
+ghost-role-information-pirate-description = Follow your captain's orders. Loot, plunder, kill.
+
+ghost-role-information-pirate-captain-name = Pirate Scooner Captain
+ghost-role-information-pirate-captain-description = Order your crewmen around. Get rich.
