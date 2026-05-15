@@ -138,7 +138,7 @@
       - DemonicWhisperAction
   - type: ReplacementAccent
     accent: slaughterDemon
-  - type: KnowledgeGrant
+  - type: KnowledgeHolder
     skills:
       MartialArtHellRip: 88 # almost maxed out, demon cant read books
       StrengthKnowledge: 70
