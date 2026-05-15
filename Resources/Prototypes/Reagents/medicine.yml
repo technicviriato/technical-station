@@ -906,9 +906,9 @@
             Radiation: -2 # Was 3, Goob change from group to types
             Asphyxiation: -2 # Was 3, Goob change from group to types
             Bloodloss: -2 # Was 3, Goob change from group to types
-            Blunt: -1.5 # Was 2, Buffed due to limb damage changes(GoobStation)
-            Slash: -1.5 # Was 2, Buffed due to limb damage changes(GoobStation)
-            Piercing: -1.5 # Was 2, Buffed due to limb damage changes(GoobStation)
+            Blunt: -2 # Buffed due to limb damage changes(GoobStation)
+            Slash: -2 # Buffed due to limb damage changes(GoobStation)
+            Piercing: -2 # Buffed due to limb damage changes(GoobStation)
 
 - type: reagent
   id: Ultravasculine
