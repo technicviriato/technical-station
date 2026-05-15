@@ -231,6 +231,7 @@
   - !type:ModifyStatusEffect
     effectProto: StatusEffectForcedSleeping
     time: 7
+    type: Update
   - !type:HealthChange
     damage:
       types:

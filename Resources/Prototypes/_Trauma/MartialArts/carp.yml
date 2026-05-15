@@ -39,6 +39,7 @@
     amount: 60
   - !type:ModifyParalysis
     time: 6
+    type: Update
   - !type:HealthChange
     damage:
       types:
