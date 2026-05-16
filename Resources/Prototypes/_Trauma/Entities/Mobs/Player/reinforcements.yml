@@ -45,7 +45,7 @@
     id: SecurityCadetPDA
     ears: ClothingHeadsetAltSecurityRegular
     back: ClothingBackpackSecurity
-    eyes: ClothingEyesHudSecurity # TODO fix
+    eyes: ClothingEyesHudSecurity
 
 # Medical
 
@@ -240,11 +240,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineering
     shoes: ClothingShoesBootsWork
-    id: TechnicianPDA
+    id: TechnicalAssistantPDA
     ears: ClothingHeadsetEngineering
     back: ClothingBackpackEngineering
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow # TODO fix
+    gloves: ClothingHandsGlovesColorYellow
+    belt: ClothingBeltUtilityEngineering
 
 # Service
 
@@ -301,16 +302,30 @@
     shoes: ClothingShoesGaloshes
     id: JanitorPDA
     ears: ClothingHeadsetService
-    back: ClothingBackpackJanitor # TODO fix
+    back: ClothingBackpack
+    gloves: ClothingHandsGlovesJanitor
+    head: ClothingHeadHatPurplesoft
+    belt: ClothingBeltJanitorFilled
+    pocket1: KeyRingJanitor
+  storage:
+    inhand:
+    - MopItem
+    - Bucket
 
 - type: startingGear
   id: ReinforcementBeaconLawyer
   equipment:
-    jumpsuit: ClothingUniformJumpsuitLawyer
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
     shoes: ClothingShoesColorBlack
     id: LawyerPDA
-    ears: ClothingHeadsetService
-    back: ClothingBackpackSatchel # TODO fix
+    ears: ClothingHeadsetSecurity
+    back: ClothingBackpackSatchelLeather
+    neck: ClothingNeckLawyerbadge
+    pocket1: RubberStampLawyer
+    pocket2: LuxuryPen
+  storage:
+    inhand:
+    - BriefcaseBrownFilled
 
 - type: startingGear
   id: ReinforcementBeaconClown

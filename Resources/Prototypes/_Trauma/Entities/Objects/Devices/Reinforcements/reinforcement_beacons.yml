@@ -112,23 +112,23 @@
     - type: Loadout
       prototypes: [ ReinforcementBeaconOfficerSpec ]
 
-#- type: entity
-#  parent: BaseReinforcementBeacon
-#  id: ReinforcementBeaconCadet
-#  suffix: Cadet
-#  components:
-#  - type: DelayedGhostRole
-#    job: SecurityCadet
-#    name: ghost-role-information-reinforcement-cadet-name
-#  - type: GhostCharacterSpawner
-#    components:
-#    - type: Loadout
-#      prototypes: [ ReinforcementBeaconCadet ]
-#      roleLoadout: [ RoleSurvivalSecurity ]
-#    - type: AutoImplant
-#      implants:
-#      - MindShieldImplant
-#    - type: AntagImmune # TODO FIX
+- type: entity
+  parent: BaseReinforcementBeacon
+  id: ReinforcementBeaconCadet
+  suffix: Cadet
+  components:
+  - type: DelayedGhostRole
+    job: SecurityCadet
+    name: ghost-role-information-reinforcement-cadet-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconCadet ]
+      roleLoadout: [ RoleSurvivalSecurity ]
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
+    - type: AntagImmune
 
 # Medical
 
@@ -342,18 +342,18 @@
     - type: Loadout
       prototypes: [ ReinforcementBeaconAtmos ]
 
-#- type: entity
-#  parent: BaseReinforcementBeacon
-#  id: ReinforcementBeaconTechnician
-#  suffix: Technician
-#  components:
-#  - type: DelayedGhostRole
-#    job: TechnicalAssistant
-#    name: ghost-role-information-reinforcement-technician-name
-#  - type: GhostCharacterSpawner
-#    components:
-#    - type: Loadout
-#      prototypes: [ ReinforcementBeaconTechnician ] # TODO FIX
+- type: entity
+  parent: BaseReinforcementBeacon
+  id: ReinforcementBeaconTechnician
+  suffix: Technician
+  components:
+  - type: DelayedGhostRole
+    job: TechnicalAssistant
+    name: ghost-role-information-reinforcement-technician-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconTechnician ]
 
 # Service
 
@@ -396,31 +396,31 @@
     - type: Loadout
       prototypes: [ ReinforcementBeaconBotanist ]
 
-#- type: entity
-#  parent: BaseReinforcementBeacon
-#  id: ReinforcementBeaconJanitor
-#  suffix: Janitor
-#  components:
-#  - type: DelayedGhostRole
-#    job: Janitor
-#    name: ghost-role-information-reinforcement-janitor-name
-#  - type: GhostCharacterSpawner
-#    components:
-#    - type: Loadout
-#      prototypes: [ ReinforcementBeaconJanitor ] # TODO FIX
+- type: entity
+  parent: BaseReinforcementBeacon
+  id: ReinforcementBeaconJanitor
+  suffix: Janitor
+  components:
+  - type: DelayedGhostRole
+    job: Janitor
+    name: ghost-role-information-reinforcement-janitor-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconJanitor ]
 
-#- type: entity
-#  parent: BaseReinforcementBeacon
-#  id: ReinforcementBeaconLawyer
-#  suffix: Lawyer
-#  components:
-#  - type: DelayedGhostRole
-#    job: Lawyer
-#    name: ghost-role-information-reinforcement-lawyer-name
-#  - type: GhostCharacterSpawner
-#    components:
-#    - type: Loadout
-#      prototypes: [ ReinforcementBeaconLawyer ] # TODO FIX
+- type: entity
+  parent: BaseReinforcementBeacon
+  id: ReinforcementBeaconLawyer
+  suffix: Lawyer
+  components:
+  - type: DelayedGhostRole
+    job: Lawyer
+    name: ghost-role-information-reinforcement-lawyer-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconLawyer ]
 
 - type: entity
   parent: BaseReinforcementBeacon
@@ -499,19 +499,6 @@
     components:
     - type: Loadout
       prototypes: [ ReinforcementBeaconReporter ]
-
-- type: entity
-  parent: BaseReinforcementBeacon
-  id: ReinforcementBeaconZookeeper
-  suffix: Zookeeper
-  components:
-  - type: DelayedGhostRole
-    job: Zookeeper
-    name: ghost-role-information-reinforcement-zookeeper-name
-  - type: GhostCharacterSpawner
-    components:
-    - type: Loadout
-      prototypes: [ ReinforcementBeaconZookeeper ]
 
 - type: entity
   parent: BaseReinforcementBeacon

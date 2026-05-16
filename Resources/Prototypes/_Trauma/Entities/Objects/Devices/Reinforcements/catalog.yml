@@ -64,22 +64,21 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
-#- type: listing
-#  id: ReinforcementCadet
-#  name: reinforcement-cadet-name
-#  description: reinforcement-cadet-desc
-#  productEntity: ReinforcementBeaconCadet
-#  icon:
-#    sprite: Markers/jobs.rsi
-#    state: security_cadet
-#  cost:
-#    Spesos: 250
-#  categories:
-#  - ReinforcementsHoS
-#  restockTime: 0
-#  resetRestockOnPurchase: true
-#  restockAfterPurchase: 60 # TODO FIX
-
+- type: listing
+  id: ReinforcementCadet
+  name: reinforcement-cadet-name
+  description: reinforcement-cadet-desc
+  productEntity: ReinforcementBeaconCadet
+  icon:
+    sprite: Markers/jobs.rsi
+    state: security_cadet
+  cost:
+    Spesos: 250
+  categories:
+  - ReinforcementsHoS
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
 # Medical
 
 - type: listing
@@ -328,21 +327,21 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
-#- type: listing
-#  id: ReinforcementTechnician
-#  name: reinforcement-technician-name
-#  description: reinforcement-technician-desc
-#  productEntity: ReinforcementBeaconTechnician
-#  icon:
-#    sprite: Markers/jobs.rsi
-#    state: technical_assistant
-#  cost:
-#    Spesos: 750
-#  categories:
-#  - EngineeringHoP
-#  restockTime: 0
-#  resetRestockOnPurchase: true
-#  restockAfterPurchase: 60 # TODO FIX
+- type: listing
+  id: ReinforcementTechnician
+  name: reinforcement-technician-name
+  description: reinforcement-technician-desc
+  productEntity: ReinforcementBeaconTechnician
+  icon:
+    sprite: Markers/jobs.rsi
+    state: technical_assistant
+  cost:
+    Spesos: 750
+  categories:
+  - EngineeringHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
 
 # Service
 
@@ -394,37 +393,37 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
-#- type: listing
-#  id: ReinforcementJanitor
-#  name: reinforcement-janitor-name
-#  description: reinforcement-janitor-desc
-#  productEntity: ReinforcementBeaconJanitor
-#  icon:
-#    sprite: Markers/jobs.rsi
-#    state: janitor
-#  cost:
-#    Spesos: 500
-#  categories:
-#  - ServiceHoP
-#  restockTime: 0
-#  resetRestockOnPurchase: true
-#  restockAfterPurchase: 60 # TODO FIX
+- type: listing
+  id: ReinforcementJanitor
+  name: reinforcement-janitor-name
+  description: reinforcement-janitor-desc
+  productEntity: ReinforcementBeaconJanitor
+  icon:
+    sprite: Markers/jobs.rsi
+    state: janitor
+  cost:
+    Spesos: 500
+  categories:
+  - ServiceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
 
-#- type: listing
-#  id: ReinforcementLawyer
-#  name: reinforcement-lawyer-name
-#  description: reinforcement-lawyer-desc
-#  productEntity: ReinforcementBeaconLawyer
-#  icon:
-#    sprite: Markers/jobs.rsi
-#    state: lawyer
-#  cost:
-#    Spesos: 750
-#  categories:
-#  - ServiceHoP
-#  restockTime: 0
-#  resetRestockOnPurchase: true
-#  restockAfterPurchase: 60 # TODO FIX
+- type: listing
+  id: ReinforcementLawyer
+  name: reinforcement-lawyer-name
+  description: reinforcement-lawyer-desc
+  productEntity: ReinforcementBeaconLawyer
+  icon:
+    sprite: Markers/jobs.rsi
+    state: lawyer
+  cost:
+    Spesos: 750
+  categories:
+  - ServiceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
 
 - type: listing
   id: ReinforcementClown
