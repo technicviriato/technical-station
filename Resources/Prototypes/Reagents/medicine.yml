@@ -895,20 +895,12 @@
   metabolisms:
     Bloodstream:
       effects:
-      - !type:HealthChange # Goobstation - Make Omnizine great again!!!!!!!
+      - !type:EvenHealthChange
         damage:
-          types: # Goobstation change, Healthchange needs types or groups and groups fuck up the math for some reason and split the groups into types anyway
-            Heat: -2 # Was 3, Goob change from group to types
-            Shock: -2 # Was 3, Goob change from group to types
-            Cold: -2 # Was 3, Goob change from group to types
-            Caustic: -2 # Was 3, Goob change from group to types
-            Poison: -2 # Was 3, Goob change from group to types
-            Radiation: -2 # Was 3, Goob change from group to types
-            Asphyxiation: -2 # Was 3, Goob change from group to types
-            Bloodloss: -2 # Was 3, Goob change from group to types
-            Blunt: -2 # Buffed due to limb damage changes(GoobStation)
-            Slash: -2 # Buffed due to limb damage changes(GoobStation)
-            Piercing: -2 # Buffed due to limb damage changes(GoobStation)
+          Burn: -2
+          Toxin: -2
+          Airloss: -2
+          Brute: -2
 
 - type: reagent
   id: Ultravasculine
