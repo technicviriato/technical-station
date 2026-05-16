@@ -8,7 +8,6 @@
     amount: 80
   - !type:ModifyParalysis
     time: 6
-    type: Update
   - !type:HealthChange
     damage:
       types:
@@ -54,5 +53,4 @@
     amount: 100
   - !type:ModifyParalysis
     time: 8
-    type: Update
   levelRequired: 10

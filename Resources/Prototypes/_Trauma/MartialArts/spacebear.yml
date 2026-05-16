@@ -36,11 +36,9 @@
   - !type:ModifyKnockdown
     time: 4
     drop: true
-    type: Update
   - !type:GenericStatusEffect
     key: SlowedDown
     time: 6
-    type: Update
   levelRequired: 26
 
 - type: combo

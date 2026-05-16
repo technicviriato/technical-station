@@ -31,7 +31,6 @@
   opponentEffects:
   - !type:ModifyParalysis
     time: 9
-    type: Update
   - !type:HealthChange
     damage:
       types:
@@ -49,7 +48,6 @@
   opponentEffects:
   - !type:ModifyParalysis
     time: 7
-    type: Update
   - !type:HealthChange
     damage:
       types:
