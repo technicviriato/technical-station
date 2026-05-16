@@ -1,6 +1,22 @@
 # Security
 
 - type: listing
+  id: ReinforcementDetective
+  name: reinforcement-detective-name
+  description: reinforcement-detective-desc
+  productEntity: ReinforcementBeaconDetective
+  icon:
+    sprite: Markers/jobs.rsi
+    state: detective
+  cost:
+    Spesos: 1500
+  categories:
+  - ReinforcementsHoS
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
   id: SecoffReinforcement
   name: reinforcement-sec-name
   description: reinforcement-sec-desc
@@ -48,23 +64,287 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
-# Civilian
+#- type: listing
+#  id: ReinforcementCadet
+#  name: reinforcement-cadet-name
+#  description: reinforcement-cadet-desc
+#  productEntity: ReinforcementBeaconCadet
+#  icon:
+#    sprite: Markers/jobs.rsi
+#    state: security_cadet
+#  cost:
+#    Spesos: 250
+#  categories:
+#  - ReinforcementsHoS
+#  restockTime: 0
+#  resetRestockOnPurchase: true
+#  restockAfterPurchase: 60 # TODO FIX
+
+# Medical
 
 - type: listing
-  id: ReinforcementAssistant
-  name: reinforcement-assistant-name
-  description: reinforcement-assistant-desc
-  productEntity: ReinforcementBeaconAssistant
+  id: ReinforcementBeaconDoctor
+  name: reinforcement-doctor-name
+  description: reinforcement-doctor-desc
+  productEntity: ReinforcementBeaconDoctor
   icon:
     sprite: Markers/jobs.rsi
-    state: passenger
+    state: doctor
   cost:
-    Spesos: 250
+    Spesos: 1250
   categories:
-  - ServiceHoP
+  - MedicalHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementBeaconChemist
+  name: reinforcement-chemist-name
+  description: reinforcement-chemist-desc
+  productEntity: ReinforcementBeaconChemist
+  icon:
+    sprite: Markers/jobs.rsi
+    state: chemist
+  cost:
+    Spesos: 2000
+  categories:
+  - MedicalHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementParamedic
+  name: reinforcement-paramedic-name
+  description: reinforcement-paramedic-desc
+  productEntity: ReinforcementBeaconParamedic
+  icon:
+    sprite: Markers/jobs.rsi
+    state: paramedic
+  cost:
+    Spesos: 1500
+  categories:
+  - MedicalHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementVirologist
+  name: reinforcement-virologist-name
+  description: reinforcement-virologist-desc
+  productEntity: ReinforcementBeaconVirologist
+  icon:
+    sprite: Markers/jobs.rsi
+    state: virologist
+  cost:
+    Spesos: 1500
+  categories:
+  - MedicalHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementPsychologist
+  name: reinforcement-psychologist-name
+  description: reinforcement-psychologist-desc
+  productEntity: ReinforcementBeaconPsychologist
+  icon:
+    sprite: Markers/jobs.rsi
+    state: psychologist
+  cost:
+    Spesos: 1000
+  categories:
+  - MedicalHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementMedicalIntern
+  name: reinforcement-medical-intern-name
+  description: reinforcement-medical-intern-desc
+  productEntity: ReinforcementBeaconMedicalIntern
+  icon:
+    sprite: Markers/jobs.rsi
+    state: medical_intern
+  cost:
+    Spesos: 500
+  categories:
+  - MedicalHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+# Science
+
+- type: listing
+  id: ReinforcementBeaconScientist
+  name: reinforcement-scientist-name
+  description: reinforcement-scientist-desc
+  productEntity: ReinforcementBeaconSci
+  icon:
+    sprite: Markers/jobs.rsi
+    state: scientist
+  cost:
+    Spesos: 1000
+  categories:
+  - ScienceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementRoboticist
+  name: reinforcement-roboticist-name
+  description: reinforcement-roboticist-desc
+  productEntity: ReinforcementBeaconRoboticist
+  icon:
+    sprite: Markers/jobs.rsi
+    state: roboticist
+  cost:
+    Spesos: 1750
+  categories:
+  - ScienceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementGeneticist
+  name: reinforcement-geneticist-name
+  description: reinforcement-geneticist-desc
+  productEntity: ReinforcementBeaconGeneticist
+  icon:
+    sprite: Markers/jobs.rsi
+    state: geneticist
+  cost:
+    Spesos: 1500
+  categories:
+  - ScienceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementResearchAssistant
+  name: reinforcement-research-assistant-name
+  description: reinforcement-research-assistant-desc
+  productEntity: ReinforcementBeaconResearchAssistant
+  icon:
+    sprite: Markers/jobs.rsi
+    state: research_assistant
+  cost:
+    Spesos: 500
+  categories:
+  - ScienceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementBeaconDClass
+  name: reinforcement-dclass-name
+  description: reinforcement-dclass-desc
+  productEntity: ReinforcementBeaconDClass
+  icon:
+    sprite: Markers/jobs.rsi
+    state: prisoner
+  cost:
+    Spesos: 250
+  categories:
+  - ScienceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+# Cargo
+
+- type: listing
+  id: ReinforcementBeaconCargo
+  name: reinforcement-cargo-name
+  description: reinforcement-cargo-desc
+  productEntity: ReinforcementBeaconCargo
+  icon:
+    sprite: Markers/jobs.rsi
+    state: cargo_tech
+  cost:
+    Spesos: 1250
+  categories:
+  - CargoHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementBeaconSalv
+  name: reinforcement-salvage-name
+  description: reinforcement-salvage-desc
+  productEntity: ReinforcementBeaconSalv
+  icon:
+    sprite: Markers/jobs.rsi
+    state: salvagespecialist
+  cost:
+    Spesos: 2000
+  categories:
+  - CargoHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+# Engineering
+
+- type: listing
+  id: ReinforcementBeaconEngineer
+  name: reinforcement-engineer-name
+  description: reinforcement-engineer-desc
+  productEntity: ReinforcementBeaconEngi
+  icon:
+    sprite: Markers/jobs.rsi
+    state: engineer
+  cost:
+    Spesos: 1500
+  categories:
+  - EngineeringHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementBeaconAtmos
+  name: reinforcement-atmos-name
+  description: reinforcement-atmos-desc
+  productEntity: ReinforcementBeaconAtmos
+  icon:
+    sprite: Markers/jobs.rsi
+    state: atmospherics
+  cost:
+    Spesos: 2000
+  categories:
+  - EngineeringHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+#- type: listing
+#  id: ReinforcementTechnician
+#  name: reinforcement-technician-name
+#  description: reinforcement-technician-desc
+#  productEntity: ReinforcementBeaconTechnician
+#  icon:
+#    sprite: Markers/jobs.rsi
+#    state: technical_assistant
+#  cost:
+#    Spesos: 750
+#  categories:
+#  - EngineeringHoP
+#  restockTime: 0
+#  resetRestockOnPurchase: true
+#  restockAfterPurchase: 60 # TODO FIX
+
+# Service
 
 - type: listing
   id: ReinforcementBartender
@@ -114,130 +394,162 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
-- type: listing
-  id: ReinforcementBeaconEngineer
-  name: reinforcement-engineer-name
-  description: reinforcement-engineer-desc
-  productEntity: ReinforcementBeaconEngi
-  icon:
-    sprite: Markers/jobs.rsi
-    state: engineer
-  cost:
-    Spesos: 1500
-  categories:
-  - EngineeringHoP
-  restockTime: 0
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 60
+#- type: listing
+#  id: ReinforcementJanitor
+#  name: reinforcement-janitor-name
+#  description: reinforcement-janitor-desc
+#  productEntity: ReinforcementBeaconJanitor
+#  icon:
+#    sprite: Markers/jobs.rsi
+#    state: janitor
+#  cost:
+#    Spesos: 500
+#  categories:
+#  - ServiceHoP
+#  restockTime: 0
+#  resetRestockOnPurchase: true
+#  restockAfterPurchase: 60 # TODO FIX
+
+#- type: listing
+#  id: ReinforcementLawyer
+#  name: reinforcement-lawyer-name
+#  description: reinforcement-lawyer-desc
+#  productEntity: ReinforcementBeaconLawyer
+#  icon:
+#    sprite: Markers/jobs.rsi
+#    state: lawyer
+#  cost:
+#    Spesos: 750
+#  categories:
+#  - ServiceHoP
+#  restockTime: 0
+#  resetRestockOnPurchase: true
+#  restockAfterPurchase: 60 # TODO FIX
 
 - type: listing
-  id: ReinforcementBeaconAtmos
-  name: reinforcement-atmos-name
-  description: reinforcement-atmos-desc
-  productEntity: ReinforcementBeaconAtmos
+  id: ReinforcementClown
+  name: reinforcement-clown-name
+  description: reinforcement-clown-desc
+  productEntity: ReinforcementBeaconClown
   icon:
     sprite: Markers/jobs.rsi
-    state: atmospherics
-  cost:
-    Spesos: 2000
-  categories:
-  - EngineeringHoP
-  restockTime: 0
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 60
-
-- type: listing
-  id: ReinforcementBeaconScientist
-  name: reinforcement-scientist-name
-  description: reinforcement-scientist-desc
-  productEntity: ReinforcementBeaconSci
-  icon:
-    sprite: Markers/jobs.rsi
-    state: scientist
-  cost:
-    Spesos: 1000
-  categories:
-  - ScienceHoP
-  restockTime: 0
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 60
-
-- type: listing
-  id: ReinforcementBeaconDClass
-  name: reinforcement-dclass-name
-  description: reinforcement-dclass-desc
-  productEntity: ReinforcementBeaconDClass
-  icon:
-    sprite: Markers/jobs.rsi
-    state: prisoner
+    state: clown
   cost:
     Spesos: 250
   categories:
-  - ScienceHoP
+  - ServiceHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
 - type: listing
-  id: ReinforcementBeaconDoctor
-  name: reinforcement-doctor-name
-  description: reinforcement-doctor-desc
-  productEntity: ReinforcementBeaconDoctor
+  id: ReinforcementMime
+  name: reinforcement-mime-name
+  description: reinforcement-mime-desc
+  productEntity: ReinforcementBeaconMime
   icon:
     sprite: Markers/jobs.rsi
-    state: doctor
+    state: mime
   cost:
-    Spesos: 1250
+    Spesos: 250
   categories:
-  - MedicalHoP
+  - ServiceHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
 - type: listing
-  id: ReinforcementBeaconChemist
-  name: reinforcement-chemist-name
-  description: reinforcement-chemist-desc
-  productEntity: ReinforcementBeaconChemist
+  id: ReinforcementChaplain
+  name: reinforcement-chaplain-name
+  description: reinforcement-chaplain-desc
+  productEntity: ReinforcementBeaconChaplain
   icon:
     sprite: Markers/jobs.rsi
-    state: chemist
+    state: chaplain
   cost:
-    Spesos: 2000
+    Spesos: 500
   categories:
-  - MedicalHoP
+  - ServiceHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
 - type: listing
-  id: ReinforcementBeaconCargo
-  name: reinforcement-cargo-name
-  description: reinforcement-cargo-desc
-  productEntity: ReinforcementBeaconCargo
+  id: ReinforcementLibrarian
+  name: reinforcement-librarian-name
+  description: reinforcement-librarian-desc
+  productEntity: ReinforcementBeaconLibrarian
   icon:
     sprite: Markers/jobs.rsi
-    state: cargo_tech
+    state: librarian
   cost:
-    Spesos: 1250
+    Spesos: 500
   categories:
-  - CargoHoP
+  - ServiceHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
 
 - type: listing
-  id: ReinforcementBeaconSalv
-  name: reinforcement-salvage-name
-  description: reinforcement-salvage-desc
-  productEntity: ReinforcementBeaconSalv
+  id: ReinforcementMusician
+  name: reinforcement-musician-name
+  description: reinforcement-musician-desc
+  productEntity: ReinforcementBeaconMusician
   icon:
     sprite: Markers/jobs.rsi
-    state: salvagespecialist
+    state: musician
   cost:
-    Spesos: 2000
+    Spesos: 250
   categories:
-  - CargoHoP
+  - ServiceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementReporter
+  name: reinforcement-reporter-name
+  description: reinforcement-reporter-desc
+  productEntity: ReinforcementBeaconReporter
+  icon:
+    sprite: Markers/jobs.rsi
+    state: reporter
+  cost:
+    Spesos: 250
+  categories:
+  - ServiceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementServiceWorker
+  name: reinforcement-service-worker-name
+  description: reinforcement-service-worker-desc
+  productEntity: ReinforcementBeaconServiceWorker
+  icon:
+    sprite: Markers/jobs.rsi
+    state: passenger
+  cost:
+    Spesos: 250
+  categories:
+  - ServiceHoP
+  restockTime: 0
+  resetRestockOnPurchase: true
+  restockAfterPurchase: 60
+
+- type: listing
+  id: ReinforcementAssistant
+  name: reinforcement-assistant-name
+  description: reinforcement-assistant-desc
+  productEntity: ReinforcementBeaconAssistant
+  icon:
+    sprite: Markers/jobs.rsi
+    state: passenger
+  cost:
+    Spesos: 250
+  categories:
+  - ServiceHoP
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60

@@ -1,107 +1,56 @@
-# Starting Gear Sec
+# Security
 
 - type: startingGear
-  id: ReinforcementOfficer
+  id: ReinforcementBeaconDetective
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveGrey
+    shoes: ClothingShoesBootsJackFilled
+    id: DetectivePDA
+    ears: ClothingHeadsetAltSecurityRegular
+    back: ClothingBackpackSecurity
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesForensic
+    outerClothing: ClothingOuterVestDetective
+    head: ClothingHeadHatFedoraGrey
+  storage:
+    back:
+    - ForensicScanner
+
+- type: startingGear
+  id: ReinforcementBeaconOfficer
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsJackFilled
     id: SecurityPDA
     ears: ClothingHeadsetAltSecurityRegular
     back: ClothingBackpackSecurity
-    eyes: ClothingEyesHudSecurity
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesSecurity
+    outerClothing: ClothingOuterArmorBasicSlim
+    head: ClothingHeadHelmetBasicAlt
 
 - type: startingGear
-  parent: ReinforcementOfficer
-  id: ReinforcementOfficerSpec
+  parent: ReinforcementBeaconOfficer
+  id: ReinforcementBeaconOfficerSpec
   equipment:
+    suitstorage: WeaponLaserCarbine
+    belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
-    outerClothing: ClothingOuterArmorBasic
-    head: ClothingHeadHelmetBasic
-  storage:
-    back:
-    - WeaponLaserCarbine
-
-# StartingGear Others
 
 - type: startingGear
-  id: AssistantReinforcement
+  id: ReinforcementBeaconCadet
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorGrey
-    shoes: ClothingShoesColorBlack
-    id: PassengerPDA
-    ears: ClothingHeadsetGrey
-    back: ClothingBackpack
+    jumpsuit: ClothingUniformJumpsuitColorRed
+    shoes: ClothingShoesBootsJack
+    id: SecurityCadetPDA
+    ears: ClothingHeadsetAltSecurityRegular
+    back: ClothingBackpackSecurity
+    eyes: ClothingEyesHudSecurity # TODO fix
+
+# Medical
 
 - type: startingGear
-  id: BartenderReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitBartender
-    shoes: ClothingShoesColorBlack
-    id: BartenderPDA
-    ears: ClothingHeadsetService
-    back: ClothingBackpack
-
-- type: startingGear
-  id: ChefReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitChef
-    shoes: ClothingShoesColorBlack
-    id: ChefPDA
-    ears: ClothingHeadsetService
-    back: ClothingBackpack
-
-- type: startingGear
-  id: BotanistReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitHydroponics
-    shoes: ClothingShoesColorGreen
-    id: BotanistPDA
-    ears: ClothingHeadsetService
-    back: ClothingBackpackHydroponics
-
-- type: startingGear
-  id: EngineerReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitEngineering
-    shoes: ClothingShoesBootsWork
-    id: EngineerPDA
-    ears: ClothingHeadsetEngineering
-    back: ClothingBackpackEngineering
-    eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
-    belt: ClothingBeltUtilityEngineering
-
-- type: startingGear
-  id: AtmosReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitAtmos
-    shoes: ClothingShoesColorWhite
-    id: AtmosPDA
-    ears: ClothingHeadsetEngineering
-    back: ClothingBackpackAtmospherics
-    eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
-    belt: ClothingBeltUtilityEngineering
-
-- type: startingGear
-  id: ScienceReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitScientist
-    shoes: ClothingShoesColorWhite
-    id: SciencePDA
-    ears: ClothingHeadsetScience
-    back: ClothingBackpackScience
-    eyes: ClothingEyesGlasses
-
-- type: startingGear
-  id: DClassReinforcement
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitPrisoner
-    shoes: ClothingShoesColorBlack
-    id: DClassIDCard
-
-- type: startingGear
-  id: DoctorReinforcement
+  id: ReinforcementBeaconDoctor
   equipment:
     jumpsuit: ClothingUniformJumpsuitMedicalDoctor
     shoes: ClothingShoesColorWhite
@@ -113,7 +62,7 @@
     belt: ClothingBeltMedicalFilled
 
 - type: startingGear
-  id: ChemistReinforcement
+  id: ReinforcementBeaconChemist
   equipment:
     jumpsuit: ClothingUniformJumpsuitChemistry
     shoes: ClothingShoesColorOrange
@@ -123,17 +72,130 @@
     eyes: ClothingEyesGlassesChemical
     belt: ChemBag
 
+
 - type: startingGear
-  id: CargoReinforcement
+  id: ReinforcementBeaconParamedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedic
+    shoes: ClothingShoesColorWhite
+    id: ParamedicPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackMedical
+    eyes: ClothingEyesHudMedical
+    gloves: ClothingHandsGlovesNitrile
+    belt: ClothingBeltMedicalFilled
+    pocket1: UndeterminedVoidsuitParamedic
+  storage:
+    back:
+    - EmergencyRollerBedSpawnFolded
+
+- type: startingGear
+  id: ReinforcementBeaconVirologist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitVirologist
+    shoes: ClothingShoesColorGreen
+    id: VirologistPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackVirology
+    eyes: ClothingEyesHudViro
+    gloves: ClothingHandsGlovesNitrile
+    mask: ClothingMaskSurgical
+    outerClothing: ClothingOuterBioVirology
+    head: ClothingHeadHatHoodBioVirology
+
+- type: startingGear
+  id: ReinforcementBeaconPsychologist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPsychologist
+    shoes: ClothingShoesLeather
+    neck: ClothingNeckTieDet
+    id: PsychologistPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackMedical
+    pocket1: PillCanisterSpaceDrugs
+
+- type: startingGear
+  id: ReinforcementBeaconMedicalIntern
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    id: MedicalInternPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackMedical
+    eyes: ClothingEyesHudMedical
+    gloves: ClothingHandsGlovesNitrile
+
+# Science
+
+- type: startingGear
+  id: ReinforcementBeaconSci
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientist
+    shoes: ClothingShoesColorWhite
+    id: SciencePDA
+    ears: ClothingHeadsetScience
+    back: ClothingBackpackScience
+    eyes: ClothingEyesGlasses
+    pocket1: NodeScanner
+    pocket2: AnomalyScanner
+
+- type: startingGear
+  id: ReinforcementBeaconRoboticist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+    shoes: ClothingShoesColorBlack
+    id: RoboticistPDA
+    ears: ClothingHeadsetRobotics
+    back: ClothingBackpackScience
+    eyes: ClothingEyesHudDiagnostic
+    gloves: ClothingHandsGlovesRobohands
+    outerClothing: ClothingOuterCoatRoboOpened
+    belt: ClothingBeltUtilityFilled
+
+- type: startingGear
+  id: ReinforcementBeaconGeneticist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGenetics
+    shoes: ClothingShoesColorWhite
+    id: GeneticistPDA
+    ears: ClothingHeadsetScience
+    back: ClothingBackpackGenetics
+    eyes: ClothingEyesGlasses
+    outerClothing: ClothingOuterCoatLabGeneOpened
+    pocket1: HandheldGeneticsScanner
+
+- type: startingGear
+  id: ReinforcementBeaconResearchAssistant
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientist
+    shoes: ClothingShoesColorWhite
+    id: ResearchAssistantPDA
+    ears: ClothingHeadsetScience
+    back: ClothingBackpackScience
+    eyes: ClothingEyesGlasses
+
+- type: startingGear
+  id: ReinforcementBeaconDClass
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    shoes: ClothingShoesColorBlack
+    id: DClassIDCard
+
+# Cargo
+
+- type: startingGear
+  id: ReinforcementBeaconCargo
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargo
-    shoes: ClothingShoesColorBrown
+    shoes: ClothingShoesColorBlack
     id: CargoPDA
     ears: ClothingHeadsetCargo
     back: ClothingBackpackCargo
+    head: ClothingHeadHatCargosoft
+    pocket1: AppraisalTool
 
 - type: startingGear
-  id: SalvageReinforcement
+  id: ReinforcementBeaconSalv
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     shoes: ClothingShoesBootsSalvage
@@ -141,3 +203,212 @@
     ears: ClothingHeadsetCargo
     back: ClothingBackpackSalvage
     belt: ClothingBeltSalvageWebbing
+
+# Engineering
+
+- type: startingGear
+  id: ReinforcementBeaconEngi
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineering
+    shoes: ClothingShoesBootsWork
+    id: EngineerPDA
+    ears: ClothingHeadsetEngineering
+    back: ClothingBackpackEngineering
+    eyes: ClothingEyesGlassesMeson
+    gloves: ClothingHandsGlovesColorYellow
+    mask: ClothingMaskGas
+    outerClothing: ClothingOuterVestHazard
+    head: ClothingHeadHatHardhatYelloDark
+    belt: ClothingBeltUtilityEngineering
+    pocket1: UndeterminedVoidsuitEngineer
+
+- type: startingGear
+  id: ReinforcementBeaconAtmos
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAtmos
+    shoes: ClothingShoesColorWhite
+    id: AtmosPDA
+    ears: ClothingHeadsetEngineering
+    back: ClothingModsuitAtmostechPowerCell
+    eyes: ClothingEyesGlassesMeson
+    gloves: ClothingHandsGlovesAtmosInsulated
+    mask: ClothingMaskGasAtmos
+    belt: ClothingBeltUtilityEngineering
+
+- type: startingGear
+  id: ReinforcementBeaconTechnician
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineering
+    shoes: ClothingShoesBootsWork
+    id: TechnicianPDA
+    ears: ClothingHeadsetEngineering
+    back: ClothingBackpackEngineering
+    eyes: ClothingEyesGlassesMeson
+    gloves: ClothingHandsGlovesColorYellow # TODO fix
+
+# Service
+
+- type: startingGear
+  id: ReinforcementBeaconBartender
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+    shoes: ClothingShoesColorBlack
+    head: ClothingHeadHatTophat
+    id: BartenderPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpack
+    eyes: ClothingEyesGlassesSunglasses
+    outerClothing: ClothingOuterArmorBasicSlim
+    suitstorage: WeaponShotgunDoubleBarreledRubber
+  storage:
+    back:
+      - BoxBeanbag
+
+- type: startingGear
+  id: ReinforcementBeaconChef
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+    shoes: ClothingShoesChef
+    head: ClothingHeadHatChef
+    id: ChefPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpack
+    outerClothing: ClothingOuterJacketChef
+    belt: ClothingBeltChefFilled
+    pocket1: BookHowToCookForFortySpaceman
+    pocket2: ButchCleaver
+  storage:
+    inhand:
+    - DrinkWineBottleFull
+    - IngredientsBeacon
+
+- type: startingGear
+  id: ReinforcementBeaconBotanist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHydroponics
+    shoes: ClothingShoesColorGreen
+    id: BotanistPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackHydroponics
+    gloves: ClothingHandsGlovesLeather
+    suitstorage: ClothingOuterApronBotanist
+    belt: ClothingBeltPlantFilled
+
+- type: startingGear
+  id: ReinforcementBeaconJanitor
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJanitor
+    shoes: ClothingShoesGaloshes
+    id: JanitorPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackJanitor # TODO fix
+
+- type: startingGear
+  id: ReinforcementBeaconLawyer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyer
+    shoes: ClothingShoesColorBlack
+    id: LawyerPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchel # TODO fix
+
+- type: startingGear
+  id: ReinforcementBeaconClown
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitClown
+    shoes: ClothingShoesClown
+    id: ClownPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackClown
+    mask: CLothingMaskClown
+    outerClothing: ClothingOuterClownPriest
+    pocket1: BikeHorn
+    pocket2: ClownRecorder
+
+- type: startingGear
+  id: ReinforcementBeaconMime
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMime
+    shoes: ClothingShoesColorWhite
+    id: MimePDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackMime
+    head: ClothingHeadHatBeretFrench
+    gloves: ClothingHandsGlovesColorWhite
+    mask: ClothingMaskMime
+    belt: ClothingBeltSuspendersBlack
+
+
+- type: startingGear
+  id: ReinforcementBeaconChaplain
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChaplain
+    shoes: ClothingShoesColorBlack
+    id: ChaplainPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchel
+    neck: ClothingNeckStoleChaplain
+    outerClothing: ClothingOuterHoodieChaplain
+    belt: Bible
+  inhand:
+  - Nullrod
+  - ArmamentsBeacon
+
+- type: startingGear
+  id: ReinforcementBeaconLibrarian
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLibrarian
+    shoes: ClothingShoesBootsLaceup
+    id: LibrarianPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchel
+    eyes: ClothingEyesGlassesJamjar
+    neck: ClothingNeckScarfStripedGreen
+    pocket1: BookSun
+    pocket2: BookRandomStory
+  storage:
+    inhand:
+    - Cane
+
+- type: startingGear
+  id: ReinforcementBeaconMusician
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMusician
+    shoes: ClothingShoesBootsLaceup
+    id: MusicianPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchelLeather
+  storage:
+    inhand:
+    - InstrusmentsBeacon
+
+- type: startingGear
+  id: ReinforcementBeaconReporter
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitReporter
+    shoes: ClothingShoesColorBlack
+    id: ReporterPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchel
+    outerClothing: SurveillanceWirelessCameraBodyEntertainment
+  storage:
+    inhand:
+    - MicrophoneInstrument
+
+- type: startingGear
+  id: ReinforcementBeaconServiceWorker
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+    shoes: ClothingShoesColorBlack
+    id: ServiceWorkerPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpack
+
+- type: startingGear
+  id: ReinforcementBeaconAssistant
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesColorBlack
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey
+    back: ClothingBackpack
