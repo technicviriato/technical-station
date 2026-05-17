@@ -23,7 +23,7 @@
   productEntity: ReinforcementBeaconSecurityOfficer
   icon:
     sprite: Markers/jobs.rsi
-    state: security_cadet
+    state: security_officer
   cost:
     Spesos: 500
   categories:
@@ -39,7 +39,7 @@
   productEntity: ReinforcementBeaconSecurityOfficerFast
   icon:
     sprite: Markers/jobs.rsi
-    state: security_cadet
+    state: security_officer
   cost:
     Spesos: 2500
   categories:
