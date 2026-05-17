@@ -84,6 +84,18 @@
   - type: Sprite
     layers:
     - state: tail-icon
+  - type: Woundable
+    boneEntity: null
+    integrity: 500
+    integrityCap: 500
+    thresholds:
+      Minor: 0
+      Moderate: 0
+      Severe: 0
+      Critical: 0
+      Mangled: 0
+  - type: Damageable
+    damageModifierSet: DragonTail
   # TODO SHITMED: space flight stuff, give the funny action?
 
 ## Organs
