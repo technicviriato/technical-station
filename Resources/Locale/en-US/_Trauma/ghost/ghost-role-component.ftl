@@ -20,8 +20,11 @@ ghost-role-information-DClass-description = The science team wants to use you fo
 ghost-role-information-facehugger-name = facehugger
 ghost-role-information-facehugger-description = A writhing nightmare. The facehugger clings to its victim's face, forcibly inserting a xenomorph fetus.
 
-ghost-role-ratma-name = Ratma
-ghost-role-ratma-desc = Hunt and kill.
+ghost-role-information-wailing-horse-name = Wailing Horse
+ghost-role-information-wailing-horse-desc = It hurts...Why does it hurt so much?
+
+ghost-role-information-ratma-name = Ratma
+ghost-role-information-ratma-desc = Hunt and kill.
 
 ghost-role-information-breadling-namee = Breadling
 ghost-role-information-BreadLing-desc = Brought to life by a loving baker, enjoy the fickle time you have remaining. You have no knowledge of your coming death unless told.
