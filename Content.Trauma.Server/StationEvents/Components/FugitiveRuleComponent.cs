@@ -101,4 +101,10 @@ public sealed partial class FugitiveRuleComponent : Component
     /// </summary>
     [DataField]
     public int MaxCounts = 4;
+
+    /// <summary>
+    /// Stores which fugitive mind is assigned to each objective prototype, so both hunters get the same targets.
+    /// </summary>
+    [DataField]
+    public Dictionary<EntProtoId, EntityUid> ObjectiveTargets = new();
 }

@@ -5,3 +5,11 @@ hunter-role-greeting = You are a Space Police Officer. You have been tasked with
 fugitive-announcement-spacepol = SpacePol
 
 station-event-fugitive-hunt-announcement = Fugitives have been spotted aboard the station. Fugitive Hunters have been dispatched.
+
+fugitive-objective-unknown = unknown fugitive
+fugitive-objective-age-young = young
+fugitive-objective-age-middle = middle-aged
+fugitive-objective-age-old = old
+fugitive-objective-identifier-dna = DNA: {$dna}
+fugitive-objective-identifier-prints = Fingerprint: {$prints}
+fugitive-objective-description = {$age} {$species} {$sex}

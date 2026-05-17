@@ -47,16 +47,6 @@
       state: base
   - type: TargetObjective
   - type: FugitiveTarget
-  - type: PickRandomPerson
-    filters:
-    - !type:HasRoleMindFilter
-      whitelist:
-        components:
-        - FugitiveRole
-    - !type:TargetObjectiveMindFilter
-      blacklist:
-        components:
-        - KillPersonCondition
   - type: KillPersonCondition
     requireDead: true
     requireMaroon: true
@@ -75,16 +65,6 @@
       state: stunbaton_on
   - type: TargetObjective
   - type: FugitiveTarget
-  - type: PickRandomPerson
-    filters:
-    - !type:HasRoleMindFilter
-      whitelist:
-        components:
-        - FugitiveRole
-    - !type:TargetObjectiveMindFilter
-      blacklist:
-        components:
-        - KillPersonCondition
   - type: KillPersonCondition
     requireDead: false
     requireMaroon: true
