@@ -8573,3 +8573,10 @@ Entries:
   id: 983
   time: '2026-05-16T19:50:46.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2660
+- author: TurboTrackerss14
+  changes:
+  - type: Add
+    message: Chef now has a playtime requirement.
+  id: 984
+  time: '2026-05-17T03:43:12.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2664
