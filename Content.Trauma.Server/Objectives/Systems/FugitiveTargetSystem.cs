@@ -11,11 +11,11 @@ using Content.Trauma.Shared.Roles;
 
 namespace Content.Trauma.Server.Objectives.Systems;
 
-public sealed class FugitiveTargetSystem : EntitySystem
+public sealed partial class FugitiveTargetSystem : EntitySystem
 {
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
-    [Dependency] private readonly TargetObjectiveSystem _target = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private MetaDataSystem _metaData = default!;
+    [Dependency] private TargetObjectiveSystem _target = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     public override void Initialize()
     {

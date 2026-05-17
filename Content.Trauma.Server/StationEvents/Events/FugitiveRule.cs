@@ -21,13 +21,13 @@ using Content.Trauma.Common.Roles;
 
 namespace Content.Trauma.Server.StationEvents.Events;
 
-public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
+public sealed partial class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 {
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly PaperSystem _paper = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private GameTicker _gameTicker = default!;
+    [Dependency] private PaperSystem _paper = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
 
     public override void Initialize()
     {
