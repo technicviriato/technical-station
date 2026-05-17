@@ -79,6 +79,7 @@
   restockTime: 0
   resetRestockOnPurchase: true
   restockAfterPurchase: 60
+
 # Medical
 
 - type: listing
