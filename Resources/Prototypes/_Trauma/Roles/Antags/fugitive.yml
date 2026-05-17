@@ -14,9 +14,13 @@
     belt: ClothingBeltSecurityFilled
     id: VisitorPDA # maybe change title of id
     pocket1: WeaponPistolMk58
-    pocket2: MagazinePistol
+    pocket2: WeaponLaserSidearm
     ears: ClothingHeadsetAltFreelancer
     gloves: ClothingHandsGlovesCombat
+  storage:
+    back:
+    - BoxSurvivalSlotsSecurity
+    - MagazinePistol
 
 # Fugitives
   # Convict
