@@ -9,12 +9,22 @@
     outerClothing: ClothingOuterVestDetective
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsJackFilled
+    belt: ClothingBeltHolsterFilled
     id: DetectivePDA
+    pocket1: ForensicScanner
     ears: ClothingHeadsetAltSecurityRegular
     gloves: ClothingHandsGlovesForensic
-  storage:
-    back:
-    - ForensicScanner
+
+- type: startingGear
+  id: ReinforcementBeaconOfficerTemplate
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    jumpsuit: ClothingUniformJumpsuitSec
+    back: ClothingBackpackSecurity
+    shoes: ClothingShoesBootsJackFilled
+    id: SecurityPDA
+    ears: ClothingHeadsetAltSecurityRegular
+    gloves: ClothingHandsGlovesSecurity
 
 - type: startingGear
   id: ReinforcementBeaconOfficer
@@ -25,14 +35,112 @@
     outerClothing: ClothingOuterArmorBasicSlim
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsJackFilled
+    belt: ClothingSecurityFilled
     id: SecurityPDA
+    pocket1: WeaponLaserSidearm
     ears: ClothingHeadsetAltSecurityRegular
     gloves: ClothingHandsGlovesSecurity
 
 - type: startingGear
-  parent: ReinforcementBeaconOfficer
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecLaser
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCarbine
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecIon
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponEnergyIonRifle
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecRiotMelee
+  equipment:
+    head: ClothingHeadHelmetRiot
+    outerClothing: ClothingOuterArmorRiot
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+  storage:
+    back:
+    - TearGasGrenade # 1
+    - TearGasGrenade # 2
+    inhand:
+    - PolymberBaton
+    - RiotShield
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecRiotRanged
+  equipment:
+    head: ClothingHeadHelmetRiot
+    outerClothing: ClothingOuterArmorRiot
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponShotgunEnforcerRubber
+  storage:
+    back:
+    - TearGasGrenade # 1
+    - TearGasGrenade # 2
+    - BoxBeanbag
+    inhand:
+    - PolymberBaton
+    - RiotShield
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
   id: ReinforcementBeaconOfficerSpec
   equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCarbine
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpec
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCarbine
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpec
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCarbine
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpec
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCarbine
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpec
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
     suitstorage: WeaponLaserCarbine

@@ -110,6 +110,102 @@
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpecLaser ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerIon
+  suffix: Security, Ion
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpecIon ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerRiotMelee
+  suffix: Security, Riot, Melee
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpecRiotMelee ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerRiotRanged
+  suffix: Security, Riot, Ranged
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpecRiotRanged ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerLaser
+  suffix: Security, Laser
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpec ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerLaser
+  suffix: Security, Laser
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpec ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerLaser
+  suffix: Security, Laser
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpec ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerLaser
+  suffix: Security, Laser
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
+      prototypes: [ ReinforcementBeaconOfficerSpec ]
+
+- type: entity
+  parent: ReinforcementBeaconSecurityOfficer
+  id: ReinforcementBeaconSpecialistOfficerLaser
+  suffix: Security, Laser
+  components:
+  - type: DelayedGhostRole
+    name: ghost-role-information-reinforcement-specialist-sec-name
+  - type: GhostCharacterSpawner
+    components:
+    - type: Loadout
       prototypes: [ ReinforcementBeaconOfficerSpec ]
 
 - type: entity
