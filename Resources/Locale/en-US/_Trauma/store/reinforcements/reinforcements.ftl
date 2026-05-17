@@ -30,17 +30,17 @@ reinforcement-virologist-desc = Hire a virologist to research diseases and hopef
 reinforcement-psychologist-name = Hire Psychologist
 reinforcement-psychologist-desc = Hire a psychologist to keep the crew sane through traumatic incidents. Minimum arrival time of three minutes.
 
-reinforcement-medical-intern-name = Medical Intern Reinforcement
-reinforcement-medical-intern-desc = Call in a fresh-faced medical intern. They may lack experience, but they're eager to stabilize patients and learn on the job. Minimum arrival time of three minutes.
+reinforcement-medical-intern-name = Hire Medical Intern
+reinforcement-medical-intern-desc = Hire a medical intern to assist doctors and learn on the job. Minimum arrival time of three minutes.
 
 reinforcement-scientist-name = Hire Scientist
 reinforcement-scientist-desc = Hire a scientist to conduct dangerous experiments and advance station research. Minimum arrival time of three minutes.
 
-reinforcement-roboticist-name = Roboticist Reinforcement
-reinforcement-roboticist-desc = Call in a roboticist capable of constructing cyborgs, repairing silicon life, and keeping the station's machines operational. Minimum arrival time of three minutes.
+reinforcement-roboticist-name = Hire Roboticist
+reinforcement-roboticist-desc = Hire a roboticist to construct cyborgs, repair silicon life, and keep the station's silicons operational. Minimum arrival time of three minutes.
 
-reinforcement-geneticist-name = Geneticist Reinforcement
-reinforcement-geneticist-desc = Call in a geneticist to research genetics, and poke at the mysteries hidden inside DNA. Minimum arrival time of three minutes.
+reinforcement-geneticist-name = Hire Geneticist
+reinforcement-geneticist-desc = Hire a geneticist to research genetics and explore the mysteries hidden inside DNA. Minimum arrival time of three minutes.
 
 reinforcement-research-assistant-name = Hire Research Assistant
 reinforcement-research-assistant-desc = Hire a research assistant to support scientific operations. Minimum arrival time of three minutes.
