@@ -169,7 +169,7 @@
   productEntity: ReinforcementBeaconMedicalIntern
   icon:
     sprite: Markers/jobs.rsi
-    state: medical_intern
+    state: doctor
   cost:
     Spesos: 500
   categories:
@@ -235,7 +235,7 @@
   productEntity: ReinforcementBeaconResearchAssistant
   icon:
     sprite: Markers/jobs.rsi
-    state: research_assistant
+    state: scientist
   cost:
     Spesos: 500
   categories:
@@ -335,7 +335,7 @@
   productEntity: ReinforcementBeaconTechnician
   icon:
     sprite: Markers/jobs.rsi
-    state: technical_assistant
+    state: engineer
   cost:
     Spesos: 750
   categories:

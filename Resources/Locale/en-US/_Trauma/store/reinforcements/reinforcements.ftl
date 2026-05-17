@@ -3,14 +3,14 @@ store-preset-name-reinforcements = Reinforcements
 reinforcement-detective-name = Hire Detective
 reinforcement-detective-desc = Hire a detective to investigate crimes and assist security. Minimum arrival time of three minutes.
 
-reinforcement-sec-name = Reinforcement Officer
-reinforcement-sec-desc = A reinforcement officer, does not come with equipment and will have to be armed. Minimum arrival time of three minutes.
+reinforcement-sec-name = Hire Security Officer
+reinforcement-sec-desc = Hire a security officer to help maintain order on the station. Minimum arrival time of three minutes.
 
-reinforcement-sec-express-name = Express Reinforcement Officer
-reinforcement-sec-express-desc = A reinforcement officer, does not come with equipment and will have to be armed. Minimum arrival time of thirty seconds.
+reinforcement-sec-express-name = Hire Security Officer (Express)
+reinforcement-sec-express-desc = Hire a security officer for rapid response. Minimum arrival time of thirty seconds.
 
-reinforcement-sec-specialist-name = Specialist Reinforcement Officer
-reinforcement-sec-specialist-desc = A reinforcement officer, this one is armored and armed. Minimum arrival time of three minutes.
+reinforcement-sec-specialist-name = Hire Security Specialist
+reinforcement-sec-specialist-desc = Hire an armored and armed security specialist. Minimum arrival time of three minutes.
 
 reinforcement-cadet-name = Hire Security Cadet
 reinforcement-cadet-desc = Hire a security cadet, eager to learn and assist the department. Minimum arrival time of three minutes.
@@ -31,16 +31,16 @@ reinforcement-psychologist-name = Hire Psychologist
 reinforcement-psychologist-desc = Hire a psychologist to keep the crew sane through traumatic incidents. Minimum arrival time of three minutes.
 
 reinforcement-medical-intern-name = Medical Intern Reinforcement
-reinforcement-medical-intern-desc = Call in a fresh-faced medical intern. They may lack experience, but they're eager to stabilize patients and learn on the job.
+reinforcement-medical-intern-desc = Call in a fresh-faced medical intern. They may lack experience, but they're eager to stabilize patients and learn on the job. Minimum arrival time of three minutes.
 
 reinforcement-scientist-name = Hire Scientist
 reinforcement-scientist-desc = Hire a scientist to conduct dangerous experiments and advance station research. Minimum arrival time of three minutes.
 
 reinforcement-roboticist-name = Roboticist Reinforcement
-reinforcement-roboticist-desc = Call in a roboticist capable of constructing cyborgs, repairing silicon life, and keeping the station's machines operational.
+reinforcement-roboticist-desc = Call in a roboticist capable of constructing cyborgs, repairing silicon life, and keeping the station's machines operational. Minimum arrival time of three minutes.
 
 reinforcement-geneticist-name = Geneticist Reinforcement
-reinforcement-geneticist-desc = Call in a geneticist to research genetics, and poke at the mysteries hidden inside DNA.
+reinforcement-geneticist-desc = Call in a geneticist to research genetics, and poke at the mysteries hidden inside DNA. Minimum arrival time of three minutes.
 
 reinforcement-research-assistant-name = Hire Research Assistant
 reinforcement-research-assistant-desc = Hire a research assistant to support scientific operations. Minimum arrival time of three minutes.

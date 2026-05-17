@@ -1,7 +1,7 @@
 ghost-role-information-reinforcement-detective-name = Station Reinforcement (Detective)
-ghost-role-information-reinforcement-sec-name = Station Reinforcement (Security)
-ghost-role-information-reinforcement-fast-sec-name = Station Reinforcement (Security)(Express)
-ghost-role-information-reinforcement-specialist-sec-name = Station Reinforcement (Security)(Specialist)
+ghost-role-information-reinforcement-sec-name = Station Reinforcement (Security Officer)
+ghost-role-information-reinforcement-fast-sec-name = Station Reinforcement (Security Officer)(Express)
+ghost-role-information-reinforcement-specialist-sec-name = Station Reinforcement (Security Specialist)
 ghost-role-information-reinforcement-cadet-name = Station Reinforcement (Security Cadet)
 
 ghost-role-information-reinforcement-doctor-name = Station Reinforcement (Doctor)
