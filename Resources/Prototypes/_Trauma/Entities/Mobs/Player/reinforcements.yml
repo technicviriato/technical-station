@@ -56,7 +56,7 @@
   id: ReinforcementBeaconOfficerSpecIon
   equipment:
     head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorBasicSlim
+    outerClothing: ClothingOuterArmorReflective
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
     suitstorage: WeaponEnergyIonRifle

@@ -153,7 +153,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 12500
+    Spesos: 15000
   categories:
   - ReinforcementsHoS
   restockTime: 0
