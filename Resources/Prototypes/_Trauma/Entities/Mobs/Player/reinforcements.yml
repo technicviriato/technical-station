@@ -230,8 +230,8 @@
   equipment:
     head: ClothingHeadHatHoodBioVirology
     eyes: ClothingEyesHudViro
-    mask: ClothingMaskSurgical
-    jumpsuit: ClothingUniformJumpsuitVirologist
+    mask: ClothingMaskSterile
+    jumpsuit: ClothingUniformJumpsuitVirology
     outerClothing: ClothingOuterBioVirology
     back: ClothingBackpackVirology
     shoes: ClothingShoesColorGreen
@@ -345,7 +345,7 @@
 - type: startingGear
   id: ReinforcementBeaconEngi
   equipment:
-    head: ClothingHeadHatHardhatYelloDark
+    head: ClothingHeadHatHardhatYellowDark
     eyes: ClothingEyesGlassesMeson
     mask: ClothingMaskGas
     jumpsuit: ClothingUniformJumpsuitEngineering
@@ -464,7 +464,7 @@
 - type: startingGear
   id: ReinforcementBeaconClown
   equipment:
-    mask: CLothingMaskClown
+    mask: ClothingMaskClown
     jumpsuit: ClothingUniformJumpsuitClown
     outerClothing: ClothingOuterClownPriest
     back: ClothingBackpackClown
