@@ -94,7 +94,7 @@
   - type: Parry # Trauma
     reflects:
       - Energy
-    maxParries: 2
+    maxParries: 0
     maxReflects: 10
     reflectSpread: 60
   - type: IgnitionSource
