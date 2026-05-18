@@ -119,7 +119,7 @@
         weight: 0.625 # Not as scary so make rarer in the event, shrimple as.
       - id: MobCoconutCrabFloofy # because it looks funny
         weight: 0.05 # NEVER BASICALLY
-      
+
 - type: entity
   id: FugitiveSpawn
   parent: BaseGameRule
