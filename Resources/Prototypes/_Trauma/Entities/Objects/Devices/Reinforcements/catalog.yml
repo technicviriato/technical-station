@@ -9,7 +9,7 @@
     sprite: Markers/jobs.rsi
     state: detective
   cost:
-    Spesos: 1500
+    Spesos: 3000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -25,7 +25,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 500
+    Spesos: 2000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -41,7 +41,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 2500
+    Spesos: 4000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -57,7 +57,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 7500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -73,7 +73,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 7500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -89,7 +89,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 7500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -105,7 +105,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 7500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -121,7 +121,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 10000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -137,7 +137,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 7500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -153,7 +153,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 12500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -169,7 +169,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 5000
+    Spesos: 15000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -185,7 +185,7 @@
     sprite: Markers/jobs.rsi
     state: brigmedic
   cost:
-    Spesos: 5000
+    Spesos: 10000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -201,7 +201,7 @@
     sprite: Markers/jobs.rsi
     state: security_cadet
   cost:
-    Spesos: 250
+    Spesos: 500
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -333,7 +333,7 @@
     sprite: Markers/jobs.rsi
     state: roboticist
   cost:
-    Spesos: 1750
+    Spesos: 1500
   categories:
   - ScienceHoP
   restockTime: 0
@@ -595,7 +595,7 @@
     sprite: Markers/jobs.rsi
     state: chaplain
   cost:
-    Spesos: 500
+    Spesos: 2500
   categories:
   - ServiceHoP
   restockTime: 0
