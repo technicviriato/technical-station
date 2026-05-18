@@ -154,7 +154,7 @@
   storage:
     back:
     - MagazineRifle # 1
-    - MagazineRifle # 2 # TODO add survival box
+    - MagazineRifle # 2
 
 - type: startingGear
   id: ReinforcementBeaconOfficerSpecCorpsman
@@ -172,7 +172,7 @@
     pocket1: WeaponLaserSidearm
   storage:
     back:
-    - MedkitCombatFilled # TODO add survival box
+    - MedkitCombatFilled
 
 - type: startingGear
   id: ReinforcementBeaconCadet
