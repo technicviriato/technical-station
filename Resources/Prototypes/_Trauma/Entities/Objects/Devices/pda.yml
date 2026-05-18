@@ -32,7 +32,7 @@
   parent: BasePDA
   id: ClearPDAHunter
   name: SpacePol PDA
-  description: Surprisingly low quality, for a space police officer.
+  description: Surprisingly low quality, for a spacepol officer's pda.
   components:
   - type: Pda
     id: SpacePolIDCard
