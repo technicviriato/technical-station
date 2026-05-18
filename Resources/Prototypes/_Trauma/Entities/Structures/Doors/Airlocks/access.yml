@@ -79,3 +79,12 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandSyndicate
+  suffix: Syndicate
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicateAgent ]

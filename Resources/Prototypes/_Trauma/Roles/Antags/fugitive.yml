@@ -12,7 +12,7 @@
     back: ClothingBackpackSatchelLeather
     shoes: ClothingShoesBootsJackFilled
     belt: ClothingBeltSecurityFilled
-    id: VisitorPDA # maybe change title of id
+    id: ClearPDAHunter
     pocket1: WeaponPistolMk58
     pocket2: WeaponLaserSidearm
     ears: ClothingHeadsetAltFreelancer

@@ -1,15 +1,5 @@
 # base
 
-# <Trauma>
-- type: entity
-  parent: VendingMachineSec
-  id: VendingMachineSecUnlocked
-  suffix: Unlocked
-  components:
-  - type: AccessReader
-    access: []
-# </Trauma>
-
 - type: entity
   id: VendingMachine
   parent: BaseMachinePowered
