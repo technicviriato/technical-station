@@ -21,7 +21,7 @@ ghost-role-information-reinforcement-cargo-name = Station Reinforcement (Cargo)
 ghost-role-information-reinforcement-salv-name = Station Reinforcement (Salvage)
 
 ghost-role-information-reinforcement-engi-name = Station Reinforcement (Engineer)
-ghost-role-information-reinforcement-atmos-name = Station Reinforcement (Atmos tech)
+ghost-role-information-reinforcement-atmos-name = Station Reinforcement (Atmos Tech)
 ghost-role-information-reinforcement-technician-name = Station Reinforcement (Technical Assistant)
 
 ghost-role-information-reinforcement-bartender-name = Station Reinforcement (Bartender)

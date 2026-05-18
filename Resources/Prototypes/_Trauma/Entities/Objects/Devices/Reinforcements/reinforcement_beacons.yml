@@ -150,63 +150,65 @@
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerLaser
-  suffix: Security, Laser
+  id: ReinforcementBeaconSpecialistOfficerHeavyLaser
+  suffix: Security, Heavy, Laser
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-sec-name
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpec ]
+      prototypes: [ ReinforcementBeaconOfficerSpecHeavyLaser ]
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerLaser
-  suffix: Security, Laser
+  id: ReinforcementBeaconSpecialistOfficerShield
+  suffix: Security, Shield
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-sec-name
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpec ]
+      prototypes: [ ReinforcementBeaconOfficerSpecShield ]
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerLaser
-  suffix: Security, Laser
+  id: ReinforcementBeaconSpecialistOfficerBodyguard
+  suffix: Security, Bodyguard
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-sec-name
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpec ]
+      prototypes: [ ReinforcementBeaconOfficerSpecBodyguard ]
+      roleLoadout: [ RoleSurvivalSecurity ]
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerLaser
-  suffix: Security, Laser
+  id: ReinforcementBeaconSpecialistOfficerAdvisor
+  suffix: Security, Advisor
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-sec-name
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpec ]
+      prototypes: [ ReinforcementBeaconOfficerSpecAdvisor ]
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerLaser
-  suffix: Security, Laser
+  id: ReinforcementBeaconSpecialistOfficerCorpsman
+  suffix: Security, Corpsman
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-sec-name
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpec ]
+      prototypes: [ ReinforcementBeaconOfficerSpecCorpsman ]
+      roleLoadout: [ RoleSurvivalSecurity ]
 
 - type: entity
   parent: BaseReinforcementBeacon

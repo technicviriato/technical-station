@@ -68,7 +68,7 @@
   id: SecoffReinforcementSpecialistIon
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerIon
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -84,7 +84,7 @@
   id: SecoffReinforcementSpecialistRiotMelee
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerRiotMelee
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -100,7 +100,7 @@
   id: SecoffReinforcementSpecialistRiotRanged
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerRiotRanged
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -113,10 +113,10 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistHeavy(laser cannon)
+  id: SecoffReinforcementSpecialistHeavyLaser
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerHeavyLaser
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -132,7 +132,7 @@
   id: SecoffReinforcementSpecialistShield
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerShield
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -145,10 +145,10 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistBodyguard(briefcase smg, expensive)
+  id: SecoffReinforcementSpecialistBodyguard
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerBodyguard
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -161,10 +161,10 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistVeteran(XL8)
+  id: SecoffReinforcementSpecialistAdvisor
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerAdvisor
   icon:
     sprite: Markers/jobs.rsi
     state: security_officer
@@ -177,13 +177,13 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistMed
+  id: SecoffReinforcementSpecialistCorpsman
   name: reinforcement-sec-specialist-name
   description: reinforcement-sec-specialist-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerLaser
+  productEntity: ReinforcementBeaconSpecialistOfficerCorpsman
   icon:
     sprite: Markers/jobs.rsi
-    state: brigmedic.png
+    state: brigmedic
   cost:
     Spesos: 5000
   categories:

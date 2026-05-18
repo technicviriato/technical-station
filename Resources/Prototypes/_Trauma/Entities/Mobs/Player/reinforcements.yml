@@ -35,7 +35,7 @@
     outerClothing: ClothingOuterArmorBasicSlim
     back: ClothingBackpackSecurity
     shoes: ClothingShoesBootsJackFilled
-    belt: ClothingSecurityFilled
+    belt: ClothingBeltSecurityFilled
     id: SecurityPDA
     pocket1: WeaponLaserSidearm
     ears: ClothingHeadsetAltSecurityRegular
@@ -74,8 +74,8 @@
     - TearGasGrenade # 1
     - TearGasGrenade # 2
     inhand:
-    - PolymberBaton
-    - RiotShield
+    - PolymerBaton
+    - RiotShield # TODO
 
 - type: startingGear
   parent: ReinforcementBeaconOfficerTemplate
@@ -91,59 +91,88 @@
     - TearGasGrenade # 1
     - TearGasGrenade # 2
     - BoxBeanbag
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecHeavyLaser
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponLaserCannon
+
+- type: startingGear
+  parent: ReinforcementBeaconOfficerTemplate
+  id: ReinforcementBeaconOfficerSpecShield
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponLaserSidearm
+    pocket2: WeaponPistolMk58
+  storage:
     inhand:
-    - PolymberBaton
-    - RiotShield
+    - RiotBulletShield # TODO
+    back:
+    - MagazinePistol # 1
+    - MagazinePistol # 2
 
 - type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpec
+  id: ReinforcementBeaconOfficerSpecBodyguard
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsLaceup
+    id: SecurityPDA
+    ears: ClothingHeadsetSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmourDurathread
+  storage:
+    inhand:
+    - WeaponSubMachineGunBriefcase # TODO fix
+    back:
+    - MagazinePistolSubMachineGun # 1
+    - MagazinePistolSubMachineGun # 2
+
+- type: startingGear
+  id: ReinforcementBeaconOfficerSpecAdvisor
   equipment:
     head: ClothingHeadHelmetBasicAlt
+    eyes: ClothingEyesGlassesSecurity
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+    back: ClothingBackpackSecurity
+    shoes: ClothingShoesBootsJackFilled
+    id: SeniorOfficerPDA
+    ears: ClothingHeadsetAltSecurityRegular
+    gloves: ClothingHandsGlovesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
-    suitstorage: WeaponLaserCarbine
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - MagazineRifle # 1
+    - MagazineRifle # 2 # TODO add survival box
 
 - type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpec
+  id: ReinforcementBeaconOfficerSpecCorpsman
   equipment:
-    head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorBasicSlim
-    belt: ClothingBeltSecurityFilled
+    head: ClothingHeadHatBeretBrigmedic
+    eyes: ClothingEyesGlassesMedSec
+    jumpsuit: ClothingUniformJumpsuitBrigmedic
+    back: ClothingBackpackSecurity
+    shoes: ClothingShoesBootsJackFilled
+    id: BrigmedicPDA
+    ears: ClothingHeadsetAltSecurityRegular
+    gloves: ClothingHandsGlovesNitrile
+    outerClothing: ClothingOuterCoatAMG
+    belt: ClothingBeltMedicalEMTFilled
     pocket1: WeaponLaserSidearm
-    suitstorage: WeaponLaserCarbine
-
-- type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpec
-  equipment:
-    head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorBasicSlim
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponLaserSidearm
-    suitstorage: WeaponLaserCarbine
-
-- type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpec
-  equipment:
-    head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorBasicSlim
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponLaserSidearm
-    suitstorage: WeaponLaserCarbine
-
-- type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpec
-  equipment:
-    head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorBasicSlim
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponLaserSidearm
-    suitstorage: WeaponLaserCarbine
+  storage:
+    back:
+    - MedkitCombatFilled # TODO add survival box
 
 - type: startingGear
   id: ReinforcementBeaconCadet
