@@ -50,8 +50,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistLaser
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-laser-name
+  description: reinforcement-sec-specialist-laser-desc
   productEntity: ReinforcementBeaconSpecialistOfficerLaser
   icon:
     sprite: Markers/jobs.rsi
@@ -66,8 +66,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistIon
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-ion-name
+  description: reinforcement-sec-specialist-ion-desc
   productEntity: ReinforcementBeaconSpecialistOfficerIon
   icon:
     sprite: Markers/jobs.rsi
@@ -82,8 +82,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistRiotMelee
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-riot-melee-name
+  description: reinforcement-sec-specialist-riot-melee-desc
   productEntity: ReinforcementBeaconSpecialistOfficerRiotMelee
   icon:
     sprite: Markers/jobs.rsi
@@ -98,8 +98,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistRiotRanged
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-riot-ranged-name
+  description: reinforcement-sec-specialist-riot-ranged-desc
   productEntity: ReinforcementBeaconSpecialistOfficerRiotRanged
   icon:
     sprite: Markers/jobs.rsi
@@ -114,8 +114,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistHeavyLaser
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-heavy-laser-name
+  description: reinforcement-sec-specialist-heavy-laser-desc
   productEntity: ReinforcementBeaconSpecialistOfficerHeavyLaser
   icon:
     sprite: Markers/jobs.rsi
@@ -130,8 +130,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistShield
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-shield-name
+  description: reinforcement-sec-specialist-shield-desc
   productEntity: ReinforcementBeaconSpecialistOfficerShield
   icon:
     sprite: Markers/jobs.rsi
@@ -146,8 +146,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistBodyguard
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-bodyguard-name
+  description: reinforcement-sec-specialist-bodyguard-desc
   productEntity: ReinforcementBeaconSpecialistOfficerBodyguard
   icon:
     sprite: Markers/jobs.rsi
@@ -162,8 +162,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistAdvisor
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-advisor-name
+  description: reinforcement-sec-specialist-advisor-desc
   productEntity: ReinforcementBeaconSpecialistOfficerAdvisor
   icon:
     sprite: Markers/jobs.rsi
@@ -178,8 +178,8 @@
 
 - type: listing
   id: SecoffReinforcementSpecialistCorpsman
-  name: reinforcement-sec-specialist-name
-  description: reinforcement-sec-specialist-desc
+  name: reinforcement-sec-specialist-corpsman-name
+  description: reinforcement-sec-specialist-corpsman-desc
   productEntity: ReinforcementBeaconSpecialistOfficerCorpsman
   icon:
     sprite: Markers/jobs.rsi

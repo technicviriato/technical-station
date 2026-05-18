@@ -12,6 +12,33 @@ reinforcement-sec-express-desc = Hire a security officer for rapid response. Min
 reinforcement-sec-specialist-name = Hire Security Specialist
 reinforcement-sec-specialist-desc = Hire an armored and armed security specialist. Minimum arrival time of three minutes.
 
+reinforcement-sec-specialist-laser-name = Hire Security Specialist (Laser)
+reinforcement-sec-specialist-laser-desc = Hire an armored security specialist equipped with a laser carbine. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-ion-name = Hire Security Specialist (Ion)
+reinforcement-sec-specialist-ion-desc = Hire an armored security specialist equipped with an ion rifle, effective against silicons. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-riot-melee-name = Hire Security Specialist (Riot - Melee)
+reinforcement-sec-specialist-riot-melee-desc = Hire an armored security specialist equipped for close-quarters riot control. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-riot-ranged-name = Hire Security Specialist (Riot - Ranged)
+reinforcement-sec-specialist-riot-ranged-desc = Hire an armored security specialist equipped for ranged riot control. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-heavy-laser-name = Hire Security Specialist (Heavy Laser)
+reinforcement-sec-specialist-heavy-laser-desc = Hire an armored security specialist equipped with a laser cannon. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-shield-name = Hire Security Specialist (Shield)
+reinforcement-sec-specialist-shield-desc = Hire an armored security specialist equipped with a ballistic shield. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-bodyguard-name = Hire Security Specialist (Bodyguard)
+reinforcement-sec-specialist-bodyguard-desc = Hire a plainclothes security specialist assigned to protect a command member. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-advisor-name = Hire Security Specialist (Advisor)
+reinforcement-sec-specialist-advisor-desc = Hire a senior security specialist and tactical advisor. Minimum arrival time of three minutes.
+
+reinforcement-sec-specialist-corpsman-name = Hire Security Specialist (Corpsman)
+reinforcement-sec-specialist-corpsman-desc = Hire a security corpsman trained in both combat and medicine. Minimum arrival time of three minutes.
+
 reinforcement-cadet-name = Hire Security Cadet
 reinforcement-cadet-desc = Hire a security cadet, eager to learn and assist the department. Minimum arrival time of three minutes.
 

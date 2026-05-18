@@ -106,7 +106,8 @@
   suffix: Security, Laser
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-laser-name
+    description: ghost-role-information-reinforcement-specialist-laser-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -118,7 +119,8 @@
   suffix: Security, Ion
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-ion-name
+    description: ghost-role-information-reinforcement-specialist-ion-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -130,7 +132,8 @@
   suffix: Security, Riot, Melee
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-riot-melee-name
+    description: ghost-role-information-reinforcement-specialist-riot-melee-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -142,7 +145,8 @@
   suffix: Security, Riot, Ranged
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-riot-ranged-name
+    description: ghost-role-information-reinforcement-specialist-riot-ranged-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -154,7 +158,8 @@
   suffix: Security, Heavy, Laser
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-heavy-laser-name
+    description: ghost-role-information-reinforcement-specialist-heavy-laser-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -166,7 +171,8 @@
   suffix: Security, Shield
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-shield-name
+    description: ghost-role-information-reinforcement-specialist-shield-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -178,7 +184,8 @@
   suffix: Security, Bodyguard
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-bodyguard-name
+    description: ghost-role-information-reinforcement-specialist-bodyguard-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -191,7 +198,8 @@
   suffix: Security, Advisor
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-advisor-name
+    description: ghost-role-information-reinforcement-specialist-advisor-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -203,7 +211,8 @@
   suffix: Security, Corpsman
   components:
   - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-sec-name
+    name: ghost-role-information-reinforcement-specialist-corpsman-name
+    description: ghost-role-information-reinforcement-specialist-corpsman-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout

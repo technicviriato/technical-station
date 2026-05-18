@@ -69,13 +69,13 @@
     outerClothing: ClothingOuterArmorRiot
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
+  inhand:
+  - PolymerBaton
+  - RiotShield
   storage:
     back:
     - TearGasGrenade # 1
     - TearGasGrenade # 2
-    inhand:
-    - PolymerBaton
-    - RiotShield # TODO
 
 - type: startingGear
   parent: ReinforcementBeaconOfficerTemplate
@@ -111,9 +111,9 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponLaserSidearm
     pocket2: WeaponPistolMk58
+  inhand:
+  - RiotBulletShield
   storage:
-    inhand:
-    - RiotBulletShield # TODO
     back:
     - MagazinePistol # 1
     - MagazinePistol # 2
@@ -129,9 +129,9 @@
     ears: ClothingHeadsetSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmourDurathread
+  inhand:
+  - WeaponSubMachineGunBriefcase
   storage:
-    inhand:
-    - WeaponSubMachineGunBriefcase # TODO fix
     back:
     - MagazinePistolSubMachineGun # 1
     - MagazinePistolSubMachineGun # 2
@@ -414,10 +414,9 @@
     pocket1: BookHowToCookForFortySpaceman
     pocket2: ButchCleaver
     ears: ClothingHeadsetService
-  storage:
-    inhand:
-    - DrinkWineBottleFull
-    - IngredientsBeacon
+  inhand:
+  - DrinkWineBottleFull
+  - IngredientsBeacon
 
 - type: startingGear
   id: ReinforcementBeaconBotanist
@@ -444,10 +443,9 @@
     pocket1: KeyRingJanitor
     ears: ClothingHeadsetService
     gloves: ClothingHandsGlovesJanitor
-  storage:
-    inhand:
-    - MopItem
-    - Bucket
+  inhand:
+  - MopItem
+  - Bucket
 
 - type: startingGear
   id: ReinforcementBeaconLawyer
@@ -460,9 +458,8 @@
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
     ears: ClothingHeadsetSecurity
-  storage:
-    inhand:
-    - BriefcaseBrownFilled
+  inhand:
+  - BriefcaseBrownFilled
 
 - type: startingGear
   id: ReinforcementBeaconClown
@@ -517,9 +514,8 @@
     pocket1: BookSun
     pocket2: BookRandomStory
     ears: ClothingHeadsetService
-  storage:
-    inhand:
-    - Cane
+  inhand:
+  - Cane
 
 - type: startingGear
   id: ReinforcementBeaconMusician
@@ -529,9 +525,8 @@
     shoes: ClothingShoesBootsLaceup
     id: MusicianPDA
     ears: ClothingHeadsetService
-  storage:
-    inhand:
-    - InstrusmentsBeacon
+  inhand:
+  - InstrumentsBeacon
 
 - type: startingGear
   id: ReinforcementBeaconReporter
@@ -542,9 +537,8 @@
     shoes: ClothingShoesColorBlack
     id: ReporterPDA
     ears: ClothingHeadsetService
-  storage:
-    inhand:
-    - MicrophoneInstrument
+  inhand:
+  - MicrophoneInstrument
 
 - type: startingGear
   id: ReinforcementBeaconServiceWorker
