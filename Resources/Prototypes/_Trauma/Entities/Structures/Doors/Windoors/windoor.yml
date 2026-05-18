@@ -1,8 +1,0 @@
-- type: entity
-  parent: WindoorSecure
-  id: WindoorSecureSyndicateLocked
-  suffix: Syndicate, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSyndicateAgent ]
