@@ -107,7 +107,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-laser-name
-    description: ghost-role-information-reinforcement-specialist-laser-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -120,7 +119,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-ion-name
-    description: ghost-role-information-reinforcement-specialist-ion-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -133,7 +131,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-riot-melee-name
-    description: ghost-role-information-reinforcement-specialist-riot-melee-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -146,7 +143,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-riot-ranged-name
-    description: ghost-role-information-reinforcement-specialist-riot-ranged-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -159,7 +155,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-heavy-laser-name
-    description: ghost-role-information-reinforcement-specialist-heavy-laser-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -172,7 +167,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-shield-name
-    description: ghost-role-information-reinforcement-specialist-shield-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -185,7 +179,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-bodyguard-name
-    description: ghost-role-information-reinforcement-specialist-bodyguard-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -199,7 +192,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-advisor-name
-    description: ghost-role-information-reinforcement-specialist-advisor-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout
@@ -212,7 +204,6 @@
   components:
   - type: DelayedGhostRole
     name: ghost-role-information-reinforcement-specialist-corpsman-name
-    description: ghost-role-information-reinforcement-specialist-corpsman-desc
   - type: GhostCharacterSpawner
     components:
     - type: Loadout

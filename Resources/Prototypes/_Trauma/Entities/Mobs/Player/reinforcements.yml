@@ -453,7 +453,7 @@
     neck: ClothingNeckLawyerbadge
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
     back: ClothingBackpackSatchelLeather
-    shoes: ClothingShoesColorBlack
+    shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
