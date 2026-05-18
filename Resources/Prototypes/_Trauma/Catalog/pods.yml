@@ -245,7 +245,7 @@
   components:
   - type: SpawnTableOnDespawn
     table:
-      id: BanjoInstrumen
+      id: BanjoInstrument
 
 - type: entity
   id: SpawnInstrumentViolin
