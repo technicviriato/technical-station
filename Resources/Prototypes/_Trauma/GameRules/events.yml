@@ -165,7 +165,7 @@
 
 
 - type: entity
-  id: HunterSpawn
+  id: FugitiveHunterRule
   parent: BaseGameRule
   components:
   - type: AntagGhostCharacterRule

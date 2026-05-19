@@ -34,14 +34,13 @@ public sealed partial class FugitiveTargetSystem : EntitySystem
             return;
         }
 
-        var protoId = MetaData(uid).EntityPrototype?.ID;
-        if (protoId == null)
+        if (Prototype(uid) is not { } proto)
         {
             args.Cancelled = true;
             return;
         }
 
-        var objectiveProto = new EntProtoId(protoId);
+        var objectiveProto = new EntProtoId(proto.ID);
 
         // Reuse stored target so both hunters always get the same objective
         if (rule.ObjectiveTargets.TryGetValue(objectiveProto, out var storedTarget))
@@ -70,7 +69,7 @@ public sealed partial class FugitiveTargetSystem : EntitySystem
             return;
 
         var description = GetFugitiveDescription(mindUid.Value);
-        var currentName = MetaData(uid).EntityName;
+        var currentName = Name(uid);
 
         // Append the description to the objective name, example: "Eliminate the fugitive (young human male)"
         _metaData.SetEntityName(uid, $"{currentName} ({description})", args.Meta);
@@ -81,13 +80,11 @@ public sealed partial class FugitiveTargetSystem : EntitySystem
     /// </summary>
     private string GetFugitiveDescription(EntityUid mindUid)
     {
-        if (!TryComp<MindComponent>(mindUid, out var mind) || mind.OwnedEntity == null)
+        if (!TryComp<MindComponent>(mindUid, out var mind) || mind.OwnedEntity is not {} mob)
             return Loc.GetString("fugitive-objective-unknown");
 
-        var mob = mind.OwnedEntity.Value;
-
         if (!TryComp<HumanoidProfileComponent>(mob, out var humanoid))
-            return MetaData(mob).EntityName;
+            return Name(mob);
 
         var speciesProto = _proto.Index(humanoid.Species);
         var species = Loc.GetString(speciesProto.Name).ToLower();
@@ -95,9 +92,9 @@ public sealed partial class FugitiveTargetSystem : EntitySystem
 
         var age = humanoid.Age switch
         {
-            < 25 => Loc.GetString("fugitive-objective-age-young"),
-            < 50 => Loc.GetString("fugitive-objective-age-middle"),
-            _    => Loc.GetString("fugitive-objective-age-old"),
+            var a when a < speciesProto.YoungAge => Loc.GetString("fugitive-objective-age-young"),
+            var a when a < speciesProto.OldAge  => Loc.GetString("fugitive-objective-age-middle"),
+            _                                   => Loc.GetString("fugitive-objective-age-old"),
         };
 
         // pick DNA first, fall back to fingerprint, fall back to nothing

@@ -23,11 +23,13 @@ namespace Content.Trauma.Server.StationEvents.Events;
 
 public sealed partial class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
 {
-    [Dependency] private GameTicker _gameTicker = default!;
+    [Dependency] private GameTicker _ticker = default!;
     [Dependency] private PaperSystem _paper = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedContainerSystem _container = default!;
+
+    private static readonly EntProtoId HunterSpawnProto = "FugitiveHunterRule";
 
     public override void Initialize()
     {
@@ -61,7 +63,7 @@ public sealed partial class FugitiveRule : StationEventSystem<FugitiveRuleCompon
 
         // Spawn hunters after the loop to avoid modifying the collection mid-iteration
         if (spawnHunters)
-            _gameTicker.StartGameRule("HunterSpawn");
+            _ticker.StartGameRule("HunterSpawnProto");
 
         base.Update(frameTime);
     }
