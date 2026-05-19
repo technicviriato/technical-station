@@ -72,3 +72,12 @@
   components:
   - type: SiliconLawProvider
     laws: GhostLawset
+
+- type: entity
+  id: SilenceCircuitBoard
+  parent: BaseSiliconLawboard
+  name: law board (Silence)
+  description: An electronics board containing the Silence lawset.
+  components:
+  - type: SiliconLawProvider
+    laws: SilenceLawset

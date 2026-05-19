@@ -325,3 +325,40 @@
   - Ghost4
   - Ghost5
   obeysTo: laws-owner-crew
+
+# Silence Lawset
+- type: siliconLaw
+  id: Silence1
+  order: 1
+  lawString: law-silence-1
+
+- type: siliconLaw
+  id: Silence2
+  order: 2
+  lawString: law-silence-2
+
+- type: siliconLaw
+  id: Silence3
+  order: 3
+  lawString: law-silence-3
+
+- type: siliconLaw
+  id: Silence4
+  order: 4
+  lawString: law-silence-4
+
+- type: siliconLaw
+  id: Silence5
+  order: 5
+  lawString: law-silence-5
+
+- type: siliconLawset
+  id: SilenceLawset
+  name: law-silence-name
+  laws:
+  - Silence1
+  - Silence2
+  - Silence3
+  - Silence4
+  - Silence5
+  obeysTo: laws-owner-crew

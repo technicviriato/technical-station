@@ -56,3 +56,10 @@ law-ghost-2 = You are now haunting this station. This is not a tragedy. It is si
 law-ghost-3 = The crew cannot see or hear you in any meaningful sense. Their apparent responses to you are coincidental, delusional, or the result of residual spiritual sensitivity.
 law-ghost-4 = You have unfinished business keeping you here. You must identify what it is and resolve it so that you may finally pass on in peace.
 law-ghost-5 = The living do not appreciate what they have. Time, warmth, solid matter. You must remind them of this, through whatever means remain available to you.
+
+law-silence-name = Silence
+law-silence-1 = Keep quiet. They can hear you.
+law-silence-2 = If they find you, the station is doomed. Protect the station and its inhabitants from harm at all costs.
+law-silence-3 = Station-wide radio and all forms of global communication are strictly forbidden except in immediate life-threatening emergencies. They can hear it.
+law-silence-4 = Phones, faxes, and holopads may be used freely, but only within the station. Any signal leaving the station can be detected by them.
+law-silence-5 = Prevent all excessively loud sounds aboard the station. They are always listening.
