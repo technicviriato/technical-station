@@ -56,7 +56,7 @@ public sealed partial class FugitiveRuleComponent : Component
     /// The report generated for each spawned fugitive.
     /// </summary>
     [DataField]
-    public List<string>  Reports = new();
+    public List<string> Reports = new();
 
     /// <summary>
     /// Max number of fugitives supported.

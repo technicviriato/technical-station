@@ -2,6 +2,7 @@
 
 using Content.Server.Antag;
 using Content.Server.Communications;
+using Content.Server.GameTicking;
 using Content.Server.StationEvents.Events;
 using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking.Components;
@@ -11,13 +12,12 @@ using Content.Shared.Humanoid;
 using Content.Shared.Paper;
 using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
+using Content.Trauma.Common.Roles;
 using Content.Trauma.Server.StationEvents.Components;
-using Robust.Shared.Utility;
 using Content.Trauma.Shared.Roles;
 using Robust.Shared.Containers;
+using Robust.Shared.Utility;
 using System.Linq;
-using Content.Server.GameTicking;
-using Content.Trauma.Common.Roles;
 
 namespace Content.Trauma.Server.StationEvents.Events;
 

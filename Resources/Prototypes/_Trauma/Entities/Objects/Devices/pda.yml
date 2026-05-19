@@ -29,19 +29,10 @@
     accentVColor: "#C0C0C0"
 
 - type: entity
-  parent: BasePDA
+  parent: ClearPDA
   id: ClearPDAHunter
   name: SpacePol PDA
   description: Surprisingly low quality, for a spacepol officer's pda.
   components:
   - type: Pda
     id: SpacePolIDCard
-  - type: Appearance
-    appearanceDataInit:
-      enum.PdaVisuals.PdaType:
-        !type:String
-        pda-clear
-  - type: PdaBorderColor
-    borderColor: "#288e4d"
-  - type: Icon
-    state: pda-clear

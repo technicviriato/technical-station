@@ -33,12 +33,12 @@ public sealed partial class TargetObjectiveSystem : EntitySystem
         if (!GetTarget(uid, out var target, comp))
             return;
 
-        if (comp.Title == null) // Trauma - skip setting name if title is null
+        if (comp.Title == null) // Trauma - skip setting name if title is null, also added dynamicName and showJobTitle too
             return;
 
         _metaData.SetEntityName(uid,
             GetTitle(target.Value, comp.Title, comp.DynamicName, comp.ShowJobTitle),
-            args.Meta);
+            args.Meta); // Trauma - dynamic name stuff was changed
     }
 
     /// <summary>

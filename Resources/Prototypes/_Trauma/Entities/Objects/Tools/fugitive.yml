@@ -1,8 +1,8 @@
 - type: entity
+  parent: [ BaseItem, BaseSetSelector, BaseMinorContraband ]
   id: SatchelFugitive
   name: undetermined fugitive satchel
   description: Most only plan to escape, you planned further.
-  parent: [ BaseItem, BaseSetSelector, BaseMinorContraband ]
   components:
   - type: Sprite
     sprite: Clothing/Back/Satchels/smuggler.rsi
