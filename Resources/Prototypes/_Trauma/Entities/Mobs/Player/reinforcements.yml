@@ -53,16 +53,6 @@
 
 - type: startingGear
   parent: ReinforcementBeaconOfficerTemplate
-  id: ReinforcementBeaconOfficerSpecIon
-  equipment:
-    head: ClothingHeadHelmetBasicAlt
-    outerClothing: ClothingOuterArmorReflective
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponLaserSidearm
-    suitstorage: WeaponEnergyIonRifle
-
-- type: startingGear
-  parent: ReinforcementBeaconOfficerTemplate
   id: ReinforcementBeaconOfficerSpecRiotMelee
   equipment:
     head: ClothingHeadHelmetRiot

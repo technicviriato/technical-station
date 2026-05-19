@@ -65,22 +65,6 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistIon
-  name: reinforcement-sec-specialist-ion-name
-  description: reinforcement-sec-specialist-ion-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerIon
-  icon:
-    sprite: Markers/jobs.rsi
-    state: security_officer
-  cost:
-    Spesos: 7500
-  categories:
-  - ReinforcementsHoS
-  restockTime: 0
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 60
-
-- type: listing
   id: SecoffReinforcementSpecialistRiotMelee
   name: reinforcement-sec-specialist-riot-melee-name
   description: reinforcement-sec-specialist-riot-melee-desc

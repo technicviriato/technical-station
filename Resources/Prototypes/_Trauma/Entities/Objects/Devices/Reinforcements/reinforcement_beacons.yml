@@ -114,18 +114,6 @@
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerIon
-  suffix: Security, Ion
-  components:
-  - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-ion-name
-  - type: GhostCharacterSpawner
-    components:
-    - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpecIon ]
-
-- type: entity
-  parent: ReinforcementBeaconSecurityOfficer
   id: ReinforcementBeaconSpecialistOfficerRiotMelee
   suffix: Security, Riot, Melee
   components:

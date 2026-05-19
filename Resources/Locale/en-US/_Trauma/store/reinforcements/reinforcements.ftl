@@ -15,9 +15,6 @@ reinforcement-sec-specialist-desc = Hire an armored and armed security specialis
 reinforcement-sec-specialist-laser-name = Hire Security Specialist (Laser)
 reinforcement-sec-specialist-laser-desc = Hire an armored security specialist equipped with a laser carbine. Minimum arrival time of three minutes.
 
-reinforcement-sec-specialist-ion-name = Hire Security Specialist (Ion)
-reinforcement-sec-specialist-ion-desc = Hire an armored security specialist equipped with an ion rifle, effective against silicons. Minimum arrival time of three minutes.
-
 reinforcement-sec-specialist-riot-melee-name = Hire Security Specialist (Riot - Melee)
 reinforcement-sec-specialist-riot-melee-desc = Hire an armored security specialist equipped for close-quarters riot control. Minimum arrival time of three minutes.
 

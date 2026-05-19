@@ -3,7 +3,6 @@ ghost-role-information-reinforcement-sec-name = Station Reinforcement (Security 
 ghost-role-information-reinforcement-fast-sec-name = Station Reinforcement (Security Officer)(Express)
 ghost-role-information-reinforcement-specialist-sec-name = Station Reinforcement (Security Specialist)
 ghost-role-information-reinforcement-specialist-laser-name = Station Reinforcement (Security Specialist - Laser)
-ghost-role-information-reinforcement-specialist-ion-name = Station Reinforcement (Security Specialist - Ion)
 ghost-role-information-reinforcement-specialist-riot-melee-name = Station Reinforcement (Security Specialist - Riot)
 ghost-role-information-reinforcement-specialist-riot-ranged-name = Station Reinforcement (Security Specialist - Riot Ranged)
 ghost-role-information-reinforcement-specialist-heavy-laser-name = Station Reinforcement (Security Specialist - Heavy Laser)
