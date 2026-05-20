@@ -1,0 +1,33 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Deadman made by tkirkby for Space Station 14. Deadman is modified from signaller.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "deadman"
+    },
+    {
+      "name": "deadman-armed",
+      "delays": [
+        [
+          0.4,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "deadman-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "deadman-inhand-right",
+      "directions": 4
+    }
+  ]
+}

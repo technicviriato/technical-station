@@ -91,7 +91,13 @@ public sealed partial class TimerTriggerComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool Examinable = true;
-
+    
+    /// <summary>
+    /// If true, the timer's next activation will be blocked.
+    /// </summary>
+    [DataField]
+    public bool Disabled = false; // Trauma - added for deadman switch instant trigger
+    
     /// <summary>
     /// The popup to show the user when starting the timer, if any.
     /// </summary>
