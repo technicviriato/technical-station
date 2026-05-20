@@ -91,7 +91,7 @@ public sealed partial class TimerTriggerComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool Examinable = true;
-    
+
     /// <summary>
     /// The popup to show the user when starting the timer, if any.
     /// </summary>

@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Trigger.Components;
+namespace Content.Shared.Trigger.Components;
 
 public sealed partial class TimerTriggerComponent
 {
