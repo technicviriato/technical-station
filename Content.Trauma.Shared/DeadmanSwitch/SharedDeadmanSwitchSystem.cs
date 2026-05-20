@@ -1,4 +1,6 @@
-﻿using Content.Shared.Interaction.Events;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Interaction.Events;
 using Content.Shared.Toggleable;
 using Content.Shared.Examine;
 using Content.Shared.DoAfter;

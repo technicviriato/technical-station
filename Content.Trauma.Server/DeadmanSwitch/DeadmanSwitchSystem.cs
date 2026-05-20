@@ -1,4 +1,6 @@
-﻿using Content.Server.DeviceLinking.Components;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceLinking.Systems;
 using Content.Shared.Trigger.Components.Triggers;
 using Content.Shared.Trigger.Components;

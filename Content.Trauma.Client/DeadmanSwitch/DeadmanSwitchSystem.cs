@@ -1,4 +1,6 @@
-﻿using Content.Shared.Interaction.Events;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Interaction.Events;
 using Content.Shared.Popups;
 using Content.Trauma.Shared.DeadmanSwitch;
 using Robust.Shared.Audio.Systems;
@@ -11,13 +13,13 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
-    
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<DeadmanSwitchComponent, UseInHandEvent>(OnUseInHand);
     }
-    
+
     protected override void ToggleInHandFeedback(Entity<DeadmanSwitchComponent?> ent, EntityUid? user)
     {
         if (!_timing.IsFirstTimePredicted)

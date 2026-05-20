@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [RemoteSignaller, BaseSyndicateContraband]
   id: RemoteSignallerDeadman
   name: deadman's switch
