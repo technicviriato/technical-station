@@ -19,13 +19,13 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private TriggerSystem _trigger = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
-    
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<DeadmanSwitchComponent, UseInHandEvent>(OnUseInHand, before: [typeof(SignallerSystem)]);
     }
-    
+
     public override void Trigger(Entity<DeadmanSwitchComponent?> ent, EntityUid? user)
     {
         if (!Resolve(ent, ref ent.Comp))
