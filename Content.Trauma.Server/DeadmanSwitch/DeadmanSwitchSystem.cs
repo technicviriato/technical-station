@@ -18,8 +18,8 @@ namespace Content.Trauma.Server.DeadmanSwitch;
 public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
 {
     [Dependency] private SignallerSystem _signal = default!;
-    [Dependency] private SharedDeviceLinkSystem _deviceLink = default!;
-    [Dependency] private SharedTransformSystem _transformSystem = default!;
+    [Dependency] private SharedDeviceLinkSystem _device = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private TriggerSystem _trigger = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
@@ -40,17 +40,17 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
         if (!TryComp<SignallerComponent>(ent, out var signaller))
             return;
 
-        var linkedDevices = _deviceLink.GetLinkedSinks(ent.Owner, signaller.Port);
+        var linkedDevices = _device.GetLinkedSinks(ent.Owner, signaller.Port);
 
         if (linkedDevices.Count > 0)
         {
             var switchXform = Transform(ent);
-            var switchPos = _transformSystem.GetWorldPosition(switchXform);
+            var switchPos = _transform.GetWorldPosition(switchXform);
 
             foreach (var linkedUid in linkedDevices)
             {
                 var linkXform = Transform(linkedUid);
-                var linkPos = _transformSystem.GetWorldPosition(linkXform);
+                var linkPos = _transform.GetWorldPosition(linkXform);
                 if (switchXform.MapID != linkXform.MapID || (switchPos - linkPos).Length() > ent.Comp.InstantTriggerRange)
                     continue;
 
@@ -75,7 +75,7 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
         }
 
         // Always invoke port regardless
-        _deviceLink.InvokePort(ent.Owner, signaller.Port);
+        _device.InvokePort(ent.Owner, signaller.Port);
 
         // Popup and sound
         if (user != null)

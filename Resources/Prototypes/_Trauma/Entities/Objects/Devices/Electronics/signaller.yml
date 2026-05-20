@@ -5,7 +5,7 @@
   description: A handheld device rigged to send a remote signal to objects within a radius of about 50 meters. Within a much shorter radius of about 1 meter, the signal is powerful enough to instantly trigger devices that would normally require a countdown. Once armed, it will trigger if it is dropped for any reason.
   components:
     - type: Sprite
-      sprite: /Textures/_Trauma/Objects/Devices/signaller.rsi
+      sprite: _Trauma/Objects/Devices/signaller.rsi
       layers:
         - state: deadman
           map: [ "enum.ToggleableVisuals.Layer" ]
