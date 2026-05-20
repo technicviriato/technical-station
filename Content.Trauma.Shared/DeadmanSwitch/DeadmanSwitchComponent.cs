@@ -20,7 +20,7 @@ public sealed partial class DeadmanSwitchComponent : Component
     /// How long it takes to arm / disarm it
     /// </summary>
     [DataField]
-    public float ArmDelay;
+    public TimeSpan ArmDelay;
 
     /// <summary>
     /// The sound the switch makes when it flips on or off

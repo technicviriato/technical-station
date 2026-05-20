@@ -4,6 +4,8 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Toggleable;
 using Content.Shared.Examine;
 using Content.Shared.DoAfter;
+using Content.Shared.Popups;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Trauma.Shared.DeadmanSwitch;
 
@@ -16,6 +18,8 @@ public abstract partial class SharedDeadmanSwitchSystem : EntitySystem
 {
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -45,48 +49,51 @@ public abstract partial class SharedDeadmanSwitchSystem : EntitySystem
         Dirty(ent);
     }
 
-    private void OnDropped(EntityUid uid, DeadmanSwitchComponent component, DroppedEvent args)
+    private void OnDropped(Entity<DeadmanSwitchComponent> ent, ref DroppedEvent args)
     {
-        if (!component.Armed)
+        if (!ent.Comp.Armed)
             return;
 
-        ToggleArmed(uid);
-        Trigger(uid, args.User);
+        ToggleArmed((ent.Owner, ent.Comp));
+        Trigger((ent.Owner, ent.Comp), args.User);
     }
 
-    protected void OnUseInHand(EntityUid uid, DeadmanSwitchComponent component, UseInHandEvent args)
+    protected void OnUseInHand(Entity<DeadmanSwitchComponent> ent, ref UseInHandEvent args)
     {
         if (args.Handled)
             return;
 
-        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, component.ArmDelay, new DeadmanSwitchDoAfterEvent(), uid, target: uid);
+        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, ent.Comp.ArmDelay, new DeadmanSwitchDoAfterEvent(), ent, target: ent);
         _doAfter.TryStartDoAfter(doAfterArgs);
 
         args.Handled = true;
     }
 
-    private void OnDoAfter(EntityUid uid, DeadmanSwitchComponent component, DeadmanSwitchDoAfterEvent args)
+    private void OnDoAfter(Entity<DeadmanSwitchComponent> ent, ref DeadmanSwitchDoAfterEvent args)
     {
         if (args.Cancelled)
             return;
 
-        ToggleArmed(uid);
-        ToggleInHandFeedback(uid, args.User);
+        ToggleArmed((ent.Owner, ent.Comp));
+        ToggleInHandFeedback((ent.Owner, ent.Comp), args.User);
     }
 
     protected virtual void ToggleInHandFeedback(Entity<DeadmanSwitchComponent?> ent, EntityUid? user)
     {
+        if (!Resolve(ent, ref ent.Comp))
+            return;
+
+        if (user != null)
+            _popup.PopupPredicted(Loc.GetString(ent.Comp.Armed ? "deadman-on-activate" : "deadman-on-deactivate", ("name", ent)), ent, user);
+
+        _audio.PlayPredicted(ent.Comp.SwitchSound, ent, user);
     }
 
-    private void OnExamined(EntityUid uid, DeadmanSwitchComponent component, ExaminedEvent args)
+    private void OnExamined(Entity<DeadmanSwitchComponent> ent, ref ExaminedEvent args)
     {
-        if (component.Armed)
-        {
+        if (ent.Comp.Armed)
             args.PushMarkup(Loc.GetString("deadman-examine-armed"));
-        }
         else
-        {
             args.PushMarkup(Loc.GetString("deadman-examine-disarmed"));
-        }
     }
 }
