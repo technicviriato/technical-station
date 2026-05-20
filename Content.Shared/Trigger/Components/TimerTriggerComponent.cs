@@ -81,7 +81,7 @@ public sealed partial class TimerTriggerComponent : Component
     public EntityUid? User;
 
     /// <summary>
-    /// The beeping sound, if any.
+    /// The beeping sound, if any
     /// </summary>
     [DataField, AutoNetworkedField]
     public SoundSpecifier? BeepSound;
