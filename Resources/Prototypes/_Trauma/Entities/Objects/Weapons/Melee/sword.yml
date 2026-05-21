@@ -68,7 +68,7 @@
       enabled: false
       radius: 2
       energy: 2
-      color: white
+      color: green
       netsync: false
     - type: Appearance
     - type: MeleeWeapon
