@@ -28,7 +28,6 @@
   - type: Tool
     qualities:
     - Prying
-    speed: 0.8
     useSound: /Audio/Items/crowbar.ogg
   - type: ToolTileCompatible
   - type: Prying
@@ -41,4 +40,4 @@
     sprite: _Trauma/Objects/Weapons/Melee/breaching_hammer.rsi
     quickEquip: false
     slots:
-    - back
+    - Back
