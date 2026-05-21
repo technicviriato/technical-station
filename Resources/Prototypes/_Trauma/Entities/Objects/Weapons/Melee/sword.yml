@@ -1,32 +1,22 @@
 ﻿- type: entity
   name: mandate
-  parent: [BaseItem, BaseGrandTheftContraband]
+  parent: [BaseSword, BaseCentcommContraband, BaseGrandTheftContraband]
   id: Mandate
-  description: A massive, ancient greatsword. Its weight alone is enough to crush most opposition. Those who wield it are slowed by its immense mass.
+  description: A ceremonial weapon belonging to the nanotrasen representative of the station. Those who wield it are slowed by its immense mass.
   components:
     - type: Sprite
       sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
       layers:
-        - state: mandate_off
-        - state: mandate_on
+        - state: icon-off
+        - state: icon-on
           visible: false
           shader: unshaded
           map: [ "blade" ]
     - type: Item
       size: Ginormous
       sprite: _Trauma/Objects/Weapons/Melee/mandate.rsi
-      inhandVisuals:
-        left:
-          - state: executionersswordunwieldedleft
-        right:
-          - state: executionersswordunwieldedright
-      wieldedInhandVisuals:
-        left:
-          - state: executionersswordwieldedleftinactive
-        right:
-          - state: executionersswordwieldedrightinaactive
       storedSprite:
-        state: executionersswordback
+        state: equipped-BACKPACK
         sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
     - type: Clothing
       sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
@@ -34,15 +24,8 @@
         - Back
       clothingVisuals:
         back:
-        - state: executionersswordback
-    - type: Battery
-      maxCharge: 1000
-      startingCharge: 1000
-    - type: BatterySelfRecharger
-      autoRechargeRate: 33.3
-      autoRechargePauseTime: 0
+          - state: equipped-BACKPACK
     - type: ItemToggle
-      needsPower: true
       onUse: false
       onActivate: false
       soundActivate:
@@ -69,18 +52,17 @@
           variation: 0.125
     - type: ComponentToggler
       components:
-        - type: Sharp
         - type: DisarmMalus
           malus: 0.8
-        - type: Execution
-          doAfterDuration: 4.0
     - type: ToggleableVisuals
       spriteLayer: blade
       inhandVisuals:
         left:
-        - state: executionersswordwieldedleftactive
+          - state: wielded-inhand-left
+            shader: unshaded
         right:
-        - state: executionersswordwieldedrightactive
+          - state: wielded-inhand-right
+            shader: unshaded
     - type: ItemTogglePointLight
     - type: PointLight
       enabled: false
@@ -91,7 +73,7 @@
     - type: Appearance
     - type: MeleeWeapon
       wideAnimationRotation: -135
-      attackRate: 0.6
+      attackRate: 0.1
       heavyStaminaCost: 40
       angle: 80
       damage:
@@ -100,7 +82,7 @@
       soundHit:
         path: /Audio/Weapons/bladeslice.ogg
     - type: UseDelay
-      delay: 1.5
+      delay: 10.0
     - type: Wieldable
       wieldSound: null
     - type: HeldSpeedModifier
@@ -108,7 +90,7 @@
       sprintModifier: 0.7
     - type: Parry
       maxParries: 3
-      maxReflects: 0
+      maxReflects: 5
       parryMinSkill: 40
       soundOnParry:
         path: /Audio/_Goobstation/Heretic/parry.ogg

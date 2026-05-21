@@ -8,13 +8,13 @@
   },
   "states": [
     {
-      "name": "mandate_off"
+      "name": "icon-off"
     },
     {
-      "name": "mandate_on"
+      "name": "icon-on"
     },
     {
-      "name": "executionersswordback",
+      "name": "equipped-BACKPACK",
       "directions": 4
     }
   ]

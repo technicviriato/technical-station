@@ -8,27 +8,19 @@
   },
   "states": [
     {
-      "name": "executionersswordunwieldedleft",
+      "name": "inhand-left",
       "directions": 4
     },
     {
-      "name": "executionersswordunwieldedright",
+      "name": "inhand-right",
       "directions": 4
     },
     {
-      "name": "executionersswordwieldedleftactive",
+      "name": "wielded-inhand-left",
       "directions": 4
     },
     {
-      "name": "executionersswordwieldedleftinactive",
-      "directions": 4
-    },
-    {
-      "name": "executionersswordwieldedrightactive",
-      "directions": 4
-    },
-    {
-      "name": "executionersswordwieldedrightinaactive",
+      "name": "wielded-inhand-right",
       "directions": 4
     }
   ]
