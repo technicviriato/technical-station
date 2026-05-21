@@ -15,8 +15,10 @@ using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Security.Components;
 using Content.Shared.StatusIcon;
+using Content.Shared.Stealth.Components;
 using Content.Shared.Tag;
 using Content.Trauma.Shared.Card;
+using Robust.Server.Containers;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 
@@ -32,10 +34,13 @@ public sealed partial class PickCriminalTargetOperator : HTNOperator
     private SharedContrabandDetectorSystem _contra = default!;
     private SharedIdCardSystem _card = default!;
     private SharedAudioSystem _audio = default!;
+    private ContainerSystem _container = default!;
     private EntityQuery<CuffableComponent> _cuffableQuery = default!;
     private EntityQuery<MobStateComponent> _mobQuery = default!;
     private EntityQuery<AntagCardComponent> _cardQuery = default!;
     private EntityQuery<CriminalRecordComponent> _criminalQuery = default!;
+    private EntityQuery<EmaggedComponent> _emagQuery = default!;
+    private EntityQuery<StealthComponent> _stealthQuery = default!;
 
 
     /// <summary>
@@ -74,11 +79,14 @@ public sealed partial class PickCriminalTargetOperator : HTNOperator
         _contra = sysManager.GetEntitySystem<SharedContrabandDetectorSystem>();
         _card = sysManager.GetEntitySystem<SharedIdCardSystem>();
         _audio = sysManager.GetEntitySystem<SharedAudioSystem>();
+        _container = sysManager.GetEntitySystem<ContainerSystem>();
 
         _cuffableQuery = _entMan.GetEntityQuery<CuffableComponent>();
         _mobQuery = _entMan.GetEntityQuery<MobStateComponent>();
         _cardQuery = _entMan.GetEntityQuery<AntagCardComponent>();
         _criminalQuery = _entMan.GetEntityQuery<CriminalRecordComponent>();
+        _emagQuery = _entMan.GetEntityQuery<EmaggedComponent>();
+        _stealthQuery = _entMan.GetEntityQuery<StealthComponent>();
     }
 
     public override async Task<(bool Valid, Dictionary<string, object>? Effects)> Plan(NPCBlackboard blackboard, CancellationToken cancelToken)
@@ -142,13 +150,19 @@ public sealed partial class PickCriminalTargetOperator : HTNOperator
         if (entity.Owner == beepsky)
             return false;
 
+        if (_container.IsEntityInContainer(entity))
+            return false;
+
         // Is target a living target?
         if (!_mobQuery.TryComp(entity, out var state) || state.CurrentState != MobState.Alive)
             return false;
 
+        if (_stealthQuery.HasComp(entity))
+            return false;
+
         bool isCriminal = (_criminalQuery.TryComp(entity, out var comp) || comp?.StatusIcon == CriminalStatus);
-        bool hasContra = _contra.FindContraband(entity).Count > 0;
-        bool isBadId = (!_card.TryFindIdCard(entity, out var idCard) || _cardQuery.HasComp(idCard)) && !_tag.HasTag(entity, BotTag);
+        bool hasContra = _contra.FindContraband(entity, false).Count > 0;
+        bool isBadId = (!_card.TryFindIdCard(entity, out var idCard) || _cardQuery.HasComp(idCard)) && !(_tag.HasTag(entity, BotTag) && !_emagQuery.HasComp(entity));
 
         if (!isEmagged ^ (isCriminal || hasContra || isBadId))
             return false;
