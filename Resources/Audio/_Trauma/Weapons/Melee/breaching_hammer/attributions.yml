@@ -1,1 +1,4 @@
-﻿club.ogg from battle for wesnoth
+﻿- files: ["club"]
+  license: "CC-BY-NC-3.0"
+  copyright: "Taken from The Battle for Wesnoth"
+  source: "https://www.wesnoth.org/"
