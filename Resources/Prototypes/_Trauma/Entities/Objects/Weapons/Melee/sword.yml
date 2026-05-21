@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [BaseSword, BaseCentcommContraband, BaseGrandTheftContraband]
   id: Mandate
   name: mandate
