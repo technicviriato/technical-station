@@ -7,11 +7,11 @@
   - type: Sprite
     sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
     layers:
-      - state: icon-off
-      - state: icon-on
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    - state: icon-off
+    - state: icon-on
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
   - type: Item
     size: Ginormous
     sprite: _Trauma/Objects/Weapons/Melee/mandate.rsi
@@ -21,10 +21,10 @@
   - type: Clothing
     sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
     slots:
-      - Back
+    - Back
     clothingVisuals:
       back:
-        - state: equipped-BACKPACK
+      - state: equipped-BACKPACK
   - type: ItemToggle
     onUse: false
     onActivate: false
@@ -58,11 +58,11 @@
     spriteLayer: blade
     inhandVisuals:
       left:
-        - state: wielded-inhand-left
-          shader: unshaded
+      - state: wielded-inhand-left
+        shader: unshaded
       right:
-        - state: wielded-inhand-right
-          shader: unshaded
+      - state: wielded-inhand-right
+        shader: unshaded
   - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
