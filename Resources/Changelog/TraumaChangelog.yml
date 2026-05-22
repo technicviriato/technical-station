@@ -8928,3 +8928,16 @@ Entries:
   id: 1016
   time: '2026-05-22T21:52:25.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2504
+- author: deltanedas
+  changes:
+  - type: Add
+    message: >-
+      Added integrated circuits! Make them in a circuit printer and read the
+      guidebook, become unstoppable cyber terrorists.
+  - type: Tweak
+    message: >-
+      C4 and stuff no longer blows up if sent a low signal from circuits or
+      logic gates.
+  id: 1017
+  time: '2026-05-22T22:02:55.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2729
