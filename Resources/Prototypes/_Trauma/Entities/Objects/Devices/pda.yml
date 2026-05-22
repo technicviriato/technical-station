@@ -36,3 +36,25 @@
   components:
   - type: Pda
     id: SpacePolIDCard
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: AdvisorPDA
+  name: security advisor PDA
+  description: An elaborate PDA for renowned veterans.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-blueshield
+  - type: Pda
+    id: AdvisorIDCard
+  - type: Icon
+    sprite: _Trauma/Objects/Devices/pda.rsi
+    state: pda-blueshield
+  - type: Sprite
+    sprite: _Trauma/Objects/Devices/pda.rsi
+    state: pda-blueshield
+  - type: PdaBorderColor
+    borderColor: "#3c94c5"
