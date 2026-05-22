@@ -63,7 +63,7 @@ public sealed partial class FugitiveRule : StationEventSystem<FugitiveRuleCompon
 
         // Spawn hunters after the loop to avoid modifying the collection mid-iteration
         if (spawnHunters)
-            _ticker.StartGameRule("HunterSpawnProto");
+            _ticker.StartGameRule(HunterSpawnProto);
 
         base.Update(frameTime);
     }

@@ -80,10 +80,12 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
 
+# Hunter
+
 - type: entity
   parent: AirlockCommand
   id: AirlockCommandSyndicate
-  suffix: Syndicate
+  suffix: Hunter, Locked
   components:
   - type: ContainerFill
     containers:
@@ -92,7 +94,7 @@
 - type: entity
   parent: AirlockGlassShuttle
   id: AirlockExternalGlassShuttleHunterLocked
-  suffix: Syndicate, Locked, Glass
+  suffix: Hunter, Locked, Glass
   components:
   - type: ContainerFill
     containers:
