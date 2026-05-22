@@ -1,4 +1,4 @@
 - files: ["club"]
   license: "CC-BY-SA-4.0"
   copyright: "Taken from The Battle for Wesnoth"
-  source: "https://github.com/DeltaV-Station/Delta-v/blob/cb62b27fcfb96af2c892fd8f6d66fcaf9f2d8bce/Resources/Audio/Nyanotrasen/Weapons/club.ogg"
+  source: "https://github.com/wesnoth/wesnoth/blob/646bf24b63a7e85133b8affa72c1ca25f9707d8f/data/core/sounds/club.ogg"
