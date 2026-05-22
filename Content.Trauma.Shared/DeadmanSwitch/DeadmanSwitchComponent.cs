@@ -11,7 +11,7 @@ namespace Content.Trauma.Shared.DeadmanSwitch;
 public sealed partial class DeadmanSwitchComponent : Component
 {
     public const string DroppedPort = "Dropped";
-    
+
     /// <summary>
     /// Whether the switch is armed or not
     /// </summary>
