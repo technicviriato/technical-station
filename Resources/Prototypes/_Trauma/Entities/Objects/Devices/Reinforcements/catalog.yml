@@ -137,7 +137,7 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 15000
+    Spesos: 20000
   categories:
   - ReinforcementsHoS
   restockTime: 0
@@ -153,12 +153,12 @@
     sprite: Markers/jobs.rsi
     state: security_officer
   cost:
-    Spesos: 15000
+    Spesos: 30000
   categories:
   - ReinforcementsHoS
   restockTime: 0
   resetRestockOnPurchase: true
-  restockAfterPurchase: 60
+  restockAfterPurchase: 1800
 
 - type: listing
   id: SecoffReinforcementSpecialistCorpsman
