@@ -26,7 +26,7 @@
       port: Dropped
     - type: SignalOnTrigger
       port: Dropped
-    - type: DeviceLinkSourc
+    - type: DeviceLinkSource
       ports:
       - Dropped
     - type: DeadmanSwitch
