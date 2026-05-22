@@ -4,6 +4,4 @@ using Content.Trauma.Shared.DeadmanSwitch;
 
 namespace Content.Trauma.Client.DeadmanSwitch;
 
-public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
-{
-}
+public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem;

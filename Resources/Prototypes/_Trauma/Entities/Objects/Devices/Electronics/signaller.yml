@@ -7,8 +7,8 @@
     - type: Sprite
       sprite: _Trauma/Objects/Devices/signaller.rsi
       layers:
-        - state: deadman
-          map: [ "enum.ToggleableVisuals.Layer" ]
+      - state: deadman
+        map: [ "enum.ToggleableVisuals.Layer" ]
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -19,7 +19,7 @@
     - type: Item
       inhandVisuals:
         left:
-          - state: deadman-inhand-left
+        - state: deadman-inhand-left
         right:
           - state: deadman-inhand-right
     - type: Signaller
@@ -28,7 +28,7 @@
       port: Dropped
     - type: DeviceLinkSource
       ports:
-        - Dropped
+      - Dropped
     - type: DeadmanSwitch
       instantTriggerRange: 1.5
       armDelay: 1

@@ -42,7 +42,7 @@
     - !type:StoreWhitelistCondition
       blacklist:
         tags:
-          - NukeOpsUplink
+        - NukeOpsUplink
 
 # - type: listing
 #   id: UplinkXenomorphBundle

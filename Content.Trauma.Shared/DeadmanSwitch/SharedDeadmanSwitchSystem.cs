@@ -91,9 +91,6 @@ public abstract partial class SharedDeadmanSwitchSystem : EntitySystem
 
     private void OnExamined(Entity<DeadmanSwitchComponent> ent, ref ExaminedEvent args)
     {
-        if (ent.Comp.Armed)
-            args.PushMarkup(Loc.GetString("deadman-examine-armed"));
-        else
-            args.PushMarkup(Loc.GetString("deadman-examine-disarmed"));
+        args.PushMarkup(Loc.GetString(ent.Comp.Armed ? "deadman-examine-armed" : "deadman-examine-disarmed"));
     }
 }

@@ -14,7 +14,7 @@ public sealed partial class DeadmanSwitchComponent : Component
     /// Whether the switch is armed or not
     /// </summary>
     [DataField, AutoNetworkedField]
-    public bool Armed = false;
+    public bool Armed;
 
     /// <summary>
     /// How long it takes to arm / disarm it

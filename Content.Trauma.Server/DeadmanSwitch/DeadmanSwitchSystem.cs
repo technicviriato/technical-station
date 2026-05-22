@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceLinking.Systems;
 using Content.Shared.Trigger.Components.Triggers;
 using Content.Shared.Trigger.Components;
@@ -20,35 +19,34 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
     [Dependency] private TriggerSystem _trigger = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
     
+    private EntityQuery<TimerTriggerComponent> _timerQuery;
+    private EntityQuery<TriggerOnSignalComponent> _signalQuery;
+
     public override void Initialize()
     {
         base.Initialize();
+        _timerQuery = GetEntityQuery<TimerTriggerComponent>();
+        _signalQuery = GetEntityQuery<TriggerOnSignalComponent>();
+
         SubscribeLocalEvent<DeadmanSwitchComponent, UseInHandEvent>(OnUseInHand, before: [typeof(SignallerSystem)]);
     }
-    
+
     public override void Trigger(Entity<DeadmanSwitchComponent?> ent, EntityUid? user)
     {
         if (!Resolve(ent, ref ent.Comp))
             return;
-
-        var signallerQuery = GetEntityQuery<SignallerComponent>();
-        if (!signallerQuery.TryGetComponent(ent, out var signaller))
-            return;
-
-        var linkedDevices = _device.GetLinkedSinks(ent.Owner, signaller.Port);
-
-        var timerQuery = GetEntityQuery<TimerTriggerComponent>();
-        var signalQuery = GetEntityQuery<TriggerOnSignalComponent>();
+        
+        var linkedDevices = _device.GetLinkedSinks(ent.Owner, "Dropped");
 
         foreach (var linkedUid in linkedDevices)
         {
             if (!_transform.InRange(ent.Owner, linkedUid, ent.Comp.InstantTriggerRange))
                 continue;
 
-            if (!timerQuery.TryGetComponent(linkedUid, out var timerTrigger))
+            if (!_timerQuery.TryComp(linkedUid, out var timerTrigger))
                 continue;
 
-            if (!signalQuery.TryGetComponent(linkedUid, out var signalTrigger))
+            if (!_signalQuery.TryComp(linkedUid, out var signalTrigger))
                 continue;
 
             if (signalTrigger.KeyOut == null || !timerTrigger.KeysIn.Contains(signalTrigger.KeyOut))
@@ -59,9 +57,9 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
 
             if (user != null)
                 _adminLogger.Add(LogType.Trigger,
-                    $"{user} instant-triggered {ToPrettyString(linkedUid):target} with {ToPrettyString(ent):device}");
+                    $"{user} instant-triggered {linkedUid:target} with {ent.Owner:device}");
         }
 
-        _device.InvokePort(ent.Owner, signaller.Port);
+        _device.InvokePort(ent.Owner, "Dropped");
     }
 }
