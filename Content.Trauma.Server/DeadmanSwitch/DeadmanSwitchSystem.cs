@@ -18,7 +18,7 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private TriggerSystem _trigger = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
-    
+
     private EntityQuery<TimerTriggerComponent> _timerQuery;
     private EntityQuery<TriggerOnSignalComponent> _signalQuery;
 
@@ -35,7 +35,7 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
     {
         if (!Resolve(ent, ref ent.Comp))
             return;
-        
+
         var linkedDevices = _device.GetLinkedSinks(ent.Owner, "Dropped");
 
         foreach (var linkedUid in linkedDevices)
