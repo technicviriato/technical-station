@@ -36,7 +36,7 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
         if (!Resolve(ent, ref ent.Comp))
             return;
         
-        var linkedDevices = _device.GetLinkedSinks(ent.Owner, "Dropped");
+        var linkedDevices = _device.GetLinkedSinks(ent.Owner, DeadmanSwitchComponent.DroppedPort);
 
         foreach (var linkedUid in linkedDevices)
         {
@@ -60,6 +60,6 @@ public sealed partial class DeadmanSwitchSystem : SharedDeadmanSwitchSystem
                     $"{user} instant-triggered {linkedUid:target} with {ent.Owner:device}");
         }
 
-        _device.InvokePort(ent.Owner, "Dropped");
+        _device.InvokePort(ent.Owner, DeadmanSwitchComponent.DroppedPort);
     }
 }
