@@ -21,6 +21,8 @@
     back:
     - BoxSurvivalSlotsSecurity
     - MagazinePistol
+    - ForensicScanner
+    - MedkitCombat
 
 # Fugitives
   # Convict
@@ -34,3 +36,4 @@
     pocket2: SoapSyndie
   inhand:
   - SatchelFugitive
+  - BarberScissors
