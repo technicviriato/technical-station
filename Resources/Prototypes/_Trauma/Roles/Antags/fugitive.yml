@@ -6,7 +6,7 @@
     head: ClothingHeadHelmetJustice
     eyes: ClothingEyesGlassesSecurity
     neck: Dinkystar
-    mask: ClothingMaskGasSwat
+    mask: ClothingHunterMaskGasSwat
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     outerClothing: ClothingOuterArmourDurathread
     back: ClothingBackpackSatchelLeather
@@ -23,6 +23,7 @@
     - MagazinePistol
     - ForensicScanner
     - MedkitCombat
+    - FakeMindShieldImplanter
 
 # Fugitives
   # Convict

@@ -35,4 +35,4 @@
   description: Surprisingly low quality, for a spacepol officer's pda.
   components:
   - type: Pda
-    id: SpacePolIDCard
+    id: SpacePolIDCardChameleon

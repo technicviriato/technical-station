@@ -157,6 +157,25 @@
       entity_storage: !type:NestedSelector
         tableId: FillGunSafePhaser
 
+- type: entity
+  parent: LockerBaseSecure
+  id: GunSafeHunter
+  name: gun safe
+  suffix: Hunter, Locked
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: shotguncase
+    stateDoorOpen: shotguncase_open
+    stateDoorClosed: shotguncase_door
+  - type: AccessReader
+    access: [ ["SyndicateAgent"] ]
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillGunHunter
+  - type: StaticPrice
+    price: 660
+
 - type: entityTable
   id: FillGunSafeRiot
   table: !type:AllSelector
@@ -221,3 +240,14 @@
     children:
     - id: WeaponLaserSidearm
       amount: 5
+
+- type: entityTable
+  id: FillGunHunter
+  table: !type:AllSelector
+    children:
+    - id: WeaponShotgunEnforcerRubber
+      amount: 3
+    - id: BoxBeanbag
+      amount: 3
+    - id: RiotLaserShield
+    - id: SecBreachingHammer
