@@ -158,23 +158,19 @@
         tableId: FillGunSafePhaser
 
 - type: entity
-  parent: LockerBaseSecure
+  parent: BaseTraumaGunSafe
   id: GunSafeHunter
   name: gun safe
   suffix: Hunter, Locked
   components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: shotguncase
-    stateDoorOpen: shotguncase_open
-    stateDoorClosed: shotguncase_door
+  - type: StationAlertLevelLock
+    lockedAlertLevels: [ ]
   - type: AccessReader
     access: [ ["SyndicateAgent"] ]
+  - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector
         tableId: FillGunHunter
-  - type: StaticPrice
-    price: 660
 
 - type: entityTable
   id: FillGunSafeRiot
