@@ -9024,3 +9024,10 @@ Entries:
   id: 1028
   time: '2026-05-23T06:05:55.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2758
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed rev shooting book giving melee skill instead of shooting.
+  id: 1029
+  time: '2026-05-23T09:52:40.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2764
