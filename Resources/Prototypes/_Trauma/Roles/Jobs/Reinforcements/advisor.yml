@@ -1,4 +1,4 @@
-﻿- type: job
+- type: job
   id: SecurityAdvisor
   name: job-name-security-advisor
   description: job-description-security-advisor
