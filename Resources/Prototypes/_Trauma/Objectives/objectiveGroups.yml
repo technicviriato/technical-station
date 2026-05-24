@@ -1,4 +1,4 @@
-﻿- type: weightedRandom
+- type: weightedRandom
   id: HunterObjectiveGroups
   weights:
     HunterObjectiveGroupSteal: 1
