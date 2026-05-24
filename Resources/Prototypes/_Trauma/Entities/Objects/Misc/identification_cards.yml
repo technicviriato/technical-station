@@ -65,7 +65,7 @@
     tags:
     - Maintenance
     - SyndicateAgent
-    - Externals
+    - External
 
 - type: entity
   parent: [IDCardStandard, BaseChameleon]
@@ -84,7 +84,7 @@
     tags:
     - Maintenance
     - SyndicateAgent
-    - Externals
+    - External
   - type: AgentIDCard
   - type: UIRequiresLock
   - type: ActivatableUI
