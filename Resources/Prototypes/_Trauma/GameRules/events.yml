@@ -137,6 +137,7 @@
   - type: AntagObjectives
     objectives:
     - FugitiveEscapeObjective
+    - FugitiveKillObjective
   - type: AntagSelection
     agentName: ghost-role-information-fugitive-name
     definitions:

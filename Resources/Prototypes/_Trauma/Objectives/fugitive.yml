@@ -34,6 +34,29 @@
   - type: EscapeShuttleCondition
 
 - type: entity
+  parent: [BaseFugitiveObjective, BaseKillObjective]
+  id: FugitiveKillObjective
+  name: Kill the snitch
+  description: Snitches get stitches. Did they really believe they would get away with selling you out?
+  components:
+  - type: Objective
+    difficulty: 1
+    icon:
+      sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+      state: base
+  - type: TargetObjective
+    title: objective-condition-kill-person-title
+  - type: PickRandomPerson
+    filters:
+      - !type:TargetObjectiveMindFilter
+        blacklist:
+          components:
+            - KillPersonCondition
+  - type: KillPersonCondition
+    requireDead: true
+    requireMaroon: true
+
+- type: entity
   parent: [BaseHunterObjective, BaseKillObjective]
   id: HunterKillFugitiveObjective
   name: Eliminate the fugitive
@@ -55,7 +78,7 @@
   parent: [BaseHunterObjective, BaseKillObjective]
   id: HunterArrestFugitiveObjective
   name: Apprehend the fugitive
-  description: Locate the fugitive using the report and ensure they do not escape on the evacuation shuttle. Bring them to justice, dead or alive.
+  description: Locate the fugitive using the report and ensure they do not escape on the evacuation shuttle. Bring them to justice, alive.
   components:
   - type: Objective
     difficulty: 1.5
