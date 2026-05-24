@@ -1,0 +1,51 @@
+﻿- type: job
+  id: SecurityAdvisor
+  name: job-name-security-advisor
+  description: job-description-security-advisor
+  playTimeTracker: JobSecurityAdvisor
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 56
+  icon: "JobIconSecurityAdvisor"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  guides:
+  - Security
+  - CorporateJudo
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - External
+  - Cryogenics
+  - Command
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: SecurityStaff
+
+- type: startingGear
+  id: SecurityAdvisorGear
+  equipment:
+    head: ClothingHeadHatBeretAdvisor
+    eyes: ClothingEyesGlassesAdvisor
+    neck: ClothingNeckCloakNanotrasen
+    mask: ClothingMaskGasSwatAdvisor
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    back: ClothingBackpackAdvisor
+    shoes: ClothingShoesBootsJackFilled
+    id: AdvisorPDA
+    ears: ClothingHeadsetAltAdvisor
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmourInvisibleAdvisor
+    belt: ClothingBeltSecurityWebbingFilled
+    pocket1: WeaponLaserSidearm
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+      - MagazineRifle # 1
+      - MagazineRifle # 2
+      - MedkitCombatFilled
