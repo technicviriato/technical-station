@@ -148,8 +148,7 @@
       startingGear: FugitiveAntagGear
       briefing:
         text: fugitive-role-greeting
-        color: Orange
-        sound: /Audio/Misc/thief_greeting.ogg
+        color: red
       components:
       - type: NpcFactionMember
         factions:
