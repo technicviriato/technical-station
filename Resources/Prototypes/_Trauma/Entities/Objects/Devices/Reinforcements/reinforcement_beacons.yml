@@ -166,6 +166,7 @@
   suffix: Security, Bodyguard
   components:
   - type: DelayedGhostRole
+    job: SecurityBodyguard
     name: ghost-role-information-reinforcement-specialist-bodyguard-name
   - type: GhostCharacterSpawner
     components:

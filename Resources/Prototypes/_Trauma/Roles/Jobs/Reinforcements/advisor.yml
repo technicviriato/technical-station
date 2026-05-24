@@ -6,7 +6,7 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 56
+    time: 6.5h
   icon: "JobIconSecurityAdvisor"
   supervisors: job-supervisors-hos
   canBeAntag: false
