@@ -180,7 +180,7 @@
   - type: LoadMapRule
     gridPath: /Maps/_Trauma/Shuttles/SpacePolShuttle.yml
   - type: AntagSelection
-    agentName: ghost-role-information-fugitive-name
+    agentName: ghost-role-information-hunter-name
     definitions:
     - spawnerPrototype: SpawnPointGhostRoleHunter
       min: 2
