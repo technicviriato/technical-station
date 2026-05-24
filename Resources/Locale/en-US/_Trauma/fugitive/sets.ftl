@@ -31,4 +31,4 @@ fugitive-set-contractor-description =
 fugitive-set-communicator-name = Communicator's Kit
 fugitive-set-communicator-description =
     Never get caught! Listen in on the station and on your hunters with this kit.
-    Contains: station master encryption key and a freelancer encryption key.
+    Contains: station master encryption key, a freelancer encryption key and a syndicate encryption key.
