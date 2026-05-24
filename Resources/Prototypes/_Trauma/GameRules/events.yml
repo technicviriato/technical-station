@@ -153,6 +153,9 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: AutoImplant
+        implants:
+        - UplinkImplant
       - type: RandomMetadata
       - type: EmitSoundOnSpawn # fell out of the ceiling
         sound: /Audio/Effects/clang.ogg
@@ -186,11 +189,15 @@
       startingGear: HunterAntagGear
       briefing:
         text: hunter-role-greeting
-        color: Blue
+        color: red
       components:
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: AutoImplant
+        implants:
+        - FakeMindShieldImplant
+        - DeathAcidifierImplant
       - type: RandomMetadata
       mindRoles:
       - MindRoleGhostRoleHunter

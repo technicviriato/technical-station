@@ -31,9 +31,9 @@
   description: A standard issue gas mask for SpacePol Officers
   components:
   - type: Sprite
-    sprite: _Trauma/Clothing/Mask/bsoswat.rsi
+    sprite: _Trauma/Clothing/Mask/spacepol.rsi
   - type: Clothing
-    sprite: _Trauma/Clothing/Mask/bsoswat.rsi
+    sprite: _Trauma/Clothing/Mask/spacepol.rsi
   - type: Tag
     tags:
       - WhitelistChameleon

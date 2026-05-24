@@ -242,8 +242,10 @@
   table: !type:AllSelector
     children:
     - id: WeaponShotgunEnforcerRubber
-      amount: 3
+      amount: 2
     - id: BoxBeanbag
-      amount: 3
+      amount: 2
+    - id: MagazineBoxPistol
+      amount: 2
     - id: RiotLaserShield
     - id: SecBreachingHammer

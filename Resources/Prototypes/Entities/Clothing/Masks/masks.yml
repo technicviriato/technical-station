@@ -536,7 +536,7 @@
   parent: [ ClothingMaskGas, BaseSecurityContraband ]
   id: ClothingMaskGasSwat
   name: swat gas mask
-  description: A elite issue Security gas mask.
+  description: An elite issue Security gas mask. # Trauma - was "A". Learn how to spell
   components:
   - type: Sprite
     sprite: Clothing/Mask/swat.rsi
