@@ -32,9 +32,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitPrisoner
     shoes: ClothingShoesColorBlack
+    belt: ClothingBeltStorageWaistbag
     id: IDCardTide
     pocket1: CombatKnife
     pocket2: SoapSyndie
   inhand:
   - SatchelFugitive
-  - BarberScissors
+  storage:
+    belt:
+    - BarberScissors
