@@ -14,7 +14,7 @@
 - type: entity
   parent: [ClothingHeadsetAltLoudspeaker, BaseCentcommContraband]
   id: ClothingHeadsetAltHunter
-  name: spacepol officrs over-ear headset
+  name: spacepol officers over-ear headset
   components:
     - type: ContainerFill
       containers:
