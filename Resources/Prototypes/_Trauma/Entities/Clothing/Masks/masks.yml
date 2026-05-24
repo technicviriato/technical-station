@@ -27,7 +27,7 @@
 - type: entity
   parent: [ ClothingMaskGas, BaseSecurityContraband ]
   id: ClothingMaskGasSwatAdvisor
-  name: security advisor's swat gas mask
+  name: security advisor swat gas mask
   description: A standard issue gas mask for SpacePol Officers
   components:
   - type: Sprite

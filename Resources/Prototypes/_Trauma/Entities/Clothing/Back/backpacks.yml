@@ -89,7 +89,7 @@
 - type: entity
   parent: [ ClothingBackpack, BaseSecurityContraband ]
   id: ClothingBackpackAdvisor
-  name: security advisor's backpack
+  name: security advisor backpack
   description: A very patriotic looking backpack.
   components:
     - type: Sprite
