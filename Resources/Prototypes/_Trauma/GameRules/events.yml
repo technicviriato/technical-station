@@ -176,6 +176,12 @@
     objectives:
     - HunterKillFugitiveObjective
     - HunterArrestFugitiveObjective
+    - HunterKillRandomPersonObjective
+  - type: AntagRandomObjectives
+    sets:
+    - groups: HunterObjectiveGroups
+      maxPicks: 3
+    maxDifficulty: 5
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/_Trauma/Shuttles/SpacePolShuttle.yml
