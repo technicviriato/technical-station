@@ -36,18 +36,18 @@
     sprite: _Trauma/Clothing/Mask/spacepol.rsi
   - type: Tag
     tags:
-      - WhitelistChameleon
-      - IPCMaskWearable
+    - WhitelistChameleon
+    - IPCMaskWearable
   - type: HideLayerClothing
     slots:
-      - Hair
-      - Snout
-      - HeadTop
-      - HeadSide
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
     hideOnToggle: true
   - type: Armor
     coverage:
-      - Head
+    - Head
     modifiers:
       coefficients:
         Blunt: 0.8

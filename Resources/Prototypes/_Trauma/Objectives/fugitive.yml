@@ -48,10 +48,10 @@
     title: objective-condition-kill-person-title
   - type: PickRandomPerson
     filters:
-      - !type:TargetObjectiveMindFilter
-        blacklist:
-          components:
-            - KillPersonCondition
+    - !type:TargetObjectiveMindFilter
+      blacklist:
+        components:
+        - KillPersonCondition
   - type: KillPersonCondition
     requireDead: true
     requireMaroon: true
