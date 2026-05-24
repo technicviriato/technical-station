@@ -47,14 +47,14 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-blueshield
+        pda-spacepol
   - type: Pda
     id: AdvisorIDCard
   - type: Icon
     sprite: _Trauma/Objects/Devices/pda.rsi
-    state: pda-blueshield
+    state: pda-spacepol
   - type: Sprite
     sprite: _Trauma/Objects/Devices/pda.rsi
-    state: pda-blueshield
+    state: pda-spacepol
   - type: PdaBorderColor
     borderColor: "#3c94c5"

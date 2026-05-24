@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "PDA-Blueshield drawn by SolsticeOfTheWinter",
+  "copyright": "PDA-spacepol drawn by SolsticeOfTheWinter",
   "size": {
     "x": 32,
     "y": 32
@@ -14,7 +14,7 @@
       "name": "light_overlay"
     },
     {
-      "name": "pda-blueshield"
+      "name": "pda-spacepol"
     },
     {
       "name": "pda",

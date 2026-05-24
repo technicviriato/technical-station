@@ -132,16 +132,16 @@
 - type: startingGear
   id: ReinforcementBeaconOfficerSpecAdvisor
   equipment:
-    head: ClothingHeadHatBeretCommand
-    eyes: ClothingEyesGlassesSecurity
+    head: ClothingHeadHatBeretAdvisor
+    eyes: ClothingEyesGlassesAdvisor
     neck: ClothingNeckCloakNanotrasen
-    mask: ClothingMaskGasSwat
+    mask: ClothingMaskGasSwatAdvisor
     jumpsuit: ClothingUniformJumpsuitNanotrasen
-    back: ClothingBackpackSecurity
+    back: ClothingBackpackAdvisor
     shoes: ClothingShoesBootsJackFilled
     id: AdvisorPDA
-    ears: ClothingHeadsetAltSecurityRegular
-    gloves: ClothingHandsGlovesSecurityBlue
+    ears: ClothingHeadsetAltAdvisor
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmourInvisibleAdvisor
     belt: ClothingBeltSecurityWebbingFilled
     pocket1: WeaponLaserSidearm
