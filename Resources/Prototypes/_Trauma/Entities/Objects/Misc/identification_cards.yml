@@ -50,7 +50,7 @@
   - type: AntagCard # D-class? Outside? Can't be.
 
 - type: entity
-  parent: [IDCardStandard, BaseChameleon]
+  parent: [ IDCardStandard, BaseChameleon ]
   id: SpacePolIDCardChameleon
   name: SpacePol ID card
   suffix: Agent
