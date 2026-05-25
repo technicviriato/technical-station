@@ -43,8 +43,6 @@
   name: nanotrasen representative's PDA
   description: Slick design for the one who pushes pencils.
   components:
-  - type: Pda
-    id: NanotrasenRepresentativeIDCard
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
@@ -61,7 +59,7 @@
 
 - type: entity
   parent: HoPPDA
-  id: altHoPPDA
+  id: AltHoPPDA
   name: head of personnel PDA
   description: Themed after everyone's favourite pet.
   components:
@@ -83,7 +81,7 @@
 
 - type: entity
   parent: CaptainPDA
-  id: altCaptainPDA
+  id: AltCaptainPDA
   name: captain PDA
   description: A stylish, modern, golden and more expensive PDA than yours.
   components:
