@@ -1,0 +1,10 @@
+﻿# PDA
+- type: loadout
+  id: CaptainPDA
+  equipment:
+    id: CaptainPDA
+
+- type: loadout
+  id: altCaptainPDA
+  equipment:
+    id: altCaptainPDA
