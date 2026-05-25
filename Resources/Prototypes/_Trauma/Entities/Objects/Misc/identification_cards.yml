@@ -58,7 +58,7 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idsecurityofficer
+    - state: idpassenger
   - type: IdCard
     jobTitle: job-name-spacepol
     jobIcon: JobIconSecurityOfficer
@@ -77,7 +77,7 @@
     - DoorBumpOpener
   - type: ChameleonClothing
     slot: [idcard]
-    default: SpacePolIDCard
+    default: PassengerIDCard
     requireTag: WhitelistChameleonIdCard
   - type: UserInterface
     interfaces:
