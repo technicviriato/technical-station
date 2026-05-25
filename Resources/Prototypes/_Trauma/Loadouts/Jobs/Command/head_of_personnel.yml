@@ -5,6 +5,6 @@
     id: HoPPDA
 
 - type: loadout
-  id: altHoPPDA
+  id: AltHoPPDA
   equipment:
-    id: altHoPPDA
+    id: AltHoPPDA

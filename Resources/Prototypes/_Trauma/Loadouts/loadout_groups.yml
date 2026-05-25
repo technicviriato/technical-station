@@ -7,8 +7,7 @@
   maxLimit: 1
   loadouts:
   - HoPPDA
-  - altHoPPDA
-
+  - AltHoPPDA
 - type: loadoutGroup
   id: CaptainPDA
   name: loadout-group-captain-id
@@ -16,7 +15,7 @@
   maxLimit: 1
   loadouts:
   - CaptainPDA
-  - altCaptainPDA
+  - AltCaptainPDA
 
 - type: loadoutGroup
   id: NanotrasenRepresentativePDA

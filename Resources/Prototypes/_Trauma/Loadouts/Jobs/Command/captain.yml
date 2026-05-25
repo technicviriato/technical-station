@@ -5,6 +5,6 @@
     id: CaptainPDA
 
 - type: loadout
-  id: altCaptainPDA
+  id: AltCaptainPDA
   equipment:
-    id: altCaptainPDA
+    id: AltCaptainPDA
