@@ -93,3 +93,9 @@ ghost-role-information-hunter-rules = You are a [color={role-type-team-antagonis
 ghost-role-information-fugitive-name = Fugitive
 ghost-role-information-fugitive-description = You're an escaped prisoner. Make it out alive.
 ghost-role-information-fugitive-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-solo-antagonist-name}[/bold][/color]. Focus on laying low rather than engaging the hunters or security directly.
+
+ghost-role-information-syndicate-reinforcement-grenadier-name = Syndicate Grenadier
+ghost-role-information-syndicate-reinforcement-grenadier-description = Someone needs reinforcements. Your expertise is in explosions, use it well.
+
+ghost-role-information-syndicate-reinforcement-hitman-name = Syndicate Hitman
+ghost-role-information-syndicate-reinforcement-hitman-description = Someone needs reinforcements. Your job is to kill someone that your agent needs dead.

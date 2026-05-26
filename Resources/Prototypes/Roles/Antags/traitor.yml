@@ -49,18 +49,20 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackSyndicate
     shoes: ClothingShoesBootsSyndieFilled
+    # <Trauma>
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    # </Trauma>
     gloves: ClothingHandsGlovesColorBlack
 
 - type: startingGear
+  parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementMedic
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     # <Trauma>
     eyes: ClothingEyesHudSyndicateAgent
-    back: ClothingBackpackSyndicate
-    shoes: ClothingShoesBootsCombatFilled
     id: SyndiMedicPDA
-    ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesNitrile
     pocket1: WeaponPistolViper
   inhand:
@@ -68,21 +70,18 @@
   storage:
     back:
     - MedkitCombatFilled
-    - CigCartonSyndicate
+    - CigPackSyndicate # 1
+    - CigPackSyndicate # 2
     - InterdyneFlippo
     - CombatMedipen # 1
-    - CombatMedipen # 2
     # </Trauma>
 
 - type: startingGear
+  parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementSpy
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     # <Trauma>
-    back: ClothingBackpackSyndicate
-    shoes: ClothingShoesBootsCombatFilled
-    id: SyndiPDA
-    ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesColorBlack
     pocket1: WeaponPistolCobra
   inhand:
@@ -93,18 +92,15 @@
     - MagazinePistolCaselessRifle # 1
     - MagazinePistolCaselessRifle # 2
     - RadioJammer
-    - CyberPen
+    - ChameleonProjector
     # </Trauma>
 
 - type: startingGear
+  parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementThief
   # <Trauma>
   equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpackSyndicate
     shoes: ClothingShoesBootsCombatFilled
-    id: SyndiPDA
-    ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsChameleonThief
     pocket1: WeaponPistolViper
   storage:
