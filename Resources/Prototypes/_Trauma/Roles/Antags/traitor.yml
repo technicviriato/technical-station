@@ -1,4 +1,4 @@
-﻿- type: startingGear
+- type: startingGear
   parent: SyndicateOperativeClothing
   id: SyndicateReinforcementGrenadier
   equipment:
