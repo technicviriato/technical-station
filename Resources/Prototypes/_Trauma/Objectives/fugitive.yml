@@ -126,13 +126,6 @@
 
 - type: entity
   parent: BaseHunterStealObjective
-  id: HunterStealCaptainIDObjective
-  components:
-  - type: StealCondition
-    stealGroup: CaptainIDCard
-
-- type: entity
-  parent: BaseHunterStealObjective
   id: HunterStealNukeDiskObjective
   components:
   - type: Objective

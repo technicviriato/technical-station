@@ -6,7 +6,6 @@
 - type: weightedRandom
   id: HunterObjectiveGroupSteal
   weights:
-    HunterStealCaptainIDObjective: 0.25
     HunterStealNukeDiskObjective: 0.5
     HunterStealHyposprayObjective: 0.5
     HunterStealHandTeleporterObjective: 0.5
