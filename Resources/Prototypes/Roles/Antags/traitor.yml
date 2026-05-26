@@ -55,51 +55,70 @@
   id: SyndicateReinforcementMedic
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
-    shoes: ClothingShoesColorRed
-    gloves: ClothingHandsGlovesLatex
-    head: ClothingHeadHatSurgcapPurple
-    id: VisitorPDA
-    belt: ClothingBeltMedicalFilled
-    back: ClothingBackpackDuffelMedical
-    ears: ClothingHeadsetMedical
-    eyes: ClothingEyesHudMedical
-    pocket1: HandheldHealthAnalyzer
-    pocket2: PillCanisterBicaridine
+    # <Trauma>
+    eyes: ClothingEyesHudSyndicateAgent
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiMedicPDA
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesNitrile
+    pocket1: WeaponPistolViper
   inhand:
-    - MedkitCombatFilled
+    - ClothingBackpackDuffelSyndicateFilledMedical
   storage:
     back:
-    - Defibrillator
-    - CigPackSyndicate
-    - UniformScrubsColorPurple
-    - ChemistryBottleToxin
-    - WeaponPistolViper
-    - Syringe
-    - Syringe
+    - MedkitCombatFilled
+    - MedkitCombatBlueFilled
+    - CigCartonSyndicate
+    - InterdyneFlippo
+    - CombatMedipen # 1
+    - CombatMedipen # 2
+    # </Trauma>
 
 - type: startingGear
   id: SyndicateReinforcementSpy
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpack
-    shoes: ClothingShoesColorBlack
+    # <Trauma>
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesColorBlack
-    pocket1: WeaponPistolViper
-    pocket2: VoiceMaskImplanter
+    pocket1: WeaponPistolCobra
   inhand:
-    - ClothingBackpackChameleonFillAgent
-- type: startingGear
-  id: SyndicateReinforcementThief
-  parent: SyndicateOperativeClothing
-  equipment:
-    pocket1: WeaponPistolViper
-    pocket2: MagazinePistolHighCapacity
-  inhand:
-    - ToolboxSyndicateFilled
+  - ClothingBackpackChameleonFillAgent
   storage:
     back:
+    - VoiceMaskImplanter
+    - MagazinePistolCaselessRifle # 1
+    - MagazinePistolCaselessRifle # 2
+    - EncryptionKeyStationMaster
+    - RadioJammer
+    - CyberPen
+    # </Trauma>
+
+- type: startingGear
+  id: SyndicateReinforcementThief
+  # <Trauma>
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsChameleonThief
+    pocket1: WeaponPistolViper
+  storage:
+    back:
+    - MagazinePistolHighCapacity # 1
+    - MagazinePistolHighCapacity # 2
     - SyndicateJawsOfLife
     - CameraBug
+    - Fulton
+    - FultonBeacon
+    - Emag
+  # </Trauma>
 
 #Syndicate Operative Outfit - Basic
 - type: startingGear
