@@ -59,7 +59,6 @@
   parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementMedic
   equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
     # <Trauma>
     eyes: ClothingEyesHudSyndicateAgent
     id: SyndiMedicPDA
@@ -80,7 +79,6 @@
   parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementSpy
   equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
     # <Trauma>
     gloves: ClothingHandsGlovesColorBlack
     pocket1: WeaponPistolCobra
