@@ -6,7 +6,7 @@
   cost:
     Telecrystal: 20
   categories:
-    - UplinkWeaponry
+  - UplinkWeaponry
 
 - type: listing
   id: UplinkRifleFAL
@@ -16,7 +16,7 @@
   cost:
     Telecrystal: 50
   categories:
-    - UplinkWeaponry
+  - UplinkWeaponry
 
 - type: listing
   id: UplinkEshieldNukies
