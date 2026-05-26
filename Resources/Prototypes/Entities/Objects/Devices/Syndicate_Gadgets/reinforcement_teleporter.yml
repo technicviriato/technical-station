@@ -105,7 +105,7 @@
       settings: default
   - type: GhostRoleMobSpawner
     prototype: MobHumanSyndicateAgentSpy
-    selectablePrototypes: ["SyndicateAgentMedic", "SyndicateAgentSpy", "SyndicateAgentThief", "SyndicateAgentGrenadier", "SyndicateAgentHitman"] # Trauma - added "SyndicateAgentGrenadier and
+    selectablePrototypes: ["SyndicateAgentMedic", "SyndicateAgentSpy", "SyndicateAgentThief", "SyndicateAgentGrenadier", "SyndicateAgentHitman"] # Trauma - added "SyndicateAgentGrenadier" and "SyndicateAgentHitman"
 
 # Goobstation - Nukeop reinforcement
 - type: entity
