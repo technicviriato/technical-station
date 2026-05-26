@@ -9092,3 +9092,19 @@ Entries:
   id: 1036
   time: '2026-05-26T00:53:07.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2808
+- author: Hoodsie
+  changes:
+  - type: Add
+    message: Gave Advanced Cleaning module to engi xenoborg.
+  id: 1037
+  time: '2026-05-26T04:10:07.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2817
+- author: Wizard25671
+  changes:
+  - type: Tweak
+    message: >-
+      Tweaked sub gamemode heretic to spawn more heretics instead of just a max
+      of 1
+  id: 1038
+  time: '2026-05-26T06:33:13.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2818
