@@ -68,7 +68,6 @@
   storage:
     back:
     - MedkitCombatFilled
-    - MedkitCombatBlueFilled
     - CigCartonSyndicate
     - InterdyneFlippo
     - CombatMedipen # 1
@@ -93,7 +92,6 @@
     - VoiceMaskImplanter
     - MagazinePistolCaselessRifle # 1
     - MagazinePistolCaselessRifle # 2
-    - EncryptionKeyStationMaster
     - RadioJammer
     - CyberPen
     # </Trauma>
@@ -117,7 +115,6 @@
     - CameraBug
     - Fulton
     - FultonBeacon
-    - Emag
   # </Trauma>
 
 #Syndicate Operative Outfit - Basic
