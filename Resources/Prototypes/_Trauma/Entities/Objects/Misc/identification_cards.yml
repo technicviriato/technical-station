@@ -50,15 +50,11 @@
   - type: AntagCard # D-class? Outside? Can't be.
 
 - type: entity
-  parent: [ IDCardStandard, BaseChameleon ]
+  parent: [ AgentIDCard ]
   id: SpacePolIDCardChameleon
   name: SpacePol ID card
   suffix: Agent
   components:
-  - type: Sprite
-    layers:
-    - state: default
-    - state: idpassenger
   - type: IdCard
     jobTitle: job-name-spacepol
     jobIcon: JobIconSecurityOfficer
@@ -67,23 +63,3 @@
     - Maintenance
     - SyndicateAgent
     - External
-  - type: AgentIDCard
-  - type: UIRequiresLock
-  - type: ActivatableUI
-    key: enum.AgentIDCardUiKey.Key
-    verbText: agent-id-open-ui-verb
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-  - type: ChameleonClothing
-    slot: [idcard]
-    default: PassengerIDCard
-    requireTag: WhitelistChameleonIdCard
-  - type: UserInterface
-    interfaces:
-      enum.AgentIDCardUiKey.Key:
-        type: AgentIDCardBoundUserInterface
-      enum.ChameleonUiKey.Key:
-        type: ChameleonBoundUserInterface
-  - type: NanoChatCard
-    listNumber: false
