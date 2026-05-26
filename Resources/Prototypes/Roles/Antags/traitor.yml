@@ -87,7 +87,7 @@
     gloves: ClothingHandsGlovesColorBlack
     pocket1: WeaponPistolCobra
   inhand:
-   - ClothingBackpackChameleonFillAgent
+    - ClothingBackpackChameleonFillAgent
   storage:
     back:
     - VoiceMaskImplanter
