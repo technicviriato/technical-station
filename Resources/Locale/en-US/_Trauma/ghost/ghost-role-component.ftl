@@ -98,4 +98,4 @@ ghost-role-information-syndicate-reinforcement-grenadier-name = Syndicate Grenad
 ghost-role-information-syndicate-reinforcement-grenadier-description = Someone needs reinforcements. Your expertise is in explosions, use it well.
 
 ghost-role-information-syndicate-reinforcement-hitman-name = Syndicate Hitman
-ghost-role-information-syndicate-reinforcement-hitman-description = Someone needs reinforcements. Your job is to kill someone that your agent needs dead.
+ghost-role-information-syndicate-reinforcement-hitman-description = Someone needs reinforcements. Your objective is to dispatch of someone that your agent needs gone.
