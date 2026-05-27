@@ -764,7 +764,7 @@
   description: uplink-syndicate-id-card-desc
   productEntity: SyndicateIDCard
   cost:
-    Telecrystal: 10 # Trauma - inflated was 1
+    Telecrystal: 5 # Trauma - inflated was 1
   categories:
   - UplinkDeception
 
@@ -1415,7 +1415,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MicroBombImplanter
   cost:
-    Telecrystal: 20 # goob
+    Telecrystal: 15 # Trauma - was 20
   categories:
   - UplinkImplants
   conditions:
@@ -1952,7 +1952,7 @@
   description: uplink-gatfruit-seeds-desc
   productEntity: GatfruitSeeds
   cost:
-    Telecrystal: 30 # goob
+    Telecrystal: 25 # Trauma - was 30
   categories:
   - UplinkJob
   conditions:
@@ -1995,7 +1995,7 @@
   description: uplink-cluster-banana-peel-desc
   productEntity: ClusterBananaPeel
   cost:
-    Telecrystal: 18 # Trauma - was 5, 5x and cheaper. it's a single use item that is trivial to "defuse"
+    Telecrystal: 15 # Trauma - was 5, 5x and cheaper. it's a single use item that is trivial to "defuse"
   categories:
   - UplinkJob
   conditions:
@@ -2010,7 +2010,7 @@
   icon: { sprite: /Textures/Objects/Fun/figurines.rsi, state: holoclown }
   productEntity: BoxHoloclown
   cost:
-    Telecrystal: 60 # goob
+    Telecrystal: 50 # Trauma - was 60
   categories:
   - UplinkJob
   conditions:
@@ -2122,10 +2122,13 @@
   description: uplink-contraband-lighter-desc
   icon: { sprite:  Objects/Tools/Lighters/syndielighter.rsi, state: icon}
   productEntity: UplinkLighterBox
-  cost:
-    Telecrystal: 1
   categories:
   - UplinkPointless
+  # <Trauma>
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  # </Trauma>
 
 - type: listing
   id: UplinkSmugglerSatchel
@@ -2173,7 +2176,7 @@
   description: uplink-briefcase-gun-desc
   productEntity: WeaponSubMachineGunBriefcase
   cost:
-    Telecrystal: 70 # Trauma - was 14, 5x
+    Telecrystal: 50 # Trauma - was 14
   categories:
   - UplinkJob
   conditions:
