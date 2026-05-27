@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Store.Components;
+namespace Content.Shared.Store.Components;
 
 public sealed partial class StoreComponent
 {
