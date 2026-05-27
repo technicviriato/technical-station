@@ -93,7 +93,7 @@
   description: uplink-gloves-north-star-desc
   productEntity: ClothingHandsGlovesNorthStar
   cost:
-    Telecrystal: 20 # Trauma - was 30
+    Telecrystal: 30 # Goob
   categories:
   - UplinkWeaponry
 
