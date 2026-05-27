@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Linq; // Trauma
 using Content.Shared.Mind;
 using Content.Shared.Store.Components;
 using Robust.Shared.Prototypes;
@@ -91,6 +92,10 @@ public abstract partial class SharedStoreSystem
     /// <returns>The available listings.</returns>
     public IEnumerable<ListingDataWithCostModifiers> GetAvailableListings(EntityUid buyer, EntityUid store, StoreComponent component)
     {
+        // Trauma - ignore all conditions if store has IgnoreListingConditions set
+        if (component.IgnoreListingConditions)
+            return component.FullListingsCatalog.Where(l => ListingHasCategory(l, component.Categories));
+
         return GetAvailableListings(buyer, component.FullListingsCatalog, component.Categories, store);
     }
 
@@ -121,10 +126,6 @@ public abstract partial class SharedStoreSystem
                 var args = new ListingConditionArgs(GetBuyerMind(buyer), storeEntity, listing, EntityManager);
                 var conditionsMet = true;
                 
-                // <Trauma> - debug uplink bypasses all listing conditions
-                if (storeEntity == null || !_tag.HasTag(storeEntity.Value, DebugUplinkTag)) 
-                // </Trauma>
-
                 foreach (var condition in listing.Conditions)
                 {
                     if (!condition.Condition(args))
