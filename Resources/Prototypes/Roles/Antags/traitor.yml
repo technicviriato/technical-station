@@ -94,9 +94,9 @@
     # </Trauma>
 
 - type: startingGear
-  parent: SyndicateOperativeClothing # Trauma
   id: SyndicateReinforcementThief
   # <Trauma>
+  parent: SyndicateOperativeClothing
   equipment:
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsChameleonThief
