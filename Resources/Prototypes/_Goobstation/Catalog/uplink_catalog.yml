@@ -539,7 +539,7 @@
   icon: { sprite: _Goobstation/Objects/Devices/communication.rsi, state: radio-syndiroach }
   productEntity: ReinforcementRadioSyndicateSyndiRoach
   cost:
-    Telecrystal: 30
+    Telecrystal: 15
   categories:
     - UplinkAllies
 

@@ -132,7 +132,7 @@
   icon: { sprite: Clothing/Hands/Gloves/Boxing/boxingblue.rsi, state: icon }
   productEntity: GlovesBoxingRiggedRandomSpawner # Trauma - was "ClothingHandsGlovesBoxingRiggedBase" it works, it just drops it on the ground
   cost:
-    Telecrystal: 30 # Trauma - was 10, 5x but much cheaper. its a fucking melee weapon
+    Telecrystal: 20 # Trauma - was 10, 5x but much cheaper. its a fucking melee weapon
   categories:
   - UplinkWeaponry
 
@@ -155,7 +155,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/hushpup.rsi, state: icon }
   productEntity: BriefcaseWeaponHushpupFilled
   cost:
-    Telecrystal: 50 # Trauma - was 10, 5x
+    Telecrystal: 40 # Trauma - was 10, 5x
   categories:
   - UplinkWeaponry
 
@@ -1169,7 +1169,7 @@
   icon: { sprite: /Textures/Objects/Misc/guardian_info.rsi, state: icon }
   productEntity: BoxHoloparasite
   cost:
-    Telecrystal: 60 # Trauma - was 12, 5x
+    Telecrystal: 50 # Trauma - was 12
   categories:
   - UplinkAllies
   conditions:
@@ -1245,7 +1245,7 @@
   productEntity: ReinforcementRadioSyndicateAncestor
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-ancestor }
   cost:
-    Telecrystal: 30 # goob
+    Telecrystal: 25 # Trauma - was 30
   categories:
   - UplinkAllies
   conditions:
@@ -1299,7 +1299,7 @@
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-syndicat }
   productEntity: ReinforcementRadioSyndicateSyndiCat
   cost:
-    Telecrystal: 30 # goob
+    Telecrystal: 25 # Trauma - was 30
   categories:
     - UplinkAllies
   conditions:
@@ -1399,7 +1399,7 @@
   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
   productEntity: RadioImplanter
   cost:
-    Telecrystal: 7 # goob - Syndicate Radio Price Adjust
+    Telecrystal: 5 # Trauma - was 7
   categories:
   - UplinkImplants
   conditions:
@@ -1472,7 +1472,7 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 20 # goob # goob - traitor suicide implants
+    Telecrystal: 15 # Trauma - was 20
   categories:
     - UplinkImplants
   # goob - traitor suicide implants
