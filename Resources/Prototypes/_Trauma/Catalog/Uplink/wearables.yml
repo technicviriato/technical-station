@@ -1,4 +1,24 @@
 - type: listing
+  id: UplinkCombatGloves
+  name: uplink-combat-gloves-name
+  description: uplink-combat-gloves-desc
+  productEntity: ClothingHandsGlovesCombat
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearables
+
+- type: listing
+  id: UplinkSyndieGasMask
+  name: uplink-syndie-gasmask-name
+  description: uplink-syndie-gasmask-desc
+  productEntity: ClothingMaskGasSyndicate
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkHolster
   name: uplink-holster-name
   description: uplink-holster-desc

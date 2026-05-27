@@ -83,7 +83,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/throwing_knife.rsi, state: icon } # Trauma
   productEntity: ClothingBeltKnifeRig # Trauma
   cost:
-    Telecrystal: 20 # goob - Pretty weak, but resusable ranged crit potential shouldn't be less.
+    Telecrystal: 50 # Trauma - was 20. HOW THE FUCK WAS THIS 20 TC, THESE ARE 8 KNIFES, THAT DEAL 25 DAMAGE, THROUGH ARMOUR!!!!
   categories:
     - UplinkWeaponry
 
@@ -93,7 +93,7 @@
   description: uplink-gloves-north-star-desc
   productEntity: ClothingHandsGlovesNorthStar
   cost:
-    Telecrystal: 30 # goob
+    Telecrystal: 20 # Trauma - was 30
   categories:
   - UplinkWeaponry
 
