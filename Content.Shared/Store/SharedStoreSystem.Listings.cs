@@ -120,9 +120,9 @@ public abstract partial class SharedStoreSystem
             {
                 var args = new ListingConditionArgs(GetBuyerMind(buyer), storeEntity, listing, EntityManager);
                 var conditionsMet = true;
-                
+
                 // <Trauma> - debug uplink bypasses all listing conditions
-                if (storeEntity == null || !_tag.HasTag(storeEntity.Value, DebugUplinkTag)) 
+                if (storeEntity == null || !_tag.HasTag(storeEntity.Value, DebugUplinkTag))
                 // </Trauma>
 
                 foreach (var condition in listing.Conditions)
