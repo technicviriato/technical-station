@@ -155,3 +155,8 @@
     balance:
       Telecrystal: 999999 # Goob - 10x
     expectedFaction: #nulls out the expected faction
+  # <Trauma>
+  - type: Tag
+    tags:
+    - DebugUplink
+  # </Trauma>
