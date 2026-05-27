@@ -126,7 +126,7 @@
   name: M90 GL
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleM90GrenadeLauncher
-  description: "An older bullpup carbine model, with an attached underbarrel grenade launcher.\nFeeds from .20 rifle magazines."
+  description: "An older bullpup carbine model, with an attached underbarrel grenade launcher.\nFeeds from .20 rifle magazines." # Trauma - half baked piece of shit, grenade launcher doesnt do anything. TODO: make it work
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
@@ -165,7 +165,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Gun
-    fireRate: 6
+    fireRate: 5 # Trauma - was 6
 
 - type: entity
   name: Lecter
@@ -183,7 +183,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
   - type: Gun
-    fireRate: 4 # Trauma, as 5
+    fireRate: 4 # Trauma - was 5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
   - type: ItemSlots
@@ -263,6 +263,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
     shotsPerBurst: 3
+    burstCooldown: 0.375 # Trauma
     selectedMode: Burst
     availableModes:
     - Burst

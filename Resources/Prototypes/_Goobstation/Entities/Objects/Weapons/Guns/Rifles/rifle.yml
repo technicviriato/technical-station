@@ -30,7 +30,7 @@
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/burner.rsi
   - type: Gun
-    fireRate: 2
+    fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: ChamberMagazineAmmoProvider
@@ -112,7 +112,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Gun
-    fireRate: 6
+    fireRate: 5
 
 - type: entity
   name: Annie
@@ -136,7 +136,7 @@
     burstFireRate: 12
     burstCooldown: 0.8
     shotsPerBurst: 4
-    fireRate: 6.5
+    fireRate: 4.5 
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/thock.ogg
   - type: ChamberMagazineAmmoProvider
