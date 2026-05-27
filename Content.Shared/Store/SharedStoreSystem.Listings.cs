@@ -1,5 +1,7 @@
+// <Trauma>
+using System.Linq;
+// </Trauma>
 using System.Diagnostics.CodeAnalysis;
-using System.Linq; // Trauma
 using Content.Shared.Mind;
 using Content.Shared.Store.Components;
 using Robust.Shared.Prototypes;
@@ -92,10 +94,10 @@ public abstract partial class SharedStoreSystem
     /// <returns>The available listings.</returns>
     public IEnumerable<ListingDataWithCostModifiers> GetAvailableListings(EntityUid buyer, EntityUid store, StoreComponent component)
     {
-        // Trauma - ignore all conditions if store has IgnoreListingConditions set
+        // <Trauma> ignore all conditions if store has IgnoreListingConditions set
         if (component.IgnoreListingConditions)
             return component.FullListingsCatalog.Where(l => ListingHasCategory(l, component.Categories));
-
+        // </Trauma>
         return GetAvailableListings(buyer, component.FullListingsCatalog, component.Categories, store);
     }
 
