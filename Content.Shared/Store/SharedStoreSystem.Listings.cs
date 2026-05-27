@@ -125,7 +125,7 @@ public abstract partial class SharedStoreSystem
             {
                 var args = new ListingConditionArgs(GetBuyerMind(buyer), storeEntity, listing, EntityManager);
                 var conditionsMet = true;
-                
+
                 foreach (var condition in listing.Conditions)
                 {
                     if (!condition.Condition(args))
