@@ -9201,3 +9201,14 @@ Entries:
   id: 1047
   time: '2026-05-27T21:06:31.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2844
+- author: TechnicFighter
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Fugitives. Shuttle changed, loadouts changed, objectives changed, etc.
+    - type: Fix
+      message: >-
+        Fixed bugs and oversights, regarding Fugitives and their Hunters.
+  id: 1048
+  time: '2026-05-27T22:41:34.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2769
