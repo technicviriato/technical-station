@@ -147,24 +147,6 @@
     - MagazineRifle # 2
 
 - type: startingGear
-  id: ReinforcementBeaconOfficerSpecCorpsman
-  equipment:
-    head: ClothingHeadHatBeretBrigmedic
-    eyes: ClothingEyesGlassesMedSec
-    jumpsuit: ClothingUniformJumpsuitBrigmedic
-    back: ClothingBackpackSecurity
-    shoes: ClothingShoesBootsJackFilled
-    id: BrigmedicPDA
-    ears: ClothingHeadsetAltSecurityRegular
-    gloves: ClothingHandsGlovesNitrile
-    outerClothing: ClothingOuterCoatAMG
-    belt: ClothingBeltMedicalEMTFilled
-    pocket1: WeaponLaserSidearm
-  storage:
-    back:
-    - MedkitCombatFilled
-
-- type: startingGear
   id: ReinforcementBeaconCadet
   equipment:
     eyes: ClothingEyesHudSecurity

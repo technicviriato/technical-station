@@ -161,22 +161,6 @@
   restockAfterPurchase: 60
 
 - type: listing
-  id: SecoffReinforcementSpecialistCorpsman
-  name: reinforcement-sec-specialist-corpsman-name
-  description: reinforcement-sec-specialist-corpsman-desc
-  productEntity: ReinforcementBeaconSpecialistOfficerCorpsman
-  icon:
-    sprite: Markers/jobs.rsi
-    state: brigmedic
-  cost:
-    Spesos: 10000
-  categories:
-  - ReinforcementsHoS
-  restockTime: 0
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 60
-
-- type: listing
   id: ReinforcementCadet
   name: reinforcement-cadet-name
   description: reinforcement-cadet-desc

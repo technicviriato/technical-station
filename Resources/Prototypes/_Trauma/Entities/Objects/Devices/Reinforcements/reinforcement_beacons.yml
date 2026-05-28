@@ -186,19 +186,6 @@
       prototypes: [ ReinforcementBeaconOfficerSpecAdvisor ]
 
 - type: entity
-  parent: ReinforcementBeaconSecurityOfficer
-  id: ReinforcementBeaconSpecialistOfficerCorpsman
-  suffix: Security, Corpsman
-  components:
-  - type: DelayedGhostRole
-    name: ghost-role-information-reinforcement-specialist-corpsman-name
-  - type: GhostCharacterSpawner
-    components:
-    - type: Loadout
-      prototypes: [ ReinforcementBeaconOfficerSpecCorpsman ]
-      roleLoadout: [ RoleSurvivalSecurity ]
-
-- type: entity
   parent: BaseReinforcementBeacon
   id: ReinforcementBeaconCadet
   suffix: Cadet
