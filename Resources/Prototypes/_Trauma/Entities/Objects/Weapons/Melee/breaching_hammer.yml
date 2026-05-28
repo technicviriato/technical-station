@@ -39,8 +39,3 @@
     useSound: /Audio/Items/jaws_pry.ogg
   - type: UseDelay
     delay: 1
-  - type: Clothing
-    sprite: _Trauma/Objects/Weapons/Melee/breaching_hammer.rsi
-    quickEquip: false
-    slots:
-    - Back
