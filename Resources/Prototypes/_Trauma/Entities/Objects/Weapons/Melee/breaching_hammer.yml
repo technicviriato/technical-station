@@ -14,7 +14,7 @@
     damage:
       types:
         Blunt: 5
-        Structural: 20
+        Structural: 25
     soundHit:
       path: /Audio/_Trauma/Weapons/Melee/breaching_hammer/club.ogg
   - type: Wieldable
@@ -24,8 +24,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 8
-        Structural: 32
+        Blunt: 5
+        Structural: 35
   - type: Item
     size: Ginormous
   - type: Tool
