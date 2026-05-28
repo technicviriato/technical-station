@@ -1,7 +1,7 @@
 fugitive-set-hitman-name = Hitman's Kit
 fugitive-set-hitman-description =
    You're no stranger to killing, you'll do it again if necessary.
-   Contains: viper, machine pistol magazine and an energy dagger.
+   Contains: viper, two machine pistol magazines and an energy dagger.
 
 fugitive-set-ghost-name = Ghost's Kit
 fugitive-set-ghost-description =
@@ -21,7 +21,8 @@ fugitive-set-infiltrator-description =
 fugitive-set-engineer-name = Engineer's Kit
 fugitive-set-engineer-description =
     Break into anywhere. No door will stop you.
-    Contains: combat gloves, syndicate gas mask, syndicate jaws of life and an emp implant.
+    Contains: combat gloves, syndicate gas mask, syndicate jaws of life, an emp implant and
+    a disposable ballistic turret.
 
 fugitive-set-contractor-name = Contractor's Kit
 fugitive-set-contractor-description =
@@ -32,4 +33,4 @@ fugitive-set-communicator-name = Communicator's Kit
 fugitive-set-communicator-description =
     Never get caught! Listen in on the station, on your hunters with this kit and potentially confuse them.
     Contains: station master encryption key, a freelancer encryption key, a syndicate encryption key,
-    a chameleon voice mask and a chameleon headset.
+    a chameleon voice mask, chameleon headset and a radio jammer.

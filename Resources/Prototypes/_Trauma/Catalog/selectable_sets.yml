@@ -9,7 +9,8 @@
     state: icon
   content:
   - WeaponPistolViper
-  - MagazinePistolHighCapacity
+  - MagazinePistolHighCapacity # 1
+  - MagazinePistolHighCapacity # 2
   - EnergyDagger
 
 - type: selectableSet
@@ -61,6 +62,7 @@
   - ClothingMaskGasSyndicate
   - SyndicateJawsOfLife
   - EmpImplanter
+  - ToolboxElectricalTurretFilled
 
 - type: selectableSet
   id: FugitiveContractorSet
@@ -85,3 +87,4 @@
   - EncryptionKeySyndie
   - ClothingMaskGasVoiceChameleon
   - ClothingHeadsetChameleon
+  - RadioJammer
