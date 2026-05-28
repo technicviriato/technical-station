@@ -1,6 +1,6 @@
 - type: entity
-  parent: [ BaseItem, BaseSecurityContraband ]
-  id: SecBreachingHammer
+  parent: [ BaseItem ]
+  id: BreachingHammer
   name: breaching hammer
   description: A large, heavy hammer with a long handle, used for breaking stones or other heavy material such as the skulls of violent criminals, also perfect for forcing your way through airlocks.
   components:
@@ -41,3 +41,8 @@
     quickEquip: false
     slots:
     - Back
+
+- type: entity
+  parent: [ BreachingHammer, BaseSecurityContraband ]
+  id: SecBreachingHammer
+  name: breaching hammer

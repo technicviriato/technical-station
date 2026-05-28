@@ -1,0 +1,18 @@
+﻿- type: entity
+  parent: [ BreachingHammer, BaseMajorContraband ]
+  id: BatteredBreachingHammer
+  name: battered breaching hammer
+  description: A lighter, more battered, and rusted version of the breaching hammer.
+  components: # TODO: rusted sprite
+  - type: MeleeWeapon
+    attackRate: 0.75
+    heavyStaminaCost: 15
+    damage:
+      types:
+        Blunt: 5
+        Structural: 10
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Structural: 15
