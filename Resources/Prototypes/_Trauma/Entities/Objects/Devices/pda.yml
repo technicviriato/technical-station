@@ -106,7 +106,7 @@
   - type: PdaBorderColor
     borderColor: "#103152"
     accentVColor: "#e6a345"
-   
+
 - type: entity
   parent: SyndiCorpsmanPDA
   id: SyndiMedicPDA
