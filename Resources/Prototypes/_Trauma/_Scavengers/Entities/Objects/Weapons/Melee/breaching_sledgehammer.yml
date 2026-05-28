@@ -1,28 +1,28 @@
-- type: entity
-  parent: [ BaseItem, BaseSecurityContraband ]
-  id: SecBreachingHammer
-  name: breaching hammer
-  description: A large, heavy hammer with a long handle, used for breaking stones or other heavy material such as the skulls of violent criminals, also perfect for forcing your way through airlocks.
+﻿- type: entity
+  parent: [ BaseItem, BaseMajorContraband ]
+  id: BatteredBreachingHammer
+  name: battered breaching hammer
+  description: A lighter, more battered, and rusted version of the breaching hammer.
   components:
   - type: Sprite
-    sprite: _Trauma/Objects/Weapons/Melee/breaching_hammer.rsi
+    sprite: _Trauma/Objects/Weapons/Melee/breaching_hammer.rsi # TODO: get rusted sprite
     state: icon
   - type: MeleeWeapon
-    attackRate: 0.5
+    attackRate: 0.75
     range: 1.70
-    heavyStaminaCost: 25
+    heavyStaminaCost: 15
     damage:
       types:
-        Blunt: 10
-        Structural: 15
+        Blunt: 5
+        Structural: 10
     soundHit:
       path: /Audio/_Trauma/Weapons/Melee/breaching_hammer/club.ogg
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 15
-        Structural: 25
+        Blunt: 10
+        Structural: 15
   - type: Item
     size: Large
   - type: Tool
