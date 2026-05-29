@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseItem, MajorContraBand ]
+  parent: [ BaseItem, BaseMajorContraband ]
   id: CrashAxe
   name: crash axe
   description: A pocket-sized, one-handed "crash axe" with both an axe blade for chopping stuff and a pick for prying things. When chopping with the axe, you do good damage to structures. When prying with the pick, the crash axe acts as a crowbar. It also has its signature "Tile Fling" special attack. It functions as a cutting tool in both modes. When thrown, it disorients the target, and knocks them down.
@@ -22,7 +22,7 @@
   - type: UseDelay
     delay: 1
   - type: StaminaDamageOnHit
-    damage: 20
+    damage: 10
   - type: EmbeddableProjectile
     deleteOnRemove: false
   - type: ThrowingAngle
