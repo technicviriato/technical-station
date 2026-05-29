@@ -1,0 +1,63 @@
+﻿- type: entity
+  parent: [ MakeshiftShield, BaseMajorContraband ]
+  id: MakeshiftRiotShield
+  name: makeshift riot shield
+  description: A rundown looking shield, not entirely useless.
+  components:
+    - type: StaminaResistance
+      damageCoefficient: 0.5
+      worn: true
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Heat: 0.5
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Heat: 0.3
+        flatReductions:
+          Blunt: 0.9
+          Slash: 0.9
+          Heat: 0.5
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel:
+                  min: 2
+                  max: 3
+    - type: Parry
+      maxParries: 3
+      maxReflects: 0
+      parryMinSkill: 30
+    - type: MeleeWeapon
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 8
+      soundHit:
+        collection: MetalThud
+      animation: WeaponArcFist
+      heavyStaminaCost: 10
+    - type: StaminaDamageOnHit
+      damage: 20
+    - type: FlashSoundSuppression
+      protectionRange: 1
