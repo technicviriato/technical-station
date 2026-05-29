@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/25/2026 21:49:11
+  time: 05/29/2026 02:03:59
   entityCount: 196
 maps: []
 grids:
@@ -27,6 +27,7 @@ entities:
     - type: MetaData
       name: grid
     - type: Transform
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -80,22 +81,22 @@ entities:
           - -1,7
           - -1,9
           - -1,10
-          - 0,9
-          - 0,10
-          - 0,8
-          - 0,5
-          - 0,7
-          - 0,4
-          - 0,3
           - 0,2
-          - 0,1
           - 0,6
+          - 0,1
+          - 0,3
+          - 0,4
+          - 0,7
+          - 0,5
+          - 0,8
+          - 0,10
+          - 0,9
+          - 1,2
           - 1,3
           - 1,10
           - 1,5
           - 1,6
           - 1,7
-          - 1,2
           - 1,1
           - 1,9
           - 1,4
@@ -116,6 +117,11 @@ entities:
             angle: 4.71238898038469 rad
             color: '#FFFFFFFF'
             id: Caution
+          decals:
+          - 1,4
+        - node:
+            color: '#FFFFFFFF'
+            id: WarnLineE
           decals:
           - 1,4
     - type: GridAtmosphere
@@ -1448,8 +1454,8 @@ entities:
   - uid: 195
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,4.5
+      rot: 1.5707963267948966 rad
+      pos: 1.5,4.5
       parent: 1
     - type: DeviceLinkSink
       invokeCounter: 1
