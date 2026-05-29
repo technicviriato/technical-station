@@ -21,6 +21,9 @@
   - type: HeldSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
   - type: IncreaseDamageOnWield
     damage:
       types:
@@ -39,3 +42,9 @@
     useSound: /Audio/Items/jaws_pry.ogg
   - type: UseDelay
     delay: 1
+  - type: Clothing
+    sprite: _Trauma/Objects/Weapons/Melee/breaching_hammer.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
