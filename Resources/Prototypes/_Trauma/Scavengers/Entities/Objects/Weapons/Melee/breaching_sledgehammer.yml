@@ -3,7 +3,10 @@
   id: BatteredBreachingHammer
   name: battered breaching hammer
   description: A lighter, more battered, and rusted version of the breaching hammer.
-  components: # TODO: rusted sprite
+  components: # TODO: rusted sprite except icon
+  - type: Sprite
+    sprite: _Trauma/Scavengers/Objects/Weapons/Melee/breaching_sledgehammer.rsi
+    state: icon
   - type: MeleeWeapon
     attackRate: 1
     heavyStaminaCost: 15
