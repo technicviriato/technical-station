@@ -13,18 +13,24 @@
     heavyStaminaCost: 25
     damage:
       types:
-        Blunt: 10
-        Structural: 15
+        Blunt: 5
+        Structural: 25
     soundHit:
       path: /Audio/_Trauma/Weapons/Melee/breaching_hammer/club.ogg
   - type: Wieldable
+  - type: HeldSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 15
-        Structural: 25
+        Blunt: 5
+        Structural: 35
   - type: Item
-    size: Large
+    size: Ginormous
   - type: Tool
     qualities:
     - Prying
@@ -41,8 +47,16 @@
     quickEquip: false
     slots:
     - Back
+    - suitStorage
 
 - type: entity
   parent: [ BreachingHammer, BaseSecurityContraband ]
   id: SecBreachingHammer
   name: breaching hammer
+  components:
+  - type: HeldSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
