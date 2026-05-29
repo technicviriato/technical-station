@@ -14,6 +14,8 @@
       types:
         Blunt: 5
         Structural: 10
+  - type: StaminaDamageOnHit
+    damage: 25
   - type: HeldSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
