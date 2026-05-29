@@ -1,0 +1,90 @@
+﻿- type: entity
+  parent: BaseItem
+  id: CrashAxe
+  name: crash axe
+  description: A pocket-sized, one-handed "crash axe" with both an axe blade for chopping stuff and a pick for prying things. To switch between its two tool heads, click on it in-hand. When chopping with the axe, you do quadruple damage against doors and windows. When prying with the pick, the crash axe acts as a crowbar. It also has its signature "Tile Fling" special attack. It functions as a cutting tool in both modes. In melee, it does 13 BRUTE and removes 25 Stamina. When thrown, it causes 21 BRUTE, disorients the target for 4 seconds, and knocks them down for 2 seconds.
+  components:
+  - type: Sprite
+    sprite: _Trauma/Scavengers/Objects/Weapons/Melee/crash_axe.rsi
+    state: icon-pick
+  - type: Item
+    size: Small
+    sprite: _Trauma/Scavengers/Objects/Weapons/Melee/crash_axe.rsi
+    heldPrefix: pick
+  - type: Clothing
+    sprite: _Trauma/Objects/Weapons/Melee/crash_axe.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: StaticPrice
+    price: 400
+  - type: Sharp
+  - type: UseDelay
+    delay: 1
+  - type: StaminaDamageOnHit
+    damage: 25
+  - type: EmbeddableProjectile
+    deleteOnRemove: false
+  - type: ThrowingAngle
+    angle: 225
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 21
+  - type: KnockdownOnCollide
+    dropItems: true
+  - type: BlurOnCollide
+    blurTime: 4.0
+  - type: ItemSwitch
+    needsPower: false
+    defaultState: axe
+    state: axe
+    showLabel: true
+    states:
+      pick: !type:ItemSwitchState
+        verb: pick
+        sprite:
+          sprite: _Trauma/Scavengers/Objects/Weapons/Melee/crash_axe.rsi
+          state: icon-pick
+        components:
+        - type: MeleeWeapon
+          attackRate: 1.0
+          damage:
+            types:
+              Blunt: 13
+          soundHit:
+            path: /Audio/Items/crowbar.ogg
+          animation: WeaponArcThrust
+        - type: Tool
+          qualities:
+          - Prying
+          - Cutting
+          useSound:
+            path: /Audio/Items/crowbar.ogg
+        - type: ToolTileCompatible
+        - type: Prying
+          speedModifier: 1.0
+          pryPowered: false
+          useSound: /Audio/Items/crowbar.ogg
+
+      axe: !type:ItemSwitchState
+        verb: axe
+        sprite:
+          sprite: _Trauma/Scavengers/Objects/Weapons/Melee/crash_axe.rsi
+          state: icon-axe
+        components:
+        - type: MeleeWeapon
+          attackRate: 1.0
+          damage:
+            types:
+              Blunt: 13
+              Structural: 35
+          soundHit:
+            path: /Audio/Weapons/bladeslice.ogg
+          animation: WeaponArcSlash
+        - type: Tool
+          qualities:
+          - Cutting
+          useSound:
+            path: /Audio/Items/wirecutter.ogg
