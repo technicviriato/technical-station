@@ -521,6 +521,7 @@
     components:
     - type: Loadout
       prototypes: [ ReinforcementBeaconClown ]
+    - type: Clumsy
 
 - type: entity
   parent: BaseReinforcementBeacon
@@ -534,6 +535,7 @@
     components:
     - type: Loadout
       prototypes: [ ReinforcementBeaconMime ]
+    - type: MimePowers
 
 - type: entity
   parent: BaseReinforcementBeacon
