@@ -549,9 +549,9 @@
     components:
     - type: Loadout
       prototypes: [ ReinforcementBeaconChaplain ]
-  - type: CurseImmune
-  - type: CanEnchant
-  - type: BibleUser
+    - type: CurseImmune
+    - type: CanEnchant
+    - type: BibleUser
 
 - type: entity
   parent: BaseReinforcementBeacon
