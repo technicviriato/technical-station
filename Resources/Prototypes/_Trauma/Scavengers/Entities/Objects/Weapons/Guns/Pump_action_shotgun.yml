@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseMajorContraband]
   id: WeaponShotgunPump
   name: pump action shotgun
