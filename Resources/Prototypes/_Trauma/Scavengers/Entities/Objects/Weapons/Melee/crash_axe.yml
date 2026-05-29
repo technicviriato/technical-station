@@ -2,7 +2,7 @@
   parent: BaseItem
   id: CrashAxe
   name: crash axe
-  description: A pocket-sized, one-handed "crash axe" with both an axe blade for chopping stuff and a pick for prying things. To switch between its two tool heads, click on it in-hand. When chopping with the axe, you do quadruple damage against doors and windows. When prying with the pick, the crash axe acts as a crowbar. It also has its signature "Tile Fling" special attack. It functions as a cutting tool in both modes. In melee, it does 13 BRUTE and removes 25 Stamina. When thrown, it causes 21 BRUTE, disorients the target for 4 seconds, and knocks them down for 2 seconds.
+  description: A pocket-sized, one-handed "crash axe" with both an axe blade for chopping stuff and a pick for prying things. When chopping with the axe, you do good damage to structures. When prying with the pick, the crash axe acts as a crowbar. It also has its signature "Tile Fling" special attack. It functions as a cutting tool in both modes. When thrown, it disorients the target, and knocks them down.
   components:
   - type: Sprite
     sprite: _Trauma/Scavengers/Objects/Weapons/Melee/crash_axe.rsi
