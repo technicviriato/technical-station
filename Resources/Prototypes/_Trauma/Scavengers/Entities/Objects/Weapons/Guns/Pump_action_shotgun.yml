@@ -21,3 +21,11 @@
     - type: BallisticAmmoProvider
       capacity: 4
       autoCycle: false
+
+- type: entity
+  parent: [ WeaponShotgunPump ]
+  id: WeaponShotgunPumpEmpty
+  suffix: Empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
