@@ -103,7 +103,7 @@
       - !type:ModifyStatusEffect
         effectProto: StatusEffectStunned
         time: 1
-        probability: 0.1
+        probability: 0.05
       - !type:PopupMessage
         type: Local
         probability: 0.08
@@ -129,7 +129,7 @@
         - !type:ReagentCondition
           reagent: Capsaicin
           min: 20
-        probability: 0.19
+        probability: 0.20
       - !type:ModifyStatusEffect
         effectProto: StatusEffectStunned
         time: 1
@@ -137,13 +137,13 @@
         - !type:ReagentCondition
           reagent: Capsaicin
           min: 20
-        probability: 0.19
+        probability: 0.20
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Capsaicin
           min: 20
-        probability: 0.19
+        probability: 0.20
         damage:
           types:
             Asphyxiation: 0.5
