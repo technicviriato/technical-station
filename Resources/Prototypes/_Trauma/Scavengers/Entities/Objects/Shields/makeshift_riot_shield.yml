@@ -4,6 +4,9 @@
   name: makeshift riot shield
   description: A rundown looking shield, not entirely useless.
   components:
+    - type: MeleeThrowOnHit
+      distance: 0.5
+      speed: 2
     - type: StaminaResistance
       damageCoefficient: 0.5
       worn: true
