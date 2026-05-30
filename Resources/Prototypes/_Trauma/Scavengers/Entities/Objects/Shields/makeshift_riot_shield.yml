@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [ MakeshiftShield, BaseMajorContraband ]
   id: MakeshiftRiotShield
   name: makeshift riot shield
