@@ -81,3 +81,75 @@
       - !type:Emote
         emote: Scream
         probability: 0.2
+
+- type: reagent
+  id: Capsaicin
+  name: reagent-name-capsaicin
+  group: Toxins
+  desc: reagent-desc-capsaicin
+  physicalDesc: reagent-physical-desc-spicy
+  flavor: spicy
+  color: "#CC1111"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.4
+      effects:
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+      - !type:Emote
+        emote: Cough
+        probability: 0.1
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
+        time: 1
+        probability: 0.1
+      - !type:PopupMessage
+        type: Local
+        probability: 0.08
+        messages:
+        - generic-reagent-effect-burning-eyes
+        - generic-reagent-effect-burning-eyes-a-bit
+        - generic-reagent-effect-tearing-up
+        - norepinephricacid-effect-eyelids
+        - norepinephricacid-effect-eyes-itch
+        - norepinephricacid-effect-vision-fade
+        - norepinephricacid-effect-vision-fail
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectBlindness
+        time: 2
+        probability: 0.5
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.7
+        sprintSpeedModifier: 0.7
+        time: 3
+      - !type:Emote
+        emote: Cough
+        conditions:
+        - !type:ReagentCondition
+          reagent: Capsaicin
+          min: 20
+        probability: 0.19
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
+        time: 1
+        conditions:
+        - !type:ReagentCondition
+          reagent: Capsaicin
+          min: 20
+        probability: 0.19
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Capsaicin
+          min: 20
+        probability: 0.19
+        damage:
+          types:
+            Asphyxiation: 0.5
+      - !type:ModifyKnockdown
+        time: 5
+        conditions:
+        - !type:ReagentCondition
+          reagent: Capsaicin
+          min: 80

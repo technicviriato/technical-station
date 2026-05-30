@@ -1,0 +1,19 @@
+- type: entity
+  parent: [ SmokeGrenade, BaseMajorContraband ]
+  id: CapsaicinGrenade
+  name: crow dispersal grenade
+  description: A riot control grenade that releases a cloud of capsaicin, causing intense irritation, coughing, and temporary blindness to anyone caught in it.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/tear_gas.rsi
+  - type: SmokeOnTrigger
+    duration: 15
+    spreadAmount: 50
+    solution:
+      reagents:
+        - ReagentId: Capsaicin
+          Quantity: 40
+  - type: Construction
+    graph: CapsaicinGrenadeGraph
+    node: start
+    deconstructionTarget: null

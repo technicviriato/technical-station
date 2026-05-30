@@ -6,3 +6,6 @@ reagent-desc-nitric-acid = A corrosive chemical used in the production of explos
 
 reagent-name-tiring-solution = tiring solution
 reagent-desc-tiring-solution = An extremely weak stamina-toxin that tires out the target. Completely harmless.
+
+reagent-name-capsaicin = Capsaicin
+reagent-desc-capsaicin = The active ingredient in peppers and pepper spray alike. A painful irritant that can quickly disable the unprepared.
