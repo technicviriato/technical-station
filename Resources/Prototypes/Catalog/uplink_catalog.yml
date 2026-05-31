@@ -83,7 +83,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/throwing_knife.rsi, state: icon } # Trauma
   productEntity: ClothingBeltKnifeRig # Trauma
   cost:
-    Telecrystal: 50 # Trauma - was 6, 5x more expensive. HOW THE FUCK WAS THIS 20 TC, THESE ARE 8 KNIFES, THAT DEAL 25 DAMAGE, THROUGH ARMOUR!!!!
+    Telecrystal: 40 # Trauma - was 6, 5x more expensive. HOW THE FUCK WAS THIS 20 TC, THESE ARE 8 KNIFES, THAT DEAL 25 DAMAGE, THROUGH ARMOUR!!!!
   categories:
     - UplinkWeaponry
 
