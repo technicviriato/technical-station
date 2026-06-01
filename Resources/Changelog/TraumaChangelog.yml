@@ -9458,3 +9458,12 @@ Entries:
   id: 1073
   time: '2026-06-01T10:33:08.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2963
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed wizard not picking anyone opted into it roundstart.
+  - type: Fix
+    message: Fixed (now rare) wizard ghost role not having a description.
+  id: 1074
+  time: '2026-06-01T11:13:07.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2964
