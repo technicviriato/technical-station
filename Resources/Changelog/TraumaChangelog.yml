@@ -9483,3 +9483,44 @@ Entries:
   id: 1076
   time: '2026-06-01T11:28:04.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2966
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed abductor agent never spawning...
+  id: 1077
+  time: '2026-06-01T17:05:25.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2971
+- author: deltanedas
+  changes:
+  - type: Add
+    message: >-
+      Added the RFID access scanner, you can craft it from door electronics and
+      some materials.
+  - type: Tweak
+    message: Logic gates and other similar items can now be hidden under floor tiles.
+  id: 1078
+  time: '2026-06-01T17:08:03.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2969
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed AI Triumvurate trait leaving the extra 2 cores unpowered.
+  id: 1079
+  time: '2026-06-01T17:20:11.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2972
+- author: Hoodsie
+  changes:
+  - type: Add
+    message: Zombie immune to drones
+  - type: Remove
+    message: Oil bloodstream from drones
+  id: 1080
+  time: '2026-06-01T17:26:43.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2812
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed helmets having a broken examine for their vision decrease.
+  id: 1081
+  time: '2026-06-01T17:57:24.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2974
