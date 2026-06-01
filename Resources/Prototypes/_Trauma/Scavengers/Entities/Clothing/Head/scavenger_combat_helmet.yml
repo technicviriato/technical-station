@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ClothingHeadEVAHelmetBase
   id: ClothingHeadHelmetScavenger
   name: scavenger combat helmet
