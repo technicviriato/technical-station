@@ -13,7 +13,7 @@
 
 - type: entity
   name: greatshield
-  parent: [BaseItem, ClothingSlotBase, BaseCentcommContraband]
+  parent: [BaseShield, ClothingSlotBase, BaseCentcommContraband]
   id: BlueShieldShield
   description: The iconic namesake of these soldiers, the Blueshield. Known to take shots meant for high-ranking officials.
   components:
@@ -118,33 +118,21 @@
       - FitsInCharger
     - type: Parry
       maxParries: 5
-      maxReflects: 0
-      parryMinSkill: 30
       soundOnParry:
         path: /Audio/Weapons/pierce.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: HeldSpeedModifier
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
-      attackRate: 0.5
       damage:
         types:
           Heat: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
     - type: StaminaDamageOnHit
       damage: 30
     - type: FlashSoundSuppression
       protectionRange: 1
     - type: MeleeThrowOnHit
       distance: 1
-      speed: 2
 
 - type: entity
   parent: BlueShieldShield

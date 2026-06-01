@@ -10,6 +10,41 @@
       malus: 1
     - type: CosmicTransmutable
       transmuteTo: ShieldCosmicCult
+    - type: Parry
+      maxParries: 3
+      maxReflects: 0
+      parryMinSkill: 30
+      reflectMinSkill: 30
+      soundOnParry:
+        path: /Audio/Weapons/block_metal1.ogg
+        params:
+          variation: 0.2
+          volume: -11
+      soundOnReflect:
+        path: /Audio/Weapons/Guns/Hits/ric4.ogg
+        params:
+          variation: 0.2
+          volume: -11
+    - type: HeldSpeedModifier
+      walkModifier: 0.8
+      sprintModifier: 0.8
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      attackRate: 0.5
+      damage:
+        types:
+          Blunt: 8
+      soundHit:
+        collection: MetalThud
+      animation: WeaponArcFist
+      heavyStaminaCost: 10
+    - type: StaminaDamageOnHit
+      damage: 10
+    - type: FlashSoundSuppression
+      protectionRange: 2
+    - type: MeleeThrowOnHit
+      distance: 0.5
+      speed: 2
     # </Trauma>
     - type: Sprite
       sprite: Objects/Weapons/Melee/shields.rsi
@@ -99,32 +134,16 @@
     - type: Parry
       maxParries: 5
       maxReflects: 0
-      parryMinSkill: 30
-      soundOnParry:
-        path: /Audio/Weapons/block_metal1.ogg
-        params:
-          variation: 0.2
-          volume: -11
-    - type: HeldSpeedModifier
-      walkModifier: 0.8
-      sprintModifier: 0.8
     - type: MeleeWeapon
-      wideAnimationRotation: -135
-      attackRate: 0.5
       damage:
         types:
           Blunt: 12
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
     - type: StaminaDamageOnHit
       damage: 20
     - type: FlashSoundSuppression
       protectionRange: 1
     - type: MeleeThrowOnHit
       distance: 1
-      speed: 2
     # </Trauma>
     - type: StaticPrice
       price: 90
@@ -151,35 +170,13 @@
     - type: Parry
       maxParries: 0
       maxReflects: 5
-      reflectMinSkill: 30
       soundOnReflect:
         path: /Audio/Weapons/Guns/Hits/laser_sear_wall.ogg
-        params:
-          variation: 0.2
-          volume: -11
       reflectSpread: 300
       reflects:
       - Energy
-    - type: HeldSpeedModifier
-      walkModifier: 0.8
-      sprintModifier: 0.8
-    - type: MeleeWeapon
-      wideAnimationRotation: -135
-      attackRate: 0.5
-      damage:
-        types:
-          Blunt: 8
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: StaminaDamageOnHit
-      damage: 10
     - type: FlashSoundSuppression
       protectionRange: 1
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: Sprite
       state: riot_laser-icon
@@ -205,12 +202,6 @@
     - type: Parry
       maxParries: 0
       maxReflects: 5
-      reflectMinSkill: 30
-      soundOnReflect:
-        path: /Audio/Weapons/Guns/Hits/ric4.ogg
-        params:
-          variation: 0.2
-          volume: -11
       reflectSpread: 300
       reflects:
       - NonEnergy
@@ -218,22 +209,12 @@
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Blunt: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: StaminaDamageOnHit
-      damage: 10
-    - type: FlashSoundSuppression
-      protectionRange: 2
     - type: MeleeThrowOnHit
       distance: 1
-      speed: 2
     # </Trauma>
     - type: Sprite
       sprite: _Goobstation/Objects/Shields/riotbulletshield.rsi # Trauma
@@ -262,33 +243,17 @@
     # <Trauma>
     - type: Parry
       maxParries: 2
-      maxReflects: 0
-      parryMinSkill: 30
-      soundOnParry:
-        path: /Audio/Weapons/block_metal1.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: HeldSpeedModifier
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
-      attackRate: 0.5
       damage:
         types:
           Blunt: 5
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
     - type: StaminaDamageOnHit
       damage: 5
     - type: FlashSoundSuppression
       protectionRange: 3
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: Sprite
       state: buckler-icon
@@ -350,11 +315,9 @@
       maxParries: 1
       maxReflects: 0
       parryMinSkill: 0
+      reflectMinSkill: 0
       soundOnParry:
         path: /Audio/Items/Toys/card_tube_bonk.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: PhysicalComposition
       materialComposition:
         Cardboard: 300
@@ -362,14 +325,10 @@
       tags:
       - Trash
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Blunt: 1
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
     - type: StaminaDamageOnHit
       damage: 1
     # </Trauma>
@@ -436,18 +395,6 @@
     - type: Parry
       maxParries: 1
       maxReflects: 1
-      parryMinSkill: 30
-      reflectMinSkill: 30
-      soundOnParry:
-        path: /Audio/Weapons/block_metal1.ogg
-        params:
-          variation: 0.2
-          volume: -11
-      soundOnReflect:
-        path: /Audio/Weapons/Guns/Hits/ric4.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: PhysicalComposition
       materialComposition:
         Steel: 250
@@ -455,22 +402,7 @@
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
-      damage:
-        types:
-          Blunt: 8
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: StaminaDamageOnHit
-      damage: 10
-    - type: FlashSoundSuppression
-      protectionRange: 2
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: Tag #goobstation
       tags:
@@ -534,22 +466,12 @@
     - type: Parry
       maxParries: 1
       maxReflects: 0
-      parryMinSkill: 30
       soundOnParry:
         path: /Audio/Weapons/slash.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: MeleeWeapon
-      wideAnimationRotation: -135
-      attackRate: 0.5
       damage:
         types:
           Blunt: 5
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
     - type: FlashSoundSuppression
       protectionRange: 3
     - type: StaminaDamageOnHit
@@ -614,32 +536,14 @@
     - type: Parry
       maxParries: 5
       maxReflects: 0
-      parryMinSkill: 30
-      soundOnParry:
-        path: /Audio/Weapons/block_metal1.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: HeldSpeedModifier
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Blunt: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: StaminaDamageOnHit
-      damage: 10
-    - type: FlashSoundSuppression
-      protectionRange: 2
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: Sprite
       state: ratvarian-icon
@@ -677,27 +581,14 @@
       reflectMinSkill: 0
       soundOnReflect:
         path: /Audio/Weapons/Guns/Hits/laser_sear_wall.ogg
-        params:
-          variation: 0.2
-          volume: -11
       reflectSpread: 300
       reflects:
         - Energy
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Slash: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: FlashSoundSuppression
-      protectionRange: 2
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: Sprite
       state: mirror-icon
@@ -744,7 +635,7 @@
 
 - type: entity
   name: energy shield
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: [BaseShield, BaseSyndicateContraband] # Trauma - was BaseItem, instead of BaseShield
   id: EnergyShield
   description: Exotic energy shield, when folded, can even fit in your pocket.
   components:
@@ -752,35 +643,22 @@
     - type: Parry
       reflects:
         - energy
+      maxParries: 0
       maxReflects: 10
       reflectMinSkill: 50
-      maxParries: 0
       reflectSpread: 300
       soundOnReflect:
         path: /Audio/Weapons/Guns/Hits/laser_sear_wall.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: HeldSpeedModifier
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Heat: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
     - type: StaminaDamageOnHit
       damage: 15
-    - type: FlashSoundSuppression
-      protectionRange: 2
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: ItemToggle
       predictable: false # WD EDIT
@@ -898,30 +776,11 @@
     # <Trauma>
     - type: Parry
       maxParries: 5
-      maxReflects: 0
-      parryMinSkill: 30
-      soundOnParry:
-        path: /Audio/Weapons/block_metal1.ogg
-        params:
-          variation: 0.2
-          volume: -11
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
           Blunt: 10
-      soundHit:
-        collection: MetalThud
-      animation: WeaponArcFist
-      heavyStaminaCost: 10
-    - type: StaminaDamageOnHit
-      damage: 10
-    - type: FlashSoundSuppression
-      protectionRange: 2
-    - type: MeleeThrowOnHit
-      distance: 0.5
-      speed: 2
     # </Trauma>
     - type: ItemToggle
       soundActivate:
@@ -969,7 +828,7 @@
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 50 # Trauma, was 70
+            damage: 50 # Trauma - was 70
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
