@@ -1,0 +1,40 @@
+﻿- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetScavenger
+  name: scavenger combat helmet
+  description: A reinforced juggernaut helmet pieced together from salvaged industrial equipment and battlefield scrap. Its integrated thermal visor can detect heat signatures through darkness, walls, and cloaking devices, though the enhanced optics make sudden flashes far more punishing to the wearer.
+  components:
+  - type: Sprite
+    sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+  - type: Clothing
+    sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+  - type: Armor
+    coverage:
+    - Head
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Caustic: 0
+        Radiation: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Machines/button.ogg
+    soundDeactivate:
+      path: /Audio/Machines/button.ogg
+  - type: ItemTogglePrefix
+    prefixOn: on
+    prefixOff: off
+  - type: ComponentToggler
+    components:
+    - type: ThermalVision
+      flashDurationMultiplier: 2
+      isEquipment: true
+      toggleAction: ToggleThermalVision
+  - type: FaceHuggerBlocker
+  - type: StaticPrice
+    price: 250

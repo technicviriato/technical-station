@@ -1,0 +1,22 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "lorem ipsum",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-HELMET-off",
+      "directions": 1
+    },
+    {
+      "name": "equipped-HELMET-on",
+      "directions": 1
+    }
+  ]
+}
