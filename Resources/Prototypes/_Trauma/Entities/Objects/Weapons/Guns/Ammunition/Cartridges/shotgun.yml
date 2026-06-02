@@ -29,7 +29,7 @@
   - type: ChemicalAmmo
   - type: Solution
     solution:
-        maxVol: 7
+      maxVol: 7
   - type: RefillableSolution
     solution: ammo
   - type: InjectableSolution
