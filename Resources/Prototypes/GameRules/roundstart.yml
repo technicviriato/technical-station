@@ -372,10 +372,8 @@
   parent: [ BaseWizardRule, BaseRoundstartAntagRule ]
   id: Wizard
   components:
-  # <Trauma>
-  #- type: GameRule
-  #  minPlayers: 10
-  # </Trauma>
+  - type: GameRule
+    minPlayers: 30 # Trauma - was 10
   - type: DynamicRuleCost
     cost: 150
 
