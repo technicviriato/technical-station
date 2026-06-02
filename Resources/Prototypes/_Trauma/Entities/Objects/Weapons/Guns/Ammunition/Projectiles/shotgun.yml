@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseBulletTrigger
   id: PelletShotgunTearGas
   name: bullet (12 Gauge tear gas)
