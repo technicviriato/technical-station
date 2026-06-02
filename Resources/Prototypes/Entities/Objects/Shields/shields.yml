@@ -544,6 +544,7 @@
       damage:
         types:
           Blunt: 10
+    - type: ReflectiveSurface
     # </Trauma>
     - type: Sprite
       state: ratvarian-icon
@@ -631,7 +632,6 @@
                 SheetGlass:
                   min: 5
                   max: 5
-    - type: ReflectiveSurface # Goob
 
 - type: entity
   name: energy shield
@@ -659,6 +659,14 @@
           Heat: 10
     - type: StaminaDamageOnHit
       damage: 15
+    - type: Battery
+      maxCharge: 35
+      startingCharge: 35
+    - type: BatterySelfRecharger
+      autoRechargeRate: 2
+    - type: RechargeableBlocking
+      dischargedRechargeRate: 2
+      chargedRechargeRate: 3
     # </Trauma>
     - type: ItemToggle
       predictable: false # WD EDIT
@@ -742,16 +750,6 @@
     # Trauma - removed Destructible
     - type: StaticPrice
       price: 350
-      # WD EDIT START
-    - type: Battery
-      maxCharge: 35
-      startingCharge: 35
-    - type: BatterySelfRecharger
-      autoRechargeRate: 2
-    - type: RechargeableBlocking
-      dischargedRechargeRate: 2
-      chargedRechargeRate: 3
-      # WD EDIT END
 
 - type: entity
   name: broken energy shield
