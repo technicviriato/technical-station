@@ -115,12 +115,16 @@
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
   id: CrateSecurityRiot
   name: swat crate
-  description: Contains two sets of riot armor, helmets, shields, and enforcers loaded with beanbags. Extra ammo is included. Requires Armory access to open.
+  description: Contains two sets of riot armor, helmets, shields, and enforcers loaded with beanbags. Extra ammo is included, including special tear gas shells. Requires Armory access to open. # Trauma - added "including special tear gas shells"
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
+        # <Trauma>
+        - id: BoxShotgunTearGas
+          amount: 2
+        # </Trauma>
         - id: ClothingOuterArmorRiot
           amount: 2
         - id: ClothingHeadHelmetRiot
