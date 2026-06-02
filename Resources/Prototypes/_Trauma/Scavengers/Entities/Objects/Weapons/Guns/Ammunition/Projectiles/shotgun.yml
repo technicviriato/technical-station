@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: PelletShotgunCapsaicin
   name: bullet (12 Gauge capsaicin)
   parent: BaseBulletTrigger

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [ AmmoProviderShotgunShell, BaseMajorContraband ]
   id: BoxCapsaicin
   name: shell box (12 Gauge capsaicin)
