@@ -309,7 +309,7 @@
   parent: [BaseGameRule, BaseRoundstartAntagRule]
   components:
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 20
   - type: RevolutionaryRule
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
@@ -372,8 +372,6 @@
   parent: [ BaseWizardRule, BaseRoundstartAntagRule ]
   id: Wizard
   components:
-  - type: GameRule
-    minPlayers: 10
   - type: DynamicRuleCost
     cost: 150
 
