@@ -9596,3 +9596,10 @@ Entries:
   id: 1089
   time: '2026-06-02T23:02:50.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3011
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: buffed xenomorph callout announcement time from 7 minutes to 15
+  id: 1090
+  time: '2026-06-02T23:04:35.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3004
