@@ -9562,3 +9562,10 @@ Entries:
   id: 1085
   time: '2026-06-01T20:03:08.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2976
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed armoks forging sprites that had no transparency...
+  id: 1086
+  time: '2026-06-02T08:28:43.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2991
