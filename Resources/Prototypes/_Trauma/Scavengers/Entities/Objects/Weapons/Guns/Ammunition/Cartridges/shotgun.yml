@@ -1,0 +1,17 @@
+﻿- type: entity
+  parent: [ BaseShellShotgun, BaseMajorContraband ]
+  id: ShellShotgunCapsaicin
+  name: shell (12 Gauge capsaicin)
+  components:
+  - type: Tag
+    tags:
+      - ShellShotgun
+      - ShellShotgunLight
+  - type: Sprite
+    layers:
+    - state: practice
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunCapsaicin
+  - type: SpentAmmoVisuals
+    state: "practice"

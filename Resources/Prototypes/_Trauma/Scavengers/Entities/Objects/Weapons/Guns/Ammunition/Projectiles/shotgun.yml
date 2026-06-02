@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: PelletShotgunCapsaicin
+  name: bullet (12 Gauge capsaicin)
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SmokeOnTrigger
+    duration: 5
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: Capsaicin
+        Quantity: 20
+    spreadAmount: 1
+  - type: AutoStartTimer
+  - type: TimerTrigger
+    examinable: false
+    delay: 1
+  - type: DeleteOnTrigger
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+  - type: StaminaDamageOnCollide
+    damage: 30
