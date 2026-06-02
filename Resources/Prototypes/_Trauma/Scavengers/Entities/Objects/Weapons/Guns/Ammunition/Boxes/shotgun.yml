@@ -1,6 +1,6 @@
 - type: entity
   parent: [ AmmoProviderShotgunShell, BaseMajorContraband ]
-  id: BoxCapsaicin
+  id: BoxShotgunCapsaicin
   name: shell box (12 Gauge capsaicin)
   components:
   - type: BallisticAmmoProvider
