@@ -35,11 +35,11 @@
   id: UplinkHypoShell
   name: uplink-hyposhell-name
   description: uplink-hyposhell-desc
-  productEntity: BoxShellHypo
+  productEntity: BoxShotgunHypo
   cost:
     Telecrystal: 25
   categories:
-    - UplinkJob
+  - UplinkJob
   conditions:
   - !type:BuyerJobCondition
     whitelist:
