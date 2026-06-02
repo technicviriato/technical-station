@@ -37,7 +37,7 @@
   description: uplink-hyposhell-desc
   productEntity: BoxShotgunHypo
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - UplinkJob
   conditions:

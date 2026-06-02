@@ -21,7 +21,7 @@
   name: shell box (hypo)
   components:
   - type: BallisticAmmoProvider
-    proto: ShellHypo
+    proto: ShellShotgunHypo
     capacity: 4
   - type: Sprite
     sprite: _Trauma/Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
