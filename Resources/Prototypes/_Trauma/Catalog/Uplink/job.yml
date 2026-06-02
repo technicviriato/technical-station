@@ -30,3 +30,17 @@
     blacklist:
       components:
       - SurplusBundle
+
+- type: listing
+  id: UplinkHypoShell
+  name: uplink-hyposhell-name
+  description: uplink-hyposhell-desc
+  productEntity: BoxShellHypo
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Bartender
