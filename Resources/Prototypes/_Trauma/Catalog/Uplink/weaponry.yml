@@ -18,7 +18,7 @@
     Telecrystal: 25
   categories:
   - UplinkWeaponry
-  
+
 - type: listing
   id: UplinkRifleFAL
   name: uplink-rifle-FAL-name
