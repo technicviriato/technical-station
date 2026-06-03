@@ -17,12 +17,3 @@
       map: [ "enum.AmmoVisualLayers.Base" ]
   - type: Appearance
   - type: SpentAmmoVisuals
-
-- type: entity
-  parent: BaseCartridgeCaselessRifle
-  id: CartridgeTurretStrong
-  name: cartridge (.35 auto)
-  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
-  components:
-  - type: CartridgeAmmo
-    proto: BulletTurretStrong

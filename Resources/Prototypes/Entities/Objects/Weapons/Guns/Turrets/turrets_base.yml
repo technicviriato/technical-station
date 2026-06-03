@@ -100,7 +100,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
   - type: BallisticAmmoProvider
-    proto: CartridgeTurretStrong # Trauma - was CartridgeCaselessRifle
+    proto: CartridgeCaselessRifle
     capacity: 500
 
 - type: entity
