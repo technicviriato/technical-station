@@ -2,15 +2,13 @@
   id: SecurityBodyguard
   name: job-name-security-bodyguard
   description: job-description-security-bodyguard
-  playTimeTracker: JobSecurityBodyguard
   setPreference: false
   requirements:
   - !type:DepartmentTimeRequirement
     department: Security
     time: 3h
-  icon: "JobIconSecurityAdvisor"
+  icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos
-  canBeAntag: false
   guides:
   - Security
   - CorporateJudo
@@ -25,4 +23,4 @@
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
-      - type: SecurityStaff
+    - type: SecurityStaff

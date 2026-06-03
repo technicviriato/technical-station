@@ -51,6 +51,7 @@
     - type: IdBind
     - type: Loadout
       roleLoadout: [ RoleSurvivalStandard ]
+    - type: Hypoport
   - type: Transform
     anchored: true
 
@@ -189,10 +190,6 @@
     - type: Loadout
       prototypes: [ ReinforcementBeaconOfficerSpecAdvisor ]
       roleLoadout: [ RoleSurvivalSecurity ]
-  - type: AutoImplant
-    implants:
-      - MindShieldImplant
-  - type: AntagImmune
 
 - type: entity
   parent: ReinforcementBeaconSecurityOfficer

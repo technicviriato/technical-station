@@ -2,7 +2,6 @@
   id: SecurityAdvisor
   name: job-name-security-advisor
   description: job-description-security-advisor
-  playTimeTracker: JobSecurityAdvisor
   setPreference: false
   requirements:
   - !type:DepartmentTimeRequirement
@@ -10,7 +9,6 @@
     time: 6.5h
   icon: "JobIconSecurityAdvisor"
   supervisors: job-supervisors-hos
-  canBeAntag: false
   guides:
   - Security
   - CorporateJudo
@@ -26,4 +24,4 @@
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
-      - type: SecurityStaff
+    - type: SecurityStaff
