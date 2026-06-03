@@ -15,7 +15,7 @@
     state: "breach"
 
 - type: entity
-  parent: [ SolutionAmmo, SolutionToolVeryTiny, BaseShellShotgun, BaseSyndicateContraband ]
+  parent: [ BaseSyndicateContraband, SolutionAmmo, SolutionToolVeryTiny, BaseShellShotgun ]
   id: ShellShotgunHypo
   name: shell (12 Gauge hypo)
   components:
