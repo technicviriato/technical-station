@@ -11,6 +11,17 @@
 
 - type: entity
   parent: BaseBullet
+  id: BulletTurretStrong
+  categories: [ HideSpawnMenu ]
+  name: bullet (.35 auto)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+
+- type: entity
+  parent: BaseBullet
   id: BaseBulletKinetic
   abstract: true
   components:
