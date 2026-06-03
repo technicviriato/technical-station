@@ -20,6 +20,7 @@
   id: UplinkHypoShell
   name: uplink-hyposhell-name
   description: uplink-hyposhell-desc
+  icon: { sprite: _Trauma/Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi, state: icon-hypo }
   productEntity: BoxShotgunHypo
   cost:
     Telecrystal: 20
