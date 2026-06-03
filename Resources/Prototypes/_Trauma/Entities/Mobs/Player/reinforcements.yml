@@ -81,6 +81,7 @@
     - TearGasGrenade # 1
     - TearGasGrenade # 2
     - BoxBeanbag
+    - BoxShotgunTearGas
 
 - type: startingGear
   parent: ReinforcementBeaconOfficerTemplate
