@@ -1952,7 +1952,7 @@
   description: uplink-gatfruit-seeds-desc
   productEntity: GatfruitSeeds
   cost:
-    Telecrystal: 40 # Trauma - was 6
+    Telecrystal: 40 # Trauma - was 6, 5x and more expensive due to how strong they can be
   categories:
   - UplinkJob
   conditions:
