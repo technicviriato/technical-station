@@ -2010,7 +2010,7 @@
   icon: { sprite: /Textures/Objects/Fun/figurines.rsi, state: holoclown }
   productEntity: BoxHoloclown
   cost:
-    Telecrystal: 50 # Trauma - was 60
+    Telecrystal: 50 # Trauma - was 12, 5x and less expensive
   categories:
   - UplinkJob
   conditions:
@@ -2024,7 +2024,7 @@
   description: uplink-hot-potato-desc
   productEntity: HotPotato
   cost:
-    Telecrystal: 20 # goob
+    Telecrystal: 20 # Trauma - was 4, 5x
   categories:
   - UplinkJob
   conditions:
@@ -2041,7 +2041,7 @@
   description: uplink-chimp-upgrade-kit-desc
   productEntity: WeaponPistolCHIMPUpgradeKit
   cost:
-    Telecrystal: 10 # goob - Weak but very cheap
+    Telecrystal: 10 # Trauma - was 4, 5x and less expensive due to how weak it is
   categories:
   - UplinkJob
   conditions:
@@ -2055,7 +2055,7 @@
   description: uplink-proximity-mine-desc
   productEntity: WetFloorSignMineExplosive
   cost:
-    Telecrystal: 16 # goob - was 20, with my buff made it 25 to be closer to minibomb -panzer well no one uses it! 16 TC better.
+    Telecrystal: 16 # Trauma - was 5, 5x and less expensive
   categories:
   - UplinkJob
   conditions:
@@ -2092,7 +2092,7 @@
   icon: { sprite:  Objects/Weapons/Melee/cane.rsi, state: cane}
   productEntity: CaneSheathFilled
   cost:
-    Telecrystal: 20 # Trauma - was 40 in prior goob edit
+    Telecrystal: 20 # Trauma - was 3, 5x and more expensive due to how good it is
   categories:
   - UplinkJob
   conditions:
@@ -2107,7 +2107,7 @@
   icon: { sprite:  Objects/Consumable/Food/Baked/bread.rsi, state: baguette}
   productEntity: CombatBakeryKit
   cost:
-    Telecrystal: 20 # goob
+    Telecrystal: 20 # Trauma - was 4, 5x
   categories:
   - UplinkJob
   conditions:
@@ -2147,7 +2147,7 @@
   icon: { sprite: Clothing/OuterClothing/Armor/cult_armour.rsi, state: icon}
   productEntity: ClothingBackpackDuffelAcolyteBundle
   cost:
-    Telecrystal: 20 # Goobstation
+    Telecrystal: 20 # Trauma - was 4, 5x
   categories:
   - UplinkJob
   conditions:
@@ -2176,7 +2176,7 @@
   description: uplink-briefcase-gun-desc
   productEntity: WeaponSubMachineGunBriefcase
   cost:
-    Telecrystal: 50 # Trauma - was 14
+    Telecrystal: 50 # Trauma - was 14, 5x and less expensive
   categories:
   - UplinkJob
   conditions:
