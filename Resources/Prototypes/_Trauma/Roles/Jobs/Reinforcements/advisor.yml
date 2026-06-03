@@ -7,7 +7,6 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 6.5h
-  icon: "JobIconSecurityAdvisor"
   supervisors: job-supervisors-hos
   guides:
   - Security
