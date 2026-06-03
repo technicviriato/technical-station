@@ -9603,3 +9603,64 @@ Entries:
   id: 1090
   time: '2026-06-02T23:04:35.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3004
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: >-
+      xenomorph win condition is higher and their minpop to spawn is now 40,
+      aswell as them having more of a weakness to heat damage
+  id: 1091
+  time: '2026-06-03T03:44:36.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3014
+- author: TechnicFighter
+  changes:
+  - type: Add
+    message: >-
+      Added hyposhells, a syndicate uplink item that can hold 7u of any reagent
+      and inject upon impact. A job unique item for the bartender.
+  - type: Add
+    message: >-
+      Added tear gas shotgun shells, you can find them in the shotgun gun safe
+      or by ordering a swat crate.
+  id: 1092
+  time: '2026-06-03T05:59:26.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2989
+- author: SpeltIncorrectyl
+  changes:
+  - type: Add
+    message: Added a harm mode to interactors. Automated forging is now!
+  id: 1093
+  time: '2026-06-03T07:11:15.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3006
+- author: Aviu
+  changes:
+  - type: Fix
+    message: >-
+      Fix morph/chameleon projector disguise, heretic shadow form and similar
+      things not hiding your sprite.
+  - type: Fix
+    message: Fix segmented entity tails not being hidden by viewcones.
+  - type: Fix
+    message: >-
+      Fix lock path losing free side knowledge draft upon buying any side
+      knowledge from its category.
+  - type: Fix
+    message: Fix arm hammer not knocking down on left click.
+  - type: Fix
+    message: Fix flesh stalker shapeshift removing ghoul indicators.
+  - type: Fix
+    message: Fix plasmaman immortality.
+  - type: Tweak
+    message: Shattered risen gets noslip.
+  id: 1094
+  time: '2026-06-03T08:19:24.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3017
+- author: Octave
+  changes:
+  - type: Fix
+    message: >-
+      Bosche sprite made to be the up-to-date version rather than the
+      placeholder.
+  id: 1095
+  time: '2026-06-03T15:00:16.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3019
