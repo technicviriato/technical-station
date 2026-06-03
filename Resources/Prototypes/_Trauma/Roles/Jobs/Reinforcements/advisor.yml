@@ -3,6 +3,7 @@
   name: job-name-security-advisor
   description: job-description-security-advisor
   playTimeTracker: JobSecurityAdvisor
+  setPreference: false
   requirements:
   - !type:DepartmentTimeRequirement
     department: Security
@@ -26,26 +27,3 @@
   - !type:AddComponentSpecial
     components:
       - type: SecurityStaff
-
-- type: startingGear
-  id: SecurityAdvisorGear
-  equipment:
-    head: ClothingHeadHatBeretAdvisor
-    eyes: ClothingEyesGlassesAdvisor
-    neck: ClothingNeckCloakNanotrasen
-    mask: ClothingMaskGasSwatAdvisor
-    jumpsuit: ClothingUniformJumpsuitNanotrasen
-    back: ClothingBackpackAdvisor
-    shoes: ClothingShoesBootsJackFilled
-    id: AdvisorPDA
-    ears: ClothingHeadsetAltAdvisor
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmourInvisibleAdvisor
-    belt: ClothingBeltSecurityWebbingFilled
-    pocket1: WeaponLaserSidearm
-    suitstorage: WeaponRifleLecterXL8
-  storage:
-    back:
-      - MagazineRifle # 1
-      - MagazineRifle # 2
-      - MedkitCombatFilled
