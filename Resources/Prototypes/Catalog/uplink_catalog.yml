@@ -130,7 +130,7 @@
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc
   icon: { sprite: Clothing/Hands/Gloves/Boxing/boxingblue.rsi, state: icon }
-  productEntity: ClothingHandsGlovesBoxingRiggedBase
+  productEntity: ClothingHandsGlovesBoxingRiggedBlue
   cost:
     Telecrystal: 20 # Trauma - was 10, 5x less expensive because it's a gimmick item and not viable
   categories:
