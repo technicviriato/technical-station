@@ -9603,3 +9603,12 @@ Entries:
   id: 1090
   time: '2026-06-02T23:04:35.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3004
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: >-
+      xenomorph win condition is higher and their minpop to spawn is now 40,
+      aswell as them having more of a weakness to heat damage
+  id: 1091
+  time: '2026-06-03T03:44:36.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3014
