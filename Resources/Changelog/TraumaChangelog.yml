@@ -9562,3 +9562,44 @@ Entries:
   id: 1085
   time: '2026-06-01T20:03:08.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2976
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed armoks forging sprites that had no transparency...
+  id: 1086
+  time: '2026-06-02T08:28:43.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2991
+- author: assripper.
+  changes:
+  - type: Fix
+    message: roundstart xenomorphs now work again
+  id: 1087
+  time: '2026-06-02T08:33:11.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2982
+- author: TechnicFighter
+  changes:
+  - type: Add
+    message: >-
+      Added shield bashing, flash protection, and knockback on hit to most
+      shields.
+  - type: Tweak
+    message: >-
+      Changed the values of some shields, slowdown, more hp, different
+      parry/reflect stats, etc.
+  id: 1088
+  time: '2026-06-02T16:13:10.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2983
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed demons being able to build anything.
+  id: 1089
+  time: '2026-06-02T23:02:50.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3011
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: buffed xenomorph callout announcement time from 7 minutes to 15
+  id: 1090
+  time: '2026-06-02T23:04:35.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3004
