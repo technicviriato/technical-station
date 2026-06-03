@@ -165,7 +165,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Gun
-    fireRate: 5 # Trauma - was 6
+    fireRate: 6
 
 - type: entity
   name: Lecter
