@@ -212,7 +212,7 @@
     - type: Gun
       minAngle: 21
       maxAngle: 32
-      fireRate: 5 # Trauma - was 6
+      fireRate: 6
       burstFireRate: 18
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
