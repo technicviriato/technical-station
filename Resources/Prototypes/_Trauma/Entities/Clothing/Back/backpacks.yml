@@ -83,6 +83,7 @@
       reagents:
       - ReagentId: Holywater
         Quantity: 1200
+
 - type: entity
   parent: [ ClothingBackpack, BaseSecurityContraband ]
   id: ClothingBackpackAdvisor
