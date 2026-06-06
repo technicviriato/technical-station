@@ -1170,7 +1170,7 @@
 
 - type: entity
   parent: [ BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune ]
-  id: SummoningRuneCentifiend
+  id: SummoningRuneCentifiendTame
   categories: [ HideSpawnMenu ]
   components:
   - type: GhostRoleMobSpawner
