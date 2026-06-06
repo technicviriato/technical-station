@@ -395,20 +395,20 @@
           BaseDemonSoulFragment:
             min: 1
             max: 3
-    - type: Solution
-      id: melee
-      solution:
-        maxVol: 10
-    - type: SolutionRegeneration
-      generated:
-        reagents:
-        - ReagentId: UnstableMutagen
-          Quantity: 3
-        - ReagentId: Mold
-          Quantity: 5
-    - type: MeleeChemicalInjector
-      transferAmount: 8
-      solution: melee
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 10
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: UnstableMutagen
+        Quantity: 3
+      - ReagentId: Mold
+        Quantity: 5
+  - type: MeleeChemicalInjector
+    transferAmount: 8
+    solution: melee
 
 - type: entity
   parent: [ ControlledDemon, MediumDemonCentifiend ]
