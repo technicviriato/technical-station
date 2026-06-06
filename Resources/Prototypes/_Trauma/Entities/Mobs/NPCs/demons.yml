@@ -34,7 +34,7 @@
       1000: Dead
   - type: PassiveDamage
     allowedStates:
-      - Alive
+    - Alive
     damage:
       types:
         Heat: -1
@@ -111,7 +111,7 @@
   - type: GhostRole
     name: ghost-role-information-demon-tame-name
     description: ghost-role-information-demon-tame-desc
-    rules: ghost-role-information-familliar-rules
+    rules: ghost-role-information-familiar-rules
     mindRoles:
     - MindRoleGhostRoleFamiliar
     raffle:
@@ -364,7 +364,56 @@
   id: MinorDemonVulpControlled
   suffix: Controlled
 
-# medium
+# Medium
+
+- type: entity
+  parent: BaseDemon
+  id: MediumDemonCentifiend
+  name: Centifiend
+  components:
+  - type: Sprite
+    sprite: _Trauma/Mobs/Monsters/Demons/centifiend.rsi
+  - type: MeleeWeapon
+    range: 1
+    soundHit:
+      path: /Audio/Effects/demon_attack1.ogg
+    damage:
+      types:
+        Piercing: 1
+    altDisarm: true
+    canWideSwing: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          BaseDemonSoulFragment:
+            min: 1
+            max: 3
+    - type: Solution
+      id: melee
+      solution:
+        maxVol: 10
+    - type: SolutionRegeneration
+      generated:
+        reagents:
+        - ReagentId: UnstableMutagen
+          Quantity: 3
+        - ReagentId: Mold
+          Quantity: 5
+    - type: MeleeChemicalInjector
+      transferAmount: 8
+      solution: melee
+
+- type: entity
+  parent: [ControlledDemon, MediumDemonCentifiend]
+  id: MediumDemonCentifiendControlled
+  suffix: Controlled
 
 - type: entity
   parent: BaseDemon
@@ -922,12 +971,12 @@
 - type: entity
   abstract: true
   parent: BaseDemonSummoningRuneHostile
-  id: BaseDemonSummoningRuneFamilliar
+  id: BaseDemonSummoningRuneFamiliar
   components:
   - type: GhostRole
     name: ghost-role-information-demon-tame-name
     description: ghost-role-information-demon-tame-desc
-    rules: ghost-role-information-familliar-rules
+    rules: ghost-role-information-familiar-rules
     mindRoles:
     - MindRoleGhostRoleFamiliar
 
@@ -998,7 +1047,7 @@
     prototype: MinorDemonGuy
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneGuyTame
   categories: [HideSpawnMenu]
   components:
@@ -1018,7 +1067,7 @@
     prototype: MinorDemonIncel
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneIncelTame
   categories: [HideSpawnMenu]
   components:
@@ -1038,7 +1087,7 @@
     prototype: MinorDemonUrist
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneUristTame
   categories: [HideSpawnMenu]
   components:
@@ -1058,7 +1107,7 @@
     prototype: MinorDemonIan
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneIanTame
   categories: [HideSpawnMenu]
   components:
@@ -1078,7 +1127,7 @@
     prototype: MinorDemonVox
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneVoxTame
   categories: [HideSpawnMenu]
   components:
@@ -1098,7 +1147,7 @@
     prototype: MinorDemonVulp
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMinorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMinorSummoningRune]
   id: SummoningRuneVulpTame
   categories: [HideSpawnMenu]
   components:
@@ -1111,6 +1160,26 @@
 
 - type: entity
   parent: [BaseDemonSummoningRuneHostile, BaseMediumSummoningRune]
+  id: SummoningRuneCentifiend
+  categories: [HideSpawnMenu]
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: MediumDemonCentifiend
+  - type: SpawnOnDespawn
+    prototype: MediumDemonCentifiend
+
+- type: entity
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
+  id: SummoningRuneCentifiend
+  categories: [HideSpawnMenu]
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: MediumDemonCentifiend
+  - type: SpawnOnDespawn
+    prototype: MediumDemonCentifiend
+
+- type: entity
+  parent: [BaseDemonSummoningRuneHostile, BaseMediumSummoningRune]
   id: SummoningRuneChad
   categories: [HideSpawnMenu]
   components:
@@ -1120,7 +1189,7 @@
     prototype: MediumDemonChad
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneChadTame
   categories: [HideSpawnMenu]
   components:
@@ -1140,7 +1209,7 @@
     prototype: MediumDemonGhost
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneGhostTame
   categories: [HideSpawnMenu]
   components:
@@ -1160,7 +1229,7 @@
     prototype: MediumDemonHamlet
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneHamletTame
   categories: [HideSpawnMenu]
   components:
@@ -1180,7 +1249,7 @@
     prototype: MediumDemon64Fat
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneDemon64FatTame
   categories: [HideSpawnMenu]
   components:
@@ -1200,7 +1269,7 @@
     prototype: MediumDemon64Buff
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneDemon64BuffTame
   categories: [HideSpawnMenu]
   components:
@@ -1220,7 +1289,7 @@
     prototype: MediumDemon64
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMediumSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMediumSummoningRune]
   id: SummoningRuneDemon64Tame
   categories: [HideSpawnMenu]
   components:
@@ -1242,7 +1311,7 @@
     prototype: MajorDemonBosche
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMajorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMajorSummoningRune]
   id: SummoningRuneBoscheTame
   categories: [HideSpawnMenu]
   components:
@@ -1262,7 +1331,7 @@
     prototype: MajorDemonFeverbird
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMajorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMajorSummoningRune]
   id: SummoningRuneFeverbirdTame
   categories: [HideSpawnMenu]
   components:
@@ -1282,7 +1351,7 @@
     prototype: MajorDemonHanged
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMajorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMajorSummoningRune]
   id: SummoningRuneHangedTame
   categories: [HideSpawnMenu]
   components:
@@ -1302,7 +1371,7 @@
     prototype: MajorDemonHiver
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMajorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMajorSummoningRune]
   id: SummoningRuneHiverTame
   categories: [HideSpawnMenu]
   components:
@@ -1322,7 +1391,7 @@
     prototype: MajorDemonSteamer
 
 - type: entity
-  parent: [BaseDemonSummoningRuneFamilliar, BaseMajorSummoningRune]
+  parent: [BaseDemonSummoningRuneFamiliar, BaseMajorSummoningRune]
   id: SummoningRuneSteamerTame
   categories: [HideSpawnMenu]
   components:
