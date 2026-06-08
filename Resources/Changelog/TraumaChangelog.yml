@@ -9957,3 +9957,18 @@ Entries:
   id: 1127
   time: '2026-06-08T15:32:42.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3106
+- author: Smilez1010
+  changes:
+  - type: Add
+    message: Added Skill chip boxes to cargo catalog
+  - type: Add
+    message: Added Service skill chip box to hop locker
+  - type: Add
+    message: Added Service Skill chips to Ptech
+  - type: Add
+    message: Added Nukie Skill Chip to Emagged Ptech
+  - type: Tweak
+    message: Ptech restock costs 2.5k now
+  id: 1128
+  time: '2026-06-08T17:07:31.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3102
