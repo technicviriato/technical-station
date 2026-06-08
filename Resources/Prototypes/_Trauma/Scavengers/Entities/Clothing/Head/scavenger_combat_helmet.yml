@@ -6,8 +6,10 @@
   components:
   - type: Sprite
     sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+    state: icon
   - type: Clothing
     sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+    equippedPrefix: off
   - type: Armor
     coverage:
     - Head
@@ -20,21 +22,45 @@
         Radiation: 0.2
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  - type: ItemToggle
-    predictable: false
-    soundActivate:
-      path: /Audio/Machines/button.ogg
-    soundDeactivate:
-      path: /Audio/Machines/button.ogg
-  - type: ItemTogglePrefix
-    prefixOn: on
-    prefixOff: off
-  - type: ComponentToggler
-    components:
-    - type: ThermalVision
-      flashDurationMultiplier: 2
-      isEquipment: true
-      toggleAction: ToggleThermalVision
   - type: FaceHuggerBlocker
   - type: StaticPrice
     price: 250
+  - type: ItemSwitch
+    needsPower: false
+    defaultState: off
+    state: "off"
+    showLabel: true
+    states:
+      off: !type:ItemSwitchState
+        verb: off
+        sprite:
+          sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+          state: icon
+        components:
+        - type: Clothing
+          equipDelay: 2
+          unequipDelay: 2
+          slots:
+          - HEAD
+          sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+          equippedPrefix: off
+
+      on: !type:ItemSwitchState
+        verb: on
+        sprite:
+          sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+          state: icon-on
+        components:
+        - type: Clothing
+          equipDelay: 2
+          unequipDelay: 2
+          slots:
+          - HEAD
+          sprite: _Trauma/Scavengers/Clothing/Head/Helmets/scavenger_combat_helmet.rsi
+          equippedPrefix: on
+        - type: ThermalVision
+          flashDurationMultiplier: 2
+          isEquipment: true
+          toggleAction: ToggleThermalVision
+        soundStateActivate:
+          path: /Audio/Machines/button.ogg

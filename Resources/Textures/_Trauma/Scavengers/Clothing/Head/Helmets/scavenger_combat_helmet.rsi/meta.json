@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "lorem ipsum",
+  "copyright": "lorem ipsum, directional sprites edited by Gravest0ne",
   "size": {
     "x": 32,
     "y": 32
@@ -11,12 +11,15 @@
       "name": "icon"
     },
     {
+      "name": "icon-on"
+    },
+    {
       "name": "equipped-HELMET-off",
-      "directions": 1
+      "directions": 4
     },
     {
       "name": "equipped-HELMET-on",
-      "directions": 1
+      "directions": 4
     }
   ]
 }
