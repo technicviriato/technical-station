@@ -1,4 +1,6 @@
-﻿namespace Content.Trauma.Shared.ItemSwitch;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+namespace Content.Trauma.Shared.ItemSwitch;
 
 /// <summary>
 /// Tracks components granted to the wearer by ItemSwitch states so they can be cleaned up on state change.
