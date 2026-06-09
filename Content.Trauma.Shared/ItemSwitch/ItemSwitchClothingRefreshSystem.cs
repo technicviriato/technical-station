@@ -1,75 +1,69 @@
 ﻿using System.Linq;
 using Content.Goobstation.Shared.Clothing.Components;
 using Content.Medical.Shared.ItemSwitch;
-using Content.Shared.Clothing.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 
 namespace Content.Trauma.Shared.ItemSwitch;
 
+/// <summary>
+/// Cleans up and re-grants clothing components when an ItemSwitch state changes while worn,
+/// so ClothingGrantComponentComponent correctly updates the wearer.
+/// </summary>
 public sealed partial class ItemSwitchClothingRefreshSystem : EntitySystem
 {
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<ItemSwitchComponent, ItemSwitchedEvent>(OnItemSwitched);
+        SubscribeLocalEvent<ItemSwitchGrantTrackerComponent, ItemSwitchedEvent>(OnItemSwitched);
     }
 
-    private readonly HashSet<EntityUid> _processing = new();
-
-    private void OnItemSwitched(Entity<ItemSwitchComponent> ent, ref ItemSwitchedEvent args)
+    private void OnItemSwitched(Entity<ItemSwitchGrantTrackerComponent> ent, ref ItemSwitchedEvent args)
     {
         if (args.User == null
-            || !TryComp<InventoryComponent>(args.User.Value, out var inventory)
-            || !TryComp<ClothingComponent>(ent, out _))
+            || !TryComp<InventoryComponent>(args.User.Value, out var inventory))
             return;
+        
+        var dirty = false;
 
-        if (!_processing.Add(ent.Owner))
-            return;
-
-        try
+        // Remove components granted by the previous state.
+        if (ent.Comp.Wearer != null)
         {
-            var enumerator = new InventorySystem.InventorySlotEnumerator(inventory, SlotFlags.WITHOUT_POCKET);
-            while (enumerator.NextItem(out var item, out var slotDef))
+            foreach (var name in ent.Comp.GrantedComponents)
             {
-                if (item != ent.Owner)
-                    continue;
-
-                var tracker = EnsureComp<ItemSwitchGrantTrackerComponent>(ent);
-
-                // Clean up previously granted components using tracker
-                if (tracker.Wearer != null)
-                {
-                    foreach (var name in tracker.GrantedComponents.ToList())
-                    {
-                        var type = Factory.GetRegistration(name).Type;
-                        RemComp(tracker.Wearer.Value, type);
-                    }
-                    tracker.GrantedComponents.Clear();
-                    tracker.Wearer = null;
-                }
-
-                // Grant new state's components and track what is granted
-                if (TryComp<ClothingGrantComponentComponent>(ent, out var grant))
-                {
-                    // Temporarily record what is gonna be granted
-                    foreach (var name in grant.Components.Keys)
-                    {
-                        var type = Factory.GetRegistration(name).Type;
-                        if (!HasComp(args.User.Value, type))
-                            tracker.GrantedComponents.Add(name);
-                    }
-                    tracker.Wearer = args.User.Value;
-                }
-
-                var equipEv = new GotEquippedEvent(args.User.Value, ent.Owner, slotDef);
-                RaiseLocalEvent(ent.Owner, equipEv, true);
-                break;
+                var type = Factory.GetRegistration(name).Type;
+                RemComp(ent.Comp.Wearer.Value, type);
             }
+            ent.Comp.GrantedComponents.Clear();
+            ent.Comp.Wearer = null;
+            dirty = true;
         }
-        finally
+
+        var enumerator = new InventorySystem.InventorySlotEnumerator(inventory, ent.Comp.TargetSlots);
+        while (enumerator.NextItem(out var item, out var slotDef))
         {
-            _processing.Remove(ent.Owner);
+            if (item != ent.Owner)
+                continue;
+
+            // Record components granted by the new state for later cleanup.
+            if (TryComp<ClothingGrantComponentComponent>(ent, out var grant))
+            {
+                foreach (var name in grant.Components.Keys)
+                {
+                    var type = Factory.GetRegistration(name).Type;
+                    if (!HasComp(args.User.Value, type))
+                        ent.Comp.GrantedComponents.Add(name);
+                }
+                ent.Comp.Wearer = args.User.Value;
+                dirty = true;
+            }
+
+            var equipEv = new GotEquippedEvent(args.User.Value, ent.Owner, slotDef);
+            RaiseLocalEvent(ent.Owner, equipEv, true);
+            break;
         }
+        
+        if (dirty)
+            Dirty(ent);
     }
 }
