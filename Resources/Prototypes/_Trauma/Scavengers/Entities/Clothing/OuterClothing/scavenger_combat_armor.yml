@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ ClothingOuterEVASuitBase, BaseMajorContraband]
   id: ClothingOuterHardsuitScavenger
   name: scavenger combat armor
   description: A rugged suit of scavenger combat armor assembled from industrial EVA gear and military surplus plating. Despite its crude appearance, it provides outstanding protection against bullets, blades, explosions, radiation, and corrosive hazards without sacrificing mobility.
