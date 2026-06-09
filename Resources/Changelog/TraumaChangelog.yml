@@ -10011,3 +10011,16 @@ Entries:
   id: 1133
   time: '2026-06-09T22:50:10.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3121
+- author: Sulfari, Arraydeess, LilithArson, PureBreadBagel
+  changes:
+  - type: Tweak
+    message: The bar dispensers can now make infinite drinks.
+  - type: Add
+    message: Food Synthesizers have been added.
+  - type: Add
+    message: Science can now research energy chem dispensers and Food synthesizers.
+  - type: Tweak
+    message: All energy chem machines require BlueSpace Crystals to be built now.
+  id: 1134
+  time: '2026-06-09T23:56:23.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3113
