@@ -25,7 +25,7 @@ public sealed partial class ItemSwitchClothingRefreshSystem : EntitySystem
         if (args.User == null
             || !TryComp<InventoryComponent>(args.User.Value, out var inventory))
             return;
-        
+
         var dirty = false;
 
         // Remove components granted by the previous state.
@@ -64,7 +64,7 @@ public sealed partial class ItemSwitchClothingRefreshSystem : EntitySystem
             RaiseLocalEvent(ent.Owner, equipEv, true);
             break;
         }
-        
+
         if (dirty)
             Dirty(ent);
     }
