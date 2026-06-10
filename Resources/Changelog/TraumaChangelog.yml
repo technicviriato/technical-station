@@ -10033,3 +10033,10 @@ Entries:
   id: 1135
   time: '2026-06-10T00:09:36.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3130
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed trevor letting you noclip and go invisible.
+  id: 1136
+  time: '2026-06-10T01:27:45.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3128
