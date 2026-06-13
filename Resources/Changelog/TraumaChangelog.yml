@@ -10127,3 +10127,10 @@ Entries:
   id: 1146
   time: '2026-06-13T15:15:05.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3126
+- author: TechnicFighter, Graves
+  changes:
+  - type: Add
+    message: Added the Monarch Coat to the uplink.
+  id: 1147
+  time: '2026-06-13T15:17:08.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3150
