@@ -41,6 +41,7 @@ public sealed partial class BlockingSystem : EntitySystem
     [Dependency] private EntityQuery<HandsComponent> _handQuery = default!;
     [Dependency] private EntityQuery<MobStateComponent> _mobQuery = default!;
     [Dependency] private EntityQuery<BlockingUserComponent> _userQuery = default!;
+    [Dependency] private EntityQuery<PhysicsComponent> _physicsQuery = default!; // Trauma
 
     public override void Initialize()
     {
@@ -176,10 +177,9 @@ public sealed partial class BlockingSystem : EntitySystem
         if (playerTileRef != null)
         {
             var intersecting = _lookup.GetLocalEntitiesIntersecting(playerTileRef.Value, 0f);
-            var physicsQuery = GetEntityQuery<PhysicsComponent>(); // Trauma - Fix non collidable entities such as pAIs or positronic brains preventing blocking.
             foreach (var uid in intersecting)
             {
-                if (uid != user && _mobQuery.HasComponent(uid) && physicsQuery.TryGetComponent(uid, out var physicsComp) && physicsComp.CanCollide) // Trauma - Fix non collidable entities such as pAIs or positronic brains preventing blocking.
+                if (uid != user && _mobQuery.HasComponent(uid) && _physicsQuery.TryGetComponent(uid, out var physicsComp) && physicsComp.CanCollide) // Trauma - Fix non collidable entities such as pAIs or positronic brains preventing blocking.
                 {
                     TooCloseError(user);
                     return false;
