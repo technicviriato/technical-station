@@ -10100,3 +10100,12 @@ Entries:
   id: 1143
   time: '2026-06-12T22:57:51.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3144
+- author: GoidaYAMLWarrior
+  changes:
+  - type: Tweak
+    message: Buffed billy club's attack rate so it swings faster.
+  - type: Tweak
+    message: Added 3 billy clubs to the armory melee locker.
+  id: 1144
+  time: '2026-06-13T05:04:58.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3153
