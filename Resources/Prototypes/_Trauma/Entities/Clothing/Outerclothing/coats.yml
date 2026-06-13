@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseSyndicateContraband]
   id: ClothingOuterArmorMonarchCoat
-  name: Monarch Coat
+  name: monarch coat
   description: Straight from the wardrobe of Gorlex Entertainment's star human performer, this replica of their most iconic outfit utilizes reflective technology to shrug off energy blasts, while remaining flimsy against real damage.
   components:
   - type: Sprite
