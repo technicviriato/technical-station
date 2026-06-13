@@ -11,6 +11,9 @@
   - type: Armor
     coverage:
     - Torso
+    - Arm
+    - Leg
+    - Tail
     modifiers:
       coefficients:
         Blunt: 0.75
