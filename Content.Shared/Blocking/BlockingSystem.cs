@@ -25,8 +25,10 @@ namespace Content.Shared.Blocking;
 
 public sealed partial class BlockingSystem : EntitySystem
 {
-    [Dependency] private EntityQuery<PhysicsComponent> _physicsQuery = default!; // Trauma
-    [Dependency] private ItemToggleSystem _toggle = default!; // Trauma
+    // <Trauma>
+    [Dependency] private EntityQuery<PhysicsComponent> _physicsQuery = default!;
+    [Dependency] private ItemToggleSystem _toggle = default!;
+    // </Trauma>
     [Dependency] private SharedActionsSystem _actionsSystem = default!;
     [Dependency] private ActionContainerSystem _actionContainer = default!;
     [Dependency] private SharedTransformSystem _transformSystem = default!;
