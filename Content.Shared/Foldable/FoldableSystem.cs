@@ -118,8 +118,8 @@ public sealed partial class FoldableSystem : EntitySystem
         if (_container.IsEntityInContainer(uid) && !fold.CanFoldInsideContainer)
             return false;
 
-        if (!fold.CanFoldInsideContainer && (!TryComp(uid, out PhysicsComponent? body) || // Trauma - FoldableClothingFix
-            !_anchorable.TileFree(Transform(uid).Coordinates, body)))
+        if (TryComp(uid, out PhysicsComponent? body) && body.CanCollide && // Trauma - FoldableClothingFix
+            !_anchorable.TileFree(Transform(uid).Coordinates, body))
             return false;
 
         var ev = new FoldAttemptEvent(fold);
