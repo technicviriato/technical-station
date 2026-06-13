@@ -10116,3 +10116,28 @@ Entries:
   id: 1145
   time: '2026-06-13T05:44:37.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3157
+- author: Aviu
+  changes:
+  - type: Add
+    message: Mouse wheel to zoom.
+  - type: Add
+    message: Shift + mouse wheel to change targeting.
+  - type: Add
+    message: Ctrl + mouse wheel to rotate camera.
+  id: 1146
+  time: '2026-06-13T15:15:05.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3126
+- author: TechnicFighter, Graves
+  changes:
+  - type: Add
+    message: Added the Monarch Coat to the uplink.
+  id: 1147
+  time: '2026-06-13T15:17:08.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3150
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed IPCs not taking ion damage. Set justice to ion.
+  id: 1148
+  time: '2026-06-13T15:29:42.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3166
