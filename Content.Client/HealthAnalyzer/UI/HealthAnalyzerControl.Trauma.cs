@@ -177,7 +177,7 @@ public sealed partial class HealthAnalyzerControl
                 Text = Loc.GetString("condition-body-unrevivable", ("entity", identity)),
                 Margin = new Thickness(0, 4),
             });
-        
+
         if (bloodLevelLow)
             ConditionsListContainer.AddChild(new RichTextLabel
             {
