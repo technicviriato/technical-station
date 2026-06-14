@@ -177,15 +177,13 @@ public sealed partial class HealthAnalyzerControl
                 Text = Loc.GetString("condition-body-unrevivable", ("entity", identity)),
                 Margin = new Thickness(0, 4),
             });
-
-        // <Trauma>
+        
         if (bloodLevelLow)
             ConditionsListContainer.AddChild(new RichTextLabel
             {
                 Text = Loc.GetString("condition-body-low-blood", ("entity", identity)),
                 Margin = new Thickness(0, 4),
             });
-        // </Trauma>
 
         foreach (var bleeding in state.Bleeding)
         {
