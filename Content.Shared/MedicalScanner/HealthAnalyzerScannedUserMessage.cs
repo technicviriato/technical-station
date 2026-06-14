@@ -42,7 +42,7 @@ public struct HealthAnalyzerUiState
     // </Shitmed>
     public bool? Unrevivable;
 
-    public bool BloodLevelLow; // <Trauma>
+    public bool BloodLevelLow; // Trauma
 
     public HealthAnalyzerUiState() {}
 
