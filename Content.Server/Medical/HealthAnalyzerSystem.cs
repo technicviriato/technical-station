@@ -256,6 +256,7 @@ public sealed partial class HealthAnalyzerSystem : EntitySystem
             bodyTemperature = temp.CurrentTemperature;
 
         var bloodAmount = float.NaN;
+        var bloodLow = false; // Trauma
         //var bleeding = false; // Shitmed - bleeding is stored per-part not global
         var unrevivable = false;
 
@@ -264,6 +265,7 @@ public sealed partial class HealthAnalyzerSystem : EntitySystem
                 ref bloodstream.BloodSolution, out var bloodSolution))
         {
             bloodAmount = _bloodstreamSystem.GetBloodLevel(entity);
+            bloodLow = bloodAmount < bloodstream.BloodlossThreshold; // Trauma
             // Shitmed - bleeding is stored per-part not global
             //bleeding = bloodstream.BleedAmount > 0;
         }
@@ -289,7 +291,11 @@ public sealed partial class HealthAnalyzerSystem : EntitySystem
             unrevivable,
             bodyStatus,
             vitalDamage,
-            part != null ? GetNetEntity(part) : null);
+            // <Trauma>
+            part != null ? GetNetEntity(part) : null,
+            null,
+            bloodLow);
+            // </Trauma>
         switch (mode)
         {
             case HealthAnalyzerMode.Body:

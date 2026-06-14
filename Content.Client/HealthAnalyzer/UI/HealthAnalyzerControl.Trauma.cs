@@ -91,7 +91,7 @@ public sealed partial class HealthAnalyzerControl
             button.Visible = isHumanoid;
     }
 
-    public void PopulateTrauma(EntityUid target, HealthAnalyzerUiState state)
+    public void PopulateTrauma(EntityUid target, HealthAnalyzerUiState state, bool bloodLevelLow = false)
     {
         _target = target;
         var humanoid = _entityManager.HasComponent<HumanoidProfileComponent>(target);
@@ -109,7 +109,7 @@ public sealed partial class HealthAnalyzerControl
         switch (state.ScanState)
         {
             case HealthAnalyzerBodyState body:
-                PopulateBody(target, state, body);
+                PopulateBody(target, state, body, bloodLevelLow);
                 break;
             case HealthAnalyzerOrgansState organs:
                 PopulateOrgans(organs);
@@ -131,7 +131,7 @@ public sealed partial class HealthAnalyzerControl
 
     #region Scan state populate methods
 
-    public void PopulateBody(EntityUid target, HealthAnalyzerUiState state, HealthAnalyzerBodyState body)
+    public void PopulateBody(EntityUid target, HealthAnalyzerUiState state, HealthAnalyzerBodyState body, bool bloodLevelLow = false)
     {
         var part = _entityManager.GetEntity(state.Part);
         if (part != null)
@@ -177,6 +177,15 @@ public sealed partial class HealthAnalyzerControl
                 Text = Loc.GetString("condition-body-unrevivable", ("entity", identity)),
                 Margin = new Thickness(0, 4),
             });
+
+        // <Trauma>
+        if (bloodLevelLow)
+            ConditionsListContainer.AddChild(new RichTextLabel
+            {
+                Text = Loc.GetString("condition-body-low-blood", ("entity", identity)),
+                Margin = new Thickness(0, 4),
+            });
+        // </Trauma>
 
         foreach (var bleeding in state.Bleeding)
         {

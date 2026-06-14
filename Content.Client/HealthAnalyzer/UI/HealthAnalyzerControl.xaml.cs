@@ -53,7 +53,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         // </Trauma>
     }
 
-    public void Populate(HealthAnalyzerUiState state)
+    public void Populate(HealthAnalyzerUiState state, bool bloodLevelLow = false) // Trauma bloodLevelLow
     {
         var target = _entityManager.GetEntity(state.TargetEntity);
 
@@ -151,7 +151,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
 
         DrawDiagnosticGroups(damageSortedGroups, damagePerType);
 
-        PopulateTrauma(target.Value, state); // Trauma
+        PopulateTrauma(target.Value, state, bloodLevelLow); // Trauma
     }
 
     private static string GetStatus(MobState mobState)
