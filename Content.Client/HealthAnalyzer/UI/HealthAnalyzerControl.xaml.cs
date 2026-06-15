@@ -151,13 +151,8 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         var damagePerType = _damageable.GetAllDamage(target.Value).DamageDict;
 
         DrawDiagnosticGroups(damageSortedGroups, damagePerType);
-        // <Trauma>
-        var bloodLevelLow = !float.IsNaN(state.BloodLevel)
-                            && _entityManager.TryGetComponent<BloodstreamComponent>(target.Value, out var bloodstream)
-                            && state.BloodLevel < bloodstream.BloodlossThreshold;
 
-        PopulateTrauma(target.Value, state, bloodLevelLow);
-        // </Trauma>
+        PopulateTrauma(target.Value, state); // Trauma
     }
 
     private static string GetStatus(MobState mobState)

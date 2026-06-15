@@ -9,6 +9,7 @@ using Content.Medical.Common.Wounds;
 using Content.Medical.Shared.Wounds;
 using Content.Shared.Atmos.Rotting;
 using Content.Shared.Body;
+using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
@@ -91,7 +92,7 @@ public sealed partial class HealthAnalyzerControl
             button.Visible = isHumanoid;
     }
 
-    public void PopulateTrauma(EntityUid target, HealthAnalyzerUiState state, bool bloodLevelLow = false)
+    public void PopulateTrauma(EntityUid target, HealthAnalyzerUiState state)
     {
         _target = target;
         var humanoid = _entityManager.HasComponent<HumanoidProfileComponent>(target);
@@ -105,6 +106,12 @@ public sealed partial class HealthAnalyzerControl
             SpriteView.SetEntity(SetupIcon(state.Body, state.Bleeding));
 
         PartView.Visible = SpriteView.Visible;
+        
+        // <Trauma>
+        var bloodLevelLow = !float.IsNaN(state.BloodLevel)
+                            && _entityManager.TryGetComponent<BloodstreamComponent>(target, out var bloodstream)
+                            && state.BloodLevel < bloodstream.BloodlossThreshold;
+        // </Trauma>
 
         switch (state.ScanState)
         {
