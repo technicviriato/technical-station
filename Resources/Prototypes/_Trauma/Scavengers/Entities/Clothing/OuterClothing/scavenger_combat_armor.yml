@@ -5,9 +5,9 @@
   description: A rugged suit of scavenger combat armor assembled from industrial EVA gear and military surplus plating. Despite its crude appearance, it provides outstanding protection against bullets, blades, explosions, radiation, and corrosive hazards without sacrificing mobility.
   components:
   - type: Sprite
-    sprite: _Trauma/Scavengers/Clothing/OuterClothing/Armor/scavenger_combat_armor.rsi
+    sprite: _Trauma/Scavengers/Clothing/OuterClothing/Suits/scavenger_combat_armor.rsi
   - type: Clothing
-    sprite: _Trauma/Scavengers/Clothing/OuterClothing/Armor/scavenger_combat_armor.rsi
+    sprite: _Trauma/Scavengers/Clothing/OuterClothing/Suits/scavenger_combat_armor.rsi
   - type: Armor
     coverage:
     - Torso
