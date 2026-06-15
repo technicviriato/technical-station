@@ -39,7 +39,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-      - type: Condemned # Goobstation - Nanotrasen owns your soul pal.
+      - type: Condemned # Trauma - Nanotrasen owns your soul pal.
         soulOwnedNotDevil: true
 
 - type: startingGear
