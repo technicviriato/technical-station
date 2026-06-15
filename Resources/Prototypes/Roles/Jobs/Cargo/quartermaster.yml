@@ -42,8 +42,10 @@
     components:
       - type: CommandStaff
       - type: QuartermasterTraining
-      - type: Condemned # Trauma - Nanotrasen owns your soul pal.
+      # <Trauma>
+      - type: Condemned # Nanotrasen owns your soul pal.
         soulOwnedNotDevil: true
+      # </Trauma>
 
 - type: startingGear
   id: QuartermasterGear
