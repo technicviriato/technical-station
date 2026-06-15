@@ -1,4 +1,5 @@
 // <Trauma>
+using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.EntitySystems;
 // </Trauma>
 using System.Linq;
@@ -53,7 +54,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         // </Trauma>
     }
 
-    public void Populate(HealthAnalyzerUiState state, bool bloodLevelLow = false) // Trauma bloodLevelLow
+    public void Populate(HealthAnalyzerUiState state)
     {
         var target = _entityManager.GetEntity(state.TargetEntity);
 
@@ -150,8 +151,13 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         var damagePerType = _damageable.GetAllDamage(target.Value).DamageDict;
 
         DrawDiagnosticGroups(damageSortedGroups, damagePerType);
+        // <Trauma>
+        var bloodLevelLow = !float.IsNaN(state.BloodLevel)
+                            && _entityManager.TryGetComponent<BloodstreamComponent>(target.Value, out var bloodstream)                 
+                            && state.BloodLevel < bloodstream.BloodlossThreshold;
 
-        PopulateTrauma(target.Value, state, bloodLevelLow); // Trauma
+        PopulateTrauma(target.Value, state, bloodLevelLow);
+        // </Trauma>
     }
 
     private static string GetStatus(MobState mobState)

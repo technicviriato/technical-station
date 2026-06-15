@@ -29,6 +29,6 @@ public sealed partial class HealthAnalyzerWindow : FancyWindow
 
     public void Populate(HealthAnalyzerScannedUserMessage msg)
     {
-        HealthAnalyzer.Populate(msg.State, msg.State.BloodLevelLow); // Trauma BloodLevelLow
+        HealthAnalyzer.Populate(msg.State);
     }
 }
