@@ -106,7 +106,7 @@ public sealed partial class HealthAnalyzerControl
             SpriteView.SetEntity(SetupIcon(state.Body, state.Bleeding));
 
         PartView.Visible = SpriteView.Visible;
-        
+
         // <Trauma>
         var bloodLevelLow = !float.IsNaN(state.BloodLevel)
                             && _entityManager.TryGetComponent<BloodstreamComponent>(target, out var bloodstream)
