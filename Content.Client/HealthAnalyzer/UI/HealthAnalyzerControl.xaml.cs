@@ -153,7 +153,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         DrawDiagnosticGroups(damageSortedGroups, damagePerType);
         // <Trauma>
         var bloodLevelLow = !float.IsNaN(state.BloodLevel)
-                            && _entityManager.TryGetComponent<BloodstreamComponent>(target.Value, out var bloodstream)                 
+                            && _entityManager.TryGetComponent<BloodstreamComponent>(target.Value, out var bloodstream)
                             && state.BloodLevel < bloodstream.BloodlossThreshold;
 
         PopulateTrauma(target.Value, state, bloodLevelLow);
