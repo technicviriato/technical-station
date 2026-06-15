@@ -47,6 +47,7 @@
     - type: CommandStaff
     - type: Condemned # Nanotrasen owns your soul pal.
       soulOwnedNotDevil: true
+    - type: Lawyer
 
 - type: startingGear
   id: NanotrasenRepresentativeGear
