@@ -45,6 +45,8 @@
     components:
       - type: CommandStaff
       # <Trauma>
+      - type: Condemned # Nanotrasen owns your soul pal.
+        soulOwnedNotDevil: true
       - type: SurgerySpeedModifier
         speedModifier: 2
       - type: CPRTraining

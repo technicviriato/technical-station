@@ -301,7 +301,7 @@
   - type: ProjectileRequireWhitelist
     whitelist:
       components:
-      - Condemned
+      - Lawyer
   - type: RefillableSolution
     solution: ammo
   - type: DrainableSolution
