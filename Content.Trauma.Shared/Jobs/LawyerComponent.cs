@@ -1,4 +1,6 @@
-﻿namespace Content.Trauma.Shared.Jobs;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+namespace Content.Trauma.Shared.Jobs;
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class LawyerComponent : Component { }
