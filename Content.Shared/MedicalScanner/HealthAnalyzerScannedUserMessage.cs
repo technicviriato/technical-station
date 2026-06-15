@@ -42,8 +42,6 @@ public struct HealthAnalyzerUiState
     // </Shitmed>
     public bool? Unrevivable;
 
-    public bool BloodLevelLow; // Trauma
-
     public HealthAnalyzerUiState() {}
 
     public HealthAnalyzerUiState(NetEntity? targetEntity, float temperature, float bloodLevel, bool? scanMode,
@@ -53,9 +51,8 @@ public struct HealthAnalyzerUiState
         Dictionary<ProtoId<OrganCategoryPrototype>, WoundableSeverity>? body,
         FixedPoint2 vitalDamage,
         NetEntity? part = null,
-        HealthAnalyzerScanState? scanState = null,
+        HealthAnalyzerScanState? scanState = null)
         // </Shitmed>
-        bool bloodLevelLow = false) // Trauma
     {
         // <Shitmed>
         Body = body;
@@ -69,6 +66,5 @@ public struct HealthAnalyzerUiState
         ScanMode = scanMode;
         Bleeding = bleeding;
         Unrevivable = unrevivable;
-        BloodLevelLow = bloodLevelLow; // Trauma
     }
 }
