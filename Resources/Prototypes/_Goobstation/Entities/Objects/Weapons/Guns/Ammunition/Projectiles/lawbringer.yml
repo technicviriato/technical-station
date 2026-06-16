@@ -220,21 +220,15 @@
     damage:
       types:
         Heat: 0
-  - type: RefillableSolution
-    solution: ammo
-  - type: DrainableSolution
-    solution: ammo
   - type: SolutionInjectOnProjectileHit
     transferAmount: 2
-    solution: ammo
-  - type: InjectableSolution
     solution: ammo
   - type: Solution
     id: ammo
     solution:
       reagents:
       - ReagentId: Haloperidol
-        Quantity: 1.5
+        Quantity: 2
   - type: BlurOnCollide
 
 - type: entity
