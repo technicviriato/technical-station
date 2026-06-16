@@ -58,33 +58,11 @@
       - NukeOpsUplink
 
 - type: listing
-  id: uplinkRiggedBoxingGlovesRed
+  id: UplinkUndeterminedSelectorBoxingRigged
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc
-  icon: { sprite: Clothing/Hands/Gloves/Boxing/boxingred.rsi, state: icon }
-  productEntity: ClothingHandsGlovesBoxingRiggedRed
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: uplinkRiggedBoxingGlovesGreen
-  name: uplink-rigged-boxing-gloves-name
-  description: uplink-rigged-boxing-gloves-desc
-  icon: { sprite: Clothing/Hands/Gloves/Boxing/boxinggreen.rsi, state: icon }
-  productEntity: ClothingHandsGlovesBoxingRiggedGreen
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: uplinkRiggedBoxingGlovesYellow
-  name: uplink-rigged-boxing-gloves-name
-  description: uplink-rigged-boxing-gloves-desc
-  icon: { sprite: Clothing/Hands/Gloves/Boxing/boxingyellow.rsi, state: icon }
-  productEntity: ClothingHandsGlovesBoxingRiggedYellow
+  icon: { sprite: _Goobstation/Objects/Devices/unique_teleporters.rsi, state: standard }
+  productEntity: UndeterminedSelectorBoxingRigged
   cost:
     Telecrystal: 20
   categories:

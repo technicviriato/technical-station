@@ -1,0 +1,15 @@
+﻿- type: entity
+  id: UndeterminedSelectorBoxingRigged
+  name: boxing gloves selector
+  description: A small remote utilizing bluespace technology to drop in a pair of rigged boxing gloves of your choosing.
+  parent: [ BaseItem, BaseSetSelector, BaseSyndicateContraband ]
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/unique_teleporters.rsi
+    state: standard
+  - type: SetSelector
+    possibleSets:
+    - UndeterminedSelectorBoxingBlue
+    - UndeterminedSelectorBoxingGreen
+    - UndeterminedSelectorBoxingRed
+    - UndeterminedSelectorBoxingYellow
