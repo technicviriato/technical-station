@@ -56,14 +56,3 @@
     whitelist:
       tags:
       - NukeOpsUplink
-
-- type: listing
-  id: UplinkUndeterminedSelectorBoxingRigged
-  name: uplink-rigged-boxing-gloves-name
-  description: uplink-rigged-boxing-gloves-desc
-  icon: { sprite: _Goobstation/Objects/Devices/unique_teleporters.rsi, state: standard }
-  productEntity: UndeterminedSelectorBoxingRigged
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWeaponry
