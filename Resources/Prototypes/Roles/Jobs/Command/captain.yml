@@ -38,11 +38,11 @@
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
-      # <Trauma>
-      - type: Condemned # Nanotrasen owns your soul pal.
-        soulOwnedNotDevil: true
-      # </Trauma>
-      - type: CommandStaff
+    # <Trauma>
+    - type: Condemned # Nanotrasen owns your soul pal.
+      soulOwnedNotDevil: true
+    # </Trauma>
+    - type: CommandStaff
 
 - type: startingGear
   id: CaptainGear
