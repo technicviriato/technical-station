@@ -8,7 +8,7 @@
     solution:
       reagents:
       - ReagentId: CocoaPowder
-        Quantity: 2
+        Quantity: 5
   - type: Icon
     state: packet-soysauce
   - type: Appearance
