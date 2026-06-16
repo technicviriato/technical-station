@@ -221,14 +221,14 @@
       types:
         Heat: 0
   - type: SolutionInjectOnProjectileHit
-    transferAmount: 2
+    transferAmount: 1.5
     solution: ammo
   - type: Solution
     id: ammo
     solution:
       reagents:
       - ReagentId: Haloperidol
-        Quantity: 2
+        Quantity: 1.5
   - type: BlurOnCollide
 
 - type: entity
