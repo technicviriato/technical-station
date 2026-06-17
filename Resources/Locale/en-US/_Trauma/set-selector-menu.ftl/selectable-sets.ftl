@@ -41,15 +41,3 @@ selectable-set-syndicate-door-kicker-description =
     syndicate operative pda, web vest, chest rig, syndicate gas mask,
     syndicate jaws of death, 'bojevic' combat shotgun, shell box,
     syndicate encryption key, and two C-4.
-
-undetermined-selector-boxing-blue-name = Blue Rigged Boxing Gloves
-undetermined-selector-boxing-blue-description = Blue gloves for competitive boxing.
-
-undetermined-selector-boxing-green-name = Green Rigged Boxing Gloves
-undetermined-selector-boxing-green-description = Green gloves for competitive boxing.
-
-undetermined-selector-boxing-red-name = Red Rigged Boxing Gloves
-undetermined-selector-boxing-red-description = Red gloves for competitive boxing.
-
-undetermined-selector-boxing-yellow-name = Yellow Rigged Boxing Gloves
-undetermined-selector-boxing-yellow-description = Yellow gloves for competitive boxing.
