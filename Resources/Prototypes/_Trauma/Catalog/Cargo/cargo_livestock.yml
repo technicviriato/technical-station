@@ -1,4 +1,6 @@
-﻿- type: cargoProduct
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: cargoProduct
   id: LivestockBunny
   icon:
     sprite: _Trauma/Mobs/Animals/bunny.rsi
