@@ -23,6 +23,12 @@
   components:
   - type: Sprite
     sprite: _Trauma/Mobs/Animals/bear.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: bear
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
 
 - type: entity
   parent: MobKangarooSpace
@@ -34,6 +40,9 @@
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: squid
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
   - type: DamageStateVisuals
     states:
       Alive:
@@ -55,6 +64,9 @@
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: spider_crab
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
   - type: DamageStateVisuals
     states:
       Alive:

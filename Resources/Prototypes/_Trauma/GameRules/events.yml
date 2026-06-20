@@ -246,6 +246,24 @@
       - id: MobBunny
       - id: MobBunnySea
       - id: MobBunnyEvil
+- type: entity
+  parent: BaseStationEventShortDelay
+  id: SpiderCrabSpawn
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-horde-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    earliestStart: 20
+    minimumPlayers: 30
+    weight: 2
+    duration: 5
+    maxDuration: 20
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: 4, 8
+      children:
+      - id: MobSpiderCrabSea
 
 - type: entity
   parent: BaseAntagGhostRoleRule
