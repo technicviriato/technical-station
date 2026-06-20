@@ -9,7 +9,7 @@
   group: market
 
 - type: cargoProduct
-  id: LivestockSnake
+  id: LivestockSnakeGrass
   icon:
     sprite: _Trauma/Mobs/Animals/grass_snake.rsi
     state: grass_snake
