@@ -915,6 +915,29 @@
       deleteSpawnerAfterSpawn: false
       table: !type:GroupSelector
         children:
+        # <Trauma>
+        - id: MobSnakeGrass
+          amount: !type:RangeNumberSelector
+            range: 1, 3
+        - id: MobBunny
+          amount: !type:RangeNumberSelector
+            range: 1, 3
+        - id: MobBunnySea
+          amount: !type:RangeNumberSelector
+            range: 1, 3
+        - id: MobSnake
+          amount: !type:RangeNumberSelector
+            range: 1, 3
+        - id: MobDartFrog1
+          amount: !type:RangeNumberSelector
+            range: 1, 2
+        - id: MobDartFrog3
+          amount: !type:RangeNumberSelector
+            range: 1, 2
+        - id: MobDartFrog6
+          amount: !type:RangeNumberSelector
+            range: 1, 2
+        # </Trauma>
         - id: MobMouse
         - id: MobPig
         - id: MobParrot
@@ -943,27 +966,6 @@
             range: 1, 3
         - id: MobMonkeySyndicateAgent #so lucky
           prob: 0.03
-        - id: MobSnakeGrass
-          amount: !type:RangeNumberSelector
-            range: 1, 3
-        - id: MobBunny
-          amount: !type:RangeNumberSelector
-            range: 1, 3
-        - id: MobBunnySea
-          amount: !type:RangeNumberSelector
-            range: 1, 3
-        - id: MobSnake
-          amount: !type:RangeNumberSelector
-            range: 1, 3
-        - id: MobDartFrog1
-          amount: !type:RangeNumberSelector
-            range: 1, 2
-        - id: MobDartFrog3
-          amount: !type:RangeNumberSelector
-            range: 1, 2
-        - id: MobDartFrog6
-          amount: !type:RangeNumberSelector
-            range: 1, 2
 
 - type: entity
   id: XenoArtifactHostileFaunaSpawn
