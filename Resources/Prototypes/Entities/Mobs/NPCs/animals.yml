@@ -1614,6 +1614,7 @@
   parent: [ AppearanceMonkey, MobBaseAncestor ] # Shitmed
   description: New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
   suffix: syndicate base
+  abstract: true # Trauma
   components:
   # <Trauma>
   - type: KnowledgeHolder
@@ -1779,6 +1780,7 @@
   id: MobBaseSyndicateKobold
   parent: MobBaseKobold
   suffix: syndicate base
+  abstract: true # Trauma
   components:
   - type: MobThresholds
     thresholds:
