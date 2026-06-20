@@ -169,7 +169,7 @@
     - Carp
     - DoorBumpOpener
     - CannotSuicide
-  - type: LanguageSpeaker 
+  - type: LanguageSpeaker
     speaks:
     - Carptongue
     understands:
