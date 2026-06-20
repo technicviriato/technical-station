@@ -66,7 +66,7 @@
       effectProto: WeatherSchedulerRadiationStorm
       time: null # it removes itself when done
 
-- type:
+- type: entity
   parent: BaseStationEventShortDelay
   id: RatmaSpawn
   components:
