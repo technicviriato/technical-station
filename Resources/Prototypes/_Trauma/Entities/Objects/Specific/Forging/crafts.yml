@@ -61,7 +61,6 @@
   parent: [ BaseForgedProduct, KitchenKnife ]
   id: ForgedKnife
   name: knife
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/knifeblade.rsi
@@ -72,7 +71,6 @@
   parent: [ BaseForgedProduct, ButchCleaver ]
   id: ForgedCleaver
   name: cleaver
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/cleaver.rsi
@@ -82,7 +80,6 @@
 - type: entity
   parent: [ BaseForgedProduct, CombatKnife ]
   id: ForgedCombatKnife
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/combatknife.rsi
@@ -95,7 +92,6 @@
 - type: entity
   parent: [ BaseForgedProduct, KukriKnife ]
   id: ForgedKukriKnife
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/kukri.rsi
@@ -105,7 +101,6 @@
 - type: entity
   parent: [ BaseForgedProduct, SurvivalKnife, BaseMetallicProcGen ]
   id: ForgedSurvivalKnife
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/survival_knife.rsi
@@ -120,7 +115,6 @@
 - type: entity
   parent: [ BaseForgedProduct, MeleeHammer ]
   id: ForgedHammer
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/hammerhead.rsi
@@ -130,7 +124,6 @@
 - type: entity
   parent: [ BaseForgedProduct, BaseScrewdriver ]
   id: ForgedScrewdriver
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/screwdriver.rsi
@@ -146,7 +139,6 @@
   parent: [ BaseForgedProductCrossGuard, BaseSword ]
   id: ForgedSword
   name: arming sword
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/sword_blade.rsi
@@ -183,7 +175,6 @@
   id: ForgedHalberd
   name: halberd
   description: A powerful polearm with an oddly shaped head.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/halberd_head.rsi
@@ -207,8 +198,7 @@
   parent: [ BaseForgedProductSeparateHead, BaseSword ]
   id: ForgedLongsword
   name: longsword
-  description: "It's like a sword, but longer. Needs two hands to wield properly."
-  categories: [ HideSpawnMenu ]
+  description: It's like a sword, but longer. Needs two hands to wield properly.
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/longsword_blade.rsi
@@ -248,7 +238,6 @@
   id: ForgedWarhammer
   name: warhammer
   description: Every dwarf's gotta have one of these, or maybe forty thousand of them.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/warhammer_head.rsi
@@ -272,13 +261,15 @@
     qualities:
     - Prying
     - Hammering
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Prying
 
 # Pickaxe
 
 - type: entity
   parent: [ BaseForgedProductSeparateHead, Pickaxe ]
   id: ForgedPickaxe
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/pickaxe_head.rsi
@@ -292,7 +283,6 @@
   id: ForgedKatana
   name: katana
   description: While they were out partying, I practiced the blade.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/thin_blade.rsi
@@ -322,7 +312,6 @@
   parent: [ BaseMetallicProcGen, BaseArrow ]
   id: ForgedArrow
   name: arrow
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -346,7 +335,6 @@
 - type: entity
   parent: [ BaseForgedProductSeparateHead, Spear ]
   id: ForgedSpear
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/spear_head.rsi
@@ -371,7 +359,6 @@
   id: ForgedMorningstar
   name: morningstar
   description: You REALLY don't want to get your skull caved in by this...
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Trauma/Objects/Specific/Forging/Unfinished/morningstar_head.rsi
