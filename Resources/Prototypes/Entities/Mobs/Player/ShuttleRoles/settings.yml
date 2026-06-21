@@ -934,7 +934,7 @@
       roleLoadout: [ RoleSurvivalStandard ]
     # <Trauma>
     - type: AutoTraitor
-      profile: TraitorReinforcementlackmarketeer
+      profile: TraitorReinforcementBlackmarketeer
     # </Trauma>
 
 - type: randomHumanoidSettings
