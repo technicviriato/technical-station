@@ -149,7 +149,7 @@
   - type: AntagPlayerEffects
     effects:
     - !type:InstallOrganChip
-      chip: SkillChipSyndiePirateScooner
+      chip: SkillChipPirateScooner
 
 - type: entity
   parent: TraitorReinforcement
@@ -158,7 +158,7 @@
   - type: AntagPlayerEffects
     effects:
     - !type:InstallOrganChip
-      chip: SkillChipSyndieBlackmarketeer
+      chip: SkillChipBlackmarketeer
 
 - type: entity
   parent: TraitorReinforcement
@@ -167,4 +167,4 @@
   - type: AntagPlayerEffects
     effects:
     - !type:InstallOrganChip
-      chip: SkillChipSyndieCossack
+      chip: SkillChipCossack
