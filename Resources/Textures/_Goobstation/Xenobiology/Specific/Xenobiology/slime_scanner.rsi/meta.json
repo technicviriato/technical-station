@@ -4,7 +4,7 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
+    "license": "CC BY-NC-SA 3.0 US",
     "copyright": "Made by whateverusername0 (github) for Space Station 14 taking health analyzer as base. Health analyzer taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f07f847706d85b7cfa4b398e5175732212b69a63",
     "states": [
         {
