@@ -59,9 +59,9 @@
     endSound: /Audio/_Impstation/Items/Decapoid/claw_prying.ogg
 
 - type: entity
-  name: vaporizer
   parent: ClothingMaskGas
-  id: ClothingNeckMaskGasBreathingApparatus
+  id: ClothingNeckDecapoidVaporizer
+  name: vaporizer
   description: A neck-mounted breathing apparatus for Decapoids. Moistens your gills, if you have them. Also functions as a brain-to-voice translator.
   components:
   - type: Sprite

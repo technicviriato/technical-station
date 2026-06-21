@@ -17,7 +17,7 @@
   ## Breathing Requirements
 
   <Box>
-    <GuideEntityEmbed Entity="ClothingNeckMaskGasBreathingApparatus" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingNeckDecapoidVaporizer" Caption=""/>
     <GuideEntityEmbed Entity="VaporTank" Caption=""/>
   </Box>
 
