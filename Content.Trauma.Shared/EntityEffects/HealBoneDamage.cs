@@ -28,9 +28,6 @@ public sealed partial class HealBoneDamageEntityEffectSystem : EntityEffectSyste
 /// </summary>
 public sealed partial class HealBoneDamage : EntityEffectBase<HealBoneDamage>
 {
-    /// <summary>
-    /// Amount of bone integrity restored.
-    /// </summary>
     [DataField]
     public float Amount = 1.0f;
 
