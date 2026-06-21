@@ -9,9 +9,21 @@ using Content.Shared.FixedPoint;
 namespace Content.Trauma.Shared.EntityEffects;
 
 /// <summary>
+/// Used in yaml to set how much bone damage a reagent or chemical heals.
+/// </summary>
+public sealed partial class HealBoneDamage : EntityEffectBase<HealBoneDamage>
+{
+    [DataField]
+    public float Amount = 1.0f;
+
+    public override string EntityEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
+        => Loc.GetString("entity-effect-guidebook-heal-bone-damage", ("chance", Probability));
+}
+
+/// <summary>
 /// Heals bone damage on every body part with a bone.
 /// </summary>
-public sealed partial class HealBoneDamageEntityEffectSystem : EntityEffectSystem<BodyComponent, HealBoneDamage>
+public sealed partial class HealBoneDamageEffectSystem : EntityEffectSystem<BodyComponent, HealBoneDamage>
 {
     [Dependency] private TraumaSystem _trauma = default!;
     [Dependency] private BodySystem _body = default!;
@@ -23,16 +35,4 @@ public sealed partial class HealBoneDamageEntityEffectSystem : EntityEffectSyste
         foreach (var woundable in _body.GetOrgans<WoundableComponent>(entity.Owner))
             _trauma.HealBone(woundable, amount);
     }
-}
-
-/// <summary>
-/// Used in yaml to set how much bone damage a reagent or chemical heals.
-/// </summary>
-public sealed partial class HealBoneDamage : EntityEffectBase<HealBoneDamage>
-{
-    [DataField]
-    public float Amount = 1.0f;
-
-    public override string EntityEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
-        => Loc.GetString("entity-effect-guidebook-heal-bone-damage", ("chance", Probability));
 }
