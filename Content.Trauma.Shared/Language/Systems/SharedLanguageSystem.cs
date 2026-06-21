@@ -203,6 +203,7 @@ public abstract partial class SharedLanguageSystem : CommonLanguageSystem
             ent.Comp.Speaks.Remove(language);
         if (removeUnderstood)
             ent.Comp.Understands.Remove(language);
+        EnsureValidLanguage(ent!);
         Dirty(ent);
     }
 

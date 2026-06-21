@@ -172,7 +172,7 @@ public abstract partial class SharedKnowledgeSystem
         else
         {
             langComp.Speaks = !args.RemoveSpoken;
-            langComp.Understands = !args.RemoveSpoken;
+            langComp.Understands = !args.RemoveUnderstood;
             Dirty(unit, langComp);
         }
 
