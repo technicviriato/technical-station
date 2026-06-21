@@ -159,7 +159,7 @@
   container:
     entity: WrappedParcel
     containerId: contents
-  cost: 5000 # Trauma - was 1200, increased due to skillchips being included
+  cost: 7500 # Trauma - was 1200, increased due to skillchips being included
   category: cargoproduct-category-name-service
   group: market
 
