@@ -275,8 +275,6 @@
       0: Alive
       30: Critical
       60: Dead
-  - type: Stamina
-    baseCritThreshold: 30
   - type: DamageStateVisuals
     states:
       Alive:
