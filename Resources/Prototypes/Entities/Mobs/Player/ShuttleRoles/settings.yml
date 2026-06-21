@@ -804,6 +804,13 @@
   id: SyndieSoldierTeamLeader
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieSoldierTeamLeader
+    # </Trauma>
     - type: NpcFactionMember
       factions:
       - Syndicate
@@ -819,16 +826,18 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierTeamLeaderGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipSyndieSoldierTeamLeader
 
 - type: randomHumanoidSettings
   id: SyndieSoldier
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieSoldier
+    # </Trauma>
     - type: NpcFactionMember
       factions:
       - Syndicate
@@ -844,16 +853,18 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipSyndieSoldier
 
 - type: randomHumanoidSettings
   id: SyndieVisitor
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieVisitor
+    # </Trauma>
     - type: NpcFactionMember
       factions:
       - Syndicate
@@ -866,16 +877,18 @@
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipSyndieVisitor
 
 - type: randomHumanoidSettings
   id: PirateScooner
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipPirateScooner
+    # </Trauma>
     - type: NpcFactionMember
       factions:
       - Syndicate
@@ -890,16 +903,18 @@
     - type: Loadout
       prototypes: [ PirateScoonerAltA, PirateScoonerAltB, PirateScoonerAltC, PirateScoonerAltD ]
       roleLoadout: [ RoleSurvivalEVA ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipPirateScooner
 
 - type: randomHumanoidSettings
   id: PirateCaptainScooner
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipPirateCaptainScooner
+    # </Trauma>
     - type: NpcFactionMember
       factions:
       - Syndicate
@@ -914,11 +929,6 @@
     - type: Loadout
       prototypes: [ PirateCaptainScooner ]
       roleLoadout: [ RoleSurvivalEVA ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipPirateCaptainScooner
 
 ### Other
 
@@ -926,6 +936,13 @@
   id: VisitorBlackmarketeer
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipBlackmarketeer
+    # </Trauma>
     - type: GhostRole
       name: ghost-role-information-blackmarketeer-name
       description: ghost-role-information-blackmarketeer-description
@@ -937,16 +954,18 @@
     - type: Loadout
       prototypes: [ VisitorBlackmarketeer, VisitorBlackmarketeer ]
       roleLoadout: [ RoleSurvivalStandard ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipBlackmarketeer
 
 - type: randomHumanoidSettings
   id: Cossack
   parent: EventHumanoid
   components:
+    # <Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipCossack
+    # </Trauma>
     - type: RussianAccent
     - type: ScrambledAccent
     - type: SlurredAccent
@@ -962,8 +981,3 @@
     - type: Loadout
       prototypes: [ CossackGear ]
       roleLoadout: [ RoleSurvivalEVA ]
-    - type: TriggerOnSpawn
-    - type: EntityEffectOnTrigger
-      effects:
-      - !type:InstallOrganChip
-        chip: SkillChipCossack
