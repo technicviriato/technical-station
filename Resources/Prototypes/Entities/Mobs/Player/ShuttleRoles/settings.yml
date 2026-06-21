@@ -819,10 +819,11 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierTeamLeaderGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementSyndieSoldierTeamLeader
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieSoldierTeamLeader
 
 - type: randomHumanoidSettings
   id: SyndieSoldier
@@ -843,10 +844,11 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementSyndieSoldier
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieSoldier
 
 - type: randomHumanoidSettings
   id: SyndieVisitor
@@ -864,10 +866,11 @@
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
       roleLoadout: [ RoleSurvivalSyndicate ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementSyndieVisitor
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipSyndieVisitor
 
 - type: randomHumanoidSettings
   id: PirateScooner
@@ -887,10 +890,11 @@
     - type: Loadout
       prototypes: [ PirateScoonerAltA, PirateScoonerAltB, PirateScoonerAltC, PirateScoonerAltD ]
       roleLoadout: [ RoleSurvivalEVA ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementPirateScooner
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipPirateScooner
 
 - type: randomHumanoidSettings
   id: PirateCaptainScooner
@@ -910,10 +914,11 @@
     - type: Loadout
       prototypes: [ PirateCaptainScooner ]
       roleLoadout: [ RoleSurvivalEVA ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementPirateCaptainScooner
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipPirateCaptainScooner
 
 ### Other
 
@@ -932,10 +937,11 @@
     - type: Loadout
       prototypes: [ VisitorBlackmarketeer, VisitorBlackmarketeer ]
       roleLoadout: [ RoleSurvivalStandard ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementBlackmarketeer
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipBlackmarketeer
 
 - type: randomHumanoidSettings
   id: Cossack
@@ -956,7 +962,8 @@
     - type: Loadout
       prototypes: [ CossackGear ]
       roleLoadout: [ RoleSurvivalEVA ]
-    # <Trauma>
-    - type: AutoTraitor
-      profile: TraitorReinforcementCossack
-    # </Trauma>
+    - type: TriggerOnSpawn
+    - type: EntityEffectOnTrigger
+      effects:
+      - !type:InstallOrganChip
+        chip: SkillChipCossack
