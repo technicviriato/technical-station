@@ -819,6 +819,10 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierTeamLeaderGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementSyndieSoldierTeamLeader
+    # </Trauma>
 
 - type: randomHumanoidSettings
   id: SyndieSoldier
@@ -839,6 +843,10 @@
     - type: Loadout
       prototypes: [ SyndicateFootsoldierGear ]
       roleLoadout: [ RoleSurvivalSyndicate ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementSyndieSoldier
+    # </Trauma>
 
 - type: randomHumanoidSettings
   id: SyndieVisitor
@@ -856,6 +864,10 @@
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
       roleLoadout: [ RoleSurvivalSyndicate ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementSyndieVisitor
+    # </Trauma>
 
 - type: randomHumanoidSettings
   id: PirateScooner
@@ -875,6 +887,10 @@
     - type: Loadout
       prototypes: [ PirateScoonerAltA, PirateScoonerAltB, PirateScoonerAltC, PirateScoonerAltD ]
       roleLoadout: [ RoleSurvivalEVA ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementPirateScooner
+    # </Trauma>
 
 - type: randomHumanoidSettings
   id: PirateCaptainScooner
@@ -894,6 +910,10 @@
     - type: Loadout
       prototypes: [ PirateCaptainScooner ]
       roleLoadout: [ RoleSurvivalEVA ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementPirateCaptainScooner
+    # </Trauma>
 
 ### Other
 
@@ -912,6 +932,10 @@
     - type: Loadout
       prototypes: [ VisitorBlackmarketeer, VisitorBlackmarketeer ]
       roleLoadout: [ RoleSurvivalStandard ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementlackmarketeer
+    # </Trauma>
 
 - type: randomHumanoidSettings
   id: Cossack
@@ -932,3 +956,7 @@
     - type: Loadout
       prototypes: [ CossackGear ]
       roleLoadout: [ RoleSurvivalEVA ]
+    # <Trauma>
+    - type: AutoTraitor
+      profile: TraitorReinforcementCossack
+    # </Trauma>
