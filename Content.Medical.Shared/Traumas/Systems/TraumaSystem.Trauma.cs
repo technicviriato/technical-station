@@ -1,4 +1,6 @@
-﻿using Content.Medical.Shared.Wounds;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Medical.Shared.Wounds;
 using Content.Shared.FixedPoint;
 
 namespace Content.Medical.Shared.Traumas;

@@ -1,4 +1,6 @@
-﻿using Content.Medical.Shared.Traumas;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Medical.Shared.Traumas;
 using Content.Medical.Shared.Wounds;
 using Content.Shared.Body;
 using Content.Shared.EntityEffects;
