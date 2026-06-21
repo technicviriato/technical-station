@@ -90,7 +90,7 @@
 
 - type: entity
   parent: GasTankRoundBase
-  id: VaporTank
+  id: DecapoidVaporTank
   name: vapor tank
   suffix: Filled
   description: An alien contraption consisting of two tanks. The smaller tank takes in water and converts it into vapor, which is stored in the larger tank. It can hold 5 L of gas, and 30u of fluid.
