@@ -64911,7 +64911,7 @@ entities:
     - type: Transform
       pos: 30.5,-47.5
       parent: 2
-- proto: DecapoidVaporTank
+- proto: VaporTank
   entities:
   - uid: 25672
     components:
