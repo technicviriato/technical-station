@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Whitelist;
 
