@@ -217,7 +217,7 @@ public abstract partial class SharedLanguageSystem : CommonLanguageSystem
         if (!Resolve(ent, ref ent.Comp, false))
             return false;
 
-        if (!ent.Comp!.Speaks.Contains(ent.Comp.CurrentLanguage))
+        if (!ent.Comp.Speaks.Contains(ent.Comp.CurrentLanguage))
         {
             ent.Comp.CurrentLanguage = ent.Comp.Speaks.FirstOrDefault(UniversalPrototype);
             Dirty(ent);
