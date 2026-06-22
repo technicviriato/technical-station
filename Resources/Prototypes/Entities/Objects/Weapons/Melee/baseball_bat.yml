@@ -29,7 +29,7 @@
   - type: Item
     size: Normal
     shape:
-    - 0,0,3,0
+    - 0,0,0,3
     storedRotation: 90 # Trauma
     storedSprite:
       state: storage
