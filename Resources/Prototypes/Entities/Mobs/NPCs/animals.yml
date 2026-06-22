@@ -2691,7 +2691,7 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomSpider
-#  - type: SolutionRegeneration
+#  - type: SolutionRegeneration Trauma
 #    generated:
 #      reagents:
 #      - ReagentId: Mechanotoxin
