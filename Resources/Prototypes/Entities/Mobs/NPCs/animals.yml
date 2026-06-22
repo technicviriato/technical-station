@@ -2687,7 +2687,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      90: Dead
+      120: Dead # Trauma - was 90
   - type: SolutionManager
     solutions:
     - SolutionVenomSpider
@@ -2766,6 +2766,14 @@
   parent: [SolutionWeapon, SolutionTiny]
   id: SolutionVenomSpider
   categories: [ HideSpawnMenu ]
+  # <Trauma>
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Mechanotoxin
+        Quantity: 30
+  # </Trauma>
 
 - type: entity
   parent: MobSpiderBase
