@@ -1,5 +1,4 @@
 // <Trauma>
-using System.Linq;
 using Content.Shared.Emag.Systems;
 // </Trauma>
 using System.Numerics;
@@ -52,8 +51,9 @@ public abstract partial class SharedFultonSystem : EntitySystem
         SubscribeLocalEvent<FultonComponent, AfterInteractEvent>(OnFultonInteract);
 
         SubscribeLocalEvent<FultonComponent, StackSplitEvent>(OnFultonSplit);
-        
+        // <Trauma>
         SubscribeLocalEvent<FultonComponent, GotEmaggedEvent>(OnEmagged);
+        // </Trauma>
     }
 
     private void OnFultonContainerInserted(EntityUid uid, FultonedComponent component, EntGotInsertedIntoContainerMessage args)
@@ -202,23 +202,6 @@ public abstract partial class SharedFultonSystem : EntitySystem
         return true;
     }
 
-    private void OnEmagged(EntityUid ent, FultonComponent comp, ref GotEmaggedEvent args)
-    {
-        ChangeWhitelistToEvac(comp, "MindContainer");
-        _popup.PopupClient(Loc.GetString("fulton-emagged"), ent);
-        Dirty(ent, comp);
-        args.Handled = true;
-    }
-
-
-    // Adding new Comp to whitelist for evac
-    protected void ChangeWhitelistToEvac(FultonComponent comp, string nameComp)
-    {
-        comp.Whitelist ??= new EntityWhitelist();
-        comp.Whitelist.Components = (comp.Whitelist.Components ?? Array.Empty<string>())
-            .Union(new[] { nameComp })
-            .ToArray();
-    }
     [Serializable, NetSerializable]
     private sealed partial class FultonedDoAfterEvent : SimpleDoAfterEvent
     {
