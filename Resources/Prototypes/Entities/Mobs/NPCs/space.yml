@@ -300,6 +300,13 @@
       reagents:
       - ReagentId: ChloralHydrate
         Quantity: 30
+  # <Trauma>
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: ChloralHydrate
+      Quantity: 2
+  # </Trauma>
 
 - type: entity
   id: MobSpiderSpaceSalvage
@@ -424,6 +431,13 @@
       reagents:
       - ReagentId: NorepinephricAcid
         Quantity: 30
+  # <Trauma>
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: NorepinephricAcid
+        Quantity: 3
+  # </Trauma>
 
 - type: entity
   id: MobCobraSpaceSalvage

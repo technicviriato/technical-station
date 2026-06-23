@@ -2792,7 +2792,7 @@
     generated:
       reagents:
       - ReagentId: Mechanotoxin
-        Quantity: 1
+        Quantity: 0.75
   # </Trauma>
 
 - type: entity
