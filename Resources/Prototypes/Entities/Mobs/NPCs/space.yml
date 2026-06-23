@@ -295,11 +295,6 @@
   id: SolutionVenomSpiderSpace
   categories: [ HideSpawnMenu ]
   components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: ChloralHydrate
-        Quantity: 30
   # <Trauma>
   - type: SolutionRegeneration
     generated:
@@ -307,6 +302,11 @@
       - ReagentId: ChloralHydrate
       Quantity: 2
   # </Trauma>
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ChloralHydrate
+        Quantity: 30
 
 - type: entity
   id: MobSpiderSpaceSalvage

@@ -2050,23 +2050,6 @@
       Taco: RatTaco
       Burger: RatBurger
       Skewer: RatSkewer
-# <Trauma>
-- type: entity
-  parent: [ SolutionWeapon, SolutionTiny ]
-  id: SolutionMouseBites
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: MouseBites
-        Quantity: 5
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-      - ReagentId: MouseBites
-        Quantity: 1
-# </Trauma>
 
 - type: entity
   abstract: true
@@ -2706,7 +2689,7 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomSpider
-#  - type: SolutionRegeneration Trauma
+#  - type: SolutionRegeneration # Trauma - moved to solution SolutionVenomSpider
 #    generated:
 #      reagents:
 #      - ReagentId: Mechanotoxin

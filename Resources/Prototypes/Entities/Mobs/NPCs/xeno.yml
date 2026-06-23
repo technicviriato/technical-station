@@ -55,8 +55,8 @@
     solutions:
     - SolutionVenomPurpleSnake
   - type: MeleeChemicalInjector
-    solution: melee
     transferAmount: 5 # Trauma
+    solution: melee
   - type: Fixtures
     fixtures:
       fix1:

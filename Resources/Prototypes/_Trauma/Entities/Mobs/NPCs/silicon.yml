@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: [SolutionSpray, SolutionSmall]
+  id: SolutionFireExtinguisherBot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 60
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 10
