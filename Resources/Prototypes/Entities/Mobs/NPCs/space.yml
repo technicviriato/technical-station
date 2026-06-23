@@ -426,11 +426,6 @@
   id: SolutionVenomCobraSpace
   categories: [ HideSpawnMenu ]
   components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: NorepinephricAcid
-        Quantity: 30
   # <Trauma>
   - type: SolutionRegeneration
     generated:
@@ -438,6 +433,11 @@
       - ReagentId: NorepinephricAcid
         Quantity: 3
   # </Trauma>
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: NorepinephricAcid
+        Quantity: 30
 
 - type: entity
   id: MobCobraSpaceSalvage
