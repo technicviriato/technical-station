@@ -1,4 +1,6 @@
-﻿using Content.Shared.DoAfter;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Strip.Components;
@@ -18,19 +20,19 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        
+
         SubscribeLocalEvent<ActiveStrippingComponent, DoAfterAttemptEvent<StrippableDoAfterEvent>>(OnStripAttempt);
         SubscribeLocalEvent<ActiveStrippingComponent, StrippableDoAfterEvent>(OnStripDoAfterFinished);
         SubscribeLocalEvent<HandsComponent, BeforeStripEvent>(OnBeforeStripEnsureComp);
 
         InitializeBagAccess();
     }
-    
+
     private void OnBeforeStripEnsureComp(Entity<HandsComponent> user, ref BeforeStripEvent args)
     {
         EnsureComp<ActiveStrippingComponent>(user.Owner);
     }
-    
+
     private void OnStripAttempt(Entity<ActiveStrippingComponent> user, ref DoAfterAttemptEvent<StrippableDoAfterEvent> args)
     {
         // Only limit removals, inserting items back doesn't require a free hand slot.
