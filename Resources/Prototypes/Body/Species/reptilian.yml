@@ -64,6 +64,9 @@
   categories: [ HideSpawnMenu ]
   name: reptilian appearance
   components:
+  # <Trauma>
+  - type: BagAccess
+  # </Trauma>
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:

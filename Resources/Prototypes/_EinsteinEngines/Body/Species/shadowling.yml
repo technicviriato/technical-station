@@ -21,6 +21,7 @@
   id: AppearanceShadowling
   name: shadowling appearance
   components:
+  - type: BagAccess
   - type: InitialBody
     organs:
       # Parts

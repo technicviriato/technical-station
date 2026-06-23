@@ -43,6 +43,9 @@
   id: MobGingerbread
   name: Urist McCookie
   components:
+  # <Trauma>
+  - type: BagAccess
+  # </Trauma>
   - type: Butcherable
     spawned:
     - id: FoodBakedCookie

@@ -46,6 +46,7 @@
   name: Urist McHands the Dwarf
   components:
   # <Trauma>
+  - type: BagAccess
   - type: Mutatable # dwarves have dwarfism
     defaultMutations:
       MutationDwarfism: 1.0

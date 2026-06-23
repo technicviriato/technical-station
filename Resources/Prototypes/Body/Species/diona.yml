@@ -74,6 +74,7 @@
   name: Urist McPlants
   components:
   # <Trauma>
+  - type: BagAccess
   - type: LanguageSpeaker
     speaks:
     - TauCetiBasic
