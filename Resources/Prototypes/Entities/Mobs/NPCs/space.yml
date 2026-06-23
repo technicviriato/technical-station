@@ -300,7 +300,7 @@
     generated:
       reagents:
       - ReagentId: ChloralHydrate
-      Quantity: 2
+        Quantity: 2
   # </Trauma>
   - type: Solution
     solution:
