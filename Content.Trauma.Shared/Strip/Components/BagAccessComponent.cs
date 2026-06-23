@@ -4,7 +4,7 @@
 /// Allows direct bag/pocket access verbs on this entity when being stripped.
 /// Doafter delays scale with the target's state.
 /// </summary>
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class BagAccessComponent : Component
 {
     /// <summary>

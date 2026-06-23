@@ -18,19 +18,21 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        
+
         SubscribeLocalEvent<ActiveStrippingComponent, DoAfterAttemptEvent<StrippableDoAfterEvent>>(OnStripAttempt);
         SubscribeLocalEvent<ActiveStrippingComponent, StrippableDoAfterEvent>(OnStripDoAfterFinished);
         SubscribeLocalEvent<HandsComponent, BeforeStripEvent>(OnBeforeStripEnsureComp);
 
         InitializeBagAccess();
     }
-    
+
     private void OnBeforeStripEnsureComp(Entity<HandsComponent> user, ref BeforeStripEvent args)
     {
-        EnsureComp<ActiveStrippingComponent>(user.Owner);
+        var active = EnsureComp<ActiveStrippingComponent>(user.Owner);
+        active.ActiveCount++;
+        Dirty(user.Owner, active);
     }
-    
+
     private void OnStripAttempt(Entity<ActiveStrippingComponent> user, ref DoAfterAttemptEvent<StrippableDoAfterEvent> args)
     {
         // Only limit removals, inserting items back doesn't require a free hand slot.
@@ -40,25 +42,8 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
         if (!TryComp<HandsComponent>(user.Owner, out var hands))
             return;
 
-        var freeHands = CountFreeHands((user.Owner, hands));
-
-        if (!user.Comp.TrackedDoAfters.Contains(args.DoAfter.Index))
-        {
-            if (user.Comp.ActiveCount >= freeHands)
-            {
-                args.Cancel();
-                return;
-            }
-
-            user.Comp.TrackedDoAfters.Add(args.DoAfter.Index);
-            user.Comp.ActiveCount++;
-            Dirty(user.Owner, user.Comp);
-        }
-        else
-        {
-            if (user.Comp.ActiveCount > freeHands)
-                args.Cancel();
-        }
+        if (user.Comp.ActiveCount > CountFreeHands((user.Owner, hands)))
+            args.Cancel();
     }
 
     private void OnStripDoAfterFinished(Entity<ActiveStrippingComponent> user, ref StrippableDoAfterEvent args)
@@ -66,7 +51,6 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
         if (args.InsertOrRemove)
             return;
 
-        user.Comp.TrackedDoAfters.Remove(args.DoAfter.Index);
         DecrementActiveCount(user);
     }
 

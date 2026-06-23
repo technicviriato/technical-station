@@ -80,6 +80,9 @@
   id: MobArachnid
   name: Urist McWebs
   components:
+  # <Trauma>
+  - type: BagAccess
+  # </Trauma>
   - type: Respirator
     damage:
       types:
