@@ -9,6 +9,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
+using Content.Shared.Strip;
 using Content.Shared.Strip.Components;
 using Content.Shared.Verbs;
 using Content.Trauma.Shared.Strip.Components;
@@ -23,6 +24,7 @@ public sealed partial class TraumaStrippingSystem
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private SharedUserInterfaceSystem _ui = default!;
     [Dependency] private SharedStorageSystem _storage = default!;
+    [Dependency] private SharedStrippableSystem _strippableSystem = default!;
 
     private EntityQuery<StorageComponent> _storageQuery;
     private EntityQuery<HandsComponent> _handsQuery;
@@ -86,12 +88,13 @@ public sealed partial class TraumaStrippingSystem
     private void StartBagAccess(EntityUid user, Entity<BagAccessComponent> target, string slotName, NetEntity netBagEntity)
     {
         var delay = GetBagAccessDelay(target);
+        var (_, stealth) = _strippableSystem.GetStripTimeModifiers(user, target.Owner, null, TimeSpan.Zero);
 
         var doAfterArgs = new DoAfterArgs(
             EntityManager,
             user,
             delay,
-            new BagAccessDoAfterEvent(slotName, netBagEntity),
+            new BagAccessDoAfterEvent(slotName, netBagEntity, stealth),
             eventTarget: target.Owner,
             target: target.Owner,
             used: null)
@@ -101,12 +104,13 @@ public sealed partial class TraumaStrippingSystem
             NeedHand = true,
             AttemptFrequency = AttemptFrequency.EveryTick,
             DuplicateCondition = DuplicateConditions.SameTool,
+            Hidden = stealth,
         };
 
         _doAfter.TryStartDoAfter(doAfterArgs);
 
         // Notify alive, uncuffed targets when the doafter starts.
-        if (!_mobState.IsDead(target.Owner))
+        if (!stealth && !_mobState.IsDead(target.Owner))
         {
             if (!_cuffableQuery.TryComp(target.Owner, out var cuffable) || cuffable.CuffedHandCount == 0)
             {
@@ -144,7 +148,7 @@ public sealed partial class TraumaStrippingSystem
 
         // Temporarily bypass UI range checks so the user can open a bag they aren't holding.
         EnsureComp<IgnoreUIRangeComponent>(args.User);
-        _storage.OpenStorageUI(bagEntity, args.User, storage, false);
+        _storage.OpenStorageUI(bagEntity, args.User, storage, args.Stealth);
         // Don't remove IgnoreUIRangeComponent yet, remove it when the UI closes.
         var activeComp = EnsureComp<ActiveStrippingComponent>(args.User);
         activeComp.BagAccessOpenedStorages.Add(bagEntity);
