@@ -10582,8 +10582,6 @@ Entries:
   - type: Add
     message: Security Ballistic Surplus crate to armory.
   - type: Add
-    message: Complete
-  - type: Add
     message: Barbed wire
   - type: Add
     message: Barbed wire traps
@@ -10658,7 +10656,42 @@ Entries:
   - type: Fix
     message: Johntonine now digests
   - type: Fix
-    message: 'Issue where some goob sounds were stereo '
+    message: Issue where some goob sounds were stereo
+  - type: Fix
+    message: Add prices to gold, silver, and adamantine ingots.
   id: 1192
   time: '2026-06-22T20:55:46.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3273
+- author: assripper.
+  changes:
+  - type: Add
+    message: xenomorphs footsteps now give you ptsd
+  id: 1193
+  time: '2026-06-23T22:21:48.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3284
+- author: TechnicFighter
+  changes:
+  - type: Fix
+    message: Fixed roundstart wraith being weak.
+  id: 1194
+  time: '2026-06-23T22:56:32.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3294
+- author: TechnicFighter
+  changes:
+  - type: Add
+    message: Some mobs now inject chemicals.
+  - type: Tweak
+    message: Buffed the HP of Tarantulas by 33%.
+  - type: Tweak
+    message: Buffed the HP of Clown Spiders by 33%
+  - type: Tweak
+    message: Tweaked reagent values in most mobs that inject/use reagents.
+  - type: Fix
+    message: Fixed multiple mobs not injecting chemicals.
+  - type: Fix
+    message: Fixed ALL mobs not regenerating reagents.
+  - type: Fix
+    message: Fixed the Dart gun not working.
+  id: 1195
+  time: '2026-06-24T01:49:13.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3280
