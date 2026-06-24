@@ -21,7 +21,7 @@ public sealed partial class GunApplySolutionSystem : EntitySystem
         if (!_solutionContainer.TryGetSolution(uid, comp.SourceSolution, out var ent, out var source))
             return;
 
-        foreach (var (ammo, _) in args.Ammo)
+        foreach (var (ammo, _) in args.Ammo) // This gives wrong uid on client
         {
             if (ammo == null)
                 continue;
@@ -32,6 +32,6 @@ public sealed partial class GunApplySolutionSystem : EntitySystem
             _solutionContainer.TryTransferSolution(target.Value, source, comp.Amount);
         }
 
-        _solutionContainer.UpdateChemicals(ent.Value);
+        _solutionContainer.UpdateChemicals(ent.Value);  // So we call this
     }
 }
