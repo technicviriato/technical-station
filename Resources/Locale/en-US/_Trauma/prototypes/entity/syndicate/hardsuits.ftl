@@ -1,4 +1,4 @@
-﻿# Hardsuits
+# Hardsuits
 ent-ClothingOuterHardsuitSyndie = blood-red hardsuit
     .desc = A heavily armored hardsuit designed for live-action stuntwork and terrorism alike, and is typically seen as the hardsuit of a "faceless grunt". Property of Gorlex Entertainment.
 
