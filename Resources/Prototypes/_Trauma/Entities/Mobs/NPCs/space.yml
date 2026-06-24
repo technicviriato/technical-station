@@ -172,8 +172,8 @@
         Base: archer_dead
   - type: Butcherable
     spawned:
-      - id: FoodMeatFish
-        amount: 2
+    - id: FoodMeatFish
+      amount: 2
   - type: TypingIndicator
     proto: alien
   - type: Tag
