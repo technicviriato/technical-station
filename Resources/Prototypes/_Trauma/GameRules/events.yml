@@ -246,6 +246,7 @@
       - id: MobBunny
       - id: MobBunnySea
       - id: MobBunnyEvil
+
 - type: entity
   parent: BaseStationEventShortDelay
   id: SpiderCrabSpawn
