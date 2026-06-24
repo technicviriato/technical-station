@@ -32,7 +32,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
-    solutions:
+    solution:
       reagents:
       - ReagentId: HeartbreakerToxin
         Quantity: 30

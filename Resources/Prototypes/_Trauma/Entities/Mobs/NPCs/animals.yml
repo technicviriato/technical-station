@@ -38,7 +38,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Solution
-    solutions:
+    solution:
       reagents:
       - ReagentId: Honk
         Quantity: 30
