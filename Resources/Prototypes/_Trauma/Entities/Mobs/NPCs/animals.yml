@@ -828,11 +828,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog1
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 2
   - type: MeleeChemicalInjector
     transferAmount: 2
     solution: melee
@@ -847,6 +842,11 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 10
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 2
 
 - type: entity
   parent: MobDartFrogBase
@@ -879,11 +879,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog2
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 4
   - type: MeleeChemicalInjector
     transferAmount: 4
     solution: melee
@@ -904,6 +899,11 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 15
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 4
 
 - type: entity
   parent: MobDartFrogBase
@@ -936,11 +936,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog3
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 1.5
   - type: MeleeChemicalInjector
     transferAmount: 1.5
     solution: melee
@@ -955,6 +950,11 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 10
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 1.5
 
 - type: entity
   parent: MobDartFrogBase
@@ -987,11 +987,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog4
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 3
   - type: MeleeChemicalInjector
     transferAmount: 3
     solution: melee
@@ -1012,6 +1007,11 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 15
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 3
 
 - type: entity
   parent: MobDartFrogBase
@@ -1044,11 +1044,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog5
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 5
   - type: MeleeChemicalInjector
     transferAmount: 5
     solution: melee
@@ -1069,6 +1064,11 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 25
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 5
 
 - type: entity
   parent: MobDartFrogBase
@@ -1101,11 +1101,6 @@
   - type: SolutionManager
     solutions:
     - SolutionVenomDartFrog6
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-        - ReagentId: BatrachoToxin
-          Quantity: 1
   - type: MeleeChemicalInjector
     transferAmount: 1
     solution: melee
@@ -1120,3 +1115,24 @@
       reagents:
       - ReagentId: BatrachoToxin
         Quantity: 10
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: BatrachoToxin
+        Quantity: 1
+
+- type: entity
+  parent: [ SolutionWeapon, SolutionTiny ]
+  id: SolutionMouseBites
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: MouseBites
+        Quantity: 5
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: MouseBites
+        Quantity: 1
