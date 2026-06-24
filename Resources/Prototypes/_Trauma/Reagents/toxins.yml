@@ -124,7 +124,6 @@
           types:
             Poison: 1.5
             Cellular: 0.5
-
       - !type:ModifyParalysis
         probability: 0.15
         time: 3
@@ -132,7 +131,6 @@
         - !type:ReagentCondition
           reagent: BatrachoToxin
           min: 5
-
       - !type:ModifyParalysis
         probability: 0.4
         time: 5
@@ -140,7 +138,6 @@
         - !type:ReagentCondition
           reagent: BatrachoToxin
           min: 15
-
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -151,7 +148,6 @@
             Poison: 3.5
             Asphyxiation: 2
             Cellular: 1.5
-
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution
