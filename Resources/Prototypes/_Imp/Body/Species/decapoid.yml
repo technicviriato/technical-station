@@ -51,7 +51,6 @@
   id: AppearanceDecapoid
   name: Decapoid appearance
   components:
-  - type: BagAccess
   - type: Inventory
     templateId: diona # Human but no shoes
     displacements:
@@ -122,6 +121,7 @@
   id: MobDecapoid
   name: Urist McCrab
   components:
+  - type: BagAccess
   - type: SpeechRequiresEquipment
     equipment:
       mask:

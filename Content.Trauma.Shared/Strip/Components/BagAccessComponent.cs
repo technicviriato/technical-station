@@ -1,4 +1,6 @@
-﻿namespace Content.Trauma.Shared.Strip.Components;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+namespace Content.Trauma.Shared.Strip.Components;
 
 /// <summary>
 /// Allows direct bag/pocket access verbs on this entity when being stripped.

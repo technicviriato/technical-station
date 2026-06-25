@@ -1,4 +1,4 @@
-﻿trauma-bag-access-verb = Open { $slot ->
+trauma-bag-access-verb = Open { $slot ->
     [back] Backpack
     [belt] Belt
     [outerClothing] Outer Clothing
