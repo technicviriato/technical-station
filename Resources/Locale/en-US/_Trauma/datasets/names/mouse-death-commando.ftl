@@ -1,4 +1,4 @@
-﻿names-mouse-death-commando-dataset-1 = Operator Blue Cheese
+names-mouse-death-commando-dataset-1 = Operator Blue Cheese
 names-mouse-death-commando-dataset-2 = Operator AMERICAN CHEESE
 names-mouse-death-commando-dataset-3 = Operator Fromage
 names-mouse-death-commando-dataset-4 = Operator Asiago

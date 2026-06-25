@@ -1,4 +1,6 @@
-﻿- type: localizedDataset
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: localizedDataset
   id: NamesMouseDeathCommando
   values:
     prefix: names-mouse-death-commando-dataset-

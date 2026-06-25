@@ -1,4 +1,4 @@
-﻿names-spider-operative-dataset-1=Zilla
+names-spider-operative-dataset-1=Zilla
 names-spider-operative-dataset-2=Thrasha
 names-spider-operative-dataset-3=King Gohma
 names-spider-operative-dataset-4=Queen Gohma
