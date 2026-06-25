@@ -98,6 +98,8 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/mouse_squeak.ogg
+  - type: Damageable
+    damageModifierSet: NukieSpider
 
 - type: entity
   parent: MobGiantSpiderAngry
