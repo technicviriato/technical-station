@@ -43,7 +43,7 @@
   description: You're not sure if that's a radio transceiver or an eye blinking at you. Might attract an odd spider.
   components:
   - type: Sprite
-    sprite: _Trauma/Mobs/Animals/nukiespider.rsi
+    sprite: _Trauma/Mobs/Animals/Syndicate/nukiespider.rsi
     layers:
     - state: syndicate-spider-egg
   - type: GhostRole
