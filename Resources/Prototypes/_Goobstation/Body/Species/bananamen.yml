@@ -39,6 +39,9 @@
   id: MobBananaMen # banana women when???
   name: Urist McBanana
   components:
+  # <Trauma>
+  - type: BagAccess
+  # </Trauma>
   - type: SlipperyOnLayingDown
   - type: Bloodstream
     bloodReferenceSolution:
