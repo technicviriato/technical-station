@@ -1,4 +1,6 @@
-﻿- type: listing
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: listing
   id: MouseOperativeReinforcement
   name: uplink-reinforcement-radio-nukie-mouse-name
   description: uplink-reinforcement-radio-nukie-mouse-desc
