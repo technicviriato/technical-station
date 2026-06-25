@@ -176,7 +176,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 8
+        Slash: 4
+        Piercing: 4
         Structural: 25
   - type: SolutionManager
     solutions:
