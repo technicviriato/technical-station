@@ -204,7 +204,6 @@
     - DoorBumpOpener
     - Radio
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: NukieSpider
 
 - type: entity
