@@ -416,7 +416,7 @@
     - SolutionVenomCobra
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 6
+    transferAmount: 3
   - type: NpcFactionMember
     factions:
     - Xeno
@@ -452,6 +452,11 @@
       reagents:
       - ReagentId: Hemorrhinol
         Quantity: 30
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Hemorrhinol
+        Quantity: 1.5
 
 - type: entity
   parent: MobPurpleSnake
