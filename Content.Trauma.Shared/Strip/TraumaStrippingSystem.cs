@@ -28,9 +28,7 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
 
     private void OnBeforeStripEnsureComp(Entity<HandsComponent> user, ref BeforeStripEvent args)
     {
-        var active = EnsureComp<ActiveStrippingComponent>(user.Owner);
-        active.ActiveCount++;
-        Dirty(user.Owner, active);
+        EnsureComp<ActiveStrippingComponent>(user.Owner);
     }
 
     private void OnStripAttempt(Entity<ActiveStrippingComponent> user, ref DoAfterAttemptEvent<StrippableDoAfterEvent> args)
@@ -42,8 +40,25 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
         if (!TryComp<HandsComponent>(user.Owner, out var hands))
             return;
 
-        if (user.Comp.ActiveCount > CountFreeHands((user.Owner, hands)))
-            args.Cancel();
+        var freeHands = CountFreeHands((user.Owner, hands));
+
+        if (!user.Comp.TrackedDoAfters.Contains(args.DoAfter.Index))
+        {
+            if (user.Comp.ActiveCount >= freeHands)
+            {
+                args.Cancel();
+                return;
+            }
+
+            user.Comp.TrackedDoAfters.Add(args.DoAfter.Index);
+            user.Comp.ActiveCount++;
+            Dirty(user.Owner, user.Comp);
+        }
+        else
+        {
+            if (user.Comp.ActiveCount > freeHands)
+                args.Cancel();
+        }
     }
 
     private void OnStripDoAfterFinished(Entity<ActiveStrippingComponent> user, ref StrippableDoAfterEvent args)
@@ -51,6 +66,7 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
         if (args.InsertOrRemove)
             return;
 
+        user.Comp.TrackedDoAfters.Remove(args.DoAfter.Index);
         DecrementActiveCount(user);
     }
 
@@ -60,7 +76,7 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
     public int CountFreeHands(Entity<HandsComponent> ent)
     {
         var count = 0;
-        foreach (var (name, hand) in ent.Comp.Hands)
+        foreach (var (name, _) in ent.Comp.Hands)
         {
             if (_handsSystem.GetHeldItem((ent.Owner, ent.Comp), name) == null)
                 count++;

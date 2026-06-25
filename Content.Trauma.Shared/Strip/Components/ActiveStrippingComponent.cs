@@ -8,7 +8,10 @@
 public sealed partial class ActiveStrippingComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public int ActiveCount = 0;
+    public int ActiveCount;
+
+    // Not networked, server-side only, tracks active doafter indices to avoid double-counting.
+    public HashSet<ushort> TrackedDoAfters = new();
 
     // Not networked, tracks storages opened via bag access so IgnoreUIRangeComponent is cleaned up on close.
     [DataField]
