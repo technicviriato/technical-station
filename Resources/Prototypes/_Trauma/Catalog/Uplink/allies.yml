@@ -18,7 +18,7 @@
   productEntity: ReinforcementRadioSyndicateNukieSpider
   icon: { sprite: _Trauma/Mobs/Animals/nukiespider.rsi, state: syndicate-spider-egg }
   cost:
-    Telecrystal: 40
+    Telecrystal: 60
   categories:
   - UplinkAllies
 
