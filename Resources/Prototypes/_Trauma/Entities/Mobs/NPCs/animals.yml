@@ -453,7 +453,7 @@
       - ReagentId: Hemorrhinol
         Quantity: 30
   - type: SolutionRegeneration
-    solution:
+    generated:
       reagents:
       - ReagentId: Hemorrhinol
         Quantity: 1
