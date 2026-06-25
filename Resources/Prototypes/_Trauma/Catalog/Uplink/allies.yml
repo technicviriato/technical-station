@@ -5,7 +5,7 @@
   productEntity: ReinforcementRadioSyndicateNukieMouse
   icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: cheese-radio }
   cost:
-    Telecrystal: 3
+    Telecrystal: 15
   categories:
   - UplinkAllies
 
@@ -16,7 +16,7 @@
   productEntity: ReinforcementRadioSyndicateNukieSpider
   icon: { sprite: _Trauma/Mobs/Animals/nukiespider.rsi, state: syndicate-spider-egg }
   cost:
-    Telecrystal: 8
+    Telecrystal: 40
   categories:
   - UplinkAllies
 
@@ -25,19 +25,35 @@
   name: uplink-reinforcement-radio-cyborg-saboteur-name
   description: uplink-reinforcement-radio-cyborg-saboteur-desc
   productEntity: ReinforcementRadioSyndicateCyborgSaboteur
-  icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: old-radio-borg-synd_engi } # TODO icon
+  icon: { sprite: _Trauma/Mobs/Silicon/synd_engi.rsi, state: synd_engi }
   cost:
-    Telecrystal: 13
+    Telecrystal: 250
   categories:
   - UplinkAllies
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+    blacklist:
+      tags:
+      - ContravendUplink
 
 - type: listing
   id: UplinkReinforcementRadioSyndicateCyborgMedical
   name: uplink-reinforcement-radio-cyborg-medical-name
   description: uplink-reinforcement-radio-cyborg-medical-desc
   productEntity: ReinforcementRadioSyndicateCyborgMedical
-  icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: old-radio-borg-synd_med } # TODO icon
+  icon: { sprite: _Trauma/Mobs/Silicon/synd_medical.rsi, state: synd_medical }
   cost:
-    Telecrystal: 13
+    Telecrystal: 250
   categories:
   - UplinkAllies
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+    blacklist:
+      tags:
+      - ContravendUplink

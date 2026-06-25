@@ -58,31 +58,12 @@
       - NukeOpsUplink
 
 - type: listing
-  id: UplinkRealFoamSabre
-  name: uplink-foam-sabre-name
-  description: uplink-foam-sabre-desc
-  productEntity: ClothingBeltRealFoamSheathFilled
-  icon:
-    entity: RealFoamSabre
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 4
+  id: UplinkRealFoamCutlass
+  name: uplink-foam-cutlass-name
+  description: uplink-foam-cutlass-desc
+  productEntity: RealFoamCutlass
+  icon: { sprite: /Textures/Objects/Weapons/Melee/cutlass.rsi, state: foam_icon }
   cost:
-    Telecrystal: 6
-  categories:
-  - UplinkWeaponry
-
-- type: listing
-  id: WeaponRiggedLaserTagGun
-  name: uplink-rigged-laser-tag-gun-name
-  description: uplink-rigged-laser-tag-gun-desc
-  productEntity: WeaponRiggedLaserTagGun
-  icon:
-    entity: WeaponRiggedLaserTagGun
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 5
-  cost:
-    Telecrystal: 10
+    Telecrystal: 20
   categories:
   - UplinkWeaponry

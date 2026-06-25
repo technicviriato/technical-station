@@ -69,9 +69,9 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 5
-        Piercing: 3
-        Structural: 1.5
+        Slash: 4
+        Piercing: 4
+        Structural: 15
   - type: MobPrice
     price: 250
   - type: IntrinsicRadioReceiver
@@ -174,8 +174,14 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 6
-        Structural: 15
+        Piercing: 8
+        Structural: 25
+  - type: SolutionManager
+    solutions:
+    - SolutionVenomSpiderNukie
+  - type: MeleeChemicalInjector
+    transferAmount: 0.5
+    solution: melee
   - type: MobPrice
     price: 250
   - type: IntrinsicRadioReceiver
@@ -197,3 +203,19 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: NukieSpider
+
+- type: entity
+  parent: [SolutionWeapon, SolutionTiny]
+  id: SolutionVenomSpiderNukie
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Lexorin
+        Quantity: 30
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Lexorin
+        Quantity: 1

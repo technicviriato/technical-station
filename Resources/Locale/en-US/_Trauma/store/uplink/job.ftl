@@ -3,3 +3,6 @@ uplink-foxdie-desc = A dna sampler for the legendary FOXDIE retrovirus. Scan som
 
 uplink-hyposhell-name = Box of hyposhells
 uplink-hyposhell-desc = A box containing four hyposhells, shotgun shells that can hold 7u of any chemical.
+
+uplink-appraisal-tool-gun-name = Appraisal Tool Gun
+uplink-appraisal-tool-gun-desc = A modified Viper to appear as an appraisal tool.
