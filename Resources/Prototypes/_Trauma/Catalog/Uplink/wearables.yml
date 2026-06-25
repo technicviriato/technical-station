@@ -21,6 +21,17 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkChameleonArmor
+  name: uplink-chameleon-armor-name
+  description: uplink-chameleon-armor-desc
+  productEntity: ClothingOuterChameleonArmor
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWearables
+
+
+- type: listing
   id: UplinkMonarchCoat
   name: uplink-monarch-name
   description: uplink-monarch-desc
@@ -33,13 +44,3 @@
   - !type:BuyerSpeciesCondition
     whitelist:
     - Human
-
-- type: listing
-  id: UplinkChameleonArmor
-  name: uplink-chameleon-armor-name
-  description: uplink-chameleon-armor-desc
-  productEntity: ClothingOuterChameleonArmor
-  cost:
-    Telecrystal: 25
-  categories:
-  - UplinkWearables

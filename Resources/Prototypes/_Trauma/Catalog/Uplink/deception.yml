@@ -21,6 +21,19 @@
   - UplinkDeception
 
 - type: listing
+  id: HandheldStationMapRecordsTablet
+  name: uplink-records-tablet-name
+  description: uplink-records-tablet-desc
+  icon:
+    sprite: _Trauma/Objects/Devices/tablets.rsi
+    state: icon
+  productEntity: HandheldStationMapRecordsTablet
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkDeception
+
+- type: listing
   id: UplinkCodespeakManual
   name: uplink-codespeak-manual-name
   description: uplink-codespeak-manual-desc
@@ -42,21 +55,3 @@
     Telecrystal: 20
   categories:
   - UplinkDeception
-
-- type: listing
-  id: HandheldStationMapRecordsTablet
-  name: uplink-records-tablet-name
-  description: uplink-records-tablet-desc
-  icon:
-    sprite: _Trauma/Objects/Devices/tablets.rsi
-    state: icon
-  productEntity: HandheldStationMapRecordsTablet
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkDeception
-  conditions:
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
