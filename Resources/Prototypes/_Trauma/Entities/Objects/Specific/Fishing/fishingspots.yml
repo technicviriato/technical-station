@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   abstract: true
   parent: BaseStructure
@@ -65,7 +67,7 @@
   - type: InteractionOutline
   - type: PhysicsGunBlacklist
   - type: StaticPrice
-    price: 5000
+    price: 2000
   - type: Climbable
   - type: Clickable
 

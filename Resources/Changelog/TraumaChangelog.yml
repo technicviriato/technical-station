@@ -10582,8 +10582,6 @@ Entries:
   - type: Add
     message: Security Ballistic Surplus crate to armory.
   - type: Add
-    message: Complete
-  - type: Add
     message: Barbed wire
   - type: Add
     message: Barbed wire traps
@@ -10658,7 +10656,123 @@ Entries:
   - type: Fix
     message: Johntonine now digests
   - type: Fix
-    message: 'Issue where some goob sounds were stereo '
+    message: Issue where some goob sounds were stereo
+  - type: Fix
+    message: Add prices to gold, silver, and adamantine ingots.
   id: 1192
   time: '2026-06-22T20:55:46.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3273
+- author: assripper.
+  changes:
+  - type: Add
+    message: xenomorphs footsteps now give you ptsd
+  id: 1193
+  time: '2026-06-23T22:21:48.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3284
+- author: TechnicFighter
+  changes:
+  - type: Fix
+    message: Fixed roundstart wraith being weak.
+  id: 1194
+  time: '2026-06-23T22:56:32.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3294
+- author: TechnicFighter
+  changes:
+  - type: Add
+    message: Some mobs now inject chemicals.
+  - type: Tweak
+    message: Buffed the HP of Tarantulas by 33%.
+  - type: Tweak
+    message: Buffed the HP of Clown Spiders by 33%
+  - type: Tweak
+    message: Tweaked reagent values in most mobs that inject/use reagents.
+  - type: Fix
+    message: Fixed multiple mobs not injecting chemicals.
+  - type: Fix
+    message: Fixed ALL mobs not regenerating reagents.
+  - type: Fix
+    message: Fixed the Dart gun not working.
+  id: 1195
+  time: '2026-06-24T01:49:13.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3280
+- author: Graves
+  changes:
+  - type: Tweak
+    message: Resprited brullbars. Go check maints.
+  id: 1196
+  time: '2026-06-24T03:40:00.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3297
+- author: Armok
+  changes:
+  - type: Tweak
+    message: 'Worms no longer spread '
+  id: 1197
+  time: '2026-06-24T18:16:00.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3299
+- author: TechnicFighter, Graves
+  changes:
+  - type: Tweak
+    message: Rewrote the description of some syndicate items to fit with Trauma's lore!
+  - type: Tweak
+    message: >-
+      Buffed the Commander Hardsuit to have better stats. General 65% instead of
+      50%, and faster movespeed by 10%.
+  - type: Remove
+    message: >-
+      Removed ARC, BLF, Tiger Cooperative and NLF from the list of traitor
+      flavour texts.
+  id: 1198
+  time: '2026-06-24T18:18:01.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3300
+- author: Wizard25671
+  changes:
+  - type: Tweak
+    message: Reduced the price of all fishing spots in the cargo catalogue
+  id: 1199
+  time: '2026-06-24T21:54:01.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3295
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: >-
+      xenomorphs shove stun has been tweaked to stun in one hit, but the stun
+      only lasts for 3 seconds
+  id: 1200
+  time: '2026-06-24T22:01:59.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3309
+- author: TechnicFighter
+  changes:
+  - type: Add
+    message: Added 22 new animals!
+  - type: Tweak
+    message: Made special types of carps have different resistances.
+  - type: Tweak
+    message: >-
+      Tweaked the animal spawns and item spawns of some artifacts, xenobio
+      stuff, etc.
+  id: 1201
+  time: '2026-06-24T22:45:29.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3244
+- author: TechnicViriato
+  changes:
+  - type: Tweak
+    message: Made it so snakes dont 2 hit kill you anymore.
+  id: 1202
+  time: '2026-06-25T02:24:29.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3320
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: >-
+      The master material silo now directly feeds service and medical techfabs
+      since they don't have department silos for 1 lathe.
+  id: 1203
+  time: '2026-06-25T04:25:27.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3325
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Nerfed grilles health to 30, down from 100.
+  id: 1204
+  time: '2026-06-25T04:47:24.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3328

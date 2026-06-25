@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: DiseaseBase
   id: DiseaseGutWorms
@@ -7,11 +9,10 @@
   - type: Disease
     diseaseType: Parasite
     genotype: 7361
-    infectionRate: 0.005
+    infectionRate: 0.05
     immunityGainRate: 0.5
     mutationRate: 0
     effects:
-      DiseaseBehaviorFightImmunity: 1
       DiseaseBehaviorSluggish: 1
       DiseaseBehaviorFeelUnwell: 1
-      DiseaseBehaviorVomit: 1
+      DiseaseBehaviorVomitNoSpread: 1
