@@ -55,7 +55,7 @@
     solutions:
     - SolutionVenomPurpleSnake
   - type: MeleeChemicalInjector
-    transferAmount: 5 # Trauma
+    transferAmount: 1 # Trauma
     solution: melee
   - type: Fixtures
     fixtures:
@@ -91,7 +91,7 @@
     generated:
       reagents:
         - ReagentId: Toxin
-          Quantity: 2.5
+          Quantity: 0.5
   # </Trauma>
 
 - type: entity
