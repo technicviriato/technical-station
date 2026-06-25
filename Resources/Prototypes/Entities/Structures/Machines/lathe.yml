@@ -572,9 +572,10 @@
   description: Prints equipment and circuitboards for use by the medbay.
   components:
   # <Trauma>
+  - type: MasterSiloClient # it's the only lathe in med
   - type: EmagLatheRecipes
     emagStaticPacks:
-    - SyndicateCatridgesStatic
+    - SyndicateCartridgesStatic
   # </Trauma>
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
