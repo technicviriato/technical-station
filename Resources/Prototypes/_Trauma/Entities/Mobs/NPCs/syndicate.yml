@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: nuclear operative mouse
   parent: [ MobMouse, MobCombat ]
   id: MobNukieMouse
+  name: nuclear operative mouse
   description: A Nuclear Operative... MOUSE?!
   suffix: syndicate
   components:
@@ -35,7 +35,7 @@
     color: green
   - type: Sprite
     drawdepth: SmallMobs
-    sprite: _Trauma/Mobs/Animals/nukiemouse.rsi
+    sprite: _Trauma/Mobs/Animals/Syndicate/nukiemouse.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: mouse
@@ -71,8 +71,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 4
-        Piercing: 4
+        Slash: 5
+        Piercing: 5
         Structural: 15
   - type: MobPrice
     price: 250
@@ -103,8 +103,8 @@
   parent: MobGiantSpiderAngry
   id: MobNukieSpider
   name: nuclear operative tarantula
-  suffix: syndicate
   description: A spider? A NUKIE SPIDER?!
+  suffix: syndicate
   components:
   - type: GhostRole
     makeSentient: true
@@ -135,7 +135,7 @@
     color: green
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Trauma/Mobs/Animals/nukiespider.rsi
+    sprite: _Trauma/Mobs/Animals/Syndicate/nukiespider.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: syndicate-spider
@@ -220,4 +220,59 @@
     generated:
       reagents:
       - ReagentId: Lexorin
+        Quantity: 1
+
+- type: entity
+  parent: BaseMobCarp
+  id: MobNukieCarp
+  name: nuclear operative carp
+  description: A bloodred carp trained in carp-to-carp combat.
+  suffix: syndicate
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Trauma/Mobs/Animals/Syndicate/nukiecarp.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: mouth
+      shader: unshaded
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+  - type: Tag
+    tags:
+    - Carp
+    - DoorBumpOpener
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Insulated
+  - type: SolutionManager
+    solutions:
+    - SolutionVenomSyndicarp
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 1
+  - type: Damageable
+    damageModifierSet: NukieSpider
+
+- type: entity
+  parent: [ SolutionWeapon, SolutionTiny ]
+  id: SolutionVenomSyndicarp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CarpoToxin
+        Quantity: 30
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: CarpoToxin
         Quantity: 1

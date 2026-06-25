@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Inspired by the cheese wedge sprite from tg station https://github.com/tgstation/tgstation/blob/master/icons/obj/food/food.dmi modified by @ps3moira.",
+  "copyright": "Taken from https://github.com/DeltaV-Station/Delta-v/tree/61aee79dc23109773e02b182e7093f99137cb018/Resources/Textures/_DV/Objects/Devices/communication.rsi",
   "size": {
     "x": 32,
     "y": 32
@@ -20,9 +20,6 @@
           1.8
         ]
       ]
-    },
-    {
-      "name": "old-radio-borg-synd_engi"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "copyright": "Taken from https://github.com/tgstation/tgstation/blob/master/icons/obj/device.dmi state export_scanner at commit 7544e865d0771d9bd917461e9da16d301fe40fc3. In-hand sprites made by obscenelytinyshark for use in SS14. Modified into a gun sprite by Radezolid",
+    "copyright": "Taken from https://github.com/DeltaV-Station/Delta-v/tree/61aee79dc23109773e02b182e7093f99137cb018/Resources/Textures/_DV/Objects/Weapons/Guns/Pistols/appraisal-gun.rsi",
     "license": "CC-BY-SA-3.0",
     "size": {
         "x": 32,

@@ -1,6 +1,9 @@
 uplink-reinforcement-radio-nukie-mouse-name = Mouse Operative Reinforcement Teleporter
 uplink-reinforcement-radio-nukie-mouse-desc = Calls in a specially trained mouse operative to assist you.
 
+uplink-reinforcement-radio-nukie-carp-name = Carp Operative Reinforcement Teleporter
+uplink-reinforcement-radio-nukie-carp-desc = Calls in a specially trained carp operative to assist you.
+
 uplink-reinforcement-radio-nukie-spider-name = Spider Operative Reinforcement Teleporter
 uplink-reinforcement-radio-nukie-spider-desc = Calls in a specially trained arachnid operative to assist you.
 

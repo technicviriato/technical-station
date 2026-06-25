@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Edited from https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b and Nimfar11 (github) by Sal_DragonsNOA for SS14. Gameplay implementation by RoboBozu.",
+    "copyright": "Taken from https://github.com/DeltaV-Station/Delta-v/tree/61aee79dc23109773e02b182e7093f99137cb018/Resources/Textures/_DV/Mobs/Animals/nukiemouse.rsi",
     "size": {
         "x": 32,
         "y": 32
@@ -11,17 +11,11 @@
             "name": "icon"
         },
         {
-            "name": "syndicate-spider",
+            "name": "mouse",
             "directions": 4
         },
         {
-            "name": "syndicate-spider-egg"
-        },
-        {
-            "name": "syndicate-spider-dead"
-        },
-        {
-            "name": "syndicate-spider-moving",
+            "name": "mouse-moving",
             "directions": 4,
             "delays": [
                 [
@@ -45,6 +39,24 @@
                     0.2
                 ]
             ]
+        },
+        {
+            "name": "dead"
+        },
+        {
+            "name": "splat"
+        },
+        {
+            "name": "equipped-HELMET",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
         }
     ]
 }

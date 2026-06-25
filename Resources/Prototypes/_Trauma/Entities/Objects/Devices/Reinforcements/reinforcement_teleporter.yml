@@ -23,6 +23,21 @@
 
 - type: entity
   parent: ReinforcementRadio
+  id: ReinforcementRadioSyndicateNukieCarp
+  name: syndicate carp reinforcement radio
+  description: Calls in a syndicate carp ready to assist you.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-nukie-carp-name
+    description: ghost-role-information-nukie-carp-description
+    rules: ghost-role-information-rules-team-antagonist
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+  - type: GhostRoleMobSpawner
+    prototype: MobNukieCarp
+
+- type: entity
+  parent: ReinforcementRadio
   id: ReinforcementRadioSyndicateNukieSpider
   name: inexplicably menacing egg
   description: You're not sure if that's a radio transceiver or an eye blinking at you. Might attract an odd spider.

@@ -12,11 +12,22 @@
   - UplinkAllies
 
 - type: listing
+  id: CarpOperativeReinforcement
+  name: uplink-reinforcement-radio-nukie-carp-name
+  description: uplink-reinforcement-radio-nukie-carp-desc
+  productEntity: ReinforcementRadioSyndicateNukieCarp
+  icon: { sprite: _Trauma/Mobs/Animals/Syndicate/nukiecarp.rsi, state: icon }
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkAllies
+
+- type: listing
   id: SpiderOperativeReinforcement
   name: uplink-reinforcement-radio-nukie-spider-name
   description: uplink-reinforcement-radio-nukie-spider-desc
   productEntity: ReinforcementRadioSyndicateNukieSpider
-  icon: { sprite: _Trauma/Mobs/Animals/nukiespider.rsi, state: syndicate-spider-egg }
+  icon: { sprite: _Trauma/Mobs/Animals/Syndicate/nukiespider.rsi, state: syndicate-spider-egg }
   cost:
     Telecrystal: 60
   categories:
