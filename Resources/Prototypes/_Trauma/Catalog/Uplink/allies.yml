@@ -1,0 +1,43 @@
+﻿- type: listing
+  id: MouseOperativeReinforcement
+  name: uplink-reinforcement-radio-nukie-mouse-name
+  description: uplink-reinforcement-radio-nukie-mouse-desc
+  productEntity: ReinforcementRadioSyndicateNukieMouse
+  icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: cheese-radio }
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAllies
+
+- type: listing
+  id: SpiderOperativeReinforcement
+  name: uplink-reinforcement-radio-nukie-spider-name
+  description: uplink-reinforcement-radio-nukie-spider-desc
+  productEntity: ReinforcementRadioSyndicateNukieSpider
+  icon: { sprite: _Trauma/Mobs/Animals/nukiespider.rsi, state: syndicate-spider-egg }
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkAllies
+
+- type: listing
+  id: UplinkReinforcementRadioSyndicateCyborgSaboteur
+  name: uplink-reinforcement-radio-cyborg-saboteur-name
+  description: uplink-reinforcement-radio-cyborg-saboteur-desc
+  productEntity: ReinforcementRadioSyndicateCyborgSaboteur
+  icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: old-radio-borg-synd_engi } # TODO icon
+  cost:
+    Telecrystal: 13
+  categories:
+  - UplinkAllies
+
+- type: listing
+  id: UplinkReinforcementRadioSyndicateCyborgMedical
+  name: uplink-reinforcement-radio-cyborg-medical-name
+  description: uplink-reinforcement-radio-cyborg-medical-desc
+  productEntity: ReinforcementRadioSyndicateCyborgMedical
+  icon: { sprite: _Trauma/Objects/Devices/communication.rsi, state: old-radio-borg-synd_med } # TODO icon
+  cost:
+    Telecrystal: 13
+  categories:
+  - UplinkAllies

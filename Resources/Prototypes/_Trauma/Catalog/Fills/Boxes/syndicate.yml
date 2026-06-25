@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: [BoxCardboard, BaseSyndicateContraband]
+  id: Observationskit
+  name: observations kit
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: SyndiCrewMonitorEmpty
+      amount: 1
+    - id: PowerCellMicroreactor
+      amount: 1
+    - id: ClothingEyesGlassesHiddenSecurity
+      amount: 1
+    - id: CameraBug
+      amount: 1

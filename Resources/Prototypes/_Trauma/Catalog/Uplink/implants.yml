@@ -46,3 +46,26 @@
     blacklist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: UplinkHostageImplanter
+  name: uplink-syndicate-hostage-implanter-bundle-name
+  description: uplink-syndicate-hostage-implanter-bundle-desc
+  icon: { sprite: Objects/Misc/handcuffs.rsi, state: handcuff }
+  productEntity: BoxSyndicateHostageImplanter
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+    - UplinkImplants
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - NukeOpsUplink

@@ -33,3 +33,13 @@
   - !type:BuyerSpeciesCondition
     whitelist:
     - Human
+
+- type: listing
+  id: UplinkChameleonArmor
+  name: uplink-chameleon-armor-name
+  description: uplink-chameleon-armor-desc
+  productEntity: ClothingOuterChameleonArmor
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWearables
