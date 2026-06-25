@@ -62,7 +62,7 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
     public int CountFreeHands(Entity<HandsComponent> ent)
     {
         var count = 0;
-        foreach (var (name, hand) in ent.Comp.Hands)
+        foreach (var (name, _) in ent.Comp.Hands)
         {
             if (_handsSystem.GetHeldItem((ent.Owner, ent.Comp), name) == null)
                 count++;

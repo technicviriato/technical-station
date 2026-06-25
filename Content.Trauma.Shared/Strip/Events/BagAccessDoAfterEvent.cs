@@ -18,5 +18,5 @@ public sealed partial class BagAccessDoAfterEvent : DoAfterEvent
         Stealth = stealth;
     }
 
-    public override DoAfterEvent Clone() => this;
+    public override DoAfterEvent Clone() => new BagAccessDoAfterEvent(SlotName, BagEntity, Stealth);
 }

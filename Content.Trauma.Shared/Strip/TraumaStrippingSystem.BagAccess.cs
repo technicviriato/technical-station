@@ -22,22 +22,11 @@ public sealed partial class TraumaStrippingSystem
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private MobStateSystem _mobState = default!;
-    [Dependency] private SharedUserInterfaceSystem _ui = default!;
     [Dependency] private SharedStorageSystem _storage = default!;
-    [Dependency] private SharedStrippableSystem _strippableSystem = default!;
-
-    private EntityQuery<StorageComponent> _storageQuery;
-    private EntityQuery<HandsComponent> _handsQuery;
-    private EntityQuery<InventoryComponent> _inventoryQuery;
-    private EntityQuery<CuffableComponent> _cuffableQuery;
+    [Dependency] private SharedStrippableSystem _strippable = default!;
 
     private void InitializeBagAccess()
     {
-        _storageQuery = GetEntityQuery<StorageComponent>();
-        _handsQuery = GetEntityQuery<HandsComponent>();
-        _inventoryQuery = GetEntityQuery<InventoryComponent>();
-        _cuffableQuery = GetEntityQuery<CuffableComponent>();
-
         SubscribeLocalEvent<StrippingComponent, GetVerbsEvent<Verb>>(OnGetBagAccessVerbs);
         SubscribeLocalEvent<BagAccessComponent, BagAccessDoAfterEvent>(OnBagAccessDoAfter);
         SubscribeLocalEvent<BoundUIClosedEvent>(OnStorageUiClosed);
@@ -52,7 +41,7 @@ public sealed partial class TraumaStrippingSystem
         if (!TryComp<BagAccessComponent>(args.Target, out var bagAccess))
             return;
 
-        if (!_handsQuery.TryComp(args.User, out var hands))
+        if (!TryComp<HandsComponent>(args.User, out var hands))
             return;
 
         var freeHands = CountFreeHands((args.User, hands));
@@ -60,7 +49,7 @@ public sealed partial class TraumaStrippingSystem
         if (active.ActiveCount >= freeHands)
             return;
 
-        if (!_inventoryQuery.TryComp(args.Target, out var inventory))
+        if (!HasComp<InventoryComponent>(args.Target))
             return;
 
         var user = args.User;
@@ -68,7 +57,7 @@ public sealed partial class TraumaStrippingSystem
         var enumerator = _inventory.GetSlotEnumerator(args.Target);
         while (enumerator.NextItem(out var slotEntity, out var slotDef))
         {
-            if (!_storageQuery.HasComp(slotEntity))
+            if (!HasComp<StorageComponent>(slotEntity))
                 continue;
 
             var capturedSlotName = slotDef.Name;
@@ -88,7 +77,7 @@ public sealed partial class TraumaStrippingSystem
     private void StartBagAccess(EntityUid user, Entity<BagAccessComponent> target, string slotName, NetEntity netBagEntity)
     {
         var delay = GetBagAccessDelay(target);
-        var (_, stealth) = _strippableSystem.GetStripTimeModifiers(user, target.Owner, null, TimeSpan.Zero);
+        var (_, stealth) = _strippable.GetStripTimeModifiers(user, target.Owner, null, TimeSpan.Zero);
 
         var doAfterArgs = new DoAfterArgs(
             EntityManager,
@@ -112,7 +101,7 @@ public sealed partial class TraumaStrippingSystem
         // Notify alive, uncuffed targets when the doafter starts.
         if (!stealth && !_mobState.IsDead(target.Owner))
         {
-            if (!_cuffableQuery.TryComp(target.Owner, out var cuffable) || cuffable.CuffedHandCount == 0)
+            if (!TryComp<CuffableComponent>(target.Owner, out var cuffable) || cuffable.CuffedHandCount == 0)
             {
                 var userName = Identity.Name(user, EntityManager);
                 var friendlySlotName = Loc.GetString("trauma-bag-access-slot", ("slot", slotName));
@@ -143,7 +132,7 @@ public sealed partial class TraumaStrippingSystem
         if (!Exists(bagEntity))
             return;
 
-        if (!_storageQuery.TryComp(bagEntity, out var storage))
+        if (!TryComp<StorageComponent>(bagEntity, out var storage))
             return;
 
         // Temporarily bypass UI range checks so the user can open a bag they aren't holding.
@@ -179,7 +168,7 @@ public sealed partial class TraumaStrippingSystem
         if (_mobState.IsCritical(target.Owner))
             return target.Comp.CuffedOrCritDelay;
 
-        if (_cuffableQuery.TryComp(target.Owner, out var cuffable) && cuffable.CuffedHandCount > 0)
+        if (TryComp<CuffableComponent>(target.Owner, out var cuffable) && cuffable.CuffedHandCount > 0)
             return target.Comp.CuffedOrCritDelay;
 
         return target.Comp.NormalDelay;
