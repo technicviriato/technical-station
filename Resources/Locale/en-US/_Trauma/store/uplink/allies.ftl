@@ -12,3 +12,9 @@ uplink-reinforcement-radio-cyborg-saboteur-desc = Calls in a lightly armored cyb
 
 uplink-reinforcement-radio-cyborg-medical-name = Medical Cyborg Reinforcement Teleporter
 uplink-reinforcement-radio-cyborg-medical-desc = Calls in a lightly armored cyborg specializing in anything medical related.
+
+uplink-magic-carp-dehydrated-name = Dehydrated Magic Carp
+uplink-magic-carp-dehydrated-desc = Looks like a plush toy carp, but just add water and it becomes a real-life magic carp!
+
+uplink-holo-carp-dehydrated-name = Dehydrated Holo Carp
+uplink-holo-carp-dehydrated-desc = Looks like a plush toy carp, but just add water and it becomes a real-life holo carp!
