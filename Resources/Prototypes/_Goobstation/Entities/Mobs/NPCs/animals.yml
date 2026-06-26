@@ -910,8 +910,8 @@
       - ReagentId: Felinase
         Quantity: 1
   - type: MeleeChemicalInjector
-    solution: melee
     transferAmount: 3
+    solution: melee
   - type: Vocal
     sounds:
       Male: ClownGoblin

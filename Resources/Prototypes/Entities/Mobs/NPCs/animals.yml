@@ -2871,8 +2871,8 @@
         - ReagentId: Laughter
           Quantity: 2
     - type: MeleeChemicalInjector
-      solution: SolutionClownSpider
       transferAmount: 6
+      solution: SolutionClownSpider
     # </Trauma>
     - type: Sprite
       drawdepth: Mobs
