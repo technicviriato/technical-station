@@ -82,9 +82,6 @@
   categories: [ HideSpawnMenu ]
   name: vox appearance
   components:
-  # <Trauma>
-  - type: BagAccess
-  # </Trauma>
   - type: Inventory
     speciesId: vox
     displacements:

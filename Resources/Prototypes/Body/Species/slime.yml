@@ -90,7 +90,6 @@
   name: Urist McWobble
   components:
   # <Trauma>
-  - type: BagAccess
   - type: LanguageSpeaker
     speaks:
     - TauCetiBasic

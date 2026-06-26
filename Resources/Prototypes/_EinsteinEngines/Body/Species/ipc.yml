@@ -63,7 +63,6 @@
   id: AppearanceIPC
   name: IPC appearance
   components:
-  - type: BagAccess
   - type: InitialBody
     organs:
       # Parts

@@ -147,9 +147,6 @@
   id: MobVulpkanin
   name: Urist McArfArf
   components:
-  # <Trauma>
-  - type: BagAccess
-  # </Trauma>
   #- type: DamageVisuals # Trauma - wound visuals used instead
   #  damageOverlayGroups:
   #    Brute:

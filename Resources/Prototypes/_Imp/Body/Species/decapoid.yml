@@ -121,7 +121,6 @@
   id: MobDecapoid
   name: Urist McCrab
   components:
-  - type: BagAccess
   - type: SpeechRequiresEquipment
     equipment:
       mask:

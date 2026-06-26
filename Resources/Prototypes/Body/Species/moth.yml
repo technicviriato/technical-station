@@ -59,9 +59,6 @@
   categories: [ HideSpawnMenu ]
   name: moth appearance
   components:
-  # <Trauma>
-  - type: BagAccess
-  # </Trauma>
   - type: Inventory
     speciesId: moth
     femaleDisplacements:

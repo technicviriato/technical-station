@@ -18,7 +18,6 @@
   id: AppearanceShadow
   name: shadow appearance
   components:
-  - type: BagAccess
   - type: InitialBody
     organs:
       # Parts

@@ -42,7 +42,6 @@
   id: MobAbductor
   name: Urist McAlien
   components:
-  - type: BagAccess
   - type: Absorbable
   - type: WraithAbsorbable
   - type: Bloodstream

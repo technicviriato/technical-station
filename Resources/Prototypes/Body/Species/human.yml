@@ -94,7 +94,6 @@
   name: Urist McHands
   components:
   # <Trauma>
-  - type: BagAccess
   - type: Mutatable
     dormant:
     - MutationMonkified # return to monke

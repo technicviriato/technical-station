@@ -45,7 +45,6 @@
   id: AppearancePlasmaman
   name: plasmaman appearance
   components:
-  - type: BagAccess
   - type: InitialBody
     organs:
       # Parts
