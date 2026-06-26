@@ -826,7 +826,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Dead
+      100: Dead
   - type: Physics
   - type: HTN
     rootTask:
@@ -835,7 +835,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -896,19 +896,9 @@
     soundHit:
       collection: BikeHorn
     animation: WeaponArcFist
-  - type: Solution
-    id: melee
-    solution:
-      maxVol: 3
-  - type: SolutionRegeneration
-    generated:
-      reagents:
-      - ReagentId: Honk
-        Quantity: 1
-      - ReagentId: Happiness
-        Quantity: 1
-      - ReagentId: Felinase
-        Quantity: 1
+  - type: SolutionManager
+    solutions:
+    - SolutionClownSpider
   - type: MeleeChemicalInjector
     transferAmount: 3
     solution: melee
