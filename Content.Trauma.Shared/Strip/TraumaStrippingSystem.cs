@@ -3,6 +3,7 @@
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Popups;
 using Content.Shared.Strip.Components;
 using Content.Trauma.Shared.Strip.Components;
 
@@ -46,6 +47,21 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
 
         if (!user.Comp.TrackedDoAfters.Contains(args.DoAfter.Index))
         {
+            // Cannot remove jumpsuit while outer clothing is still worn.
+            if (args.Event.InventoryOrHand
+                && args.Event.SlotOrHandName == "jumpsuit"
+                && args.DoAfter.Args.Target is { } target
+                && _inventory.TryGetSlotEntity(target, "outerClothing", out _))
+            {
+                _popup.PopupEntity(
+                    Loc.GetString("trauma-strip-jumpsuit-blocked"),
+                    user.Owner,
+                    user.Owner,
+                    PopupType.SmallCaution);
+                args.Cancel();
+                return;
+            }
+
             if (user.Comp.ActiveCount >= freeHands)
             {
                 args.Cancel();

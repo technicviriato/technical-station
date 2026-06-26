@@ -12,3 +12,5 @@ trauma-bag-access-slot = { $slot ->
     *[other] { $slot }
 }
 trauma-bag-access-popup = { $user } is trying to open your { $slot }!
+
+trauma-strip-jumpsuit-blocked = Remove their outer clothing first!
