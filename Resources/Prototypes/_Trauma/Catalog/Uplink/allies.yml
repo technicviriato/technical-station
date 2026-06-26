@@ -48,7 +48,7 @@
   productEntity: ReinforcementRadioSyndicateNukieCarp
   icon: { sprite: _Trauma/Mobs/Animals/Syndicate/nukiecarp.rsi, state: icon }
   cost:
-    Telecrystal: 40
+    Telecrystal: 30
   categories:
   - UplinkAllies
 
@@ -59,7 +59,7 @@
   productEntity: ReinforcementRadioSyndicateNukieSpider
   icon: { sprite: _Trauma/Mobs/Animals/Syndicate/nukiespider.rsi, state: syndicate-spider-egg }
   cost:
-    Telecrystal: 60
+    Telecrystal: 50
   categories:
   - UplinkAllies
 
