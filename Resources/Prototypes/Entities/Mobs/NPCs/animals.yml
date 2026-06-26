@@ -2873,7 +2873,7 @@
     - type: MeleeChemicalInjector
       solution: SolutionClownSpider
       transferAmount: 6
-        # </Trauma>
+    # </Trauma>
     - type: Sprite
       drawdepth: Mobs
       layers:
