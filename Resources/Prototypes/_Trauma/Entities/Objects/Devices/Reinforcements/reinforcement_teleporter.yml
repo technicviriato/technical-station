@@ -77,7 +77,7 @@
 - type: entity
   parent: ReinforcementRadio
   id: ReinforcementRadioSyndicateCyborgMedical
-  name: syndicate saboteur cyborg reinforcement radio
+  name: syndicate medical cyborg reinforcement radio
   description: Calls in a medical borg with good support capabilities and disruptive gear.
   components:
   - type: GhostRole
