@@ -2857,10 +2857,23 @@
     - type: SolutionManager
       solutions:
       - SolutionClownSpider
+    - type: Solution
+      id: SolutionClownSpider
+      solution:
+        maxVol: 30
+    - type: SolutionRegeneration
+      generated:
+        reagents:
+        - ReagentId: Honk
+          Quantity: 2
+        - ReagentId: Happiness
+          Quantity: 2
+        - ReagentId: Laughter
+          Quantity: 2
     - type: MeleeChemicalInjector
-      transferAmount: 4
-      solution: melee
-    # </Trauma>
+      solution: SolutionClownSpider
+      transferAmount: 6
+        # </Trauma>
     - type: Sprite
       drawdepth: Mobs
       layers:
@@ -2905,7 +2918,7 @@
     - type: Bloodstream
       bloodReferenceSolution:
         reagents:
-        - ReagentId: Laughter
+        - ReagentId: Honk # Trauma - was Laughter
           Quantity: 150
 - type: entity
   name: wizard spider

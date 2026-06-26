@@ -896,12 +896,22 @@
     soundHit:
       collection: BikeHorn
     animation: WeaponArcFist
-  - type: SolutionManager
-    solutions:
-    - SolutionClownSpider
+  - type: Solution
+    id: melee
+    solution:
+      maxVol: 3
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Honk
+        Quantity: 1
+      - ReagentId: Happiness
+        Quantity: 1
+      - ReagentId: Copium
+        Quantity: 1
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 2
+    transferAmount: 3
   - type: Vocal
     sounds:
       Male: ClownGoblin
