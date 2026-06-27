@@ -1,6 +1,132 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: listing
+  id: UplinkClothingHeadHatConeStorage
+  name: uplink-cone-name
+  description: uplink-cone-desc
+  productEntity: ClothingHeadHatConeStorage
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Engineering
+
+- type: listing
+  id: UplinkNetworkConfiguratorSignaller
+  name: uplink-network-configurator-signaller-name
+  description: uplink-network-configurator-signaller-desc
+  productEntity: NetworkConfiguratorSignaller
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Engineering
+
+- type: listing
+  id: UplinkMimanaStealthy
+  name: uplink-mimana-stealthy-name
+  description: uplink-mimana-stealthy-desc
+  productEntity: MimanaPeelStealthy
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
+
+- type: listing
+  id: UplinkFoodShakerPepperLead
+  name: uplink-shaker-lead-name
+  description: uplink-shaker-lead-desc
+  productEntity: FoodShakerPepperLead
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+
+- type: listing
+  id: UplinkEmergencyMedipenMute
+  name: uplink-medipen-mute-name
+  description: uplink-medipen-mute-desc
+  productEntity: EmergencyMedipenMute
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Mime
+
+- type: listing
+  id: UplinkClothingShoesColorWhiteSilent
+  name: uplink-silent-shoes-name
+  description: uplink-silent-shoes-desc
+  productEntity: ClothingShoesColorWhiteSilent
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Mime
+
+- type: listing
+  id: UplinkChemistryBottleLead
+  name: uplink-lead-bottle-name
+  description: uplink-lead-bottle-desc
+  productEntity: ChemistryBottleLead
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Medical
+
+- type: listing
+  id: UplinkChemistryBottlePlasma
+  name: uplink-plasma-bottle-name
+  description: uplink-plasma-bottle-desc
+  productEntity: ChemistryBottlePlasma
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Medical
+
+- type: listing
+  id: UplinkPitcherNapalm
+  name: uplink-pitcher-napalm-name
+  description: uplink-pitcher-napalm-desc
+  productEntity: PitcherNapalm
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+
+- type: listing
   id: UplinkNecronomicon # dog
   name: uplink-necronomicon-name
   description: uplink-necronomicon-desc
@@ -43,9 +169,65 @@
   categories:
   - UplinkJob
   conditions:
-    - !type:BuyerDepartmentCondition
-      whitelist:
-      - Cargo
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Cargo
+
+- type: listing
+  id: UplinkAppraisalToolRadioJammer
+  name: uplink-appraisal-tool-jammer-name
+  description: uplink-appraisal-tool-jammer-desc
+  productEntity: AppraisalToolRadioJammer
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Cargo
+
+- type: listing
+  id: UplinkOmnimedToolSyndie
+  name: uplink-omnimed-tool-name
+  description: uplink-omnimed-tool-desc
+  productEntity: OmnimedToolSyndie
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Medical
+
+- type: listing
+  id: UplinkUtilityKnifeReagent
+  name: uplink-utility-knife-name
+  description: uplink-utility-knife-desc
+  productEntity: UtilityKnifeReagent
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Cargo
+
+- type: listing
+  id: UplinkRealBananiumSword
+  name: uplink-banana-esword-name
+  description: uplink-banana-esword-desc
+  productEntity: RealBananiumSword
+  cost:
+    Telecrystal: 45
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
 
 - type: listing
   id: UplinkFoxDie

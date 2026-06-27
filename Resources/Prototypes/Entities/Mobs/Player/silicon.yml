@@ -617,7 +617,7 @@
       job: Borg
     - type: GhostTakeoverAvailable
 
-- type: entity
+- type: entity # TODO
   id: PlayerBorgSyndicateSaboteurBattery
   parent: BorgChassisSyndicateSaboteur
   suffix: Battery, Module, Operative
@@ -628,8 +628,9 @@
       borg_brain:
         - PositronicBrain
       borg_module:
+        - BorgModuleRCD # Trauma
         - BorgModuleSyndicateWeapon
-        - BorgModuleTool
+        - BorgModuleAdvancedTool # Trauma - was BorgModuleTool
         - BorgModuleOperative
   - type: ItemSlots
     slots:

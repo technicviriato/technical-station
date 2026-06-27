@@ -231,6 +231,9 @@
   description: A bloodred carp trained in carp-to-carp combat.
   suffix: syndicate
   components:
+  - type: RandomMetadata
+    nameFormat: name-format-nukie-carp
+    nameSegments: [ NamesNukieCarp ]
   - type: Sprite
     drawdepth: Mobs
     sprite: _Trauma/Mobs/Animals/Syndicate/nukiecarp.rsi

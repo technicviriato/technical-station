@@ -1,0 +1,25 @@
+﻿- type: entity
+  parent: [ AppraisalTool, RadioJammer ]
+  id: AppraisalToolRadioJammer
+  suffix: Jammer
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/appraisal-tool.rsi
+    layers:
+    - state: icon
+    - state: jammer
+      sprite: Objects/Devices/jammer.rsi
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: false
+    - state: jammer_high_charge
+      sprite: Objects/Devices/jammer.rsi
+      visible: false
+    - state: jammer_medium_charge
+      sprite: Objects/Devices/jammer.rsi
+      visible: false
+    - state: jammer_low_charge
+      sprite: Objects/Devices/jammer.rsi
+      visible: false
+  - type: Item
+    sprite: Objects/Tools/appraisal-tool.rsi
+    size: Small

@@ -7,3 +7,5 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
     state: icon
+
+# TODO make new modules for saboteur and medical cyborg
