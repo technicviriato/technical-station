@@ -1,4 +1,4 @@
-﻿names-nukie-carp-dataset-1=Chomper
+names-nukie-carp-dataset-1=Chomper
 names-nukie-carp-dataset-2=RedFin
 names-nukie-carp-dataset-3=BloodFin
 names-nukie-carp-dataset-4=Riptide
