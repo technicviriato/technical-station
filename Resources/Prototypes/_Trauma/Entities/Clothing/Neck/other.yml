@@ -32,3 +32,39 @@
   - type: Unremoveable
   - type: FactionClothing
     faction: Insurgent
+
+- type: entity
+  parent: [ SurveillanceWirelessCameraBodySecurity, BaseSyndicateContraband ]
+  id: ClothingNeckSlayerCoat
+  name: S.L.A.Y.E.R coat
+  description: The Syndicate Lightly Armored Yet Explosive Resistant Overcoat, or S.L.A.Y.E.R. Overcoat for short, is Gorlex Entertainment's only overcoat capable of protecting the wearer's limbs from explosive damage... if it's worn over the shoulders. Comes with proprietary technology that allows it to patch into Nanotrasen camera systems like a bodycam. Not for the faint of heart.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Trauma/Clothing/Neck/slayer_coat.rsi
+  - type: Clothing
+    sprite: _Trauma/Clothing/Neck/slayer_coat.rsi
+  - type: FactionClothing
+    faction: Syndicate
+  - type: Armor
+    coverage:
+    - Torso
+    - Tail
+    - Arm
+    - Leg
+    traumaDeductions:
+      Dismemberment: 0.3
+      OrganDamage: 0.3
+      BoneDamage: 0.3
+      VeinsDamage: 0
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: SurveillanceCamera
+    id: Slayer

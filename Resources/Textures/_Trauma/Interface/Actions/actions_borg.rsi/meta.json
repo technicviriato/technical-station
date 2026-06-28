@@ -12,6 +12,24 @@
     },
     {
       "name": "defib"
+    },
+    {
+      "name": "access_config"
+    },
+    {
+      "name": "jammer"
+    },
+    {
+      "name": "hypo"
+    },
+    {
+      "name": "surgery"
+    },
+    {
+      "name": "projector"
+    },
+    {
+      "name": "dart"
     }
   ]
 }

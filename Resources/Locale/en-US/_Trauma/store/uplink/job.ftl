@@ -32,10 +32,10 @@ uplink-appraisal-tool-jammer-name = Appraisal Tool Radio Jammer
 uplink-appraisal-tool-jammer-desc = A radio jammer hidden inside an appraisal tool. You can both jam their comms and price check the corpse!
 
 uplink-lead-bottle-name = Lead Bottle
-uplink-lead-bottle-desc = A small bottle containing 30u of lead.
+uplink-lead-bottle-desc = "Treat" your patient efficiently. Contains 30u of lead.
 
 uplink-plasma-bottle-name = Plasma Bottle
-uplink-plasma-bottle-desc = A small bottle containing 30u of plasma.
+uplink-plasma-bottle-desc = You definitely SHOULDN'T inject this plasma into batteries. Contains 30u of plasma.
 
 uplink-banana-esword-name = Real Bananium Energy Sword
 uplink-banana-esword-desc = A bananium-modified energy sword that slips whoever it slices. This one does real damage.

@@ -21,6 +21,16 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkSlayerCoat
+  name: uplink-slayer-coat-name
+  description: uplink-slayer-coat-desc
+  productEntity: ClothingNeckSlayerCoat
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkChameleonArmor
   name: uplink-chameleon-armor-name
   description: uplink-chameleon-armor-desc

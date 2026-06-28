@@ -38,7 +38,7 @@
     - item: AccessBreaker
     - item: AccessConfiguratorSyndicate
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: access_config }
 
 - type: entity
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
@@ -53,7 +53,7 @@
     hands:
     - item: BorgRadioJammer
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: jammer }
 
 - type: entity
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
@@ -71,7 +71,7 @@
     - item: ChemistryEmptyBottle01
     - item: ChemistryEmptyBottle01
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: dart }
 
 - type: entity
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
@@ -96,7 +96,7 @@
     - item: Bloodpack
     - item: Bloodpack
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: hypo }
 
 - type: entity
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
@@ -112,7 +112,7 @@
     - item: HandheldHealthAnalyzer
     - item: OmnimedToolSyndie
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: surgery }
 
 - type: entity
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
@@ -146,4 +146,4 @@
     hands:
     - item: ChameleonProjectorNoBattery
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: projector}
