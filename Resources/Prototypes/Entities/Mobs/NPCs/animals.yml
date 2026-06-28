@@ -2890,7 +2890,11 @@
         path: /Audio/Effects/bite.ogg
       damage:
         types:
-          Piercing: 8
+          # <Trauma>
+          Slash: 4
+          Piercing: 2 # was 8, split into slash and blunt so it can break grilles and windows
+          Blunt: 2
+          # </Trauma>
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepClownFast
