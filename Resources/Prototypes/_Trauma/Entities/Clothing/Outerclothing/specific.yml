@@ -5,7 +5,7 @@
   id: ClothingOuterChameleonArmor
   name: vest
   description: A thick vest with a rubbery, water-resistant shell.
-  suffix: Chameleon
+  suffix: Chameleon, Armor
   components:
   - type: Armor
     modifiers:

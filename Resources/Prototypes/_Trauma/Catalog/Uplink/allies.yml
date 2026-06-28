@@ -68,7 +68,7 @@
   name: uplink-reinforcement-radio-cyborg-saboteur-name
   description: uplink-reinforcement-radio-cyborg-saboteur-desc
   productEntity: ReinforcementRadioSyndicateCyborgSaboteur
-  icon: { sprite: _Trauma/Mobs/Silicon/synd_engi.rsi, state: synd_engi }
+  icon: { sprite: _Trauma/Mobs/Silicon/synd_engi.rsi, state: icon }
   cost:
     Telecrystal: 300
   categories:
@@ -87,7 +87,7 @@
   name: uplink-reinforcement-radio-cyborg-medical-name
   description: uplink-reinforcement-radio-cyborg-medical-desc
   productEntity: ReinforcementRadioSyndicateCyborgMedical
-  icon: { sprite: _Trauma/Mobs/Silicon/synd_medical.rsi, state: synd_medical }
+  icon: { sprite: _Trauma/Mobs/Silicon/synd_medical.rsi, state: icon }
   cost:
     Telecrystal: 300
   categories:

@@ -14,17 +14,10 @@
     id: ammo
     solution:
       maxVol: 3
-  - type: RefillableSolution
-    solution: ammo
-  - type: DrainableSolution
-    solution: ammo
   - type: SolutionInjectOnProjectileHit
     transferAmount: 3
     blockSlots: NONE
     solution: ammo
-  - type: InjectableSolution
-    solution: ammo
-
 
 - type: entity
   parent: BaseBullet
@@ -40,13 +33,7 @@
     id: ammo
     solution:
       maxVol: 1
-  - type: RefillableSolution
-    solution: ammo
-  - type: DrainableSolution
-    solution: ammo
   - type: SolutionInjectOnProjectileHit
     transferAmount: 2.5
     blockSlots: NONE
-    solution: ammo
-  - type: InjectableSolution
     solution: ammo

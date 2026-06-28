@@ -13,51 +13,19 @@
     allowMovement: true
     name: ghost-role-information-nukie-mouse-name
     description: ghost-role-information-nukie-mouse-description
-  - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameFormat: name-format-nukie-operator
     nameSegments: [ NamesMouseDeathCommando ]
   - type: NpcFactionMember
     factions:
     - Syndicate
-  - type: Speech
-    speechVerb: SmallMob
-    speechSounds: Squeak
-  - type: LanguageSpeaker
-    speaks:
-    - Mouse
-    understands:
-    - Mouse
-    - TauCetiBasic
   - type: PointLight
     radius: 1.5
     energy: 2.3
     offset: 0, -1
     color: green
   - type: Sprite
-    drawdepth: SmallMobs
     sprite: _Trauma/Mobs/Animals/Syndicate/nukiemouse.rsi
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
-      state: mouse
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mouse-moving
-    noMovementLayers:
-      movement:
-        state: mouse
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: mouse
-      Critical:
-        Base: dead
-      Dead:
-        Base: splat
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 4.9
   - type: Respirator
     minSaturation: 5.0
   - type: TemperatureDamage
@@ -86,19 +54,7 @@
     - Syndicate
   - type: Tag
     tags:
-    - VimPilot
-    - Trash
-    - Mouse
-    - Meat
     - FootstepSound
-    - Radio
-  - type: InteractionPopup
-    successChance: 0.6
-    interactSuccessString: petting-success-nukie-mouse
-    interactFailureString: petting-failure-nukie-mouse
-    interactSuccessSpawn: EffectHearts
-    interactSuccessSound:
-      path: /Audio/Animals/mouse_squeak.ogg
   - type: Damageable
     damageModifierSet: NukieSpider
 
@@ -118,19 +74,12 @@
     rules: ghost-role-information-nukie-spider-rules
     mindRoles:
     - MindRoleGhostRoleTeamAntagonist
-  - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameFormat: name-format-nukie-operator
     nameSegments: [ NamesNukieSpider ]
   - type: NpcFactionMember
     factions:
     - Syndicate
-  - type: LanguageSpeaker
-    speaks:
-    - Xeno
-    understands:
-    - Xeno
-    - TauCetiBasic
   - type: PointLight
     radius: 3
     energy: 2.3
@@ -205,7 +154,6 @@
     tags:
     - FootstepSound
     - DoorBumpOpener
-    - Radio
   - type: Damageable
     damageModifierSet: NukieSpider
 

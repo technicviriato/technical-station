@@ -8,11 +8,11 @@
   components:
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#49cece"
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#49cece"
   - type: CartridgeAmmo
     proto: BulletCaselessRifleTranquilizer
   - type: ChemicalAmmo
@@ -35,11 +35,11 @@
   components:
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#5f959c"
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#5f959c"
   - type: CartridgeAmmo
     proto: BulletCaselessRiflePoison
   - type: ChemicalAmmo

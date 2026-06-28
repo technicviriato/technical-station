@@ -11,11 +11,11 @@
             "name": "icon"
         },
         {
-            "name": "mouse",
+            "name": "mouse-0",
             "directions": 4
         },
         {
-            "name": "mouse-moving",
+            "name": "mouse-moving-0",
             "directions": 4,
             "delays": [
                 [
@@ -41,10 +41,10 @@
             ]
         },
         {
-            "name": "dead"
+            "name": "dead-0"
         },
         {
-            "name": "splat"
+            "name": "splat-0"
         },
         {
             "name": "equipped-HELMET",

@@ -68,8 +68,31 @@
     hands:
     - item: DartGun
     - item: Syringe
+      hand:
+        emptyLabel: borg-slot-injector-dropper-empty
+        emptyRepresentative: Syringe
+        whitelist:
+          tags:
+          - Dropper
+          - Syringe
     - item: ChemistryEmptyBottle01
+      hand:
+        emptyLabel: borg-slot-small-containers-empty
+        emptyRepresentative: ChemistryEmptyBottle01
+        whitelist:
+          tags:
+          - Bottle
+          - Pill
+          - PillCanister
     - item: ChemistryEmptyBottle01
+      hand:
+        emptyLabel: borg-slot-small-containers-empty
+        emptyRepresentative: ChemistryEmptyBottle01
+        whitelist:
+          tags:
+          - Bottle
+          - Pill
+          - PillCanister
   - type: BorgModuleIcon
     icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: dart }
 
@@ -87,14 +110,69 @@
     - item: HandheldHealthAnalyzer
     - item: SyndiHypo
     - item: Syringe
+      hand:
+        emptyLabel: borg-slot-injector-dropper-empty
+        emptyRepresentative: Syringe
+        whitelist:
+          tags:
+          - Dropper
+          - Syringe
     - item: Beaker
+      hand:
+        emptyLabel: borg-slot-chemical-containers-empty
+        emptyRepresentative: Beaker
+        whitelist:
+          components:
+          - FitsInDispenser
     - item: Beaker
+      hand:
+        emptyLabel: borg-slot-chemical-containers-empty
+        emptyRepresentative: Beaker
+        whitelist:
+          components:
+          - FitsInDispenser
     - item: MedicatedSuture
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: MedicatedSuture
+        whitelist:
+            components:
+            - Healing
     - item: MedicatedSuture
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: MedicatedSuture
+        whitelist:
+          components:
+          - Healing
     - item: RegenerativeMesh
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: RegenerativeMesh
+        whitelist:
+          components:
+          - Healing
     - item: RegenerativeMesh
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: RegenerativeMesh
+        whitelist:
+          components:
+          - Healing
     - item: Bloodpack
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: Bloodpack
+        whitelist:
+          components:
+          - Healing
     - item: Bloodpack
+      hand:
+        emptyLabel: borg-slot-topicals-empty
+        emptyRepresentative: Bloodpack
+        whitelist:
+          components:
+          - Healing
   - type: BorgModuleIcon
     icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: hypo }
 
