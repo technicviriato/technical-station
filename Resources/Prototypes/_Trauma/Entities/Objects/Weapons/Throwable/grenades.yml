@@ -33,3 +33,24 @@
     graph: LemonGrenadeGraph
     node: start
     deconstructionTarget: null
+
+- type: entity
+  parent: ExGrenade
+  id: StickyGrenade
+  name: sticky grenade
+  description: A grenade that sticks to whatever it's thrown at, then explodes after 3 seconds.
+  components:
+  - type: EmbeddableProjectile
+    removalTime: 1.5
+  - type: ThrowingAngle
+    angle: 0
+  - type: LandAtCursor
+  - type: TriggerOnEmbed
+  - type: TimerTrigger
+    delay: 3
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 8
+    intensitySlope: 3
+    totalIntensity: 90
+    canCreateVacuum: false

@@ -11,6 +11,16 @@
   - UplinkExplosives
 
 - type: listing
+  id: UplinkStickyGrenade
+  name: uplink-sticky-grenade-name
+  description: uplink-sticky-grenade-desc
+  productEntity: StickyGrenade
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkExplosives
+
+- type: listing
   id: UplinkClusterGrenade
   name: uplink-cluster-grenade-name
   description: uplink-cluster-grenade-desc
