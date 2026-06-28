@@ -15,6 +15,7 @@
     description: ghost-role-information-nukie-mouse-description
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
+    nameFormat: name-format-nukie-operator
     nameSegments: [ NamesMouseDeathCommando ]
   - type: NpcFactionMember
     factions:
@@ -232,7 +233,7 @@
   suffix: syndicate
   components:
   - type: RandomMetadata
-    nameFormat: name-format-nukie-carp
+    nameFormat: name-format-nukie-operator
     nameSegments: [ NamesNukieCarp ]
   - type: Sprite
     drawdepth: Mobs
