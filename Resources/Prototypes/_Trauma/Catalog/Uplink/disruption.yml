@@ -15,6 +15,7 @@
   name: uplink-syndicate-remote-name
   description: uplink-syndicate-remote-desc
   productEntity: DoorRemoteSyndicate
+  icon: { sprite: _Trauma/Objects/Devices/device_remote.rsi, state: icon }
   cost:
     Telecrystal: 15
   categories:
