@@ -90,7 +90,7 @@
   description: uplink-lead-bottle-desc
   productEntity: ChemistryBottleLead
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - UplinkJob
   conditions:
@@ -104,7 +104,7 @@
   description: uplink-plasma-bottle-desc
   productEntity: ChemistryBottlePlasma
   cost:
-    Telecrystal: 15
+    Telecrystal: 10
   categories:
   - UplinkJob
   conditions:
@@ -118,7 +118,7 @@
   description: uplink-pitcher-napalm-desc
   productEntity: PitcherNapalm
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - UplinkJob
   conditions:
