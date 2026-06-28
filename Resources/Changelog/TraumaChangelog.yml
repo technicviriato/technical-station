@@ -10776,3 +10776,97 @@ Entries:
   id: 1204
   time: '2026-06-25T04:47:24.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3328
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: >-
+      Ore processors now distribute materials through the master silo
+      automatically.
+  id: 1205
+  time: '2026-06-25T05:03:30.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3327
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: >-
+      Split spider bite damage into half slash half pierce so it can break
+      grilles.
+  id: 1206
+  time: '2026-06-25T05:09:54.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3329
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed martial arts combos not being predicted.
+  id: 1207
+  time: '2026-06-25T06:07:19.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3330
+- author: Joel The
+  changes:
+  - type: Tweak
+    message: Resprited almost all tiles and some tile related decals
+  id: 1208
+  time: '2026-06-25T11:55:57.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3305
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Chems like inaprovaline now heal in softcrit, not just hardcrit.
+  id: 1209
+  time: '2026-06-25T12:21:02.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3335
+- author: Bon-Man
+  changes:
+  - type: Fix
+    message: Fixed Salicylic Acid and Oxandrolone overdose not working
+  id: 1210
+  time: '2026-06-25T12:25:44.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3336
+- author: jhrushbe, deltanedas
+  changes:
+  - type: Add
+    message: Engi has been taken off of suicide watch.
+  id: 1211
+  time: '2026-06-25T14:03:50.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3323
+- author: deltanedas
+  changes:
+  - type: Remove
+    message: removed 1 hit gib buff rat king from fishing drops. Poshel nahui armok
+  id: 1212
+  time: '2026-06-25T14:05:17.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3338
+- author: deltanedas
+  changes:
+  - type: Remove
+    message: Removed memory leak that raider was usig to kill the server.
+  id: 1213
+  time: '2026-06-26T17:15:00.0000000+00:00'
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed round end summary not listing jobs properly.
+  id: 1214
+  time: '2026-06-27T19:57:57.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3356
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed colossus not being attacked by NPCs and turrets.
+  id: 1215
+  time: '2026-06-27T20:11:38.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3359
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed infinite morph glitch.
+  id: 1216
+  time: '2026-06-27T20:15:09.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3358
+- author: Pi-tanium
+  changes:
+  - type: Tweak
+    message: Service borgs now get plant analyzers
+  id: 1217
+  time: '2026-06-27T21:31:45.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3361
