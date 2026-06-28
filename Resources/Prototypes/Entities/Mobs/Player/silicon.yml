@@ -595,6 +595,9 @@
       borg_brain:
         - PositronicBrain
       borg_module:
+        # <Trauma>
+        - BorgModuleStickyGrenadeLauncher
+        # </Trauma>
         - BorgModuleL6C
         - BorgModuleDoubleEsword
   - type: ItemSlots
@@ -617,7 +620,7 @@
       job: Borg
     - type: GhostTakeoverAvailable
 
-- type: entity # TODO
+- type: entity
   id: PlayerBorgSyndicateSaboteurBattery
   parent: BorgChassisSyndicateSaboteur
   suffix: Battery, Module, Operative
@@ -628,7 +631,12 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleRCD # Trauma
+        # <Trauma>
+        - BorgModuleRCD
+        - BorgModuleSyndicateChameleonProjector
+        - BorgModuleSyndicateJammer
+        - BorgModuleSyndicateDoorControl
+        # </Trauma>
         - BorgModuleSyndicateWeapon
         - BorgModuleAdvancedTool # Trauma - was BorgModuleTool
         - BorgModuleOperative

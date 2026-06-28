@@ -70,7 +70,7 @@
   productEntity: ReinforcementRadioSyndicateCyborgSaboteur
   icon: { sprite: _Trauma/Mobs/Silicon/synd_engi.rsi, state: synd_engi }
   cost:
-    Telecrystal: 250
+    Telecrystal: 300
   categories:
   - UplinkAllies
   conditions:
@@ -89,7 +89,7 @@
   productEntity: ReinforcementRadioSyndicateCyborgMedical
   icon: { sprite: _Trauma/Mobs/Silicon/synd_medical.rsi, state: synd_medical }
   cost:
-    Telecrystal: 250
+    Telecrystal: 300
   categories:
   - UplinkAllies
   conditions:

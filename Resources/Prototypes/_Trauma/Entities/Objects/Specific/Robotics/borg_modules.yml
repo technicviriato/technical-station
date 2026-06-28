@@ -8,4 +8,142 @@
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
     state: icon
 
-# TODO make new modules for saboteur and medical cyborg
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleStickyGrenadeLauncher
+  name: sticky grenade launcher cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: LauncherStickyGrenadeRegenerating
+  - type: BorgModuleIcon
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: china_lake }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateDoorControl
+  name: door control cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: DoorRemoteSyndicate
+    - item: AccessBreaker
+    - item: AccessConfiguratorSyndicate
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateJammer
+  name: jammer cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: BorgRadioJammer
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateDartgun
+  name: dart gun cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: DartGun
+    - item: Syringe
+    - item: ChemistryEmptyBottle01
+    - item: ChemistryEmptyBottle01
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateTopical
+  name: topical cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: HandheldHealthAnalyzer
+    - item: SyndiHypo
+    - item: Syringe
+    - item: Beaker
+    - item: Beaker
+    - item: MedicatedSuture
+    - item: MedicatedSuture
+    - item: RegenerativeMesh
+    - item: RegenerativeMesh
+    - item: Bloodpack
+    - item: Bloodpack
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateSurgery
+  name: surgery cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: HandheldHealthAnalyzer
+    - item: OmnimedToolSyndie
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateRescue
+  name: rescue cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: HandheldHealthAnalyzer
+    - item: DefibrillatorSyndicateUnpowered
+    - item: SyndicateJawsOfLife
+    - item: BorgFireExtinguisher
+    - item: BorgHandheldGPSBasic
+  - type: BorgModuleIcon
+    icon: { sprite: _Trauma/Interface/Actions/actions_borg.rsi, state: defib }
+
+- type: entity
+  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  id: BorgModuleSyndicateChameleonProjector
+  name: chameleon projector cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: ChameleonProjectorNoBattery
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }

@@ -1,12 +1,22 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: listing
-  id: AccessConfiguratorSyndicate
+  id: UplinkAccessConfiguratorSyndicate
   name: uplink-syndicate-access-config-name
   description: uplink-syndicate-access-config-desc
   productEntity: AccessConfiguratorSyndicate
   cost:
     Telecrystal: 10
+  categories:
+  - UplinkDisruption
+
+- type: listing
+  id: UplinkDoorRemoteSyndicate
+  name: uplink-syndicate-remote-name
+  description: uplink-syndicate-remote-desc
+  productEntity: DoorRemoteSyndicate
+  cost:
+    Telecrystal: 15
   categories:
   - UplinkDisruption
 

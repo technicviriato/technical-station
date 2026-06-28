@@ -25,3 +25,30 @@
   - type: Item
     sprite: Objects/Tools/appraisal-tool.rsi
     size: Small
+
+- type: entity
+  parent: [ DoorRemoteCanEletrifyDoors, BaseSyndicateContraband ]
+  id: DoorRemoteSyndicate
+  name: syndicate door remote
+  description: A gadget which can open and bolt doors remotely. This one works for syndicate agents.
+  components:
+  - type: Sprite
+    layers:
+    - state: door_remotebase
+    - state: door_remotelightscolour
+      color: "#5c0202"
+    - state: door_remotescreencolour
+      color: "#5c0202"
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+
+- type: entity
+  parent: [ BaseJammer, BaseXenoborgContraband ]
+  id: BorgRadioJammer
+  name: radio jammer
+  components:
+  - type: RadioJammer
+    frequenciesExcluded:
+    - 1213 # Syndicate Radio
