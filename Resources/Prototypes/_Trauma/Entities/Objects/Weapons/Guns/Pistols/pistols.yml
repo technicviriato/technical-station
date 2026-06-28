@@ -1,28 +1,17 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  parent: WeaponPistolViper
+  parent: [ AppraisalTool, WeaponPistolViper ]
   id: WeaponPistolViperAppraisal
   name: appraisal tool
-  suffix: Gun
   description: A beancounter's best friend, with a quantum connection to the galactic market and the ability to appraise even the toughest items. It will also tell you if a crate contains a completed bounty.
+  suffix: Gun
   components:
-  - type: Item
-    size: Small
-    shape: null
   - type: Sprite
     sprite: _Trauma/Objects/Weapons/Guns/Pistols/appraisal-gun.rsi
   - type: Gun
     showExamineText: false
     soundGunshot:
       path: /Audio/Items/appraiser.ogg
-  - type: PriceGun
   - type: UseDelay
-    delay: 1 # To allow use of the price gun while not hindering the gun portion of it.
-  - type: Tag
-    tags:
-    - AppraisalTool
-    - Sidearm
-  - type: GuideHelp
-    guides:
-    - Cargo
+    delay: 1

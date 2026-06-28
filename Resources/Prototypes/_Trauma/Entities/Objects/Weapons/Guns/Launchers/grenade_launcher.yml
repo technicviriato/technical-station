@@ -5,7 +5,6 @@
   id: LauncherStickyGrenadeRegenerating
   name: sticky grenade launcher
   description: A self-reloading launcher that fires sticky grenades. They embed into whatever they hit and explode after 3 seconds.
-  categories: [ HideSpawnMenu ]
   suffix: Regenerating
   components:
   - type: Sprite

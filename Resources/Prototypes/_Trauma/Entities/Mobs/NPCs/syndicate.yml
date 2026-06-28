@@ -15,7 +15,7 @@
     description: ghost-role-information-nukie-mouse-description
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
-    nameSegments: [NamesMouseDeathCommando]
+    nameSegments: [ NamesMouseDeathCommando ]
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -37,7 +37,7 @@
     drawdepth: SmallMobs
     sprite: _Trauma/Mobs/Animals/Syndicate/nukiemouse.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
       state: mouse
   - type: SpriteMovement
     movementLayers:
@@ -120,7 +120,7 @@
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameFormat: name-format-nukie-operator
-    nameSegments: [NamesNukieSpider]
+    nameSegments: [ NamesNukieSpider ]
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -139,7 +139,7 @@
     drawdepth: Mobs
     sprite: _Trauma/Mobs/Animals/Syndicate/nukiespider.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
       state: syndicate-spider
   - type: SpriteMovement
     movementLayers:
@@ -209,7 +209,7 @@
     damageModifierSet: NukieSpider
 
 - type: entity
-  parent: [SolutionWeapon, SolutionTiny]
+  parent: [ SolutionWeapon, SolutionTiny ]
   id: SolutionVenomSpiderNukie
   categories: [ HideSpawnMenu ]
   components:

@@ -20,7 +20,7 @@
     Structural: 0.25
   flatReductions:
     Blunt: 10
-
+    Slash: 10
     Piercing: 10
     Heat: 10
     Structural: 10
@@ -33,7 +33,7 @@
     Structural: 0.5
   flatReductions:
     Blunt: 10
-
+    Slash: 10
     Piercing: 10
     Heat: 10
     Structural: 10
