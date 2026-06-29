@@ -43,20 +43,6 @@
     - Clown
 
 - type: listing
-  id: UplinkFoodShakerPepperLead
-  name: uplink-shaker-lead-name
-  description: uplink-shaker-lead-desc
-  productEntity: FoodShakerPepperLead
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Chef
-
-- type: listing
   id: UplinkEmergencyMedipenMute
   name: uplink-medipen-mute-name
   description: uplink-medipen-mute-desc
@@ -83,48 +69,6 @@
   - !type:BuyerJobCondition
     whitelist:
     - Mime
-
-- type: listing
-  id: UplinkChemistryBottleLead
-  name: uplink-lead-bottle-name
-  description: uplink-lead-bottle-desc
-  productEntity: ChemistryBottleLead
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerDepartmentCondition
-    whitelist:
-    - Medical
-
-- type: listing
-  id: UplinkChemistryBottlePlasma
-  name: uplink-plasma-bottle-name
-  description: uplink-plasma-bottle-desc
-  productEntity: ChemistryBottlePlasma
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerDepartmentCondition
-    whitelist:
-    - Medical
-
-- type: listing
-  id: UplinkPitcherNapalm
-  name: uplink-pitcher-napalm-name
-  description: uplink-pitcher-napalm-desc
-  productEntity: PitcherNapalm
-  cost:
-    Telecrystal: 15
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Chef
 
 - type: listing
   id: UplinkKudzuGrenade

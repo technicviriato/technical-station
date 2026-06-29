@@ -11,11 +11,43 @@
   - UplinkDisruption
 
 - type: listing
+  id: UplinkSyndicateShuttleBoard
+  name: uplink-shuttle-board-name
+  description: uplink-shuttle-board-desc
+  productEntity: SyndicateShuttleConsoleCircuitboard
+  icon: { sprite: Objects/Misc/module.rsi, state: cpu_syndicate }
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkDisruption
+
+- type: listing
   id: UplinkDoorRemoteSyndicate
   name: uplink-syndicate-remote-name
   description: uplink-syndicate-remote-desc
   productEntity: DoorRemoteSyndicate
   icon: { sprite: _Trauma/Objects/Devices/device_remote.rsi, state: icon }
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkDisruption
+
+- type: listing
+  id: UplinkSyndicateShuttleBundle
+  name: uplink-shuttle-bundle-name
+  description: uplink-shuttle-bundle-desc
+  productEntity: CrateNameSyndicateShuttleBundle
+  icon: { sprite: Structures/Shuttles/thruster.rsi, state: base }
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkDisruption
+
+- type: listing
+  id: UplinkComputerIFFSyndicateCircuitboard
+  name: uplink-shuttle-iff-name
+  description: uplink-shuttle-iff-desc
+  productEntity: ComputerIFFSyndicateCircuitboard
   cost:
     Telecrystal: 15
   categories:
@@ -31,10 +63,10 @@
   categories:
   - UplinkDisruption
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
 
 # upstream removed it lol
 - type: listing

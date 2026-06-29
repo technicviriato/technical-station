@@ -7,9 +7,6 @@ uplink-hyposhell-desc = A box containing four hyposhells, shotgun shells that ca
 uplink-appraisal-tool-gun-name = Appraisal Tool Gun
 uplink-appraisal-tool-gun-desc = A modified Viper to appear as an appraisal tool.
 
-uplink-shaker-lead-name = Lead Pepper Shaker
-uplink-shaker-lead-desc = Add a little spice to the crews life for what they have left of it. Contains 15u of lead.
-
 uplink-pitcher-napalm-name = Pitcher Half Full of Napalm
 uplink-pitcher-napalm-desc = Nothing quite like waking up to the smell of napalm in the morning. A pitcher with 50u of Napalm.
 
