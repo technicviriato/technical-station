@@ -45,3 +45,6 @@ uplink-mimana-stealthy-desc = A mutated mimana that seems to fade into the backg
 
 uplink-omnimed-tool-name = Gorlex Surgical Omnitool
 uplink-omnimed-tool-desc = A compact surgical omnitool conveniently packed like a swiss army knife. Can perform surgery through clothing.
+
+uplink-kudzu-grenade-name = Kudzu grenade
+uplink-kudzu-grenade-desc = A grenade containing mutated kudzu that spreads faster and deals damage to anyone caught inside, excluding diona.

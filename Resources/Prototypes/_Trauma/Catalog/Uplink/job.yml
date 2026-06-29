@@ -127,6 +127,20 @@
     - Chef
 
 - type: listing
+  id: UplinkKudzuGrenade
+  name: uplink-kudzu-grenade-name
+  description: uplink-kudzu-grenade-desc
+  productEntity: KudzuGrenade
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Botanist
+
+- type: listing
   id: UplinkNecronomicon # dog
   name: uplink-necronomicon-name
   description: uplink-necronomicon-desc
