@@ -39,13 +39,14 @@
         - id: CableMVStack
         - id: CableHVStack
         - id: CableApcStack
+          amount: 2
         - id: Multitool
         - id: WallmountSubstationElectronics
         - id: APCElectronics
         - id: WallmountGeneratorAPUElectronics
+          amount: 2
         - id: SheetSteel
         - id: PartRodMetal
         - id: MicroManipulatorStockPart
         - id: PowerCellSmall
-        - id: SheetGlass1
-          amount: 2
+        - id: SheetGlass
