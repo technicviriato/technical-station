@@ -18,7 +18,7 @@
   id: ClothingHeadsetAltHunter
   name: spacepol officers over-ear headset
   components:
-  - type: ContainerFill
+  - type: ContainerFil
     containers:
       key_slots:
       - EncryptionKeySyndie
