@@ -23,7 +23,7 @@
 # Nuclear Reactor
 
 - type: cargoProduct
-  id: NuclearReactorFlatpack
+  id: NuclearReactorFlatpackPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/cargo_icons.rsi
     state: reactor
@@ -33,7 +33,7 @@
   group: market
 
 - type: cargoProduct
-  id: GasTurbineFlatpack
+  id: GasTurbineFlatpackPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/cargo_icons.rsi
     state: turbine
@@ -43,7 +43,7 @@
   group: market
 
 - type: cargoProduct
-  id: CerenkiteFuelRods
+  id: CerenkiteFuelRodPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
     state: default_rod
@@ -53,17 +53,17 @@
   group: market
 
 - type: cargoProduct
-  id: BohrumReflectors
+  id: BohrumControlRodPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
     state: default_rod
-  product: CrateBohrumReflector
+  product: CrateBohrumControlRod
   cost: 2000
   category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
-  id: SteelGasChannels
+  id: SteelGasChannelPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
     state: default_rod
@@ -73,7 +73,7 @@
   group: market
 
 - type: cargoProduct
-  id: SteelHeatExhangers
+  id: SteelHeatExhangerPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
     state: default_rod
