@@ -22,7 +22,7 @@
 #    suffix: false - Goobstation
 
 - type: entity
-  id: GrenadeBirdshot
+  id: GrenadeBirdsho
   name: "40mm birdshot"
   description: "For hunting alien birds of unusual size."
   parent: BaseGrenade
