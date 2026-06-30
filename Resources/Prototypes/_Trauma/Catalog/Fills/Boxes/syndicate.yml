@@ -14,3 +14,17 @@
         - id: PowerCellMicroreactor
         - id: ClothingEyesGlassesHiddenSecurity
         - id: CameraBug
+
+- type: entity
+  parent: [ BoxCardboard, BaseSyndicateContraband ]
+  id: BombCollarKit
+  name: bomb collar kit
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingNeckBombCollar
+        - id: RemoteSignallerAdvanced
+        - id: Multitool
