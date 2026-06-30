@@ -13,9 +13,6 @@ uplink-medipen-mute-desc = An auto injector disguised as an emergency medipen fi
 uplink-silent-shoes-name = Silent Shoes
 uplink-silent-shoes-desc = A silent threat. No one will hear you coming in this special pair of shoes.
 
-uplink-cone-name = Hidden Storage Warning Cone
-uplink-cone-desc = An unassuming cone that's hiding a secret. Use it to secretly stash goods or to plant surprises for later.
-
 uplink-utility-knife-name = Chemical Utility Knife
 uplink-utility-knife-desc = A utility knife with special grooves that can hold up to 10u of any chemical.
 

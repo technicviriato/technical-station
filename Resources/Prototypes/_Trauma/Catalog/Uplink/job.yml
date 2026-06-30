@@ -1,20 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: listing
-  id: UplinkClothingHeadHatConeStorage
-  name: uplink-cone-name
-  description: uplink-cone-desc
-  productEntity: ClothingHeadHatConeStorage
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerDepartmentCondition
-    whitelist:
-    - Engineering
-
-- type: listing
   id: UplinkMimanaStealthy
   name: uplink-mimana-stealthy-name
   description: uplink-mimana-stealthy-desc
@@ -132,6 +118,20 @@
     - Cargo
 
 - type: listing
+  id: UplinkUtilityKnifeReagent
+  name: uplink-utility-knife-name
+  description: uplink-utility-knife-desc
+  productEntity: UtilityKnifeReagent
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkJob
+  conditions:
+  - !type:BuyerDepartmentCondition
+    whitelist:
+    - Cargo
+
+- type: listing
   id: UplinkOmnimedToolSyndie
   name: uplink-omnimed-tool-name
   description: uplink-omnimed-tool-desc
@@ -144,20 +144,6 @@
   - !type:BuyerDepartmentCondition
     whitelist:
     - Medical
-
-- type: listing
-  id: UplinkUtilityKnifeReagent
-  name: uplink-utility-knife-name
-  description: uplink-utility-knife-desc
-  productEntity: UtilityKnifeReagent
-  cost:
-    Telecrystal: 30
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerDepartmentCondition
-    whitelist:
-    - Cargo
 
 - type: listing
   id: UplinkRealBananiumSword
