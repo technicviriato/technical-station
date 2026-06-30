@@ -29,6 +29,10 @@
     Telecrystal: 20
   categories:
   - UplinkWearables
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
 
 - type: listing
   id: UplinkBombCollarKit

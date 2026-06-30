@@ -8,3 +8,4 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepSilence
+  - type: ViewconeSilentFootsteps

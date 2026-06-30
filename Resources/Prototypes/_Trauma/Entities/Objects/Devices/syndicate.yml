@@ -45,7 +45,7 @@
     - SyndicateAgent
 
 - type: entity
-  parent: [ BaseJammer, BaseXenoborgContraband ]
+  parent: BaseJammer
   id: BorgRadioJammer
   name: radio jammer
   components:

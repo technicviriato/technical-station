@@ -2,7 +2,7 @@
 
 - type: entity
   parent: [ NetworkConfigurator, RemoteSignallerAdvanced ]
-  id: NetworkConfiguratorSignaller
+  id: NetworkConfiguratorSignallerAdvanced
   suffix: Signaller
   components:
   - type: Sprite

@@ -1,6 +1,19 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: listing
+  id: HandheldStationMapRecordsTablet
+  name: uplink-records-tablet-name
+  description: uplink-records-tablet-desc
+  icon:
+    sprite: _Trauma/Objects/Devices/tablets.rsi
+    state: icon
+  productEntity: HandheldStationMapRecordsTablet
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkDeception
+
+- type: listing
   id: UplinkUltrabrightLantern
   name: uplink-ultrabright-lantern-name
   description: uplink-ultrabright-lantern-desc
@@ -15,19 +28,6 @@
   name: uplink-storage-briefcase-name
   description: uplink-storage-briefcase-desc
   productEntity: BriefcaseBrownFake
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkDeception
-
-- type: listing
-  id: HandheldStationMapRecordsTablet
-  name: uplink-records-tablet-name
-  description: uplink-records-tablet-desc
-  icon:
-    sprite: _Trauma/Objects/Devices/tablets.rsi
-    state: icon
-  productEntity: HandheldStationMapRecordsTablet
   cost:
     Telecrystal: 5
   categories:

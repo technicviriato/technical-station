@@ -15,20 +15,6 @@
     - Engineering
 
 - type: listing
-  id: UplinkNetworkConfiguratorSignaller
-  name: uplink-network-configurator-signaller-name
-  description: uplink-network-configurator-signaller-desc
-  productEntity: NetworkConfiguratorSignaller
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerDepartmentCondition
-    whitelist:
-    - Engineering
-
-- type: listing
   id: UplinkMimanaStealthy
   name: uplink-mimana-stealthy-name
   description: uplink-mimana-stealthy-desc
