@@ -29,6 +29,7 @@
     Telecrystal: 20
   categories:
   - UplinkWearables
+  conditions:
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
