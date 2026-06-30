@@ -20,6 +20,10 @@
       shader: unshaded
   - type: Item
     size: Normal
+  - type: Defibrillator
+    zapHeal:
+      types:
+        Asphyxiation: -40
     doAfterDuration: 3
   - type: MeleeWeapon
     damage:
