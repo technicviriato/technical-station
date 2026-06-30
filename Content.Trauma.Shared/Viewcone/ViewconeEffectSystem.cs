@@ -52,7 +52,7 @@ public sealed partial class ViewconeEffectSystem : EntitySystem
 
             SpawnEffect(ent, ent.Comp.Effect, args.WorldAngle);
         }
-        
+
     }
 
     private void OnMeleeAttack(Entity<ViewconeMeleeEffectComponent> ent, ref MeleeAttackEvent args)
