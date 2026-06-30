@@ -36,7 +36,7 @@
   id: UplinkSyndicateShuttleBundle
   name: uplink-shuttle-bundle-name
   description: uplink-shuttle-bundle-desc
-  productEntity: CrateNameSyndicateShuttleBundle
+  productEntity: CrateSyndicateShuttleBundle
   icon: { sprite: Structures/Shuttles/thruster.rsi, state: base }
   cost:
     Telecrystal: 15

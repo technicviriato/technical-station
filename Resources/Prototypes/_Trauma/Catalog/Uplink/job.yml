@@ -151,7 +151,7 @@
   description: uplink-banana-esword-desc
   productEntity: RealBananiumSword
   cost:
-    Telecrystal: 45
+    Telecrystal: 50
   categories:
   - UplinkJob
   conditions:

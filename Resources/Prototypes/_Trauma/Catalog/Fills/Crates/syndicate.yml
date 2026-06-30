@@ -25,7 +25,7 @@
 
 - type: entity
   parent: CrateSyndicate
-  id: CrateNameSyndicateShuttleBundle
+  id: CrateSyndicateShuttleBundle
   name: shuttle bundle crate
   description: Everything but the shuttle board. It's a shuttle in a crate* (Some assembly required)
   components:
