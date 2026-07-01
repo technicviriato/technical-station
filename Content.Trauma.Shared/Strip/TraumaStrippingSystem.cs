@@ -7,7 +7,6 @@ using Content.Shared.Popups;
 using Content.Shared.Strip.Components;
 using Content.Trauma.Common.Inventory;
 using Content.Trauma.Shared.Strip.Components;
-using Robust.Shared.Prototypes;
 
 namespace Content.Trauma.Shared.Strip;
 

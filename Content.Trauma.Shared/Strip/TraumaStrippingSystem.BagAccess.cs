@@ -24,15 +24,11 @@ public sealed partial class TraumaStrippingSystem
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private SharedStorageSystem _storage = default!;
     [Dependency] private SharedStrippableSystem _strippable = default!;
-
-    private EntityQuery<StorageComponent> _storageQuery;
-    private EntityQuery<CuffableComponent> _cuffableQuery;
+    [Dependency] private EntityQuery<StorageComponent> _storageQuery = default!;
+    [Dependency] private EntityQuery<CuffableComponent> _cuffableQuery = default!;
 
     private void InitializeBagAccess()
     {
-        _storageQuery = GetEntityQuery<StorageComponent>();
-        _cuffableQuery = GetEntityQuery<CuffableComponent>();
-
         SubscribeLocalEvent<StrippingComponent, GetVerbsEvent<Verb>>(OnGetBagAccessVerbs);
         SubscribeLocalEvent<BagAccessComponent, BagAccessDoAfterEvent>(OnBagAccessDoAfter);
         SubscribeLocalEvent<BoundUIClosedEvent>(OnStorageUiClosed);
