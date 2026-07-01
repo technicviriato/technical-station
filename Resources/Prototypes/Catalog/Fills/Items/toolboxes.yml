@@ -207,12 +207,12 @@
       children:
       - !type:NestedSelector
         tableId: AllToyWeaponsTable
-      - id: EnergySword # ~1/1001
-        weight: 0.001
       # <Trauma>
       - id: RealBananiumSword
         weight: 0.001
       # </Trauma>
+      - id: EnergySword # ~1/1001
+        weight: 0.001
     - !type:GroupSelector # Rarer clown tools
       rolls: 2
       children:
