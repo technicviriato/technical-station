@@ -246,8 +246,7 @@
   suffix: Stealthy
   components:
   - type: Stealth
-    minVisibility: .15
     maxVisibility: 1
   - type: StealthOnMove
-    passiveVisibilityRate: -0.37
-    movementVisibilityRate: 0.50
+    passiveVisibilityRate: -0.5
+    movementVisibilityRate: 0.6
