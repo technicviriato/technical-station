@@ -5,7 +5,9 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Strip.Components;
+using Content.Trauma.Common.Inventory;
 using Content.Trauma.Shared.Strip.Components;
+using Robust.Shared.Prototypes;
 
 namespace Content.Trauma.Shared.Strip;
 
@@ -16,7 +18,10 @@ namespace Content.Trauma.Shared.Strip;
 public sealed partial class TraumaStrippingSystem : EntitySystem
 {
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private SharedHandsSystem _handsSystem = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+
+    private static readonly ProtoId<InventorySlotPrototype> JumpsuitSlot = "jumpsuit";
+    private static readonly ProtoId<InventorySlotPrototype> OuterClothingSlot = "outerClothing";
 
     public override void Initialize()
     {
@@ -43,40 +48,39 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
         if (!TryComp<HandsComponent>(user.Owner, out var hands))
             return;
 
-        var freeHands = CountFreeHands((user.Owner, hands));
+        var freeHands = _hands.CountFreeHands((user.Owner, hands));
 
-        if (!user.Comp.TrackedDoAfters.Contains(args.DoAfter.Index))
-        {
-            // Cannot remove jumpsuit while outer clothing is still worn.
-            if (args.Event.InventoryOrHand
-                && args.Event.SlotOrHandName == "jumpsuit"
-                && args.DoAfter.Args.Target is { } target
-                && _inventory.TryGetSlotEntity(target, "outerClothing", out _))
-            {
-                _popup.PopupEntity(
-                    Loc.GetString("trauma-strip-jumpsuit-blocked"),
-                    user.Owner,
-                    user.Owner,
-                    PopupType.SmallCaution);
-                args.Cancel();
-                return;
-            }
-
-            if (user.Comp.ActiveCount >= freeHands)
-            {
-                args.Cancel();
-                return;
-            }
-
-            user.Comp.TrackedDoAfters.Add(args.DoAfter.Index);
-            user.Comp.ActiveCount++;
-            Dirty(user.Owner, user.Comp);
-        }
-        else
+        if (user.Comp.TrackedDoAfters.Contains(args.DoAfter.Index))
         {
             if (user.Comp.ActiveCount > freeHands)
                 args.Cancel();
+            return;
         }
+
+        // Cannot remove jumpsuit while outer clothing is still worn.
+        if (args.Event.InventoryOrHand
+            && args.Event.SlotOrHandName == JumpsuitSlot
+            && args.DoAfter.Args.Target is { } target
+            && _inventory.TryGetSlotEntity(target, OuterClothingSlot, out _))
+        {
+            _popup.PopupEntity(
+                Loc.GetString("trauma-strip-jumpsuit-blocked"),
+                user.Owner,
+                user.Owner,
+                PopupType.SmallCaution);
+            args.Cancel();
+            return;
+        }
+
+        if (user.Comp.ActiveCount >= freeHands)
+        {
+            args.Cancel();
+            return;
+        }
+
+        user.Comp.TrackedDoAfters.Add(args.DoAfter.Index);
+        user.Comp.ActiveCount++;
+        Dirty(user.Owner, user.Comp);
     }
 
     private void OnStripDoAfterFinished(Entity<ActiveStrippingComponent> user, ref StrippableDoAfterEvent args)
@@ -86,20 +90,6 @@ public sealed partial class TraumaStrippingSystem : EntitySystem
 
         user.Comp.TrackedDoAfters.Remove(args.DoAfter.Index);
         DecrementActiveCount(user);
-    }
-
-    /// <summary>
-    /// Returns the number of hands currently holding nothing.
-    /// </summary>
-    public int CountFreeHands(Entity<HandsComponent> ent)
-    {
-        var count = 0;
-        foreach (var (name, _) in ent.Comp.Hands)
-        {
-            if (_handsSystem.GetHeldItem((ent.Owner, ent.Comp), name) == null)
-                count++;
-        }
-        return count;
     }
 
     /// <summary>

@@ -25,8 +25,14 @@ public sealed partial class TraumaStrippingSystem
     [Dependency] private SharedStorageSystem _storage = default!;
     [Dependency] private SharedStrippableSystem _strippable = default!;
 
+    private EntityQuery<StorageComponent> _storageQuery;
+    private EntityQuery<CuffableComponent> _cuffableQuery;
+
     private void InitializeBagAccess()
     {
+        _storageQuery = GetEntityQuery<StorageComponent>();
+        _cuffableQuery = GetEntityQuery<CuffableComponent>();
+
         SubscribeLocalEvent<StrippingComponent, GetVerbsEvent<Verb>>(OnGetBagAccessVerbs);
         SubscribeLocalEvent<BagAccessComponent, BagAccessDoAfterEvent>(OnBagAccessDoAfter);
         SubscribeLocalEvent<BoundUIClosedEvent>(OnStorageUiClosed);
@@ -44,7 +50,7 @@ public sealed partial class TraumaStrippingSystem
         if (!TryComp<HandsComponent>(args.User, out var hands))
             return;
 
-        var freeHands = CountFreeHands((args.User, hands));
+        var freeHands = _hands.CountFreeHands((args.User, hands));
         var active = EnsureComp<ActiveStrippingComponent>(args.User);
         if (active.ActiveCount >= freeHands)
             return;
@@ -57,7 +63,7 @@ public sealed partial class TraumaStrippingSystem
         var enumerator = _inventory.GetSlotEnumerator(args.Target);
         while (enumerator.NextItem(out var slotEntity, out var slotDef))
         {
-            if (!HasComp<StorageComponent>(slotEntity))
+            if (!_storageQuery.HasComponent(slotEntity))
                 continue;
 
             var capturedSlotName = slotDef.Name;
@@ -168,7 +174,7 @@ public sealed partial class TraumaStrippingSystem
         if (_mobState.IsCritical(target.Owner))
             return target.Comp.CuffedOrCritDelay;
 
-        if (TryComp<CuffableComponent>(target.Owner, out var cuffable) && cuffable.CuffedHandCount > 0)
+        if (_cuffableQuery.TryComp(target.Owner, out var cuffable) && cuffable.CuffedHandCount > 0)
             return target.Comp.CuffedOrCritDelay;
 
         return target.Comp.NormalDelay;

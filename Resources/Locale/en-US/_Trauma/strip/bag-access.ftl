@@ -1,9 +1,4 @@
-trauma-bag-access-verb = Open { $slot ->
-    [back] Backpack
-    [belt] Belt
-    [outerClothing] Outer Clothing
-    *[other] { $slot }
-}
+trauma-bag-access-verb = Open { trauma-bag-access-slot }
 
 trauma-bag-access-slot = { $slot ->
     [back] Backpack
